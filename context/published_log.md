@@ -402,6 +402,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-18 | enterprise_build_vs_buy | your-secret-bill-six-cents-version | Your Secret Bill: 6 Cents a Version | https://pressflow.aichieve.net/published/2026-11-18_your-secret-bill-six-cents-version.md | reader site only |
 | 2026-11-18 | warehouse_automation_robotics_capex | your-fleets-8-3-year-bill | Your Fleet's 8.3-Year Bill: The Wave Nobody Reserves For | https://pressflow.aichieve.net/published/2026-11-18_your-fleets-8-3-year-bill.md | reader site only |
 | 2026-11-18 | property_loss_insurance_mitigation | your-3rd-claim-counts-storm-doesnt | Your 3rd Claim Counts, Storm Doesn't | https://pressflow.aichieve.net/published/2026-11-18_your-3rd-claim-counts-storm-doesnt.md | reader site only |
+| 2026-11-20 | consumer_asset_repair_replace_tco | your-applecare-79-96-vs-89 | Your AppleCare Costs $79.96 a Device | https://pressflow.aichieve.net/published/2026-11-20_your-applecare-79-96-vs-89.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

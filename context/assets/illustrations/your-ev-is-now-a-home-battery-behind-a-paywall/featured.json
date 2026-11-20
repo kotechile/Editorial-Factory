@@ -1,6 +1,6 @@
 {
   "slug": "your-ev-is-now-a-home-battery-behind-a-paywall",
-  "revision": 5,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -35,6 +35,25 @@
       "title": "Tesla Home Battery Paywall",
       "bytes": 195902,
       "sha256": "sha256:dcc8b654c6cf24092a134897307115e4a1b5dc74c0bb9088e9585b1e731d8dba"
+    },
+    {
+      "revision": 5,
+      "style": "architectural_night",
+      "model": "flux-2/pro-text-to-image",
+      "prompt": "Cinematic architectural photograph at blue hour, 35mm anamorphic wide lens with dramatic falloff. Extreme asymmetric composition with the hero off-centre. An unbranded modern electric vehicle parked on a textured concrete residential driveway, connected to a modern electrical service panel by a thick, heavy-duty illuminated umbilical cable. The car's sleek brushed metal body reflects warm amber light spilling from the home's glowing windows. The surrounding suburban neighborhood is in deep blackout shadow. Crisp atmospheric depth, moody premium editorial lighting, clean geometry, quiet confidence.",
+      "task_id": "c89fa8094a047dc2fe7b2f44d664bfa0",
+      "sha256": "sha256:dcc8b654c6cf24092a134897307115e4a1b5dc74c0bb9088e9585b1e731d8dba",
+      "generated_at": "2026-10-09T12:42:03+00:00",
+      "source_hash": "sha256:853abd7d0901c56d55900c9b6cd173f9",
+      "render_sha256": null
+    },
+    {
+      "revision": 6,
+      "alt_text": "Electric crossover parked on a driveway at dusk, its glowing charge cable linked to the only lit house on a dark street.",
+      "caption": "The car can now keep the lights on \u2014 if the household already paid for the battery in the garage.",
+      "title": "EV-to-home backup at blue hour: one lit house on a dark street",
+      "bytes": 343985,
+      "sha256": "sha256:8f333b997e42f6eca5fa81a768298885"
     }
   ],
   "style": "architectural_night",
@@ -45,67 +64,95 @@
   "model_note": "",
   "aspect_ratio": "16:9",
   "resolution": "1K",
-  "prompt": "Cinematic architectural photograph at blue hour, 35mm anamorphic wide lens with dramatic falloff. Extreme asymmetric composition with the hero off-centre. An unbranded modern electric vehicle parked on a textured concrete residential driveway, connected to a modern electrical service panel by a thick, heavy-duty illuminated umbilical cable. The car's sleek brushed metal body reflects warm amber light spilling from the home's glowing windows. The surrounding suburban neighborhood is in deep blackout shadow. Crisp atmospheric depth, moody premium editorial lighting, clean geometry, quiet confidence.",
-  "negative_prompt": "text, typography, letters, words, watermark, logos, branding, faces, people",
-  "rationale": "Architectural night photography perfectly captures the V2H narrative, using the contrast of a lit home powered by an EV against a dark, blacked-out neighborhood to symbolize the premium resilience feature.",
-  "cue": "behind a paywall",
-  "subject": "an unbranded modern electric vehicle powering a home at night via an illuminated cable",
-  "core_thesis": "Tesla's vehicle-to-home backup feature turns EVs into home power plants, but access is gated behind an expensive secondary battery installation.",
-  "core_conflict": "Accessible EV grid capacity vs expensive hardware paywalls",
-  "composition": "extreme asymmetric composition",
-  "alt_text": "Tesla Home Battery Paywall. An unbranded electric vehicle parked on a driveway at night, glowing umbilical cable to house.",
-  "caption": "Tesla Home Battery Paywall: Your EV powers your home but requires an $8,200 Powerwall.",
-  "title": "Tesla Home Battery Paywall",
+  "prompt": "Blue-hour architectural photograph, 35mm lens, deep depth of field, fine film grain. A sleek unbranded electric crossover parked off-centre left on a concrete driveway, charge-port ring lit, a heavy-duty charging cable arcing to a slim white home-battery unit beside the garage door of a modern stucco house. The single key light is warm ochre glow spilling from the house windows on the right; the rest of the street sits dark in the blackout. Deep blue ambient dusk, slate grey and charcoal palette, asphalt shingle roofline, wet-look concrete texture, long-exposure calm. Wide 16:9 framing with the dark street as breathing room, no people, no logos.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos",
+  "rationale": "The story's decisive moment happens after hours: during a blackout, the EV quietly powers the house while the neighbourhood sleeps. Architectural night lets the lit windows be the only warm light against deep blue ambient \u2014 the car as household power plant, stated without a product shot or a macro that would strip the environment. It also breaks the desk's recent cinematic_still run with a fresh photographic grammar.",
+  "cue": "backup batteries for your house",
+  "subject": "an unbranded electric crossover on a driveway, its glowing charge cable linked to a wall-mounted home battery during a neighbourhood blackout",
+  "core_thesis": "The cheapest new home backup is already parked in the driveway, but Tesla gates it behind an $8,200 Powerwall 3 \u2014 a perk for households that already own the wall battery, not a shortcut for the bill-squeezed homes that need it most.",
+  "core_conflict": "Massive idle battery capacity sitting in millions of EV driveways versus the $8,200 wall-battery gatekeeper (plus five-figure installation) that locks it, just as residential power prices and utility rate requests hit records.",
+  "composition": "Wide 16:9 architectural frame, EV off-centre left on the driveway, lit house behind on the right, dark street left as deep negative space",
+  "alt_text": "Your EV Is A Home Battery \u2014 Behind A Paywall. Electric crossover parked on a driveway at dusk, its glowing charge cable linked to the only",
+  "caption": "Your EV Is A Home Battery \u2014 Behind A Paywall: The cheapest home backup sits in your driveway \u2014 and Tesla wants $8,200 for the key.",
+  "title": "Your EV Is A Home Battery \u2014 Behind A Paywall",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
   "depicts_real_brand": false,
-  "director": "gemini-3.1-pro-preview",
+  "director": "z-ai/glm-5.3",
   "director_attempts": 2,
   "pinned": {},
   "file": "featured.jpg",
   "local_path": "context/assets/illustrations/your-ev-is-now-a-home-battery-behind-a-paywall/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 195902,
-  "sha256": "sha256:dcc8b654c6cf24092a134897307115e4a1b5dc74c0bb9088e9585b1e731d8dba",
-  "source_hash": "sha256:853abd7d0901c56d55900c9b6cd173f9",
-  "source_chars": 4412,
-  "task_id": "c89fa8094a047dc2fe7b2f44d664bfa0",
+  "bytes": 402261,
+  "sha256": "sha256:e14ba6508fc78ee97e4973b318fcc2658b3843301a5e0a92d85c135ab122f86a",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 402261,
+    "quality": 84,
+    "sha256": "sha256:e14ba6508fc78ee97e4973b318fcc2658b3843301a5e0a92d85c135ab122f86a",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:733685fb5d4bb94b0c8c7d8329f8c394d404a9049f798fe915135ab82dcfdcc0",
+  "render_phash": "02dc01fd03f903610a0fc9e78165032545e60c273b07322f21fb08ef0e070de7",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A dark blue electric crossover is parked on a driveway and connected by a cable to a wall-mounted unit on the side of a house at dusk.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 1.0,
+    "reason": "The image directly illustrates the concept of an EV acting as a home battery, matching the article's central premise."
+  },
+  "source_hash": "sha256:d23b386a593e56ed1355772118047f38",
+  "source_chars": 4401,
+  "task_id": "df2fa2f7ee14b4344f6e48aabbe435ef",
   "credits": 5.0,
-  "cost_ms": 22,
-  "provider_url": "https://tempfile.aiquickdraw.com/a2/c89fa8094a047dc2fe7b2f44d664bfa0_1791549719810.jpg",
+  "cost_ms": 67,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/df2fa2f7ee14b4344f6e48aabbe435ef_1795184483993.jpg",
   "provider_request": {
     "model": "flux-2/pro-text-to-image",
     "input": {
-      "prompt": "Cinematic architectural photograph at blue hour, 35mm anamorphic wide lens with dramatic falloff. Extreme asymmetric composition with the hero off-centre. An unbranded modern electric vehicle parked on a textured concrete residential driveway, connected to a modern electrical service panel by a thick, heavy-duty illuminated umbilical cable. The car's sleek brushed metal body reflects warm amber light spilling from the home's glowing windows. The surrounding suburban neighborhood is in deep blackout shadow. Crisp atmospheric depth, moody premium editorial lighting, clean geometry, quiet confidence.\n\nDo not include: text, lettering, numbers, logos, watermarks, UI.",
+      "prompt": "Blue-hour architectural photograph, 35mm lens, deep depth of field, fine film grain. A sleek unbranded electric crossover parked off-centre left on a concrete driveway, charge-port ring lit, a heavy-duty charging cable arcing to a slim white home-battery unit beside the garage door of a modern stucco house. The single key light is warm ochre glow spilling from the house windows on the right; the rest of the street sits dark in the blackout. Deep blue ambient dusk, slate grey and charcoal palette, asphalt shingle roofline, wet-look concrete texture, long-exposure calm. Wide 16:9 framing with the dark street as breathing room, no people, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
       "aspect_ratio": "16:9",
       "resolution": "1K"
     }
   },
-  "generated_at": "2026-10-09T12:42:03+00:00",
+  "generated_at": "2026-11-20T14:21:34+00:00",
   "overlay": {
-    "kicker": "HOME ENERGY // TESLA V2H PAYWALL",
-    "title": "TESLA HOME BATTERY PAYWALL",
-    "hook": "Your EV powers your home but requires an $8,200 Powerwall",
-    "anchor": "top-right",
+    "kicker": "VEHICLE-TO-HOME POWER // HOME ENERGY",
+    "title": "YOUR EV IS A HOME BATTERY \u2014 BEHIND A PAYWALL",
+    "hook": "The cheapest home backup sits in your driveway \u2014 and Tesla wants $8,200 for the key",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 90,
-    "contrast": 6.05,
-    "target": 5.5,
-    "clutter": 0.306,
+    "scrim": 120,
+    "contrast": 9.2,
+    "target": 4.5,
+    "clutter": 0.146,
     "region_rgb": [
-      85,
-      99,
-      114
+      21,
+      44,
+      63
     ],
     "binding_rgb": [
-      115,
-      141,
-      164
+      31,
+      65,
+      92
     ],
     "title_lines": [
-      "TESLA HOME",
-      "BATTERY PAYWALL"
+      "YOUR EV IS A",
+      "HOME BATTERY \u2014",
+      "BEHIND A PAYWALL"
     ],
-    "generated_at": "2026-10-09T12:42:03+00:00"
+    "subject": 0.153,
+    "ink_subject": 0.043,
+    "spike": 0.207,
+    "generated_at": "2026-11-20T14:21:34+00:00"
   }
 }

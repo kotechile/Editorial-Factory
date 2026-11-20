@@ -1,0 +1,113 @@
+{
+  "slug": "your-applecare-79-96-vs-89",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Three unbranded devices, a phone, tablet and closed laptop, beside a blank repair bill and foil battery pouch on an oak desk",
+      "caption": "Divide the pool before you pay it: the per-device premium costs more than the one repair whose price Apple publishes.",
+      "title": "Three devices and a repair bill: the pooled-plan math",
+      "bytes": 404337,
+      "sha256": "sha256:b280529ed3f195158310d34eaa1b2537"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead 90-degree flat-lay on a warm oak home-office desk, shot on a 50mm lens, deep focus edge to edge. Three unbranded devices in a staggered diagonal \u2014 a graphite smartphone face-down and set a few degrees askew, a bone-white tablet with its screen dark, a closed cream laptop \u2014 with a creased blank paper repair bill unfolded among them and a smartphone replacement battery in a matte foil pouch. Soft diffused window daylight from the left casting faint long shadows, muted palette of bone white, graphite and warm oak, tactile paper stock and matte aluminum, fine film grain. Extreme asymmetry: the cluster weighted into the lower-left third, generous empty desk space upper-right. No people.",
+  "negative_prompt": "garbled text, random lettering, legible numbers, watermarks",
+  "rationale": "This is a rate-notice story: a plan's price and a repair bill deciding household economics, which is precisely the document still life's territory. A top-down flat-lay puts the three-device pool and the paperwork in a single frame the reader names at a glance \u2014 three devices and a bill \u2014 while rotating the desk away from its recent cinematic and collage treatments.",
+  "cue": "The subscription only pays for a household that breaks things",
+  "subject": "Three unbranded household devices laid beside a blank paper repair bill and a foil-wrapped replacement battery on a home-office desk",
+  "core_thesis": "Apple's pooled AppleCare One plan works out to $79.96 per device per year, yet the only repair you can price in advance \u2014 a battery swap at $69\u2013$99, or $30\u2013$60 as a DIY kit \u2014 costs less than the premium, so the plan only pays for a household that breaks things.",
+  "core_conflict": "the pooled monthly premium sold as a bargain versus the published price of the one predictable repair \u2014 prepaid certainty against a repair bill that comes in under the coverage",
+  "composition": "Top-down 90-degree flat-lay with extreme asymmetry \u2014 the device-and-paperwork cluster weighted into the lower-left third, generous empty oak desk filling the upper-right",
+  "alt_text": "AppleCare One Costs $79.96 A Device. Three unbranded devices, a phone, tablet and closed laptop, beside a blank repair bill and foil",
+  "caption": "AppleCare One Costs $79.96 A Device: That per-device price pays only on accidents and theft \u2014 battery wear costs less to fix.",
+  "title": "AppleCare One Costs $79.96 A Device",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-applecare-79-96-vs-89/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 372770,
+  "sha256": "sha256:61ccd870b61b42674c59bd768801646a78a8dbe79f6cbc34792ad27f838784a5",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 372770,
+    "quality": 76,
+    "sha256": "sha256:61ccd870b61b42674c59bd768801646a78a8dbe79f6cbc34792ad27f838784a5",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:2e04237a9cbc500027db1a75ed7ee3893aa026171a90dbd456cd241e0c842020",
+  "render_phash": "5a7e763c6c194d332e230e5f073f0fff12ff37ef119f0bbf2bf339ef19eb1bf7",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A smartphone, a tablet, a document, and a foil-wrapped battery are arranged on a light wooden desk.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 1.0,
+    "reason": "The image depicts the physical objects (devices and replacement battery) that are the subject of the article's financial and repair discussion."
+  },
+  "source_hash": "sha256:3d6c477d63ef6ac01d928c08856e230c",
+  "source_chars": 4633,
+  "task_id": "120684d23f58a615c7438d2b749b5841",
+  "credits": 5.0,
+  "cost_ms": 18,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/120684d23f58a615c7438d2b749b5841_1795203619976.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead 90-degree flat-lay on a warm oak home-office desk, shot on a 50mm lens, deep focus edge to edge. Three unbranded devices in a staggered diagonal \u2014 a graphite smartphone face-down and set a few degrees askew, a bone-white tablet with its screen dark, a closed cream laptop \u2014 with a creased blank paper repair bill unfolded among them and a smartphone replacement battery in a matte foil pouch. Soft diffused window daylight from the left casting faint long shadows, muted palette of bone white, graphite and warm oak, tactile paper stock and matte aluminum, fine film grain. Extreme asymmetry: the cluster weighted into the lower-left third, generous empty desk space upper-right. No people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-20T19:40:28+00:00",
+  "overlay": {
+    "kicker": "APPLECARE ONE // PER-DEVICE MATH",
+    "title": "APPLECARE ONE COSTS $79.96 A DEVICE",
+    "hook": "That per-device price pays only on accidents and theft \u2014 battery wear costs less to fix",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.66,
+    "target": 4.5,
+    "clutter": 0.165,
+    "region_rgb": [
+      133,
+      102,
+      75
+    ],
+    "binding_rgb": [
+      156,
+      123,
+      92
+    ],
+    "title_lines": [
+      "APPLECARE ONE",
+      "COSTS $79.96 A",
+      "DEVICE"
+    ],
+    "subject": 0.079,
+    "ink_subject": 0.007,
+    "spike": 0.007,
+    "generated_at": "2026-11-20T19:40:28+00:00"
+  }
+}

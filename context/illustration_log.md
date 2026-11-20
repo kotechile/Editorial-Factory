@@ -542,3 +542,5 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-20 | `your-secret-bill-six-cents-version` | enterprise_build_vs_buy | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-secret-bill-six-cents-version/featured.jpg` |
 | 2026-11-20 | `your-3rd-claim-counts-storm-doesnt` | property_loss_insurance_mitigation | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-3rd-claim-counts-storm-doesnt/featured.jpg` |
 | 2026-11-20 | `your-3rd-claim-counts-storm-doesnt` | property_loss_insurance_mitigation | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-3rd-claim-counts-storm-doesnt/featured.jpg` |
+| 2026-11-20 | `your-ev-is-now-a-home-battery-behind-a-paywall` | resilient_home_assets | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ev-is-now-a-home-battery-behind-a-paywall/featured.jpg` |
+| 2026-11-20 | `your-applecare-79-96-vs-89` | consumer_asset_repair_replace_tco | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-applecare-79-96-vs-89/featured.jpg` |

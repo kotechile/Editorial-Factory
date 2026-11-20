@@ -16,8 +16,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-ev-is-now-a-home-battery-behind-a-paywall/featured.jpg"
 image_style: "architectural_night"
 image_model: "flux"
-image_alt: "Tesla Home Battery Paywall. An unbranded electric vehicle parked on a driveway at night, glowing umbilical cable to house."
-image_caption: "Tesla Home Battery Paywall: Your EV powers your home but requires an $8,200 Powerwall."
+image_alt: "Your EV Is A Home Battery — Behind A Paywall. Electric crossover parked on a driveway at dusk, its glowing charge cable linked to the only"
+image_caption: "Your EV Is A Home Battery — Behind A Paywall: The cheapest home backup sits in your driveway — and Tesla wants $8,200 for the key."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

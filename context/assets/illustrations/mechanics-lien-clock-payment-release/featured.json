@@ -1,6 +1,6 @@
 {
   "slug": "mechanics-lien-clock-payment-release",
-  "revision": 10,
+  "revision": 11,
   "history": [
     {
       "revision": 1,
@@ -78,6 +78,14 @@
     },
     {
       "revision": 9,
+      "alt_text": "The Hidden Lien Clock Behind Remodel Payments. The Hidden Lien Clock Behind Your Remodel. Suburban home under exterior renovation at dusk",
+      "caption": "The Hidden Lien Clock Behind Remodel Payments: Miss the 15-day filing window and subcontractors get 90 days to lien your house.",
+      "title": "The Hidden Lien Clock Behind Remodel Payments",
+      "bytes": 376300,
+      "sha256": "sha256:7ce77572da0c7814d8eaa4f24525b4917bfd6090fef32e64ee1d96054aec53a6"
+    },
+    {
+      "revision": 10,
       "alt_text": "The Hidden Lien Clock Behind Remodel Payments. The Hidden Lien Clock Behind Your Remodel. Suburban home under exterior renovation at dusk",
       "caption": "The Hidden Lien Clock Behind Remodel Payments: Miss the 15-day filing window and subcontractors get 90 days to lien your house.",
       "title": "The Hidden Lien Clock Behind Remodel Payments",

@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-11-19T14:24:43+00:00
+# Internal-link candidates — 2026-11-20T14:24:48+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 64 live article(s), 16 other target(s)
+## giniloh.com — 63 live article(s), 16 other target(s)
 
 Category hubs this front serves: —
 
@@ -40,7 +40,6 @@ Category hubs this front serves: —
 - [Why One Share Outvotes 5,300 Staff](https://giniloh.com/why-one-share-outvotes-5300-staff/) — —
 - [Why Your Fridge Upgrade Pays $12.50](https://giniloh.com/why-your-fridge-upgrade-pays-12-50/) — —
 - [Why Your Swap Died at 25%](https://giniloh.com/why-your-swap-died-at-25/) — —
-- [Your $100 Hour Is Not $208,000](https://giniloh.com/your-100-hour-is-not-208000/) — —
 - [Your $125 Exam Costs 122 Hours](https://giniloh.com/your-125-exam-costs-122-hours/) — —
 - [Your $130,000 Cap Costs the Credit](https://giniloh.com/your-130000-cap-costs-the-credit/) — —
 - [Your $350,000 Passport Isn't Europe](https://giniloh.com/your-350000-passport-isnt-europe/) — —
@@ -214,7 +213,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Unpermitted Work Calculator (tool)](https://wellroost.com/calculators/unpermitted-work/) — —
 - [Yard Robots & Automation (category)](https://wellroost.com/categories/yard-robotics/) — Yard Robots & Automation
 
-## aichieve.net — 265 live article(s), 13 other target(s)
+## aichieve.net — 266 live article(s), 13 other target(s)
 
 Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-future-of-work, autonomous-agentic-workflows, business-automation-operations, supply-chain-operations
 
@@ -326,6 +325,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - [The Tariff Split in Two — Reshoring Took the Heavy Half](https://aichieve.net/tariff-split-reshoring-heavy-half/) — Supply Chain & Operations
 - [The Tool-List Budget: How Many Tools One Agent Can Hold](https://aichieve.net/agent-tool-count-ceiling/) — Autonomous & Agentic Workflows
 - [The Vendor-Replacement Wave Is Real — AI Just Won't Run It](https://aichieve.net/vendor-replacement-ai-ceiling/) — AI Stack & Tool TCO
+- [Token Prices Hit Record Lows. Enterprise AI Bills Didn't.](https://aichieve.net/2026-10-08_token-price-record-low-budget-overrun/) — AI Stack & Tool TCO
 - [Token Prices Hit Record Lows. Enterprise AI Bills Didn't.](https://aichieve.net/token-price-record-low-budget-overrun/) — AI Stack & Tool TCO
 - [Token Prices Just Halved. The CFO Still Can’t Read the Bill.](https://aichieve.net/token-prices-just-halved-the-cfo-still-cant-read-the-bill/) — AI Stack & Tool TCO
 - [Two Sparks Cost $3,048 More: The 25 GB/s Cable](https://aichieve.net/two-sparks-cost-3048-more-cable/) — Major Purchases & Assets
@@ -499,6 +499,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 
 ## Published in a CMS but NOT live on its site (never suggested as a link target)
 
+- giniloh.com #1807 `2026-10-08_token-price-record-low-budget-overrun` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1785 `your-fleets-8-3-year-bill` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1781 `your-secret-bill-six-cents-version` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1779 `your-error-text-breaks-the-repair` — published in the CMS but absent from the frontend sitemap
@@ -585,7 +586,6 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1385 `kroger-direct-buy-retires-its-own-fine` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1381 `your-inventory-bill-is-24-percent-prepaid` — published in the CMS but absent from the frontend sitemap
 - wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
-- aichieve.net #1707 `your-100-hour-is-not-208000` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1704 `your-collar-kills-the-long-term-clock` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1701 `your-console-rose-500-instead` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1698 `your-75000-room-misses-the-stock` — published in the CMS but absent from the frontend sitemap

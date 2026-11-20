@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T14:24:43+00:00",
+  "generated_at": "2026-11-20T14:24:48+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,25 +377,6 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": null,
-      "slug": "your-100-hour-is-not-208000",
-      "title": "Your $100 Hour Is Not $208,000",
-      "url": "https://giniloh.com/your-100-hour-is-not-208000/",
-      "path": "/your-100-hour-is-not-208000/",
-      "sites_live": {
-        "giniloh.com": "/your-100-hour-is-not-208000/"
-      },
-      "categories": [],
-      "category_ids": [],
-      "category_slugs": [],
-      "excerpt": "A hundred dollars an hour is quoted against 2,080 hours a year, and no contract bills that many because a contractor's year has unpaid days built into it.",
-      "modified": "2026-11-13T18:39:33",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1212,7 +1193,7 @@
       "category_ids": [],
       "category_slugs": [],
       "excerpt": "Three months after a job ends, an incentive stock option loses its tax status \u2014 the alternative minimum tax on the exercise spread can outweigh the strike.",
-      "modified": "2026-10-31T04:48:46",
+      "modified": "2026-11-19T23:34:29",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -1776,7 +1757,7 @@
         "energy-efficiency"
       ],
       "excerpt": "The average American home buys 899 kilowatt-hours (kWh) of power a month. Most buyers use that huge yearly total to size a backup battery.",
-      "modified": "2026-10-31T04:49:13",
+      "modified": "2026-11-19T23:43:34",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3166,7 +3147,7 @@
         "home-cost-decisions"
       ],
       "excerpt": "A carrier counts nonweather claims, not storm losses, and warns you in writing after the second. The water claim is the one that can end the policy at renewal.",
-      "modified": "2026-11-18T20:13:43",
+      "modified": "2026-11-20T01:50:58",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4531,6 +4512,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "2026-10-08_token-price-record-low-budget-overrun",
+      "title": "Token Prices Hit Record Lows. Enterprise AI Bills Didn't.",
+      "url": "https://aichieve.net/2026-10-08_token-price-record-low-budget-overrun/",
+      "path": "/2026-10-08_token-price-record-low-budget-overrun/",
+      "sites_live": {
+        "aichieve.net": "/2026-10-08_token-price-record-low-budget-overrun/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Silicon Data's token-price index just printed $0.96 per million tokens \u2014 the first reading under a dollar and the cheapest rate on record.",
+      "modified": "2026-11-20T14:22:24",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "100000-totes-skip-the-cost",
       "title": "Your 100,000 Totes Skip the Cost",
       "url": "https://aichieve.net/100000-totes-skip-the-cost/",
@@ -5410,7 +5414,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "U.S. on-highway diesel fell to $6.199 a gallon the week of Oct. 5, dropping 33 cents in two weeks.",
-      "modified": "2026-10-31T04:48:45",
+      "modified": "2026-11-19T23:43:38",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6077,7 +6081,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "A last-mile carbon claim is activity times a published factor, and two federal agencies publish two different grid factors for the same kilowatt-hour.",
-      "modified": "2026-10-31T04:48:46",
+      "modified": "2026-11-19T23:43:41",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -7273,7 +7277,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Silicon Data's token-price index just printed $0.96 per million tokens \u2014 the first reading under a dollar and the cheapest rate on record.",
-      "modified": "2026-10-31T05:02:41",
+      "modified": "2026-11-19T23:34:38",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9242,7 +9246,7 @@
         "autonomous-agentic-workflows"
       ],
       "excerpt": "Your error text breaks the repair it was written to prompt. Of 3,001 error messages found in 150 widely used servers speaking the Model Context Protocol\u2026",
-      "modified": "2026-11-18T18:18:14",
+      "modified": "2026-11-20T01:51:07",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9334,7 +9338,7 @@
         "supply-chain-operations"
       ],
       "excerpt": "The robot fleet your board approved is the cheaper half of the purchase. A site that buys its machines in one year gets them back as one renewal bill around\u2026",
-      "modified": "2026-11-18T20:03:33",
+      "modified": "2026-11-20T01:50:48",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -10208,7 +10212,7 @@
         "ai-stack-tool-tco"
       ],
       "excerpt": "Amazon Web Services (AWS) bills 40 cents a month for every secret it stores. Google bills six cents a month for every live version of a secret, which is a\u2026",
-      "modified": "2026-11-18T19:23:46",
+      "modified": "2026-11-20T01:51:22",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -10700,6 +10704,20 @@
     {
       "site": "giniloh.com",
       "kind": "article",
+      "id": 1807,
+      "slug": "2026-10-08_token-price-record-low-budget-overrun",
+      "title": "Token Prices Hit Record Lows. Enterprise AI Bills Didn&#8217;t.",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-20T14:22:24",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
       "id": 1785,
       "slug": "your-fleets-8-3-year-bill",
       "title": "Your Fleet&#8217;s 8.3-Year Bill: The Wave Nobody Reserves For",
@@ -10707,7 +10725,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-11-18T20:03:33",
+      "modified": "2026-11-20T01:50:48",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -10721,7 +10739,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-11-18T19:23:46",
+      "modified": "2026-11-20T01:51:22",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -10735,7 +10753,7 @@
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-11-18T18:18:14",
+      "modified": "2026-11-20T01:51:07",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
@@ -11898,20 +11916,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-10-31T05:03:01",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "aichieve.net",
-      "kind": "article",
-      "id": 1707,
-      "slug": "your-100-hour-is-not-208000",
-      "title": "Your $100 Hour Is Not $208,000",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-13T18:39:33",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

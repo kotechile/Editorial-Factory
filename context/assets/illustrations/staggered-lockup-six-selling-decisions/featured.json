@@ -1,6 +1,6 @@
 {
   "slug": "staggered-lockup-six-selling-decisions",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -25,6 +25,14 @@
       "alt_text": "Spacex Staggered Lockup. Six staggered modular inspection gates arranged in a cascading sequence on a steel surface.",
       "caption": "Spacex Staggered Lockup: Navigating six trading windows to maximize equity.",
       "title": "Spacex Staggered Lockup",
+      "bytes": 1466990,
+      "sha256": "sha256:b0c8845e7eb037fe5170eabd7bf76cf36aa9c7fa1078058fe90fb0276335464b"
+    },
+    {
+      "revision": 4,
+      "alt_text": "SpaceX Staggered Lockup. Six staggered modular inspection gates arranged in a cascading sequence on a steel surface.",
+      "caption": "SpaceX Staggered Lockup: Navigating six trading windows to maximize equity.",
+      "title": "SpaceX Staggered Lockup",
       "bytes": 1466990,
       "sha256": "sha256:b0c8845e7eb037fe5170eabd7bf76cf36aa9c7fa1078058fe90fb0276335464b"
     }
@@ -53,12 +61,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/staggered-lockup-six-selling-decisions/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1466990,
-  "sha256": "sha256:b0c8845e7eb037fe5170eabd7bf76cf36aa9c7fa1078058fe90fb0276335464b",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/staggered-lockup-six-selling-decisions/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 403370,
+  "sha256": "sha256:1027d8a3edcf3fe58b753cc644d3a9149791481e894109dbc6e29a6c99500f7c",
   "source_hash": "sha256:893ed17c61f49cca3de14ed515764f05",
   "source_chars": 4545,
   "task_id": "3c14f0e6bba9e7bb71cc1e8702b0a0d9",
@@ -80,26 +88,43 @@
     "kicker": "EQUITY MANAGEMENT // STAGGERED LOCKUPS",
     "title": "SPACEX STAGGERED LOCKUP",
     "hook": "Navigating six trading windows to maximize equity",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": true,
-    "scrim": 60,
-    "contrast": 5.6,
+    "scrim": 120,
+    "contrast": 6.13,
     "target": 5.5,
-    "clutter": 0.258,
+    "clutter": 0.264,
     "region_rgb": [
-      57,
-      70,
-      81
+      82,
+      92,
+      101
     ],
     "binding_rgb": [
-      115,
-      124,
-      131
+      116,
+      126,
+      135
     ],
     "title_lines": [
-      "SPACEX STAGGERED",
+      "SPACEX",
+      "STAGGERED",
       "LOCKUP"
     ],
+    "subject": 0.212,
+    "ink_subject": 0.104,
+    "spike": 0.272,
     "generated_at": "2026-10-09T22:10:19+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 403370,
+    "quality": 80,
+    "sha256": "sha256:1027d8a3edcf3fe58b753cc644d3a9149791481e894109dbc6e29a6c99500f7c",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

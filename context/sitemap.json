@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T20:13:45Z",
+  "updated_at": "2026-11-20T19:41:50Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -6954,8 +6954,7 @@
       ],
       "target_persona": "equity_career_strategist",
       "date": "2026-11-13",
-      "public": true,
-      "url": "https://giniloh.com/your-100-hour-is-not-208000/"
+      "public": false
     },
     {
       "slug": "2026-11-13_your-75000-room-misses-the-stock",
@@ -7276,7 +7275,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-18",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-3rd-claim-counts-storm-doesnt/"
     },
     {
       "slug": "2026-11-18_your-6-fixes-one-hidden-code",
@@ -7332,7 +7332,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-18",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-error-text-breaks-the-repair/"
     },
     {
       "slug": "2026-11-18_your-fleets-8-3-year-bill",
@@ -7350,7 +7351,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-18",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-fleets-8-3-year-bill/"
     },
     {
       "slug": "2026-11-18_your-p99-is-a-product",
@@ -7368,7 +7370,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-18",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-p99-is-a-product/"
     },
     {
       "slug": "2026-11-18_your-secret-bill-six-cents-version",
@@ -7386,7 +7389,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-18",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-secret-bill-six-cents-version/"
     },
     {
       "slug": "2026-11-18_your-transcript-says-done",
@@ -7426,6 +7430,23 @@
       "date": "2026-11-18",
       "public": true,
       "url": "https://aichieve.net/your-vendor-exit-costs-373/"
+    },
+    {
+      "slug": "2026-11-20_your-applecare-79-96-vs-89",
+      "title": "Your AppleCare Costs $79.96 a Device",
+      "vertical": "consumer_asset_repair_replace_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "What the pooled plan prices",
+        "By the numbers",
+        "Where the plan pays",
+        "The catch"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-11-20",
+      "public": false
     }
   ]
 }

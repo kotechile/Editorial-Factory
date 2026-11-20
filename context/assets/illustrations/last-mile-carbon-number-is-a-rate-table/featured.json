@@ -1,6 +1,6 @@
 {
   "slug": "last-mile-carbon-number-is-a-rate-table",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -17,6 +17,14 @@
       "title": "Last-Mile Carbon Rates",
       "bytes": 203753,
       "sha256": "sha256:93b33a16d1a182ac1af783d878787aa8529036a8e6630d2dc75edde335eff7c3"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Last-Mile Carbon Rates. Two official regulatory rate documents layered slightly out of alignment on a plain desk.",
+      "caption": "Last-Mile Carbon Rates: Why your fleet's carbon score is just a published rate.",
+      "title": "Last-Mile Carbon Rates",
+      "bytes": 400309,
+      "sha256": "sha256:d18cd653027a17464308f481350f3ed9988be11c2244b9999552df00aef8982e"
     }
   ],
   "style": "document_flatlay",

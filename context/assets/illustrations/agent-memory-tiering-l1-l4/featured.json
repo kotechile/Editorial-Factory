@@ -1,6 +1,6 @@
 {
   "slug": "agent-memory-tiering-l1-l4",
-  "revision": 20,
+  "revision": 21,
   "history": [
     {
       "revision": 1,
@@ -158,6 +158,14 @@
     },
     {
       "revision": 19,
+      "alt_text": "Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Long Context",
+      "caption": "Tiered State For AI Agents: Why long context fails and agents require tiered memory.",
+      "title": "Tiered State For AI Agents",
+      "bytes": 395977,
+      "sha256": "sha256:fff1955f31a2e3e0df61bcc25c141a345d6c69c3bd66ef2d84e2814bfb5ea78f"
+    },
+    {
+      "revision": 20,
       "alt_text": "Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Tiered State For AI Agents. Long Context",
       "caption": "Tiered State For AI Agents: Why long context fails and agents require tiered memory.",
       "title": "Tiered State For AI Agents",
