@@ -13,10 +13,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Your error text breaks the repair it was written to prompt. Of 3,001 error messages found in 150 widely used servers speaking the Model Context Protocol…"
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-error-text-breaks-the-repair/featured.jpg"
-image_style: "cinematic_still"
+image_style: "architectural_night"
 image_model: "flux"
-image_alt: "MCP Error Text Breaks Agent Repair. Server rack with red error indicator in a dark server room, lone terminal dark beside it."
-image_caption: "MCP Error Text Breaks Agent Repair: A next step the agent cannot run cuts credential recovery from 84% to 45%."
+image_alt: "MCP Error Text Breaks The Agent Repair. A dark, disconnected operator terminal beside a lit server rack bay with its cable engaged, split between the silent terminal and the waiting rack."
+image_caption: "MCP Error Text Breaks The Agent Repair: Agents obey error text literally, and newer models obey harder — 45% recover where 84%."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
