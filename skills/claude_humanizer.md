@@ -27,8 +27,10 @@ throat-clearing. At most one figure in the opening, and a figure is stated at mo
 Order is contracted (`scripts/readability_critic.py`): `<!-- lead -->` → `<!-- tldr -->` →
 `<!-- tension -->` → `<!-- tactical-insight -->` → `<!-- nuanced-takeaway -->`. A summary moved to the
 foot of the piece is a defect.
-- **`## At a glance`** — mandatory, the second thing the reader sees: three lines (shift / number / risk),
-  50 words or fewer, never under the catch and never after the sources.
+- **`## At a glance`** — mandatory, the second thing the reader sees: ONE plain paragraph (20–50 words)
+  that briefly describes what the article is about — its subject, who it concerns, the one finding.
+  No bullets, no bold labels (owner standard 2026-11-20; the three-line schema is retired). Never
+  under the catch and never after the sources.
 - **`## By the numbers`** — mandatory, **after** the mechanism is explained. 2–3 bullets, one metric per
   bullet, one sentence, ≤25 words.
 - **`## The catch`** — the honest limitation, **self-contained**: no rule or concept first named in the

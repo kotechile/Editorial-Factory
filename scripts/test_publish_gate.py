@@ -238,9 +238,7 @@ A home battery is sized against the critical loads it must carry, and that list 
 
 ## At a glance
 
-- **The shift:** Installers size the bank against annual use, not against the outage.
-- **The number:** Three days is the outage the critical-load list has to carry.
-- **The risk:** a year of consumption oversizes the bank and hides the loads that matter.
+This piece covers home-battery sizing: installers who quote a year of consumption oversize the bank, while sizing against the short critical-load list — about three days of outage — keeps the loads that matter visible.
 
 <!-- tension -->
 
@@ -293,8 +291,9 @@ def test_a_summary_at_the_foot_of_the_piece_holds_the_push(repo):
 
 def test_a_two_statistic_bullet_holds_the_push(repo):
     text = NEW_SHAPE.replace(
-        "- **The number:** Three days is the outage the critical-load list has to carry.",
-        "- **The number — 3 days at 41% of annual use:** the outage the critical-load list has to carry.")
+        "## By the numbers", "PLACEHOLDER-NOT-PRESENT") if False else NEW_SHAPE.replace(
+        "## The number everyone uses",
+        "## By the numbers\n\n- **3 days at 41% of annual use:** the outage the critical-load list has to carry [1].\n\n## The number everyone uses")
     path = write(repo, name="2026-11-06_battery-sizing-bullet.md", text=text)
     failures = pg.text_failures(path)
     assert any("one metric per bullet" in f for f in failures), failures

@@ -27,9 +27,7 @@ Amazon Web Services (AWS) bills 40 cents a month for every secret it stores [1].
 
 ## At a glance
 
-- **The shift:** Cloud secrets-manager billing moved from servers to secrets — and one cloud counts every live version.
-- **The number:** Seven live versions, the point where the two meters flip.
-- **The risk:** A rotation job that keeps every old copy bills for each one.
+This piece covers how cloud secrets managers bill: AWS charges per stored secret while Google charges per live version, so at seven versions the two meters flip and a rotation job that keeps old copies pays for each one.
 
 <!-- tension -->
 

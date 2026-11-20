@@ -24,9 +24,7 @@ The robot fleet your board approved is the cheaper half of the purchase. A site 
 
 <!-- tldr -->
 ## At a glance
-- **The shift:** A warehouse robot fleet kept an average 8.3 years comes back as one bill, not a forecast.
-- **The numbers:** A third more than the invoice, at 3.5% a year. [3]
-- **The risk:** A reserve at the original price covers three quarters of it.
+This piece covers the replacement bill on a warehouse robot fleet: machines kept an average 8.3 years come back as one bill about eight times the annual charge, and a reserve funded at the original invoice covers only three quarters of it.
 
 <!-- tension -->
 ## The clock the case never sets

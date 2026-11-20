@@ -25,9 +25,7 @@ Your error text breaks the repair it was written to prompt. Of 3,001 error messa
 
 <!-- tldr -->
 ## At a glance
-- **The shift:** An MCP tool's failure text is part of its contract, not developer notes.
-- **The number:** 45% of credential tasks recover on a named command, 84% on a login tool.
-- **The risk:** A step the agent cannot run kills a repair its own tools could make.
+This piece covers the error messages MCP servers send AI agents: of 3,001 messages sampled, half of the next-step instructions ask the agent for something the server cannot see, and wording alone moves credential recovery from 45% to 84%.
 
 <!-- tension -->
 ## The wrong reader

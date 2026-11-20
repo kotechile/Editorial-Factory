@@ -191,11 +191,11 @@ PRIORITIES, in this order. A lower one never buys the higher one.
 5. SHAPE. The five marked sections, in **this order**, each with an H2 on its own line and a blank
    line either side: {', '.join(SKELETON)}. The executive summary is the SECOND thing the reader
    sees — `<!-- lead -->` then `<!-- tldr -->` then the chronology — so a draft that carries the
-   summary at the foot of the piece must be reordered, not copied. `## At a glance` is exactly three
-   labelled lines, under 50 words for the whole box: `- **The shift:** <one sentence: what changed>`,
-   `- **The number:** <the one figure that proves it>`, `- **The risk:** <the one operational
-   consequence>`. The three labels are checked mechanically; a box of three free-form bullets, or a
-   box that re-lists the tactical section, is not the schema. Those are the fallback headings —
+   summary at the foot of the piece must be reordered, not copied. `## At a glance` is one plain paragraph — a brief description of what the article
+   is about — under 50 words for the whole box (owner standard 2026-11-20; the old three labelled
+   bullets The shift / The number / The risk are RETIRED). No bullets, no bold labels; name the
+   article's subject, who it concerns and the one finding that carries it. A box that re-lists the
+   tactical section is not the schema. Those are the fallback headings —
    prefer a header in this article's own words that says what the section argues, and keep the numbers
    block at 2–3 bullets of figures the prose does not restate, placed after the mechanism is explained.
    The tactical section reports what the people closest to the story are doing and what answers the
@@ -246,8 +246,8 @@ PRIORITIES, in this order. A lower one never buys the higher one.
      things AND explains a failure mode; never chop one that already parses.
    * **`## Sources` carries list markers** ("- [1] Author, \"Title\" — url", one per line), because
      consecutive "[1] ..." lines render as a single paragraph on the page.
-   * The glance box's three labels are "**The shift:**", "**The numbers:**", "**The architectural
-     rule:**" (when to use option A rather than B); "The risk:" is the accepted older wording.
+   * The glance box is one plain paragraph describing what the article is about — never
+     labelled bullets ("**The shift:**" and siblings are retired owner standard 2026-11-20).
 
 DO NOT LOSE — the measured facts of this draft. Each line is a figure and the sentence it came from;
 every one must still be made, in your own words:
@@ -304,9 +304,9 @@ held instead of published, so satisfy them deliberately rather than hoping:
   5. The body contains none of these filler adverbs: really, actually, clearly, simply, essentially,
      basically, fundamentally, ultimately, notably, importantly. They are counted per 1,000 words,
      so three of them is a regression.
-  6. The critic's four checks pass: `## At a glance` is the second block, carries the three labels
-     (The shift / The number / The risk) and stays under 50 words; every bullet in At a glance and By
-     the numbers is one sentence, under 25 words, carrying **one** metric; every sentence carries **at
+  6. The critic's four checks pass: `## At a glance` is the second block, one plain paragraph of
+     20–50 words describing what the article is about (no bullets); every bullet in By the numbers
+     is one sentence, under 25 words, carrying **one** metric; every sentence carries **at
      most one** `[n]` tag; no sentence stacks three prepositional phrases or uses an abstract
      comparison ("more X than Y is Z"); the dates are explained once, in the chronology; and the
      closing paragraph introduces no concept the body has not already explained.

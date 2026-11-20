@@ -65,14 +65,14 @@ DEFAULT_REGISTRY = {
         "density": "2026-11-07", "dangling": "2026-11-07",
     },
     "at_a_glance_max_words": 50,
+    "at_a_glance_min_words": 20,
     "bullet_max_words": 25,
     "max_citations_per_sentence": 1,
     "sentence_mean_max": 22,
     "matrix_min_comparisons": 3,
-    # The glance box's three slots. The second and third accept the owner's alternative wording
-    # (2026-11-07): "The numbers" and "The architectural rule" name the same two jobs.
-    "at_a_glance_labels": [["The shift"], ["The number", "The numbers"],
-                           ["The risk", "The architectural rule"]],
+    # The glance box is one plain-English paragraph (owner 2026-11-20): a brief description of
+    # what the article is about — not labelled bullets. Bullets or **The shift:**-style labels
+    # are a fail; so is going under the floor (a fragment) or over the cap (a second summary).
     # Private shorthand: a concrete engineering term replaced by an abstract or poetic noun. The
     # reader must never have to translate the writer's vocabulary. Patterns are regexes matched
     # case-insensitively on the reader-facing body; each carries its own remedy.
@@ -213,19 +213,18 @@ def structure_findings(text: str, reg: dict) -> list[str]:
     glance = section_map(text).get("tldr", "")
     if glance:
         clean = re.sub(r"<!--.*?-->", "", glance, flags=re.S)
-        groups = reg.get("at_a_glance_labels") or [[label] for label in LABELS]
-        lacking = []
-        for group in groups:
-            if not any(str(alt).lower() in clean.lower() for alt in group):
-                lacking.append(" or ".join(f"'{a}'" for a in group))
-        if lacking:
-            fails.append("'At a glance' is missing its line(s): " + ", ".join(lacking)
-                         + " — three lines: The shift / The numbers / The architectural rule")
+        if re.search(r"(?m)^\s*[-*]\s|^\s*\*\*The\s", clean):
+            fails.append("'At a glance' is bulleted — the owner wants one plain paragraph that "
+                         "briefly describes what the article is about (no labels, no bullets)")
         words = len(_strip_markup(re.sub(r"^#+.*$", "", clean, flags=re.M)).split())
         limit = int(reg.get("at_a_glance_max_words", 50))
         if words > limit:
             fails.append(f"'At a glance' runs {words} words (cap {limit}) — it is a box, not a "
                          f"second summary")
+        floor = int(reg.get("at_a_glance_min_words", 20))
+        if words < floor:
+            fails.append(f"'At a glance' runs only {words} words (floor {floor}) — say in one "
+                         f"plain paragraph what the article is about")
     return fails
 
 

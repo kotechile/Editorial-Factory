@@ -26,9 +26,7 @@ A walkout by the 250 watchmen who inspect containers would shut all eight termin
 
 ## At a glance
 
-- **The shift:** The union served notice on 2 November and the employers asked for a delay.
-- **The number:** 85% of Long Beach cargo moves through the eight gates at risk.
-- **The risk:** A single closed gate stops every container behind it, whatever the crew size.
+This piece covers the dock-walkout clock at Long Beach: the union served notice on 2 November, 85% of the port's cargo moves through the eight gates at risk, and one closed gate stops every container behind it.
 
 <!-- tension -->
 
@@ -125,20 +123,29 @@ def test_at_a_glance_sits_directly_under_the_lede():
 
 def test_at_a_glance_at_the_foot_of_the_piece_fails():
     text = article(GOOD).replace("<!-- tldr -->\n\n## At a glance", "## At a glance")
-    text = text.replace("<!-- nuanced-takeaway -->", "<!-- tldr -->\n\n## At a glance\n\n- **The shift:** late.\n- **The number:** 85%.\n- **The risk:** late.\n\n<!-- nuanced-takeaway -->")
+    text = text.replace("<!-- nuanced-takeaway -->", "<!-- tldr -->\n\n## At a glance\n\nThe walkout is late. The number is 85%. The risk is a closed gate.\n\n<!-- nuanced-takeaway -->")
     fails = rc.structure_findings(text, rc._registry())
     assert any("immediately under the lede" in f or "out of order" in f for f in fails), fails
 
 
-def test_missing_glance_labels_fail():
-    text = article(GOOD).replace("- **The risk:** A single closed gate stops every container behind it, whatever the crew size.\n", "")
+def test_bulleted_glance_box_fails():
+    text = article(GOOD).replace(
+        "This piece covers the dock-walkout clock at Long Beach: the union served notice on 2 November, 85% of the port's cargo moves through the eight gates at risk, and one closed gate stops every container behind it.",
+        "- **The shift:** notice served.\n- **The number:** 85%.\n- **The risk:** a closed gate.")
     fails = rc.structure_findings(text, rc._registry())
-    assert any("The risk" in f for f in fails), fails
+    assert any("bulleted" in f for f in fails), fails
+
+
+def test_too_short_a_glance_fails():
+    text = article(GOOD).replace(
+        "This piece covers the dock-walkout clock at Long Beach: the union served notice on 2 November, 85% of the port's cargo moves through the eight gates at risk, and one closed gate stops every container behind it.",
+        "Notice served; the gates are at risk.")
+    fails = rc.structure_findings(text, rc._registry())
+    assert any("floor" in f for f in fails), fails
 
 
 def test_a_second_summary_in_the_glance_box_fails():
-    long_box = ("- **The shift:** " + "The union served notice and the employers asked for a delay. " * 4
-                + "\n- **The number:** 85% of cargo.\n- **The risk:** a gate closes.\n")
+    long_box = ("This piece covers " + "the dock-walkout clock at Long Beach and the gates at risk. " * 6)
     text = article(GOOD)
     start = text.index("## At a glance")
     end = text.index("<!-- tension -->")

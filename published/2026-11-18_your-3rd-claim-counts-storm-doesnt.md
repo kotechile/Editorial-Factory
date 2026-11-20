@@ -23,9 +23,7 @@ The claim that can cost you the policy is the water one, not the wind one. Texas
 
 <!-- tldr -->
 ## At a glance
-- **The shift:** A Texas homeowners policy is repriced on counted claims, not on dollars paid out [5].
-- **The number:** 22.2 percent — water damage and freezing's share of homeowners losses [6].
-- **The risk:** the third counted claim lets a carrier refuse the next year [1].
+This piece covers how a Texas homeowners policy is repriced: carriers count non-weather claims — water damage most of all — and a third counted claim in three years lets the carrier refuse the next year's policy, while storm losses never count.
 
 <!-- tension -->
 ## Where the count begins

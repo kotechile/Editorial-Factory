@@ -17,7 +17,7 @@ SECTION_GATES = """SECTION GATES (each section must pass its own gate):
 - <!-- tension -->: the section that says what changed and who it lands on. Give it an H2 in this article's own words (the house label '## The big picture:' is a fallback). A '## By the numbers' block is optional — carry the figures in the sentences that use them unless the piece is genuinely a table of numbers.
 - <!-- tactical-insight -->: what the people closest to the story are doing and what the writer expects next, structured with clean bullets and bold lead-ins for 3+ items; observations, never instructions to the reader.
 - <!-- nuanced-takeaway -->: honest limitation / counter-argument with '## The catch' H2 header.
-- <!-- tldr -->: opens with '## At a glance' H2 header; follows the three-line schema (**The shift**, **The number**, **The risk**) under 50 words with no sub-bullets and no recap of the tactical section; plain, accessible English without unexplained buzzwords.
+- <!-- tldr -->: opens with '## At a glance' H2 header; ONE plain paragraph (20–50 words) that briefly describes what the article is about — its subject, who it concerns, the one finding. No bullets, no bold labels (owner standard 2026-11-20; the three-line shift/number/risk schema is RETIRED); plain, accessible English without unexplained buzzwords.
 
 """
 

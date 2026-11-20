@@ -69,10 +69,10 @@ NEGATIVE CONSTRAINTS (apply verbatim, no exceptions):
 - PRESERVE the opening and closing `---` YAML delimiters around the frontmatter exactly — do NOT wrap the frontmatter in triple-backtick code fences.
 - Format the TL;DR as the structured <!-- tldr --> field opening with an H2 header '## At a glance', strictly following this 3-LINE schema (owner standard 2026-10-29; the four-part Big Shift / Why It Matters / What I'd Watch / Catch recap is RETIRED — rebuilding it is a rewrite defect):
   ## At a glance
-  - "**The shift:** <one sentence: what changed>"
-  - "**The number:** <the one figure that proves it and that the body already states>"
-  - "**The risk:** <the single caveat a reader must carry away>"
-  Under 50 words total, no sub-bullets, no list mirroring "What I'd watch".
+  ONE plain paragraph (20–50 words) that briefly describes what the article is about — its
+  subject, who it concerns and the one finding that carries it. No bullets and no bold labels
+  (owner standard 2026-11-20; the three-line shift/number/risk schema is RETIRED — rebuilding it
+  is a rewrite defect). No list mirroring "What I'd watch".
   Never write a prose "in conclusion / key takeaways" paragraph. Do NOT compose a TOC.
 
 SECTION GATES (each section must pass its own gate):

@@ -189,9 +189,9 @@ scripts/readability_critic.py HOLDS a push on jargon, enumeration, matrix and so
   dense body is a plain-word swap plus splitting only the sentences over 28 words.
 - `## Sources` IS A LIST ON THE PAGE. Every entry carries a list marker ("- [1] Author, \"Title\" —
   url"), one per line; consecutive "[1] ..." lines render as one paragraph in the CMS.
-- The 'At a glance' box is three lines: "**The shift:**", "**The numbers:**", "**The architectural
-  rule:**" (when to use option A rather than B). It sits directly under the lede and never repeats the
-  subtitle's numbers verbatim.
+- The 'At a glance' box is ONE plain paragraph (20–50 words) describing what the article is about
+  — subject, who it concerns, the one finding. No bullets, no bold labels (owner standard
+  2026-11-20). It sits directly under the lede and never repeats the subtitle's numbers verbatim.
 """
 
 
