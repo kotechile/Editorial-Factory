@@ -1,0 +1,30 @@
+# Signals: outdoor_power_equipment — 2026-11-21
+**Window:** 2026-10-22 → 2026-11-21
+**Queries run:** 12 (home_lifestyle_intel MCP returned 10 off-vertical rows — mortgage/energy policy, zero OPE hits — and contributed none; all rows below come from date-agnostic fallback phrasing with publisher-date verification)
+
+| # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity |
+|---|--------|-----------|------|--------------|-------|-----------|
+| 1 | EGO early-Black-Friday price ladder is live | https://www.bobvila.com/reviews/amazon-early-black-friday-ego-deals-nov-2026 | 2026-11-08 (datePublished, page JSON-LD; verified by fetch) | EGO 56V 21-in snow blower kit (two 6.0Ah) $899, was $999.99; 21-in Peak Power kit (two 4.0Ah) $699, was $749.99; 24-in two-stage (two 7.5Ah) $1,599, was $1,749.99; 24-in two-stage (two 6.0Ah) $1,499, was $1,599.99; powered snow shovel $299; "snow blower kits from $699" | buy-window timing: peak-season discount ladder, 6–14% off kits | 88 |
+| 2 | Same EGO kit already discounted two weeks earlier, framed against the first storms | https://shopping.yahoo.com/home-garden/outdoor/articles/amazon-drops-snow-blowers-37-190000714.html | 2026-10-26 (datePublished, page JSON-LD; verified by fetch) | EGO POWER+ 56V 21-in kit $899 (was $999.99) — same price as Nov 8; "Amazon has snow blowers and powered snow shovels on sale… before you wake up to a buried driveway"; headline discount up to 37% across brands | the discount window opened before the season, not after it | 82 |
+| 3 | Buy guide re-checked in-window: sellout risk rides the forecast | https://spearheadspade.com/blogs/garden-guides/best-electric-snow-blower | 2026-11-20 (dateModified; verified by fetch) | "Consumer Reports names February, October, November and December as the best months to buy a snow blower, and battery kits with packs in the box can sell out once a forecast turns, so check the listing on the day you buy"; two prior picks pulled 2026-11-11 (Snow Joe corded moved to a third-party seller; SENIX kit limited stock) | availability, not price, is the binding constraint in the buy window | 86 |
+| 4 | Vendor prices the platform war itself | https://greenworkstools.ca/blogs/news/greenworks-vs-toro-snow-blowers | 2026-10-26 (datePublished, page JSON-LD; verified by fetch) | Greenworks 80V 20-in single-stage kit C$629.99 vs "Toro's 60V Power Clear single-stage kits typically retail $1,200–$1,500 CAD or more" — a vendor's own first-party comparison table | vendor-published platform price spread (2x) as pricing leg | 74 |
+| 5 | Marketplace Black-Friday grid carries deep single-stage discounts (observation-dated) | https://www.walmart.com/browse/patio-garden/snow-blowers/5428_1102182_8710825_7674836 | 2026-11-21 (observation date; page is a live category listing, no publication date) | Tcisa 40V 20-in cordless kit "Now $229.99 Was $319.99" (28% off); generic 40V 20-in brushless kit with 2×4Ah $149.98; PowerSmart 21-in corded $169.99 was $249.99 (32% off). **Dating note:** row 5 is a standing record dated by observation; the underlying listing is undated retail state, and no promotion dates could be read from the listing body | entry-tier kit prices approaching shovel money | 68 |
+| 6 | EGO's own site caps the discount and names the deadline | https://egopowerplus.com/power-snow-blowers | 2026-11-21 (observation date; vendor page carries no publication date, dated by its own disclaimer) | Banner "Save up to $220 on select Snow Blowers!¹"; footnote verbatim: "1-Offer valid through 11/30/26 on select EGO tools at participating retailers. Subject to availability. U.S. Only." — the maker's own footnote couples the discount deadline (9 days from observation) with a sellout clause. **Dating note:** observation-dated row; the event is the live offer state as of 2026-11-21 | the vendor itself prices the buy-window trade | 90 |
+
+## Candidate Synthesis Pairs
+
+<!-- synthesis-seed:start -->
+<!-- pair-seeding: helper=synthesize_topics.py rows=6 candidates=0 heuristic=- window=2026-10-22..2026-11-21 -->
+> Advisory: mechanical pre-filter only. The Judge (`skills/virality_judge.md` §2.5) owns the collision vector
+> and the >= 8 publish gate. `emergence_heuristic` is a hint, not a score; it cannot clear any gate.
+> Seeded mechanically from this file's own rows by `python3 scripts/synthesize_topics.py --seed <this file>`; re-run it after adding or removing a signal row. The Judge scores the rows and writes the collision vector per `skills/virality_judge.md` §2.5.
+
+_No mechanically valid pair. That is a legitimate answer, not a failure: the Judge may still find a synthesis this token layer cannot see._
+<!-- synthesis-seed:end -->
+
+## Dated background (URLs available to cite; NOT in-window anchors)
+- Consumer Reports battery-cold derate (5–20% runtime loss in extreme cold; "common to see battery run times reduce in the cold") — https://www.consumerreports.org/home-garden/snow-blowers/best-cordless-electric-snow-blowers-a2733600825 — page dateModified 2026-02-09, out of window; cite only as background, never as an anchor.
+- Milwaukee M18 FUEL 21-in dual-battery single-stage press release (7.5 peak HP; two FORGE 12.0 packs; "11 car spaces or 500 feet of 3.5-foot-wide sidewalk") — https://www.milwaukeetool.com/news/press-releases/the-most-powerful-single-stage-snow-blower-new-m18-fuel-battery-powered-snow-blower — 2025 launch, out of window.
+- Toro "Single Stage Snow Blowers now up to $300 off — September 1st – September 30th, 2026" promo banner still rendering — https://www.toro.com/en/homeowner/snow-blowers — offer window expired 2026-09-30; pitfall class: an expired vendor promo that still renders fresh. Dated background only.
+- Ace Hardware 2026 Black Friday page ("Save up to $150 on select EGO Snow Blowers… Toro Snow Blowers… DeWalt") — https://www.acehardware.com/events/black-friday — 403 to fetch; UNVERIFIED, do not cite as a figure source.
+- Bob Vila January 2026 clearance piece (EGO 21-in tool-only $449.94 was $549) — https://www.bobvila.com/reviews/amazon-snow-blower-deals-jan-2026 — out of window; useful only as last season's trough-price comparison.

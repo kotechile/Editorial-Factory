@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T10:44:24Z",
+  "updated_at": "2026-11-21T11:15:44Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7446,6 +7446,24 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-20",
+      "public": false
+    },
+    {
+      "slug": "2026-11-21_your-899-blowers-9-day-window",
+      "title": "$220 Off Your EGO Kit \u2014 If It's Still There",
+      "vertical": "outdoor_power_equipment",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "One deadline, two calendars",
+        "By the numbers",
+        "What to watch",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-21",
       "public": false
     },
     {
