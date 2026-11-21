@@ -1,6 +1,6 @@
 {
   "slug": "staggered-lockup-six-selling-decisions",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -35,6 +35,14 @@
       "title": "SpaceX Staggered Lockup",
       "bytes": 1466990,
       "sha256": "sha256:b0c8845e7eb037fe5170eabd7bf76cf36aa9c7fa1078058fe90fb0276335464b"
+    },
+    {
+      "revision": 5,
+      "alt_text": "SpaceX Staggered Lockup. Six staggered modular inspection gates arranged in a cascading sequence on a steel surface.",
+      "caption": "SpaceX Staggered Lockup: Navigating six trading windows to maximize equity.",
+      "title": "SpaceX Staggered Lockup",
+      "bytes": 403370,
+      "sha256": "sha256:1027d8a3edcf3fe58b753cc644d3a9149791481e894109dbc6e29a6c99500f7c"
     }
   ],
   "style": "component_assembly",

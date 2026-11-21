@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T14:24:48+00:00",
+  "generated_at": "2026-11-21T14:27:58+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,44 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-ram-kit-costs-22-filament-spool",
+      "title": "Your RAM Kit Costs 22 Spools",
+      "url": "https://giniloh.com/your-ram-kit-costs-22-filament-spool/",
+      "path": "/your-ram-kit-costs-22-filament-spool/",
+      "sites_live": {
+        "giniloh.com": "/your-ram-kit-costs-22-filament-spool/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "A 32-gigabyte kit of random-access memory (RAM) \u2014 the Double Data Rate 5 (DDR5) kind desktops use \u2014 now costs $474 at its tracked best U.S. price, against a\u2026",
+      "modified": "2026-11-21T06:18:19",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-applecare-79-96-vs-89",
+      "title": "Your AppleCare Costs $79.96 a Device",
+      "url": "https://giniloh.com/your-applecare-79-96-vs-89/",
+      "path": "/your-applecare-79-96-vs-89/",
+      "sites_live": {
+        "giniloh.com": "/your-applecare-79-96-vs-89/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "Apple's pooled AppleCare One plan covers up to three products for $19.99 a month. Divide that by the devices and your AppleCare costs $79.96 per device per\u2026",
+      "modified": "2026-11-20T19:41:49",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2672,29 +2710,6 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
-      "slug": "ny-heat-pump-rebate-double-payouts-for-sealed-homes",
-      "title": "NY Heat Pump Rebate: Double Payouts for Sealed Homes",
-      "url": "https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
-      "path": "/ny-heat-pump-rebate-double-payouts-for-sealed-homes/",
-      "sites_live": {
-        "wellroost.com": "/ny-heat-pump-rebate-double-payouts-for-sealed-homes/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "On September 1, 2026, New York began paying up to double for heat pumps in homes that seal and insulate first.",
-      "modified": "2026-10-31T05:03:03",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
       "slug": "one-mower-two-prices-450-apart",
       "title": "Your Half-Acre Mower's $450 Gap",
       "url": "https://wellroost.com/one-mower-two-prices-450-apart/",
@@ -2902,29 +2917,6 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
-      "slug": "swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just",
-      "title": "Swapping your gas furnace for a heat pump tax credit 2026 just died",
-      "url": "https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
-      "path": "/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/",
-      "sites_live": {
-        "wellroost.com": "/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "Central time on August 31, 2026, the window closed for Wisconsin homeowners to claim a federal rebate for replacing a fossil-fuel appliance with an electric one.",
-      "modified": "2026-10-31T05:03:04",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
       "slug": "the-remodel-that-pays-you-back-isnt-the-one-you-want",
       "title": "The Remodel That Pays You Back Isn\u2019t the One You Want",
       "url": "https://wellroost.com/the-remodel-that-pays-you-back-isnt-the-one-you-want/",
@@ -2941,29 +2933,6 @@
       ],
       "excerpt": "Garage doors and front doors recoup more than they cost at resale, while a major kitchen remodel recovers about half \u2014 and most of it is financed with home equity.",
       "modified": "2026-10-31T05:02:55",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
-      "slug": "unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring",
-      "title": "Emporia Vue: How to Cut Energy Bills",
-      "url": "https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
-      "path": "/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/",
-      "sites_live": {
-        "wellroost.com": "/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/"
-      },
-      "categories": [
-        "Smart Home & Security"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "smart-home-security"
-      ],
-      "excerpt": "Thinking about an Emporia Vue? This friendly, hands-on review shows exactly how this Emporia energy monitor turns your electrical panel into a circuit-by-circuit savings map\u2014not just another whole-home meter. You\u2019ll get a true step-by-step install guide, from safely opening the panel and placing CT clamps to handling 240V double-pole circuits and knowing when to call an electrician. Then we walk through the Emporia app: account setup, Wi-Fi pairing, naming circuits, tariffs, real-time and historical graphs, solar/net metering, notifications, and data export. We also test accuracy, latency, connectivity, and firmware quirks, compare Vue generations and Sense, and share real kWh case studies with payback math. Electricity prices keep climbing; every month without circuit-level visibility is money left on the table. Try the app\u2019s demo mode today\u2014then decide if Vue 3 belongs in your panel.",
-      "modified": "2026-10-31T05:03:00",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3147,7 +3116,7 @@
         "home-cost-decisions"
       ],
       "excerpt": "A carrier counts nonweather claims, not storm losses, and warns you in writing after the second. The water claim is the one that can end the policy at renewal.",
-      "modified": "2026-11-20T01:50:58",
+      "modified": "2026-11-20T17:25:37",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3339,6 +3308,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-109-cameras-missing-verdict",
+      "title": "Your $109 Camera's Missing Verdict",
+      "url": "https://wellroost.com/your-109-cameras-missing-verdict/",
+      "path": "/your-109-cameras-missing-verdict/",
+      "sites_live": {
+        "wellroost.com": "/your-109-cameras-missing-verdict/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "On 19 November, a heat camera dropped to $109, pitched as a holiday gift for owners chasing heat loss this winter.",
+      "modified": "2026-11-21T11:42:55",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-149-99-scope-blinds-at-3-94",
       "title": "Your $149.99 Scope Blinds Past 3.94",
       "url": "https://wellroost.com/your-149-99-scope-blinds-at-3-94/",
@@ -3447,6 +3439,29 @@
       ],
       "excerpt": "Buying a spare snow blower battery is a $549 mistake, driven by how makers price their packed kits. EGO (the outdoor power equipment brand) sells its 24-inch\u2026",
       "modified": "2026-10-31T04:49:01",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-899-blowers-9-day-window",
+      "title": "$220 Off Your EGO Kit \u2014 If It's Still There",
+      "url": "https://wellroost.com/your-899-blowers-9-day-window/",
+      "path": "/your-899-blowers-9-day-window/",
+      "sites_live": {
+        "wellroost.com": "/your-899-blowers-9-day-window/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "The snow-blower aisle has an expiry date this month. The $899 price on the EGO (the battery outdoor-tool brand) 21-inch kit, with two 6.0Ah batteries in the\u2026",
+      "modified": "2026-11-21T11:25:46",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4229,6 +4244,29 @@
       ],
       "excerpt": "A contents line is a share of the house, and the jewelry cap inside it is $1,500 for theft alone. Raising the limit never moves the item that is underinsured.",
       "modified": "2026-11-11T20:15:51",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-robot-costs-775-a-month",
+      "title": "Your Robot Costs $775 a Month",
+      "url": "https://wellroost.com/your-robot-costs-775-a-month/",
+      "path": "/your-robot-costs-775-a-month/",
+      "sites_live": {
+        "wellroost.com": "/your-robot-costs-775-a-month/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "Yarbo (a maker of modular yard robots) will finance its full four-module bundle at $774.92 a month for a year.",
+      "modified": "2026-11-21T10:44:23",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -11878,44 +11916,30 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "aichieve.net",
       "kind": "article",
-      "id": 1385,
-      "slug": "kroger-direct-buy-retires-its-own-fine",
-      "title": "Kroger&#8217;s Lane Kills Your 3% Fee",
+      "id": 1813,
+      "slug": "your-ram-kit-costs-22-filament-spool",
+      "title": "Your RAM Kit Costs 22 Spools",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-11-02T13:31:56",
+      "modified": "2026-11-21T06:18:19",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "aichieve.net",
       "kind": "article",
-      "id": 1381,
-      "slug": "your-inventory-bill-is-24-percent-prepaid",
-      "title": "Your Inventory Bill Is 24% Prepaid",
+      "id": 1810,
+      "slug": "your-applecare-79-96-vs-89",
+      "title": "Your AppleCare Costs $79.96 a Device",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-11-02T13:29:06",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": 50,
-      "slug": "benefits-of-living-in-the-city-2026-pros-and-cons",
-      "title": "Benefits of Living in the City: 2026 Pros and Cons",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-10-31T05:03:01",
+      "modified": "2026-11-20T19:41:49",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

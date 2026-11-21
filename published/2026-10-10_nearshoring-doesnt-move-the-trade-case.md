@@ -14,10 +14,10 @@ meta_title_source: "derived_from_title"
 meta_description: "Two U.S. trade cases opened against Mexico on the same day. On September 30, 2026, the U.S."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/nearshoring-doesnt-move-the-trade-case/featured.jpg"
-image_style: "cinematic_still"
+image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "The Nearshoring Illusion. An unbranded railway tank car resting idle on tracks at a dimly lit industrial border checkpoint at"
-image_caption: "The Nearshoring Illusion: New trade liabilities for nearshored supply chains."
+image_alt: "Nearshoring Doesn'T Move The Trade Case. Rows of unbranded riveted-steel railway tank cars on rail sidings at a border port of entry"
+image_caption: "Nearshoring Doesn'T Move The Trade Case: Moving the factory relocates neither the trade case on the goods nor the importer's file."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

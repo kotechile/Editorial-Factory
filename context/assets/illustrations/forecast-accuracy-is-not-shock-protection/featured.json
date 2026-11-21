@@ -1,6 +1,6 @@
 {
   "slug": "forecast-accuracy-is-not-shock-protection",
-  "revision": 10,
+  "revision": 11,
   "history": [
     {
       "revision": 1,
@@ -72,6 +72,14 @@
     },
     {
       "revision": 9,
+      "alt_text": "AI Demand Sensing Cuts Error But Not El Ni\u00f1o. Forecast Accuracy. Vast intermodal shipping container yard stacked with freight receding into",
+      "caption": "AI Demand Sensing Cuts Error But Not El Ni\u00f1o: An AI forecast beat the old plan 15 of 15 times, but it cannot model a record El Ni\u00f1o.",
+      "title": "AI Demand Sensing Cuts Error But Not El Ni\u00f1o",
+      "bytes": 389850,
+      "sha256": "sha256:a5b619d303be52bae8e5370ccd1346d37ae2f1e8cfad24565277f0b495716e7b"
+    },
+    {
+      "revision": 10,
       "alt_text": "AI Demand Sensing Cuts Error But Not El Ni\u00f1o. Forecast Accuracy. Vast intermodal shipping container yard stacked with freight receding into",
       "caption": "AI Demand Sensing Cuts Error But Not El Ni\u00f1o: An AI forecast beat the old plan 15 of 15 times, but it cannot model a record El Ni\u00f1o.",
       "title": "AI Demand Sensing Cuts Error But Not El Ni\u00f1o",

@@ -33,6 +33,8 @@ On 19 November, a heat camera dropped to $109. The press release pitched it as a
 
 <!-- tension -->
 
+My read: the three dates line up into one fact about what the camera's picture is worth.
+
 ## What the cloak actually proved
 
 The Illinois device is not a software trick. The team 3D-printed an aluminum lattice that moves heat well. Then they cast a rubbery material into the gaps, and that material moves heat badly. The two together steer warmth around whatever sits inside. When the cloak sat between a hot side and a cold side, the camera read the pattern around it "much as it would if no object were present" — from almost any angle [1].
@@ -51,7 +53,7 @@ The pros hit the same wall. Buyer guidance posted this month restates what Brita
 
 ## How owners use a $109 camera without being fooled
 
-What the field guides and working inspectors converge on is a five-step drill. First, earn the delta: heat the house and wait for a real inside-outside gap before you scan. A scan on a mild day tells you nothing [3][4]. Second, compare like with like — similar surfaces, similar conditions. A cold rectangle beside a warm one is a lead. The number on the screen stays just a number [3]. Third, verify with a tool that touches: a smoke pencil at the draft, a paper slip at the window, a pin meter where a stain shows. The camera nominates. The second tool convicts. Fourth, suspect the staging in your own rooms — sun-warmed walls, a sofa against an outside wall, shut doors. These repaint the picture the same way the cloak does: by moving the surface, not the structure. Fifth, mind the roof. The Irish energy authority's figure, quoted by the camera maker itself, is that a home can lose up to 30% of its heat through the roof. No casual scan of a bedroom reaches there [3].
+I keep coming back to one drill here — the same one the field guides and working inspectors converge on. First, earn the delta: heat the house and wait for a real inside-outside gap before you scan. A scan on a mild day tells you nothing [3][4]. Second, compare like with like — similar surfaces, similar conditions. A cold rectangle beside a warm one is a lead. The number on the screen stays just a number [3]. Third, verify with a tool that touches: a smoke pencil at the draft, a paper slip at the window, a pin meter where a stain shows. The camera nominates. The second tool convicts. Fourth, suspect the staging in your own rooms — sun-warmed walls, a sofa against an outside wall, shut doors. These repaint the picture the same way the cloak does: by moving the surface, not the structure. Fifth, mind the roof. The Irish energy authority's figure, quoted by the camera maker itself, is that a home can lose up to 30% of its heat through the roof. No casual scan of a bedroom reaches there [3].
 
 <!-- nuanced-takeaway -->
 

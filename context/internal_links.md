@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-11-20T14:24:48+00:00
+# Internal-link candidates — 2026-11-21T14:27:58+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 63 live article(s), 16 other target(s)
+## giniloh.com — 65 live article(s), 16 other target(s)
 
 Category hubs this front serves: —
 
@@ -47,6 +47,7 @@ Category hubs this front serves: —
 - [Your 26-Week Cliff Kills 4 Years](https://giniloh.com/your-26-week-cliff-kills-4-years/) — —
 - [Your 3-Year Rung Costs 15.9%](https://giniloh.com/your-3-year-rung-costs-15-9/) — —
 - [Your 61-Day Window Costs the Position](https://giniloh.com/your-61-day-window-costs-the-position/) — —
+- [Your AppleCare Costs $79.96 a Device](https://giniloh.com/your-applecare-79-96-vs-89/) — —
 - [Your Battery Dies at 500 Cycles](https://giniloh.com/your-battery-expires-at-500-cycles/) — —
 - [Your Broker's Fund Bills 37%](https://giniloh.com/your-brokers-fund-bills-37/) — —
 - [Your Buyback Gap: $39.8B to $0](https://giniloh.com/your-buyback-gap-39-8b-to-zero/) — —
@@ -63,6 +64,7 @@ Category hubs this front serves: —
 - [Your ISO Ceiling: $100,000, Dead Before Exercise](https://giniloh.com/your-iso-ceiling-fixed-at-vesting/) — —
 - [Your LLC Bill: 75% Until 2028](https://giniloh.com/your-llc-bill-75-until-2028/) — —
 - [Your Overage Page Costs $0.20](https://giniloh.com/your-ink-plan-bills-20-cents/) — —
+- [Your RAM Kit Costs 22 Spools](https://giniloh.com/your-ram-kit-costs-22-filament-spool/) — —
 - [Your Raise Dies at 51.5 Hours](https://giniloh.com/your-raise-dies-at-51-5-hours/) — —
 - [Your Renewal Hides a 10-Month Cost](https://giniloh.com/your-annual-plan-is-a-10-month-loan/) — —
 - [Your Screen Gap: $999 vs $99](https://giniloh.com/your-screen-gap-999-vs-99/) — —
@@ -90,6 +92,7 @@ Category hubs this front serves: —
 
 Category hubs this front serves: energy-efficiency, home-cost-decisions, home-diagnostics-tools, outdoor-power-equipment, smart-home-security, tools-equipment, yard-robotics
 
+- [$220 Off Your EGO Kit — If It's Still There](https://wellroost.com/your-899-blowers-9-day-window/) — Outdoor Power & Snow Equipment
 - [11 Degrees Kills the Compressor Quote](https://wellroost.com/11-degrees-kills-the-compressor-quote/) — Home Diagnostic Tools
 - [2,090 vs 700: Your Condenser's Repair Bill](https://wellroost.com/your-condensers-repair-bill-2090-vs-700/) — Energy & Efficiency
 - [20% of Your AC Never Arrives](https://wellroost.com/20-percent-of-your-ac-never-arrives/) — Energy & Efficiency
@@ -106,17 +109,14 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [California Legalizes Plug-In Home Solar Panels](https://wellroost.com/california-legalizes-plug-in-home-solar-panels/) — Energy & Efficiency
 - [Cheap Gas, $20,000 Pipe: The Winter Heat Trap](https://wellroost.com/cheapest-fuel-priciest-pipe/) — Energy & Efficiency
 - [Discredited Proof Costs $1.2 Million](https://wellroost.com/discredited-proof-costs-1-2-million/) — Tools & Equipment
-- [Emporia Vue: How to Cut Energy Bills](https://wellroost.com/unveiling-the-emporia-vue-3-a-comprehensive-guide-to-home-energy-monitoring/) — Smart Home & Security
 - [Europe's Duty Leaves a 53.3% Gap](https://wellroost.com/europes-53-duty-rewrites-mower-prices/) — Yard Robots & Automation
 - [Fewer Liens, 46% More Failures: Your Bid](https://wellroost.com/fewer-liens-46-more-bankruptcies/) — Tools & Equipment
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/) — Energy & Efficiency
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/) — Energy & Efficiency
 - [Insurance Bill Beats Property Tax 14%](https://wellroost.com/insurance-beats-property-tax-14/) — Energy & Efficiency
 - [Mower's 2 cm Dies Under Trees](https://wellroost.com/mowers-2cm-dies-under-trees/) — Yard Robots & Automation
-- [NY Heat Pump Rebate: Double Payouts for Sealed Homes](https://wellroost.com/ny-heat-pump-rebate-double-payouts-for-sealed-homes/) — Energy & Efficiency
 - [Retainage Trap: 5 Percent, Not 15](https://wellroost.com/hold-back-capped-at-5-percent/) — Tools & Equipment
 - [Snow Robot Stops at 6,000 ft²: It Docks](https://wellroost.com/snow-robot-stops-at-6000-ft2-it-docks/) — Yard Robots & Automation
-- [Swapping your gas furnace for a heat pump tax credit 2026 just died](https://wellroost.com/swapping-your-gas-furnace-for-a-heat-pump-tax-credit-2026-just/) — Energy & Efficiency
 - [The Hidden Lien Clock Behind Your Remodel Payments](https://wellroost.com/mechanics-lien-clock-payment-release/) — Tools & Equipment
 - [The Remodel That Pays You Back Isn’t the One You Want](https://wellroost.com/the-remodel-that-pays-you-back-isnt-the-one-you-want/) — Energy & Efficiency
 - [The local-first smart home cost squeeze: Cloud and hardware prices rise](https://wellroost.com/local-first-smart-home-cost-squeeze/) — Smart Home & Security
@@ -127,6 +127,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Why Your $49.97 Meter Reads 78%](https://wellroost.com/your-50-meter-reads-78-its-metal/) — Home Diagnostic Tools
 - [Why Your Mower Needs 4 Approvals](https://wellroost.com/your-mower-needs-4-approvals/) — Yard Robots & Automation
 - [Windows: 13% Is the Best Case, Not Average](https://wellroost.com/windows-13-percent-best-case/) — Energy & Efficiency
+- [Your $109 Camera's Missing Verdict](https://wellroost.com/your-109-cameras-missing-verdict/) — Home Diagnostic Tools
 - [Your $149.99 Scope Blinds Past 3.94](https://wellroost.com/your-149-99-scope-blinds-at-3-94/) — Home Diagnostic Tools
 - [Your $150 Snow Shovel's 6-Inch Trap](https://wellroost.com/your-150-snow-shovels-6-inch-trap/) — Outdoor Power & Snow Equipment
 - [Your $16.53 Tester's Blind Spot](https://wellroost.com/your-16-53-tester-blind-spot/) — Home Diagnostic Tools
@@ -181,6 +182,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your Remodel Loses to 149% Growth](https://wellroost.com/your-remodel-loses-to-149-growth/) — Tools & Equipment
 - [Your Repair Budget's 7.5% Squeeze](https://wellroost.com/your-repair-budget-buys-7-5-percent-less/) — Energy & Efficiency
 - [Your Ring's Hidden 83% Gap](https://wellroost.com/your-rings-hidden-83-gap/) — Home Cost Decisions
+- [Your Robot Costs $775 a Month](https://wellroost.com/your-robot-costs-775-a-month/) — Yard Robots & Automation
 - [Your Roof Claim's Hidden Second Check: 12 Months to Collect](https://wellroost.com/roof-claim-hidden-second-check-12-months/) — Energy & Efficiency
 - [Your Septic Interval: 18 Months, Not 5 Years](https://wellroost.com/your-septic-interval-is-18-months/) — Energy & Efficiency
 - [Your Slab Leak: 15% Blind Spot](https://wellroost.com/slab-leak-listener-misses-one-in-six/) — Home Diagnostic Tools
@@ -583,9 +585,8 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1396 `your-30-inventory-cut-is-13-4` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1393 `your-90-day-key-is-two-live-keys` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1390 `your-192-sessions-stall-the-model-not-the-tools` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1385 `kroger-direct-buy-retires-its-own-fine` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1381 `your-inventory-bill-is-24-percent-prepaid` — published in the CMS but absent from the frontend sitemap
-- wellroost.com #50 `benefits-of-living-in-the-city-2026-pros-and-cons` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1813 `your-ram-kit-costs-22-filament-spool` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1810 `your-applecare-79-96-vs-89` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1704 `your-collar-kills-the-long-term-clock` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1701 `your-console-rose-500-instead` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1698 `your-75000-room-misses-the-stock` — published in the CMS but absent from the frontend sitemap

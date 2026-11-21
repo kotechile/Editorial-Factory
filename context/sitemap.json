@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T17:43:16Z",
+  "updated_at": "2026-11-21T18:47:00Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7502,6 +7502,24 @@
       "date": "2026-11-21",
       "public": true,
       "url": "https://wellroost.com/your-899-blowers-9-day-window/"
+    },
+    {
+      "slug": "2026-11-21_your-mowers-313-year-four-battery",
+      "title": "Your Robot Mower's Hidden $313 Bill",
+      "vertical": "yard_robotics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The clocks nobody prices",
+        "By the numbers",
+        "Where this bites",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-21",
+      "public": false
     },
     {
       "slug": "2026-11-21_your-ram-kit-costs-22-filament-spool",
