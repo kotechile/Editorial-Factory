@@ -19,6 +19,12 @@ meta_title: "Your Robot Mower's Hidden $313 Bill"
 meta_title_source: "derived_from_title"
 meta_description: "Husqvarna sells its 420 iQ robot mower for $2,599.99 in a current sale. The same maker says the battery \"typically lasts between 2 and 5 years\"."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-mowers-313-year-four-battery/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "Robot lawn mower in a garage with a boxed replacement battery and blade six-pack staged on the concrete beside it"
+image_caption: "The spec pages price the mower's life support at $26.99 a blade pack and $313.36 a battery — about a quarter of the machine again."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 Husqvarna sells its 420 iQ robot mower for $2,599.99 in a current sale [6]. The same maker says the battery "typically lasts between 2 and 5 years" [1]. A genuine replacement battery kit for the recent generations lists at $313.36 [5]. The sticker price buys the machine; the upkeep is a second bill nobody advertises.
@@ -65,13 +71,13 @@ My read of the two spec pages, held loosely: four years of ownership costs a qua
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
 <!-- internal-link hint: "Your Half-Acre Mower's $450 Gap" -> /one-mower-two-prices-450-apart/ [same site (wellroost.com); topical overlap: mower, mower's, sale, sells] Link "Your Half-Acre Mower's $450 Gap" in the section where the article touches mower, mower's, sale. -->
-<!-- internal-link hint: "Your Mower's 145-Minute Charge Trap" -> /your-mowers-145-minute-charge-trap/ [same site (wellroost.com); topical overlap: battery, mower, mower's] Link "Your Mower's 145-Minute Charge Trap" in the section where the article touches battery, mower, mower's. -->
 <!-- internal-link hint: "Mower's 2 cm Dies Under Trees" -> /mowers-2cm-dies-under-trees/ [same site (wellroost.com); topical overlap: mower's, robot] Link "Mower's 2 cm Dies Under Trees" in the section where the article touches mower's, robot. -->
+<!-- internal-link hint: "Your Mower Needs 4 Approvals" -> /your-mower-needs-4-approvals/ [same site (wellroost.com); topical overlap: mower, robot] Link "Your Mower Needs 4 Approvals" in the section where the article touches mower, robot. -->
 ## Related reading
 
 - [Your Half-Acre Mower's $450 Gap](/one-mower-two-prices-450-apart/) — more on Yard Robots & Automation
-- [Your Mower's 145-Minute Charge Trap](/your-mowers-145-minute-charge-trap/) — more on Outdoor Power & Snow Equipment
 - [Mower's 2 cm Dies Under Trees](/mowers-2cm-dies-under-trees/) — more on Yard Robots & Automation
+- [Your Mower Needs 4 Approvals](/your-mower-needs-4-approvals/) — more on Yard Robots & Automation
 <!-- internal-links:end -->
 
 ## Sources

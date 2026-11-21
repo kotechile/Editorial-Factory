@@ -1,0 +1,11 @@
+# Run log — 2026-11-21 your-gas-mowers-90-day-fuel-trap (outdoor_power_equipment, EVERGREEN)
+
+- **Track:** evergreen (Sat 19:00 slot; evergreen_cadence 0 19 * * 6; generation gate OK at STEP 0)
+- **Artifact:** `published/2026-11-21_your-gas-mowers-90-day-fuel-trap.md` → CMS post 452 (publish), media 451 (featured, auto-illustrated), Supabase row 3b38c0ee-8101-4885-a18a-130304f319ba
+- **Live:** https://wellroost.com/your-gas-mowers-90-day-fuel-trap/ — verified 200, title, hero `-1024x576` derivative, vertical term 25, kind tag 29 (evergreen), category link rendered
+- **Topic:** "cordless versus gas: measured torque and runtime against the carburetor and stale-fuel maintenance tax" (vertical primary_angles, homeowner_pro payback-math want). Composite **8.6** (U9/D9/E8/A8).
+- **Thesis:** the gas mower carries a written upkeep schedule (oil at 5 h, then every 50 h or yearly — Briggs & Stratton, page updated 2026-01-21) plus fuel that decays in storage (treat by 30 d, drain by 90 d — Honda dealer guide), while a cordless finishing a quarter acre inside its measured 45–50-min charge run (Consumer Reports) carries none of it.
+- **Gate:** evergreen_gate PASS — 5 rows, 5 hosts (briggsandstratton.com, nicholsequipment.com, consumerreports.org, eia.gov, egopowerplus.com), every figure fetched and evidenced; de-dup named `2026-11-07_your-mowers-145-minute-charge-trap` (charge-clock mechanism; different sources). Dropped: platform-trap (re-argues 10-25 spare-pack mechanism), zero-turn pack cliff (client-rendered price anchors), buy-window (today's news artifact).
+- **Review:** HELD attempt 1 (Flesch 45.3; retired At-a-glance bullets; unsourced "gallon or two"; critic format) → hand-repaired draft → ACCEPTED Flesch 60.4. Gate HOLD on final twice (At a glance 53→51→49 words; [1][2] double citation split) → 8/8 gates PASS.
+- **Publish notes:** generated internal-links block yielded 0 links (empty section per rule 12); hand-authored category link carried; body written back to Supabase so DB and CMS agree. Reader URL is /<slug>/ (no date path) — the initial 404 checks used the wrong date-path pattern, not a build failure.
+- **Lessons recorded:** host ledger entries for briggsandstratton.com and nicholsequipment.com (both fetchable, plain text).

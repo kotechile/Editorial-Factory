@@ -1,5 +1,5 @@
 ---
-title: Your Mower's $313 Year-Four Battery
+title: "Your Robot Mower's Hidden $313 Bill"
 vertical: yard_robotics
 kind: evergreen
 archetype: evergreen
@@ -15,6 +15,16 @@ sources:
   - https://www.husqvarna.com/us/robotic-lawn-mower-blades/classic-blades
   - https://poweredbymoyer.com/products/husqvarna-529606802-5-2ah-18v-lithium-ion-battery-kit-automower-430x-440-450x
   - https://www.husqvarna.com/us/robotic-lawn-mowers/automower-420-iq/
+meta_title: "Your Robot Mower's Hidden $313 Bill"
+meta_title_source: "derived_from_title"
+meta_description: "Husqvarna sells its 420 iQ robot mower for $2,599.99 in a current sale. The same maker says the battery \"typically lasts between 2 and 5 years\"."
+meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-mowers-313-year-four-battery/featured.jpg"
+image_style: "studio_object"
+image_model: "flux"
+image_alt: "Robot lawn mower in a garage with a boxed replacement battery and blade six-pack staged on the concrete beside it"
+image_caption: "The spec pages price the mower's life support at $26.99 a blade pack and $313.36 a battery — about a quarter of the machine again."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 Husqvarna sells its 420 iQ robot mower for $2,599.99 in a current sale [6]. The same maker says the battery "typically lasts between 2 and 5 years" [1]. A genuine replacement battery kit for the recent generations lists at $313.36 [5]. The sticker price buys the machine; the upkeep is a second bill nobody advertises.
