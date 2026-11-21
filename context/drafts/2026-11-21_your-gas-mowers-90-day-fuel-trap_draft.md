@@ -24,7 +24,7 @@ This article is for the homeowner choosing between a gas mower and a battery one
 
 ## The schedule you inherited
 
-The 50-hour rule is not advice. It is a condition the maker attaches to the engine. Briggs & Stratton wants the first oil change after the first 5 hours, then a change every 50 hours or once a year, whichever comes first [1]. A small suburban lot runs a mower 20 to 30 hours a season. That means the calendar triggers the work, not the hour meter. Every spring brings oil, a spark plug, an air filter, and an engine that must start or be diagnosed.
+What I keep circling is that the 50-hour rule is not advice, but a condition the maker attaches to the engine. Briggs & Stratton wants the first oil change after the first 5 hours, then a change every 50 hours or once a year, whichever comes first [1]. A small suburban lot runs a mower 20 to 30 hours a season. That means the calendar triggers the work, not the hour meter. Every spring brings oil, a spark plug, an air filter, and an engine that must start or be diagnosed.
 
 The fuel rule is the part owners skip until spring exposes it. Nichols Equipment, a Honda dealer, splits storage into windows. Gas in the tank for 30 to 90 days needs a stabilizer mixed into fresh fuel, then a 10-minute run to move the treated gas through the system [2]. Past 90 days, the whole fuel system must be emptied, tank included [2]. The same page is blunt about timing: a stabilizer cannot fix fuel that has already gone stale [2]. That is why the spring no-start is so common. The fuel aged on a clock nobody saw, and the carburetor kept score.
 
@@ -46,7 +46,7 @@ The running cost is easy to state. A charge or two a season draws from the wall,
 
 ## The catch
 
-The upkeep tax is small in dollars, and honesty about that matters. A season's oil, plug and filter cost a few tens of dollars and one working hour. A battery mower often costs hundreds more at the till. So the schedule alone does not close the price gap in year one. What it changes is the character of owning the machine. The gas mower degrades when it is ignored, and it starts with the fuel first, per the 90-day rule [2]. The cordless degrades mainly through use and years of charge cycles, which is a slower and kinder clock [5]. And power still belongs to gas: Consumer Reports' testers call it unbeatable there [3]. A cordless that bogs down in tall, wet grass has not lost a service race. It has hit the limit it was bought around.
+What I'd watch next is the size of the tax, because honesty about it matters. A season's oil, plug and filter cost a few tens of dollars and one working hour. A battery mower often costs hundreds more at the till. So the schedule alone does not close the price gap in year one. What it changes is the character of owning the machine. The gas mower degrades when it is ignored, and it starts with the fuel first, per the 90-day rule [2]. The cordless degrades mainly through use and years of charge cycles, which is a slower and kinder clock [5]. And power still belongs to gas: Consumer Reports' testers call it unbeatable there [3]. A cordless that bogs down in tall, wet grass has not lost a service race. It has hit the limit it was bought around.
 
 The honest rule follows. If your lawn is a quarter acre or less and you can finish it inside one charge, the cordless deletes a recurring chore, not just a price. If your lot takes several charges or your grass is heavy, the gas machine's upkeep is the salary you pay for its torque, and the service list is the least of what you owe it.
 
