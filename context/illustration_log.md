@@ -545,3 +545,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-20 | `your-ev-is-now-a-home-battery-behind-a-paywall` | resilient_home_assets | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ev-is-now-a-home-battery-behind-a-paywall/featured.jpg` |
 | 2026-11-20 | `your-applecare-79-96-vs-89` | consumer_asset_repair_replace_tco | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-applecare-79-96-vs-89/featured.jpg` |
 | 2026-11-21 | `your-ram-kit-costs-22-filament-spool` | personal_microeconomics_tinkering_tax | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ram-kit-costs-22-filament-spool/featured.jpg` |
+| 2026-11-21 | `your-robot-costs-775-a-month` | yard_robotics | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-robot-costs-775-a-month/featured.jpg` |

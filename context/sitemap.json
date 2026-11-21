@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T06:18:21Z",
+  "updated_at": "2026-11-21T10:44:24Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7464,6 +7464,23 @@
         "Related reading"
       ],
       "target_persona": "systems_tinkerer_pro",
+      "date": "2026-11-21",
+      "public": false
+    },
+    {
+      "slug": "2026-11-21_your-robot-costs-775-a-month",
+      "title": "Your Robot Costs $775 a Month",
+      "vertical": "yard_robotics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why year one loses on paper",
+        "By the numbers",
+        "What I'd watch",
+        "The catch"
+      ],
+      "target_persona": "homeowner_pro",
       "date": "2026-11-21",
       "public": false
     }

@@ -1,5 +1,13 @@
 [
  {
+  "host": "3dprintingcostcalculator.com",
+  "url": "https://3dprintingcostcalculator.com/news/filament-price-per-gram",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "personal_microeconomics_tinkering_tax",
+  "note": ""
+ },
+ {
   "host": "abcsupplychain.com",
   "url": "",
   "verdict": "fetchable",
@@ -2670,6 +2678,14 @@
   "as_of": "2026-10-13",
   "vertical": "",
   "note": "ices; its blog: a worked \"80 amps of your 100-amp service\" example), `span.io` (48A / 11.5 kW dynamic against the \"24-40A (5.7-9.6 kW)\" a worst-case fixed install is limited to). Fails or ca"
+ },
+ {
+  "host": "spoolhound.com",
+  "url": "https://spoolhound.com/filament-price-index",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "personal_microeconomics_tinkering_tax",
+  "note": ""
  },
  {
   "host": "sre.google",

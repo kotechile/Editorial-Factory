@@ -1,0 +1,115 @@
+{
+  "slug": "your-robot-costs-775-a-month",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A tracked yard robot core with its mower, snow-blower and blower modules lined up across a concrete garage floor under raking light.",
+      "caption": "Every module in the row raises the payment a buyer locks into \u2014 and year one of owning still costs more than the crew.",
+      "title": "Yard Robot Bundle as a Ladder of Modules",
+      "bytes": 365974,
+      "sha256": "sha256:aedb4f1cb04d8411dd1e397b7da4c071"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A modular yard robot staged on a weathered concrete garage floor: a low tracked core unit parked off-centre on the right third, its mower module half-docked on top, a snow-blower module and a blower module standing in a receding row to the left like rungs of a ladder. Matte textured polymer shells in deep pine green and graphite, galvanised steel tracks, hard clean edges, moulding seams. A single low raking key light from the open garage door on the left throws one long cast shadow across the concrete; muted graphite and ochre palette, generous negative space above, matte muted finish, no text.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos",
+  "rationale": "The article turns on a single number and a modular machine, which is exactly the component_assembly trigger: restraint stating the idea. The three recognisable yard-robot parts in one deliberate row make the bundle \u2014 and every module that raises the payment \u2014 the hero, in the garage where the machine actually lives.",
+  "cue": "Your Robot Costs $775 a Month",
+  "subject": "A modular yard robot's tracked core unit with its mower, snow-blower and blower modules staged in a receding row on a garage floor",
+  "core_thesis": "Yarbo's own financing puts its full four-module yard robot bundle at $774.92 a month, more than the $300\u2013$520 a landscaping crew bills for a one-acre lawn, so year one of owning costs more than year one of hiring.",
+  "core_conflict": "The robot's flat monthly installment versus the crew's seasonal invoice \u2014 owning priced above hiring in year one, with payback only possible if the machine survives to year two and replaces both mowing and plowing.",
+  "composition": "Asymmetric off-centre framing: core unit parked on the right third, modules receding left in a ladder row, one long cast shadow, generous negative space above",
+  "alt_text": "Owning Yarbo Costs More Than Hiring. A tracked yard robot core with its mower, snow-blower and blower modules lined up across a concrete",
+  "caption": "Owning Yarbo Costs More Than Hiring: Yarbo's $775 payment tops a lawn crew's entire $300-$520 monthly bill.",
+  "title": "Owning Yarbo Costs More Than Hiring",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-robot-costs-775-a-month/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 390302,
+  "sha256": "sha256:002d221f7b09f1366a2fd85ba7f69af4985009db227033d52d6e73c15754b92c",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 390302,
+    "quality": 76,
+    "sha256": "sha256:002d221f7b09f1366a2fd85ba7f69af4985009db227033d52d6e73c15754b92c",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:9b631d2d7378c6f33d505dc314f96d732fab103ceff80cc58fa7e74828d22be2",
+  "render_phash": "cfff4fff4fffc7ffefff3bdb63cd68e769e978ec7c5c3e6c1adc6ddf43b391b9",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Three pieces of modular yard equipment are parked on a concrete floor.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.95,
+    "reason": "The image depicts the modular yard robots discussed in the article, fulfilling the product focus of the piece."
+  },
+  "source_hash": "sha256:6dc844e92cfc4a14351f018a03d12dd3",
+  "source_chars": 4093,
+  "task_id": "df99812848cd81eb397922400c152413",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_111edbfc05cd5c0462e8b48d2bda95d1.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "A modular yard robot staged on a weathered concrete garage floor: a low tracked core unit parked off-centre on the right third, its mower module half-docked on top, a snow-blower module and a blower module standing in a receding row to the left like rungs of a ladder. Matte textured polymer shells in deep pine green and graphite, galvanised steel tracks, hard clean edges, moulding seams. A single low raking key light from the open garage door on the left throws one long cast shadow across the concrete; muted graphite and ochre palette, generous negative space above, matte muted finish, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-21T10:43:56+00:00",
+  "overlay": {
+    "kicker": "YARD ROBOTICS // OWN VS. HIRE",
+    "title": "OWNING YARBO COSTS MORE THAN HIRING",
+    "hook": "Yarbo's $775 payment tops a lawn crew's entire $300-$520 monthly bill",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.58,
+    "target": 5.5,
+    "clutter": 0.286,
+    "region_rgb": [
+      85,
+      80,
+      66
+    ],
+    "binding_rgb": [
+      133,
+      122,
+      104
+    ],
+    "title_lines": [
+      "OWNING YARBO",
+      "COSTS MORE",
+      "THAN HIRING"
+    ],
+    "subject": 0.134,
+    "ink_subject": 0.02,
+    "spike": 0.107,
+    "generated_at": "2026-11-21T10:43:56+00:00"
+  }
+}

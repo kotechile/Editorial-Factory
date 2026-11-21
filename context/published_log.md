@@ -404,6 +404,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-18 | property_loss_insurance_mitigation | your-3rd-claim-counts-storm-doesnt | Your 3rd Claim Counts, Storm Doesn't | https://pressflow.aichieve.net/published/2026-11-18_your-3rd-claim-counts-storm-doesnt.md | reader site only |
 | 2026-11-20 | consumer_asset_repair_replace_tco | your-applecare-79-96-vs-89 | Your AppleCare Costs $79.96 a Device | https://pressflow.aichieve.net/published/2026-11-20_your-applecare-79-96-vs-89.md | reader site only |
 | 2026-11-21 | personal_microeconomics_tinkering_tax | your-ram-kit-costs-22-filament-spool | Your RAM Kit Costs 22 Spools | https://pressflow.aichieve.net/published/2026-11-21_your-ram-kit-costs-22-filament-spool.md | reader site only |
+| 2026-11-21 | yard_robotics | your-robot-costs-775-a-month | Your Robot Costs $775 a Month | https://pressflow.aichieve.net/published/2026-11-21_your-robot-costs-775-a-month.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
