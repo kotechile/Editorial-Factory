@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T19:41:50Z",
+  "updated_at": "2026-11-21T06:18:21Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7446,6 +7446,25 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-20",
+      "public": false
+    },
+    {
+      "slug": "2026-11-21_your-ram-kit-costs-22-filament-spool",
+      "title": "Your RAM Kit Costs 22 Spools",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Where the shelves split",
+        "By the numbers",
+        "What to watch",
+        "The catch",
+        "Related reading",
+        "Related reading"
+      ],
+      "target_persona": "systems_tinkerer_pro",
+      "date": "2026-11-21",
       "public": false
     }
   ]

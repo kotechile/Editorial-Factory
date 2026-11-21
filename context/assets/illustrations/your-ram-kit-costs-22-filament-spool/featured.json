@@ -1,0 +1,113 @@
+{
+  "slug": "your-ram-kit-costs-22-filament-spool",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two DDR5 memory modules resting atop a tall stack of cream PLA filament spools on a wooden workbench.",
+      "caption": "One memory kit now buys more than a year of the plastic it turns into parts.",
+      "title": "One RAM kit, priced in spools",
+      "bytes": 395345,
+      "sha256": "sha256:c0b1b00f676e2472de2d67abe443f52b"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Studio product photograph on a home workbench of warm oak: a tall, slightly leaning column of unbranded PLA filament spools wound with cream filament stands on the right third of the frame, and two long unbranded DDR5 memory modules in matte black heat spreaders with gold edge-contact fingers rest across the top, the tiny kit outweighing the whole tower beneath it. Single softbox key light from the left with visible falloff, long cast contact shadows raking across the timber; palette of graphite, bone white and amber; three-quarter angle, 50mm lens, shallow depth of field, fine film grain, generous empty bench to the left, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos",
+  "rationale": "The story is a straight price comparison between two purchasable goods, which is exactly what a studio product photograph exists for. Staging the tiny RAM kit atop a whole column of spools makes the 22-spool arithmetic visible in one physical paradox, with no numbers on screen. It also rotates the desk away from the recent cinematic, architectural and document treatments.",
+  "cue": "Your RAM Kit Costs 22 Spools",
+  "subject": "Two unbranded DDR5 memory modules resting atop a tall stack of PLA filament spools",
+  "core_thesis": "In one 30-day window the tinkerer's plastic got cheaper while his machine's memory went vertical, so the hobby's real bill moved from what he prints to what the machine remembers.",
+  "core_conflict": "DDR5 memory repricing into scarcity (a 32GB kit at $474 against a $72 record low, cleared by scalpers and bots) versus a falling PLA consumables market (\u20ac18.06/kg, down 11.7% in 30 days), forcing the two-bench tinkerer to choose which purchase to defer.",
+  "composition": "Extreme asymmetry: the spool column crowned by the RAM kit commands the right third, with long cast shadows and generous empty bench filling the left as negative space.",
+  "alt_text": "RAM At $474 Costs 22 Spools Of Filament. Two DDR5 memory modules resting atop a tall stack of cream PLA filament spools on a wooden",
+  "caption": "RAM At $474 Costs 22 Spools Of Filament: DDR5 spiked as PLA fell 11.7%, moving the tinkerer's real bill from plastic to memory.",
+  "title": "RAM At $474 Costs 22 Spools Of Filament",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-ram-kit-costs-22-filament-spool/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 375511,
+  "sha256": "sha256:eed3a14e1b493df799cd5c7b0895fdcdf40b46dde2dff0048114bb6b8b31fe08",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 375511,
+    "quality": 80,
+    "sha256": "sha256:eed3a14e1b493df799cd5c7b0895fdcdf40b46dde2dff0048114bb6b8b31fe08",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:623e6cd348028e13935539652c7afe737332143c553580efcc193f942bbefe78",
+  "render_phash": "aefc16541d9c0d9f12df027f1a7f067d0f7b3dfc8e79fd3c3cfc877e619cf879",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Two black DDR5 memory modules rest on top of a tall stack of white and black PLA filament spools on a wooden surface.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 1.0,
+    "reason": "The image directly combines the two central subjects of the article\u2014RAM and PLA\u2014in a visual metaphor for their intersecting markets."
+  },
+  "source_hash": "sha256:0f056a4082c742b410926e99081fedfe",
+  "source_chars": 4018,
+  "task_id": "680cc86601a12e0133b462e289fc508f",
+  "credits": 5.0,
+  "cost_ms": 59,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/680cc86601a12e0133b462e289fc508f_1795241835037.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Studio product photograph on a home workbench of warm oak: a tall, slightly leaning column of unbranded PLA filament spools wound with cream filament stands on the right third of the frame, and two long unbranded DDR5 memory modules in matte black heat spreaders with gold edge-contact fingers rest across the top, the tiny kit outweighing the whole tower beneath it. Single softbox key light from the left with visible falloff, long cast contact shadows raking across the timber; palette of graphite, bone white and amber; three-quarter angle, 50mm lens, shallow depth of field, fine film grain, generous empty bench to the left, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-21T06:17:24+00:00",
+  "overlay": {
+    "kicker": "TINKERING TAX // RAM VS. FILAMENT",
+    "title": "RAM AT $474 COSTS 22 SPOOLS OF FILAMENT",
+    "hook": "DDR5 spiked as PLA fell 11.7%, moving the tinkerer's real bill from plastic to memory",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.9,
+    "target": 4.5,
+    "clutter": 0.061,
+    "region_rgb": [
+      91,
+      82,
+      66
+    ],
+    "binding_rgb": [
+      97,
+      90,
+      74
+    ],
+    "title_lines": [
+      "RAM AT $474",
+      "COSTS 22 SPOOLS",
+      "OF FILAMENT"
+    ],
+    "subject": 0.038,
+    "ink_subject": 0.01,
+    "spike": 0.092,
+    "generated_at": "2026-11-21T06:17:24+00:00"
+  }
+}

@@ -3032,6 +3032,14 @@
   "note": "w in watts), and the vendor list-price pages `fastmail.com/pricing`, `workspace.google.com/pricing.html`, `digitalocean.com/pricing/droplets`, `support.apple.com/en-us/108047` and `tailscale"
  },
  {
+  "host": "www.apple.com",
+  "url": "https://www.apple.com/legal/sales-support/applecare/applecareplus/2509/250909_applecareplus_us_tl_disclosures_non-ny.pdf",
+  "verdict": "unreachable",
+  "as_of": "2026-11-20",
+  "vertical": "consumer_asset_repair_replace_tco",
+  "note": "AppleCare disclosure PDFs return 0 bytes to the fetcher; the per-device US AppleCare+ price tables render model names without dollars. Machine-readable sources: apple.com/support/products/ (AppleCare One tiers + service "
+ },
+ {
   "host": "www.automate.org",
   "url": "https://www.automate.org/robotics/new-interoperability-standard-iso-21423-2026",
   "verdict": "fetchable",
