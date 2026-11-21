@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T11:28:41Z",
+  "updated_at": "2026-11-21T11:42:55Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7446,6 +7446,24 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-20",
+      "public": false
+    },
+    {
+      "slug": "2026-11-21_your-109-cameras-missing-verdict",
+      "title": "Your $109 Camera's Missing Verdict",
+      "vertical": "home_diagnostics_tech",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The big picture: a cheap camera, a staged image",
+        "By the numbers",
+        "What I'd watch: the second tool",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-21",
       "public": false
     },
     {

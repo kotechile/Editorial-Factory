@@ -1,0 +1,113 @@
+{
+  "slug": "your-109-cameras-missing-verdict",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A handheld thermal camera on a windowsill at dusk, its screen showing a false-color heat map of the window frame beside it.",
+      "caption": "The cheap infrared camera finds the cold spot, but the verdict still costs a second tool.",
+      "title": "Handheld thermal camera reading a cold window at dusk",
+      "bytes": 269501,
+      "sha256": "sha256:94c5a8503ca1274a3bcf077032f2601d"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A handheld thermal camera lying on a painted-wood windowsill in a hallway, beside a cold window frame at dusk, its small screen glowing with a false-color heat map of that same window \u2014 amber and rust blooms over slate blue. 100mm macro, razor-sharp focal plane on the glowing screen, shallow depth of field, the graphite body and pale hallway wall falling soft behind. Cold blue dusk light enters from the window at left; the screen's warm glow answers from the right. Palette: bone white, graphite, rust amber. Dust on the sill, fine film grain, no people, no legible text, no logos. Extreme asymmetry: camera low on the right third, generous negative space to the left.",
+  "negative_prompt": "garbled text, random lettering, unreadable numbers on screen, watermark, logo",
+  "rationale": "The story turns on one physical, purchasable thing \u2014 the $109 camera \u2014 whose price and whose epistemic limit are both the news, so a 100mm macro with razor focus on the glowing false-color screen states the thesis in one glance. The windowsill setting keeps the photograph inside the home-diagnostics world the article serves, and the amber heat map against cold blue dusk dramatizes pattern-versus-verdict without a single word. Macro is reserved here precisely because the protagonist is a handable device, not a systemic facility.",
+  "cue": "Your $109 Camera's Missing Verdict",
+  "subject": "a handheld thermal camera on a hallway windowsill, its screen glowing with a false-color heat map of the window beside it",
+  "core_thesis": "A thermal camera cheap enough to be a holiday stocking stuffer now sits in homeowners' hands the same month a lab proved an infrared image can be deliberately staged and the camera maker's own guide admitted the picture is a pattern, not a verdict.",
+  "core_conflict": "Democratized cheap thermal imaging versus the epistemic limits of the image itself \u2014 the camera nominates a cold spot, but only a second tool convicts, and the picture cannot even score its own repairs.",
+  "composition": "Extreme asymmetry: the camera sits low on the right third of the sill, the window frame and pale wall falling into soft negative space on the left.",
+  "alt_text": "Your $109 Heat Camera Is Not A Verdict. A handheld thermal camera on a windowsill at dusk, its screen showing a false-color heat map of the",
+  "caption": "Your $109 Heat Camera Is Not A Verdict: As cheap heat cameras hit holiday shelves, a lab just proved their images can be staged.",
+  "title": "Your $109 Heat Camera Is Not A Verdict",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-109-cameras-missing-verdict/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 341457,
+  "sha256": "sha256:8023b8c4509b4fb529b4aaa33bb74944d2e279b8aba0e995fb2ab0dfeb84b6c0",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 341457,
+    "quality": 88,
+    "sha256": "sha256:8023b8c4509b4fb529b4aaa33bb74944d2e279b8aba0e995fb2ab0dfeb84b6c0",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:509b724c49a9ed2f43372b21080a4b61e3aa16fb89722f05d6789a3a5cd377af",
+  "render_phash": "98de99fe99fc99ac99ec987e99fb1c990fa961a931ab18d30c3b011f02c731a3",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A handheld thermal camera sits on a white windowsill, displaying a false-color heat map on its screen.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 1.0,
+    "reason": "The image perfectly matches the Art Director's brief and illustrates the central object of the article."
+  },
+  "source_hash": "sha256:60bd18c1e0f1078fb876ebe7a0a93bd0",
+  "source_chars": 5134,
+  "task_id": "4e44a91a19f804cadeb3199a9191c704",
+  "credits": 5.0,
+  "cost_ms": 39,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/4e44a91a19f804cadeb3199a9191c704_1795261311825.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A handheld thermal camera lying on a painted-wood windowsill in a hallway, beside a cold window frame at dusk, its small screen glowing with a false-color heat map of that same window \u2014 amber and rust blooms over slate blue. 100mm macro, razor-sharp focal plane on the glowing screen, shallow depth of field, the graphite body and pale hallway wall falling soft behind. Cold blue dusk light enters from the window at left; the screen's warm glow answers from the right. Palette: bone white, graphite, rust amber. Dust on the sill, fine film grain, no people, no legible text, no logos. Extreme asymmetry: camera low on the right third, generous negative space to the left.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-21T11:41:59+00:00",
+  "overlay": {
+    "kicker": "THERMAL CAMERAS // HOME DIAGNOSTICS",
+    "title": "YOUR $109 HEAT CAMERA IS NOT A VERDICT",
+    "hook": "As cheap heat cameras hit holiday shelves, a lab just proved their images can be staged",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.69,
+    "target": 5.5,
+    "clutter": 0.351,
+    "region_rgb": [
+      68,
+      73,
+      80
+    ],
+    "binding_rgb": [
+      140,
+      160,
+      185
+    ],
+    "title_lines": [
+      "YOUR $109 HEAT",
+      "CAMERA IS NOT A",
+      "VERDICT"
+    ],
+    "subject": 0.188,
+    "ink_subject": 0.058,
+    "spike": 0.419,
+    "generated_at": "2026-11-21T11:41:59+00:00"
+  }
+}

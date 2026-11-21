@@ -547,3 +547,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-21 | `your-ram-kit-costs-22-filament-spool` | personal_microeconomics_tinkering_tax | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ram-kit-costs-22-filament-spool/featured.jpg` |
 | 2026-11-21 | `your-robot-costs-775-a-month` | yard_robotics | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-robot-costs-775-a-month/featured.jpg` |
 | 2026-11-21 | `your-899-blowers-9-day-window` | outdoor_power_equipment | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-899-blowers-9-day-window/featured.jpg` |
+| 2026-11-21 | `your-109-cameras-missing-verdict` | home_diagnostics_tech | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-109-cameras-missing-verdict/featured.jpg` |
