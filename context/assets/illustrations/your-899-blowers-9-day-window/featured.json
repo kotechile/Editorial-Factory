@@ -1,0 +1,113 @@
+{
+  "slug": "your-899-blowers-9-day-window",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A teal battery snow blower waits inside an open garage at dusk while the first snow falls on the driveway behind it.",
+      "caption": "The banner gives the discount nine days \u2014 the first named storm may give the aisle fewer.",
+      "title": "Snow blower in open garage as first snow falls over the driveway",
+      "bytes": 322419,
+      "sha256": "sha256:84cf9c64e19a396b7ba90fa07f17dcdc"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "An unbranded battery snow blower standing just inside an open garage at dusk, deep pine green housing, black discharge chute, one battery pack docked in its port, a second pack resting on the concrete floor beside it. A single warm worklight inside the garage rakes the machine from the left; beyond the open door a driveway runs out under a heavy slate sky with the first snowflakes falling. Wide anamorphic 35mm establishing shot, the machine sharp on the right third, weather filling the left with negative space, shallow depth of field, deep contact shadow under the wheels, palette of deep pine green, graphite and warm amber, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos",
+  "rationale": "The story turns on one decisive moment \u2014 the nine-day window closing as the first forecast turns \u2014 and the snow blower itself is the protagonist, so it must be the hero in its narrative context rather than a studio still. A dusk establishing shot inside the home's own garage carries both calendars at once: the machine lit and ready, the storm sky already arriving through the open door. Studio_object, the natural fit for a price story, is barred by the rotation rule, and the environment is what makes the availability tension legible.",
+  "cue": "The snow-blower aisle has an expiry date this month.",
+  "subject": "an unbranded teal battery snow blower with a docked battery pack standing inside an open garage as the first snowflakes reach the driveway",
+  "core_thesis": "EGO's own site caps its snow-blower discount at $220, runs it only to November 30, and stamps it 'subject to availability' \u2014 so the price and the stock behind it can expire on different days, with a storm forecast as the tiebreaker.",
+  "core_conflict": "A printed promotional deadline (up to $220, ending November 30) racing a weather-driven stock clock \u2014 the same nine days that expire the price can empty the shelf first.",
+  "composition": "extreme asymmetry \u2014 the snow blower sharp on the right third inside the lit garage, the open door and storm sky filling the left two-thirds as negative space",
+  "alt_text": "A teal battery snow blower waits inside an open garage at dusk while the first snow falls on the driveway behind it.",
+  "caption": "The banner gives the discount nine days — the first named storm may give the aisle fewer.",
+  "title": "EGO's $220 Snow-Blower Deal Has Two Deadlines",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-899-blowers-9-day-window/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 378379,
+  "sha256": "sha256:ccae80a6e32e0c7c21c7207f7e47e2088bb882156a5c0ef36301494b5e42d512",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 378379,
+    "quality": 88,
+    "sha256": "sha256:ccae80a6e32e0c7c21c7207f7e47e2088bb882156a5c0ef36301494b5e42d512",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b0f8b3cd487e040f095ba3420e453a597adc152d25f924dad10336aa863be23c",
+  "render_phash": "0d3e066623d607ae06e606ce26ce674c067c1e941d9001d000ec003b019b01cf",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A green snow blower is parked inside a garage, with snow visible outside the open door.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 1.0,
+    "reason": "The image clearly depicts the product (a snow blower) and the setting (winter/snow) central to the article's sales pitch."
+  },
+  "source_hash": "sha256:d79deb9eb4d7ba5bfd56149493219807",
+  "source_chars": 4456,
+  "task_id": "4ef4b8c609438e3f2b527d84fe94010b",
+  "credits": 5.0,
+  "cost_ms": 28,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/4ef4b8c609438e3f2b527d84fe94010b_1795259937506.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "An unbranded battery snow blower standing just inside an open garage at dusk, deep pine green housing, black discharge chute, one battery pack docked in its port, a second pack resting on the concrete floor beside it. A single warm worklight inside the garage rakes the machine from the left; beyond the open door a driveway runs out under a heavy slate sky with the first snowflakes falling. Wide anamorphic 35mm establishing shot, the machine sharp on the right third, weather filling the left with negative space, shallow depth of field, deep contact shadow under the wheels, palette of deep pine green, graphite and warm amber, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-21T11:19:07+00:00",
+  "overlay": {
+    "kicker": "SNOW-BLOWER DEALS // PRICE VS STOCK",
+    "title": "EGO'S $220 SNOW-BLOWER DEAL HAS TWO DEADLINES",
+    "hook": "The price expires November 30, but a single snow forecast can empty the aisle first",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.58,
+    "target": 5.5,
+    "clutter": 0.262,
+    "region_rgb": [
+      94,
+      95,
+      100
+    ],
+    "binding_rgb": [
+      140,
+      132,
+      129
+    ],
+    "title_lines": [
+      "EGO'S $220",
+      "SNOW-BLOWER DEAL",
+      "HAS TWO DEADLINES"
+    ],
+    "subject": 0.162,
+    "ink_subject": 0.037,
+    "spike": 0.409,
+    "generated_at": "2026-11-21T11:19:07+00:00"
+  }
+}

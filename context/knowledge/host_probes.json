@@ -864,6 +864,14 @@
   "note": "ERIFIED at the push by design and only the evergreen gate reads it); `egopowerplus.com/21-inch-self-propelled-mower-select-cut-lm2135sp` (run time, deck, torque and the self-propel range on"
  },
  {
+  "host": "egopowerplus.com",
+  "url": "https://egopowerplus.com/power-snow-blowers",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "outdoor_power_equipment",
+  "note": "vendor promo banner + footnote disclaimers carry real offer windows \u2014 read the footnote before quoting any 'save up to' figure"
+ },
+ {
   "host": "eia.gov",
   "url": "",
   "verdict": "fetchable",
@@ -2664,6 +2672,14 @@
   "note": "Live cross-platform carrier-API monitor; primary for its own incident and uptime counts, and explicit about its limits (reported vs measured, carriers inferred from titles). Figures refresh live \u2014 cite the snapshot times"
  },
  {
+  "host": "shopping.yahoo.com",
+  "url": "https://shopping.yahoo.com/home-garden/outdoor/articles/amazon-drops-snow-blowers-37-190000714.html",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "outdoor_power_equipment",
+  "note": "syndicated deal copy with JSON-LD datePublished \u2014 corroboration only"
+ },
+ {
   "host": "snowjoe.com",
   "url": "",
   "verdict": "fetchable",
@@ -2678,6 +2694,14 @@
   "as_of": "2026-10-13",
   "vertical": "",
   "note": "ices; its blog: a worked \"80 amps of your 100-amp service\" example), `span.io` (48A / 11.5 kW dynamic against the \"24-40A (5.7-9.6 kW)\" a worst-case fixed install is limited to). Fails or ca"
+ },
+ {
+  "host": "spearheadspade.com",
+  "url": "https://spearheadspade.com/blogs/garden-guides/best-electric-snow-blower",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "outdoor_power_equipment",
+  "note": "Shopify guide with dateModified meta; prose carries its own re-check dates"
  },
  {
   "host": "spoolhound.com",
@@ -3046,6 +3070,22 @@
   "as_of": "2026-10-10",
   "vertical": "",
   "note": "w in watts), and the vendor list-price pages `fastmail.com/pricing`, `workspace.google.com/pricing.html`, `digitalocean.com/pricing/droplets`, `support.apple.com/en-us/108047` and `tailscale"
+ },
+ {
+  "host": "www.acehardware.com",
+  "url": "https://www.acehardware.com/events/black-friday",
+  "verdict": "unreachable",
+  "as_of": "2026-11-21",
+  "vertical": "outdoor_power_equipment",
+  "note": "403 to plain curl; promo claims UNVERIFIED"
+ },
+ {
+  "host": "www.acmetools.com",
+  "url": "https://www.acmetools.com/ego/black-friday",
+  "verdict": "unreachable",
+  "as_of": "2026-11-21",
+  "vertical": "outdoor_power_equipment",
+  "note": "403 to plain curl"
  },
  {
   "host": "www.apple.com",

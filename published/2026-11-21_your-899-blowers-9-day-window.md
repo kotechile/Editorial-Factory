@@ -10,10 +10,16 @@ meta_title: "$220 Off Your EGO Kit — If It's Still There"
 meta_title_source: "derived_from_title"
 meta_description: "The snow-blower aisle has an expiry date this month. The $899 price on the EGO (the battery outdoor-tool brand) 21-inch kit, with two 6.0Ah batteries in the…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-899-blowers-9-day-window/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "A teal battery snow blower waits inside an open garage at dusk while the first snow falls on the driveway behind it."
+image_caption: "The banner gives the discount nine days — the first named storm may give the aisle fewer."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
-The snow-blower aisle has an expiry date this month. The $899 price on the EGO (the battery outdoor-tool brand) 21-inch kit, with two 6.0Ah batteries in the box, runs out on November 30, 2026 — nine days from the November 21 reading of the maker's own page. The footnote that sets that date ends on the words "Subject to availability," which means the same stretch of days can decide whether the kit is still on the shelf at all [1].
+The snow-blower aisle has an expiry date this month, and the maker's banner caps the season's discount at $220 off your EGO kit. The $899 price on the EGO (the battery outdoor-tool brand) 21-inch kit, with two 6.0Ah batteries in the box, runs out on November 30, 2026 — nine days from the November 21 reading of the maker's own page. The footnote that sets that date ends on the words "Subject to availability," which means the same stretch of days can decide whether the kit is still there at all [1].
 
 <!-- tldr -->
 ## At a glance
@@ -54,10 +60,7 @@ None of this is a prediction that kits vanish on the deadline. The vendor's stoc
 <!-- internal-links -->
 
 <!-- internal-links:start — generated from context/internal_links.json by scripts/internal_links.py; edits between these markers are overwritten -->
-<!-- internal-link hint: "Your Mower's 145-Minute Charge Trap" -> /your-mowers-145-minute-charge-trap/ [same site (wellroost.com); topical overlap: aisle, trap] Link "Your Mower's 145-Minute Charge Trap" in the section where the article touches aisle, trap. -->
-## Related reading
-
-- [Your Mower's 145-Minute Charge Trap](/your-mowers-145-minute-charge-trap/) — more on Outdoor Power & Snow Equipment
+<!-- internal-link hint: none — no live page on this site scored for this topic -->
 <!-- internal-links:end -->
 
 ## Sources
