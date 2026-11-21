@@ -551,3 +551,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-21 | `home-assistant-cloud-rename-hardware-rent` | personal_microeconomics_tinkering_tax | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/home-assistant-cloud-rename-hardware-rent/featured.jpg` |
 | 2026-11-21 | `nearshoring-doesnt-move-the-trade-case` | supplier_risk_reshoring_decision | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/nearshoring-doesnt-move-the-trade-case/featured.jpg` |
 | 2026-11-21 | `your-2-minute-task-never-pays-back-a-script` | personal_microeconomics_tinkering_tax | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-2-minute-task-never-pays-back-a-script/featured.jpg` |
+| 2026-11-21 | `your-gas-mowers-90-day-fuel-trap` | outdoor_power_equipment | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-gas-mowers-90-day-fuel-trap/featured.jpg` |

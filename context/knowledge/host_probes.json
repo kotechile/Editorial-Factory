@@ -3120,6 +3120,14 @@
   "note": "PDF returns empty text through the verifier's fetcher; same for research.google.com/pubs/archive/40801.pdf, cacm.acm.org and three .edu mirrors of The Tail at Scale"
  },
  {
+  "host": "www.briggsandstratton.com",
+  "url": "https://www.briggsandstratton.com/en-us/support/maintenance-how-to/how-to-change-oil",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "outdoor_power_equipment",
+  "note": "6.2KB plain text; prints 'every 50 hours of use (whichever comes first)' plus the 5-hour break-in \u2014 carry the oil-interval row"
+ },
+ {
   "host": "www.california.public.law",
   "url": "https://www.california.public.law/...",
   "verdict": "fetchable",
@@ -3206,6 +3214,14 @@
   "as_of": "2026-11-17",
   "vertical": "workstation_compute_economics",
   "note": "workstation_compute_economics 2026-11-17: plain fetch returned the full page (measurements / daily index table); registered in source_quality.primary_hosts as an origin host."
+ },
+ {
+  "host": "www.nicholsequipment.com",
+  "url": "https://www.nicholsequipment.com/storing-your-lawn-mower-for-more-than-30-days",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "outdoor_power_equipment",
+  "note": "3KB text; carries the 30-90-day stabilizer window and the 90-day drain rule \u2014 stale-fuel anchor"
  },
  {
   "host": "www.nysenate.gov",
