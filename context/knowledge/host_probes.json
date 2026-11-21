@@ -880,6 +880,14 @@
   "note": "Table 1's `82 ppmvd / 1.0 g/HP-hr` row all flatten to one text run); `eia.gov/tools/faqs/faq.php?id=74&t=11` (0.81 lb CO2/kWh U.S. average and 0.96 lb for gas-fired generation, 2023 data, wi"
  },
  {
+  "host": "eltexsoft.com",
+  "url": "https://eltexsoft.com/blog/software-maintenance-cost",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "personal_microeconomics_tinkering_tax",
+  "note": "Quotes the 1978 Lientz-Swanson survey figures verbatim (48.0% staff hours, 60.3% perfective) in plain text; good secondary-carries-primary anchor when the journal is paywalled"
+ },
+ {
   "host": "emp.lbl.gov",
   "url": "",
   "verdict": "fetchable",
@@ -3152,6 +3160,14 @@
   "note": "epa.gov SPCC paths (/spcc, /emergency-response/..., /oil-spills-prevention-and-preparedness-regulations/...) all unreachable to the verifier on 2026-11-17; a /sites/default/files PDF came back unsupported. Build an SPCC "
  },
  {
+  "host": "www.hikmicrotech.com",
+  "url": "https://www.hikmicrotech.com/en/explore/home-blog/Places-Your-Home-Might-Be-Losing-Heat",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "home_diagnostics_tech",
+  "note": "undated first-party home-blog guide; date by observation, winter-anchored copy"
+ },
+ {
   "host": "www.ibhs.org",
   "url": "",
   "verdict": "mentioned",
@@ -3208,12 +3224,28 @@
   "note": "OCP document PDFs answered unreachable to the verifier on 2026-11-17 (an OCP PDF did fetch on 2026-10-13), so probe before building an ORV3 / rack-power row on opencompute.org."
  },
  {
+  "host": "www.prnewswire.com",
+  "url": "https://www.prnewswire.com/news-releases/rision-offers-up-to-45-off-thermal-cameras-for-black-friday-and-cyber-monday-302945429.html",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "home_diagnostics_tech",
+  "note": "release dateline in body ('HONG KONG, Nov. 19, 2026, 09:00 ET'); page nav-heavy, extract middle"
+ },
+ {
   "host": "www.rfc-editor.org",
   "url": "https://www.rfc-editor.org/rfc/rfc9457.html",
   "verdict": "fetchable",
   "as_of": "2026-11-18",
   "vertical": "multi_agent_enterprise_fabric",
   "note": "RFC pages fetch first try under the verifier UA; the five problem-object members live under 3.1 with no numeric count in the text, so lead a figure cell on the RFC number itself"
+ },
+ {
+  "host": "www.sciencedaily.com",
+  "url": "https://www.sciencedaily.com/releases/2026/10/261025073051.htm",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "home_diagnostics_tech",
+  "note": "publication date shown on page ('October 26, 2026'); fetches clean"
  },
  {
   "host": "www.sea-intelligence.com",
@@ -3238,6 +3270,14 @@
   "as_of": "2026-11-18",
   "vertical": "enterprise_build_vs_buy",
   "note": "read at source this run"
+ },
+ {
+  "host": "zapier.com",
+  "url": "https://zapier.com/pricing",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "personal_microeconomics_tinkering_tax",
+  "note": "Zapier pricing page: plan prices (9.99 Professional) are plain text on fetch; task-tier selector text rides the same region"
  },
  {
   "host": "zebra.com",

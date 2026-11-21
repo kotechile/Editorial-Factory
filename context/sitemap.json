@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T11:42:55Z",
+  "updated_at": "2026-11-21T17:43:16Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7446,7 +7446,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-20",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-applecare-79-96-vs-89/"
     },
     {
       "slug": "2026-11-21_your-109-cameras-missing-verdict",
@@ -7463,6 +7464,24 @@
         "Related reading"
       ],
       "target_persona": "homeowner_pro",
+      "date": "2026-11-21",
+      "public": true,
+      "url": "https://wellroost.com/your-109-cameras-missing-verdict/"
+    },
+    {
+      "slug": "2026-11-21_your-2-minute-task-never-pays-back-a-script",
+      "title": "Your 104-Minute Payback Loses to 120",
+      "vertical": "personal_microeconomics_tinkering_tax",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Upkeep is the real price",
+        "By the numbers",
+        "The rule that settles it",
+        "What the rule cannot carry"
+      ],
+      "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-21",
       "public": false
     },
@@ -7481,7 +7500,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-21",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-899-blowers-9-day-window/"
     },
     {
       "slug": "2026-11-21_your-ram-kit-costs-22-filament-spool",
@@ -7500,7 +7520,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-21",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-ram-kit-costs-22-filament-spool/"
     },
     {
       "slug": "2026-11-21_your-robot-costs-775-a-month",
@@ -7517,7 +7538,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-21",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-robot-costs-775-a-month/"
     }
   ]
 }

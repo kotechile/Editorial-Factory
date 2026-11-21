@@ -1,0 +1,113 @@
+{
+  "slug": "your-2-minute-task-never-pays-back-a-script",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Brass stopwatch set on a ruled paper project plan with one blank row, pencil beside it, on an oak desk.",
+      "caption": "The upkeep line stays blank on the plan while the stopwatch keeps billing the weekend.",
+      "title": "Stopwatch on the Blank Upkeep Line",
+      "bytes": 309457,
+      "sha256": "sha256:3a5560b1bd0b7df2cf9ab2d866d33245"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead 90-degree document flat-lay photograph on a warm oak desk in a home study. A cream paper project plan lies angled across the lower-left third, ruled rows holding faint illegible pencil strokes and one row left blank, its edge cropped by the frame. A brass mechanical stopwatch rests on the page corner, slightly rotated as if just set down, a hex pencil lying askew beside it. Soft window daylight from the left, gently diffused, casting long faint shadows to the right across the bare oak filling the upper right. Bone white, graphite and ochre palette, tactile paper stock and brushed brass, 60mm lens, deep focus with the oak grain falling softly away, fine film grain, no people, no legible text.",
+  "negative_prompt": "garbled text, random lettering, legible numbers, watermarks, logos, human hands",
+  "rationale": "The story's verdict is made on paper \u2014 the rule that settles it is minutes plus build, divided by 52 \u2014 so the hero is the artefact where that call happens: the hand-ruled project plan with its empty upkeep line, named in the article. A top-down document still life gives the stopwatch (the metered 2 minutes) physical weight against tactile paper stock, in the site's home-office world, without drifting into a generic desk-worker clich\u00e9.",
+  "cue": "the upkeep line stay empty in every project plan",
+  "subject": "a brass mechanical stopwatch resting on a paper project plan whose upkeep row is left blank",
+  "core_thesis": "A hobbyist script must out-earn its own upkeep before it earns anything: a 2-minute weekly task returns 104 minutes a year while quarterly fixes burn 120, so the automation never pays for itself \u2014 the task must be worth at least 4.2 minutes a week to break even.",
+  "core_conflict": "The visible saving of the automated task (104 minutes a year) versus the invisible, recurring upkeep that quietly outruns it (120 minutes a year plus an 8-hour build) \u2014 the upkeep line every home project plan leaves blank.",
+  "composition": "Top-down 90-degree flat-lay, hero cluster pressed into the lower-left third with the page edge cropped by the frame, bare oak desk filling the upper right as breathing room",
+  "alt_text": "Your 2-Minute Task Never Pays Back A Script. Brass stopwatch set on a ruled paper project plan with one blank row, pencil beside it, on an",
+  "caption": "Your 2-Minute Task Never Pays Back A Script: Upkeep burns 120 minutes a year to save 104 \u2014 the script never breaks even.",
+  "title": "Your 2-Minute Task Never Pays Back A Script",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-2-minute-task-never-pays-back-a-script/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 371164,
+  "sha256": "sha256:674133c49cf71c087beb8207852fdffe43bfa08ed352604d3951c7bc46cb0380",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 371164,
+    "quality": 88,
+    "sha256": "sha256:674133c49cf71c087beb8207852fdffe43bfa08ed352604d3951c7bc46cb0380",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:349243aac90c4de318153042da8c4f7c20cf19abb57c29abb9603ddffe3cf82e",
+  "render_phash": "f9ffacffb67bdc3fedbf8f8f1f8f762703770cfb1b69036d83b403b301bb00db",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A brass mechanical stopwatch rests on a sheet of paper next to a pencil on a wooden desk.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.95,
+    "reason": "The stopwatch and project plan visually represent the article's focus on time investment and efficiency."
+  },
+  "source_hash": "sha256:6bc92815b9e1a2d2f419d19235d22a67",
+  "source_chars": 3854,
+  "task_id": "485a2f6fe0fb8462345508b4e6671cfa",
+  "credits": 5.0,
+  "cost_ms": 35,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/485a2f6fe0fb8462345508b4e6671cfa_1795282938906.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead 90-degree document flat-lay photograph on a warm oak desk in a home study. A cream paper project plan lies angled across the lower-left third, ruled rows holding faint illegible pencil strokes and one row left blank, its edge cropped by the frame. A brass mechanical stopwatch rests on the page corner, slightly rotated as if just set down, a hex pencil lying askew beside it. Soft window daylight from the left, gently diffused, casting long faint shadows to the right across the bare oak filling the upper right. Bone white, graphite and ochre palette, tactile paper stock and brushed brass, 60mm lens, deep focus with the oak grain falling softly away, fine film grain, no people, no legible text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-21T17:42:27+00:00",
+  "overlay": {
+    "kicker": "DIY SCRIPTS // THE TINKERING TAX",
+    "title": "YOUR 2-MINUTE TASK NEVER PAYS BACK A SCRIPT",
+    "hook": "Upkeep burns 120 minutes a year to save 104 \u2014 the script never breaks even",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 5.26,
+    "target": 4.5,
+    "clutter": 0.173,
+    "region_rgb": [
+      202,
+      198,
+      188
+    ],
+    "binding_rgb": [
+      168,
+      164,
+      155
+    ],
+    "title_lines": [
+      "YOUR 2-MINUTE",
+      "TASK NEVER PAYS",
+      "BACK A SCRIPT"
+    ],
+    "subject": 0.118,
+    "ink_subject": 0.059,
+    "spike": 0.142,
+    "generated_at": "2026-11-21T17:42:27+00:00"
+  }
+}
