@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T14:27:58+00:00",
+  "generated_at": "2026-11-22T14:23:10+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,25 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-2-minute-task-never-pays-back-a-script",
+      "title": "Your 2-Minute Task Never Pays Back a Script",
+      "url": "https://giniloh.com/your-2-minute-task-never-pays-back-a-script/",
+      "path": "/your-2-minute-task-never-pays-back-a-script/",
+      "sites_live": {
+        "giniloh.com": "/your-2-minute-task-never-pays-back-a-script/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "A 2-minute weekly task pays back 104 minutes a year. A script that needs a fix once a quarter burns 120 minutes of upkeep alone.",
+      "modified": "2026-11-21T17:43:15",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2133,52 +2152,6 @@
     },
     {
       "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
-      "slug": "california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy",
-      "title": "California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit Strategy",
-      "url": "https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/",
-      "path": "/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/",
-      "sites_live": {
-        "wellroost.com": "/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "California\u2019s last-resort insurer\u2014the Fair Access to Insurance Requirements (FAIR) Plan\u2014raises rates by an average of 29.1% on October 15, 2026.",
-      "modified": "2026-10-31T05:02:59",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
-      "slug": "california-legalizes-plug-in-home-solar-panels",
-      "title": "California Legalizes Plug-In Home Solar Panels",
-      "url": "https://wellroost.com/california-legalizes-plug-in-home-solar-panels/",
-      "path": "/california-legalizes-plug-in-home-solar-panels/",
-      "sites_live": {
-        "wellroost.com": "/california-legalizes-plug-in-home-solar-panels/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "California just made it legal to plug a solar panel straight into a normal wall outlet. On Sept. 30, 2026, Gov. Gavin Newsom signed Senate Bill 868 (SB 868).",
-      "modified": "2026-10-31T05:02:58",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
       "kind": "category",
       "id": null,
       "slug": "energy-efficiency",
@@ -2473,29 +2446,6 @@
       ],
       "excerpt": "The national mechanic's lien index fell to 47 in the third quarter, matching its 2022 low, after remodeling spending dropped 13.0 percent in a single month.",
       "modified": "2026-11-05T12:50:21",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
-      "slug": "heat-pumps-cheaper-to-run-pricier-to-buy",
-      "title": "Heat Pumps Just Got Cheaper to Run \u2014 and Pricier to Buy",
-      "url": "https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/",
-      "path": "/heat-pumps-cheaper-to-run-pricier-to-buy/",
-      "sites_live": {
-        "wellroost.com": "/heat-pumps-cheaper-to-run-pricier-to-buy/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "A new study shows heat pumps can save Maryland oil and propane users up to $1,600 a year, just as Heating, Ventilation, and Air Conditioning (HVAC) makers\u2026",
-      "modified": "2026-10-31T04:49:16",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3814,6 +3764,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-gas-mowers-90-day-fuel-trap",
+      "title": "Your Gas Mower's 90-Day Fuel Trap",
+      "url": "https://wellroost.com/your-gas-mowers-90-day-fuel-trap/",
+      "path": "/your-gas-mowers-90-day-fuel-trap/",
+      "sites_live": {
+        "wellroost.com": "/your-gas-mowers-90-day-fuel-trap/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "The engine maker prints the bill most buyers never add up. Briggs & Stratton, the small-engine manufacturer, says to change the oil after the first 5 hours\u2026",
+      "modified": "2026-11-21T19:10:20",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-heat-pump-cuts-everyone-13",
       "title": "Your Heat Pump Cuts Everyone 13%",
       "url": "https://wellroost.com/your-heat-pump-cuts-everyone-13/",
@@ -4014,6 +3987,29 @@
       ],
       "excerpt": "A homeowner in the mower aisle is deciding whether a second battery earns its place, and the answer is not printed on the pack.",
       "modified": "2026-11-07T19:32:07",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-mowers-313-year-four-battery",
+      "title": "Your Robot Mower's Hidden $313 Bill",
+      "url": "https://wellroost.com/your-mowers-313-year-four-battery/",
+      "path": "/your-mowers-313-year-four-battery/",
+      "sites_live": {
+        "wellroost.com": "/your-mowers-313-year-four-battery/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "Husqvarna sells its 420 iQ robot mower for $2,599.99 in a current sale. The same maker says the battery \\\"typically lasts between 2 and 5 years\\\".",
+      "modified": "2026-11-21T19:15:38",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4290,6 +4286,29 @@
       ],
       "excerpt": "A 1,000-gallon septic tank gives up about 300 gallons to sludge and scum before solids leave for the drainfield, and on Penn State Extension's per-adult\u2026",
       "modified": "2026-11-02T19:28:12",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-snow-cores-1300-apart",
+      "title": "Your Snow Cores Are $1,300 Apart, One Blower",
+      "url": "https://wellroost.com/your-snow-cores-1300-apart/",
+      "path": "/your-snow-cores-1300-apart/",
+      "sites_live": {
+        "wellroost.com": "/your-snow-cores-1300-apart/"
+      },
+      "categories": [
+        "Yard Robots & Automation"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "yard-robotics"
+      ],
+      "excerpt": "Yarbo sells the same 24-inch snow blower on two base units, and the base unit sets the bill. The Y40 Core with the Snow Blower Module Gen 2 lists at $4,899.",
+      "modified": "2026-11-22T14:11:10",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -11902,16 +11921,16 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "aichieve.net",
       "kind": "article",
-      "id": 1390,
-      "slug": "your-192-sessions-stall-the-model-not-the-tools",
-      "title": "Your Queue Caps the Wrong Unit: 192 Sessions",
+      "id": 1816,
+      "slug": "your-2-minute-task-never-pays-back-a-script",
+      "title": "Your 2-Minute Task Never Pays Back a Script",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-11-02T17:50:39",
+      "modified": "2026-11-21T17:43:15",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

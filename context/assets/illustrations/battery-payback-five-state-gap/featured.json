@@ -1,6 +1,6 @@
 {
   "slug": "battery-payback-five-state-gap",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Home Battery Geographic Payback Divide",
       "bytes": 294502,
       "sha256": "sha256:84c14abdea8fe77a494001c4fd77b6bc"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The 5-State Battery Gap. Two identical home battery units shown in a split screen, one brightly lit and the other in deep sha",
+      "caption": "The 5-State Battery Gap: Why home backup power now depends on local utilities.",
+      "title": "The 5-State Battery Gap",
+      "bytes": 161456,
+      "sha256": "sha256:f187d83dc1eda4cde1321972ea03b4cf25755bbc7a9dd987148dad82b01ecccd"
     }
   ],
   "style": "cinematic_still",
@@ -39,8 +47,8 @@
   "local_path": "context/assets/illustrations/battery-payback-five-state-gap/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 161456,
-  "sha256": "sha256:f187d83dc1eda4cde1321972ea03b4cf25755bbc7a9dd987148dad82b01ecccd",
+  "bytes": 329845,
+  "sha256": "sha256:7741e75285fe58a162b14be088d7d62f1ab56014ec0b1a933939f0d313d94bff",
   "source_hash": "sha256:6f523b679474626d5ef41dabbfd31056",
   "source_chars": 4915,
   "task_id": "d1c5fe11b611d12cc6cfa757ea5d626f",
@@ -62,27 +70,40 @@
     "hook": "Why home backup power now depends on local utilities",
     "anchor": "bottom-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 11.7,
+    "scrim": 120,
+    "contrast": 10.86,
     "target": 4.5,
-    "clutter": 0.123,
+    "clutter": 0.127,
     "region_rgb": [
       22,
-      28,
-      28
+      31,
+      33
     ],
     "binding_rgb": [
-      59,
-      43,
-      27
+      18,
+      55,
+      73
     ],
     "title_lines": [
       "THE 5-STATE",
       "BATTERY GAP"
     ],
-    "subject": 0.009,
-    "ink_subject": 0.004,
-    "spike": 0.029,
+    "subject": 0.049,
+    "ink_subject": 0.003,
+    "spike": 0.026,
     "generated_at": "2026-10-12T12:11:28+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 329845,
+    "quality": 88,
+    "sha256": "sha256:7741e75285fe58a162b14be088d7d62f1ab56014ec0b1a933939f0d313d94bff",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

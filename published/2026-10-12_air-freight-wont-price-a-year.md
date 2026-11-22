@@ -14,8 +14,8 @@ meta_description: "60% of new air capacity deals now run three months or less, a
 image_path: "context/assets/illustrations/air-freight-wont-price-a-year/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "The Safety Stock Squeeze. Densely packed intermodal shipping containers and warehouse bays viewed through a compressed teleph"
-image_caption: "The Safety Stock Squeeze: Short air deals and tight storage break the safety buffer."
+image_alt: "The Buffer-Expedite Trade Breaks Both Ways. Air-cargo freighter at a loading bay, telephoto-compressed against a warehouse wall stacked"
+image_caption: "The Buffer-Expedite Trade Breaks Both Ways: No longer which hedge is cheaper — which side of the stock trade a team can lock."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

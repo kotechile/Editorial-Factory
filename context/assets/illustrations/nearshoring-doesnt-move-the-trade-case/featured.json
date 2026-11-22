@@ -1,6 +1,6 @@
 {
   "slug": "nearshoring-doesnt-move-the-trade-case",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -28,6 +28,14 @@
       "title": "Railway tank cars at a border port \u2014 Nearshoring Doesn't Move the Trade Case header",
       "bytes": 400596,
       "sha256": "sha256:982753af35b95fc73896c0747953ae9f"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Nearshoring Doesn'T Move The Trade Case. Rows of unbranded riveted-steel railway tank cars on rail sidings at a border port of entry",
+      "caption": "Nearshoring Doesn'T Move The Trade Case: Moving the factory relocates neither the trade case on the goods nor the importer's file.",
+      "title": "Nearshoring Doesn'T Move The Trade Case",
+      "bytes": 392204,
+      "sha256": "sha256:6c5736f8768d64c8c0064b94d9d2ec74059a8233db6d58e8d1d8578dc53a85a6"
     }
   ],
   "style": "long_lens_industry",

@@ -1,6 +1,6 @@
 {
   "slug": "home-assistant-cloud-rename-hardware-rent",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -28,6 +28,14 @@
       "title": "Home Assistant Cloud Becomes Link \u2014 Paper Diptych",
       "bytes": 403126,
       "sha256": "sha256:5b8bc757b7d0823ce683d20494dca0fd"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Home Assistant Drops Cloud For Link. A cut-paper house chained to a hovering paper cloud beside the same house freed next to an unclipped",
+      "caption": "Home Assistant Drops Cloud For Link: Big tech \"ruined the cloud\" \u2014 the real fight is over rent on hardware you own.",
+      "title": "Home Assistant Drops Cloud For Link",
+      "bytes": 389197,
+      "sha256": "sha256:fb55a7ce2159674d2056bcfeb7bd39f42e282648a2f4c3636e817b89eb02b395"
     }
   ],
   "style": "paper_collage",

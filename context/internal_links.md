@@ -1,8 +1,8 @@
-# Internal-link candidates — 2026-11-21T14:27:58+00:00
+# Internal-link candidates — 2026-11-22T14:23:10+00:00
 
 Source of sites: context/frontends.json, CMS base per domain from public.vertical_sites. Candidates are the pages each front end publishes (its own sitemap), described by the page itself; liveness is the sitemap plus the page's own canonical URL, never an HTTP status.
 
-## giniloh.com — 65 live article(s), 16 other target(s)
+## giniloh.com — 66 live article(s), 16 other target(s)
 
 Category hubs this front serves: —
 
@@ -44,6 +44,7 @@ Category hubs this front serves: —
 - [Your $130,000 Cap Costs the Credit](https://giniloh.com/your-130000-cap-costs-the-credit/) — —
 - [Your $350,000 Passport Isn't Europe](https://giniloh.com/your-350000-passport-isnt-europe/) — —
 - [Your $75,000 Room Doesn't Hold Stock](https://giniloh.com/your-75000-room-misses-the-stock/) — —
+- [Your 2-Minute Task Never Pays Back a Script](https://giniloh.com/your-2-minute-task-never-pays-back-a-script/) — —
 - [Your 26-Week Cliff Kills 4 Years](https://giniloh.com/your-26-week-cliff-kills-4-years/) — —
 - [Your 3-Year Rung Costs 15.9%](https://giniloh.com/your-3-year-rung-costs-15-9/) — —
 - [Your 61-Day Window Costs the Position](https://giniloh.com/your-61-day-window-costs-the-position/) — —
@@ -105,13 +106,10 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [A Cloud Patch Bricked the Fridge. Local-First Just Stopped Saying ‘Cloud.](https://wellroost.com/cloud-update-bricked-the-fridge-local-first/) — Smart Home & Security
 - [A Smart Sprinkler Pays Back at Your Top Water Tier, Not the Spec Sheet](https://wellroost.com/smart-irrigation-payback-water-tier/) — Energy & Efficiency
 - [Borrow at 8% to remodel, or let your battery earn on the grid](https://wellroost.com/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/) — Energy & Efficiency
-- [California FAIR Plan Premiums Jump 29.1% Oct 15: Your Exit Strategy](https://wellroost.com/california-fair-plan-premiums-jump-291-oct-15-your-exit-strategy/) — Energy & Efficiency
-- [California Legalizes Plug-In Home Solar Panels](https://wellroost.com/california-legalizes-plug-in-home-solar-panels/) — Energy & Efficiency
 - [Cheap Gas, $20,000 Pipe: The Winter Heat Trap](https://wellroost.com/cheapest-fuel-priciest-pipe/) — Energy & Efficiency
 - [Discredited Proof Costs $1.2 Million](https://wellroost.com/discredited-proof-costs-1-2-million/) — Tools & Equipment
 - [Europe's Duty Leaves a 53.3% Gap](https://wellroost.com/europes-53-duty-rewrites-mower-prices/) — Yard Robots & Automation
 - [Fewer Liens, 46% More Failures: Your Bid](https://wellroost.com/fewer-liens-46-more-bankruptcies/) — Tools & Equipment
-- [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/) — Energy & Efficiency
 - [Heat Pumps Just Got Cheaper to Run — and Pricier to Buy](https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/) — Energy & Efficiency
 - [Insurance Bill Beats Property Tax 14%](https://wellroost.com/insurance-beats-property-tax-14/) — Energy & Efficiency
 - [Mower's 2 cm Dies Under Trees](https://wellroost.com/mowers-2cm-dies-under-trees/) — Yard Robots & Automation
@@ -161,6 +159,7 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your EV Is Now a Home Battery — Behind a Paywall](https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/) — Energy & Efficiency
 - [Your Equity Stuck at 7.18%](https://wellroost.com/your-equity-stuck-at-7-18/) — Energy & Efficiency
 - [Your Flood Gap Has 44 Days](https://wellroost.com/your-flood-gap-has-44-days/) — Home Cost Decisions
+- [Your Gas Mower's 90-Day Fuel Trap](https://wellroost.com/your-gas-mowers-90-day-fuel-trap/) — Outdoor Power & Snow Equipment
 - [Your Half-Acre Mower's $450 Gap](https://wellroost.com/one-mower-two-prices-450-apart/) — Yard Robots & Automation
 - [Your Heat Pump Cuts Everyone 13%](https://wellroost.com/your-heat-pump-cuts-everyone-13/) — Energy & Efficiency
 - [Your Home Backup Battery Is Sized Against the Wrong Number](https://wellroost.com/backup-battery-sizing-critical-loads/) — Energy & Efficiency
@@ -183,9 +182,11 @@ Category hubs this front serves: energy-efficiency, home-cost-decisions, home-di
 - [Your Repair Budget's 7.5% Squeeze](https://wellroost.com/your-repair-budget-buys-7-5-percent-less/) — Energy & Efficiency
 - [Your Ring's Hidden 83% Gap](https://wellroost.com/your-rings-hidden-83-gap/) — Home Cost Decisions
 - [Your Robot Costs $775 a Month](https://wellroost.com/your-robot-costs-775-a-month/) — Yard Robots & Automation
+- [Your Robot Mower's Hidden $313 Bill](https://wellroost.com/your-mowers-313-year-four-battery/) — Yard Robots & Automation
 - [Your Roof Claim's Hidden Second Check: 12 Months to Collect](https://wellroost.com/roof-claim-hidden-second-check-12-months/) — Energy & Efficiency
 - [Your Septic Interval: 18 Months, Not 5 Years](https://wellroost.com/your-septic-interval-is-18-months/) — Energy & Efficiency
 - [Your Slab Leak: 15% Blind Spot](https://wellroost.com/slab-leak-listener-misses-one-in-six/) — Home Diagnostic Tools
+- [Your Snow Cores Are $1,300 Apart, One Blower](https://wellroost.com/your-snow-cores-1300-apart/) — Yard Robots & Automation
 - [Your Tank's Class Costs $55](https://wellroost.com/you-are-pricing-the-fuel-not-the-tank/) — Energy & Efficiency
 - [Your Two Backyard Homes, $1,000 Risk](https://wellroost.com/second-backyard-home-1000-deposit/) — Tools & Equipment
 - [Your Upgrade's $9 Silent Reset](https://wellroost.com/your-upgrades-9-silent-reset/) — Energy & Efficiency
@@ -584,7 +585,7 @@ Category hubs this front serves: ai-stack-tool-tco, artificial-intelligence-futu
 - giniloh.com #1400 `your-cheapest-part-needs-four-sigma` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1396 `your-30-inventory-cut-is-13-4` — published in the CMS but absent from the frontend sitemap
 - giniloh.com #1393 `your-90-day-key-is-two-live-keys` — published in the CMS but absent from the frontend sitemap
-- giniloh.com #1390 `your-192-sessions-stall-the-model-not-the-tools` — published in the CMS but absent from the frontend sitemap
+- aichieve.net #1816 `your-2-minute-task-never-pays-back-a-script` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1813 `your-ram-kit-costs-22-filament-spool` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1810 `your-applecare-79-96-vs-89` — published in the CMS but absent from the frontend sitemap
 - aichieve.net #1704 `your-collar-kills-the-long-term-clock` — published in the CMS but absent from the frontend sitemap

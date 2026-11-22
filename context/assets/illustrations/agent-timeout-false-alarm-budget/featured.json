@@ -1,6 +1,6 @@
 {
   "slug": "agent-timeout-false-alarm-budget",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "precision_timer_budget",
       "bytes": 361862,
       "sha256": "sha256:f8fd7a9cb018bd080a558b4f5fe50279"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Agent Timeout Budgets. An intricate brass mechanical timer and steel calipers on a slate surface.",
+      "caption": "Agent Timeout Budgets: Why lazy timeout settings break agent retry loops.",
+      "title": "Agent Timeout Budgets",
+      "bytes": 215145,
+      "sha256": "sha256:661b17506876ce73eeb50b2bdf4c4618a8a63e5025aedf64fb25c230bb09dbd6"
     }
   ],
   "style": "studio_object",
@@ -39,8 +47,8 @@
   "local_path": "context/assets/illustrations/agent-timeout-false-alarm-budget/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 215145,
-  "sha256": "sha256:661b17506876ce73eeb50b2bdf4c4618a8a63e5025aedf64fb25c230bb09dbd6",
+  "bytes": 399882,
+  "sha256": "sha256:20977a36a131a3736c8e26d002b5c0f6a5b9cb63b44a095d373f10525fee842f",
   "source_hash": "sha256:bb46f683b948c670fa4e70a702a606a3",
   "source_chars": 4790,
   "task_id": "77804ff1470ef265f44460847f01ec20",
@@ -62,27 +70,40 @@
     "hook": "Why lazy timeout settings break agent retry loops",
     "anchor": "top-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 5.43,
+    "scrim": 120,
+    "contrast": 4.81,
     "target": 4.5,
-    "clutter": 0.17,
+    "clutter": 0.206,
     "region_rgb": [
-      69,
-      76,
-      88
+      70,
+      78,
+      90
     ],
     "binding_rgb": [
-      87,
-      97,
-      109
+      96,
+      104,
+      123
     ],
     "title_lines": [
       "AGENT TIMEOUT",
       "BUDGETS"
     ],
-    "subject": 0.095,
-    "ink_subject": 0.055,
-    "spike": 0.256,
+    "subject": 0.12,
+    "ink_subject": 0.044,
+    "spike": 0.2,
     "generated_at": "2026-10-12T17:37:36+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 399882,
+    "quality": 84,
+    "sha256": "sha256:20977a36a131a3736c8e26d002b5c0f6a5b9cb63b44a095d373f10525fee842f",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

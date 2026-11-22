@@ -1,6 +1,6 @@
 {
   "slug": "kill-switch-misses-half-your-agents",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Agent Runtime Containment Bay",
       "bytes": 7913273,
       "sha256": "sha256:1f587d2b7a02747e547c2e4939479b38"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Flawed Agent Kill Switch. Isometric cutaway of a routing bay with a precision mechanical containment gate severing a glowing ",
+      "caption": "Flawed Agent Kill Switch: The new kill switch misses agents without known owners.",
+      "title": "Flawed Agent Kill Switch",
+      "bytes": 3118208,
+      "sha256": "sha256:70aad87e211f3e91914009ea963c7c8564fb3ca0b09e9eb4a7e4d66f25014b66"
     }
   ],
   "style": "technical_isometric",
@@ -27,7 +35,7 @@
   "core_thesis": "Agent governance has flipped from permission-first to containment-first: the shared control the industry is standardizing is instant, reversible revocation at the runtime.",
   "core_conflict": "slow approval gates creating shadow AI vs runtime containment stopping rogue agents",
   "composition": "extreme asymmetry, hero subject anchored off-centre on the right thirds",
-  "alt_text": "Flawed Agent Kill Switch. Isometric cutaway of a routing bay with a precision mechanical containment gate severing a glowing ",
+  "alt_text": "Flawed Agent Kill Switch. Isometric cutaway of a routing bay with a precision mechanical containment gate severing a glowing",
   "caption": "Flawed Agent Kill Switch: The new kill switch misses agents without known owners.",
   "title": "Flawed Agent Kill Switch",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -35,12 +43,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/kill-switch-misses-half-your-agents/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 3118208,
-  "sha256": "sha256:70aad87e211f3e91914009ea963c7c8564fb3ca0b09e9eb4a7e4d66f25014b66",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/kill-switch-misses-half-your-agents/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 401090,
+  "sha256": "sha256:4696f73d7c8de55dedd725dc9957a4bd575fbe64fedf5104591189897a04bb65",
   "source_hash": "sha256:3e34e1cd1c1d09d35f98aa24c6754be1",
   "source_chars": 5976,
   "task_id": "216860b073854094d756279d70de30e9",
@@ -62,29 +70,42 @@
     "kicker": "ENTERPRISE AI // ROGUE AGENTS",
     "title": "FLAWED AGENT KILL SWITCH",
     "hook": "The new kill switch misses agents without known owners",
-    "anchor": "top-left",
+    "anchor": "bottom-left",
     "light": false,
-    "scrim": 30,
-    "contrast": 4.86,
+    "scrim": 120,
+    "contrast": 4.77,
     "target": 4.5,
-    "clutter": 0.099,
+    "clutter": 0.161,
     "region_rgb": [
-      145,
-      153,
-      156
+      129,
+      136,
+      139
     ],
     "binding_rgb": [
-      138,
-      146,
-      149
+      129,
+      136,
+      142
     ],
     "title_lines": [
       "FLAWED AGENT",
       "KILL SWITCH"
     ],
-    "subject": 0.096,
-    "ink_subject": 0.033,
-    "spike": 0.349,
+    "subject": 0.157,
+    "ink_subject": 0.072,
+    "spike": 0.389,
     "generated_at": "2026-10-12T11:10:39+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 401090,
+    "quality": 76,
+    "sha256": "sha256:4696f73d7c8de55dedd725dc9957a4bd575fbe64fedf5104591189897a04bb65",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "cheapest-fuel-priciest-pipe",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Winter-Heat-Trap-Pipe-Cost",
       "bytes": 381399,
       "sha256": "sha256:3b5048c0123ec8f07ed512198f45aebe"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The Gas Line Trap. An excavated trench in a dark lawn exposes a heavy utility pipe, with a warmly lit house in the background",
+      "caption": "The Gas Line Trap: The hidden $30,000 pipe cost behind cheap winter heat.",
+      "title": "The Gas Line Trap",
+      "bytes": 201158,
+      "sha256": "sha256:7c8ea5b94a48f5b3c9d7e354b762e7562f97d8a6afbf41415f1858d38d01525b"
     }
   ],
   "style": "architectural_night",
@@ -39,8 +47,8 @@
   "local_path": "context/assets/illustrations/cheapest-fuel-priciest-pipe/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 201158,
-  "sha256": "sha256:7c8ea5b94a48f5b3c9d7e354b762e7562f97d8a6afbf41415f1858d38d01525b",
+  "bytes": 403943,
+  "sha256": "sha256:0d45ed2e11e73cbdb61b5f17e1cf2d88c14598b84b32b8478a835c5920f00352",
   "source_hash": "sha256:3477450cc3450537683bc0eb9ec21196",
   "source_chars": 5672,
   "task_id": "dee30ec35e23e26808069f651a8e7c04",
@@ -62,27 +70,40 @@
     "hook": "The hidden $30,000 pipe cost behind cheap winter heat",
     "anchor": "bottom-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 14.37,
+    "scrim": 120,
+    "contrast": 13.06,
     "target": 4.5,
-    "clutter": 0.076,
+    "clutter": 0.107,
     "region_rgb": [
-      14,
       20,
-      19
+      24,
+      21
     ],
     "binding_rgb": [
-      18,
-      33,
-      28
+      29,
+      41,
+      29
     ],
     "title_lines": [
       "THE GAS LINE",
       "TRAP"
     ],
-    "subject": 0.015,
-    "ink_subject": 0.006,
-    "spike": 0.048,
+    "subject": 0.097,
+    "ink_subject": 0.005,
+    "spike": 0.04,
     "generated_at": "2026-10-12T11:40:11+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 403943,
+    "quality": 88,
+    "sha256": "sha256:0d45ed2e11e73cbdb61b5f17e1cf2d88c14598b84b32b8478a835c5920f00352",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

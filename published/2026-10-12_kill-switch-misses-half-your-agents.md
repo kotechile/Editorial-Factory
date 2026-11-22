@@ -12,10 +12,10 @@ sources:
   - https://www.okta.com/newsroom/press-releases/industry-leaders-form-the-blueprint-alliance
 meta_title: "Kill Switch Misses Half Your Agents"
 meta_description: "One in three firms watched staff skip the AI approval queue as too slow. The fix that shipped in September misses half the agents it was built to stop."
-image_path: "context/assets/illustrations/kill-switch-misses-half-your-agents/featured.png"
+image_path: "context/assets/illustrations/kill-switch-misses-half-your-agents/featured.jpg"
 image_style: "technical_isometric"
 image_model: "nanobanana"
-image_alt: "Flawed Agent Kill Switch. Isometric cutaway of a routing bay with a precision mechanical containment gate severing a glowing "
+image_alt: "Flawed Agent Kill Switch. Isometric cutaway of a routing bay with a precision mechanical containment gate severing a glowing"
 image_caption: "Flawed Agent Kill Switch: The new kill switch misses agents without known owners."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---

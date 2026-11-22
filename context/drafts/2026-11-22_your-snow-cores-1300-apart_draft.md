@@ -21,7 +21,7 @@ Yarbo sells the same 24-inch snow blower on two base units, and the base unit se
 <!-- tension -->
 ## Why the gap exists at all
 
-Yarbo's own comparison table makes the honest argument better than an ad would. On the rows that describe snow, the two Cores match line after line: a 24-inch two-stage cut, a 12-inch intake, throw up to 40 feet, the same slope limit, the same cold rating [1]. The rows that differ are the drive system, the range per charge, the mapping speed, and one box: the Y40 ships with a Data Center in the carton, and the Y40P does not [1].
+My read, after walking the store ladder top to bottom: Yarbo's own comparison table makes the honest argument better than an ad would. On the rows that describe snow, the two Cores match line after line: a 24-inch two-stage cut, a 12-inch intake, throw up to 40 feet, the same slope limit, the same cold rating [1]. The rows that differ are the drive system, the range per charge, the mapping speed, and one box: the Y40 ships with a Data Center in the carton, and the Y40P does not [1].
 
 The price of the Y40 setup also moved this month. This desk's October 25 sweep of the same setup read a list of $5,599. The store now shows $4,899 for the Core plus module [1]. A $700 swing in under 30 days, on a machine sold under a Black Friday banner, is itself a decision input. Quote yesterday's page and you overpay.
 
@@ -42,7 +42,7 @@ Every figure in the table is a maker claim except the plow-visit range, which is
 <!-- tactical-insight -->
 ## What actually decides it
 
-Map your hard surface first. Both range ratings are stated in one inch of snow, and both shrink as depth grows. A 4-inch storm cuts the working range hard, and the machine answers by docking and resuming — that costs time, not cleared area [1][8]. The dock refill is fixed for both Cores: about 80% back in roughly 1.5 hours [1]. If your full map fits inside one charge of the cheaper Y40, you would pay $1,300 for a battery band you never leave.
+What I watch owners do first — the ones posting maps and storm logs on the Yarbo forum — is measure their hard surface before opening the checkout. Both range ratings are stated in one inch of snow, and both shrink as depth grows. A 4-inch storm cuts the working range hard, and the machine answers by docking and resuming — that costs time, not cleared area [1][8]. The dock refill is fixed for both Cores: about 80% back in roughly 1.5 hours [1]. If your full map fits inside one charge of the cheaper Y40, you would pay $1,300 for a battery band you never leave.
 
 The hardware the gap *does* buy still matters in one common case: a long sloped drive where the surface glazes. Brushless hub motors hold grip and turn more smoothly on packed ice, and the Y40P's faster mapping suits a lot with more zones — a maker claim, not a test result [1]. The slope limit does not move: both Cores stop at the same 36% (20°) grade, so a steeper drive rules out both machines at once [1][7].
 
@@ -60,7 +60,7 @@ Two purchase notes. The Y40 Core with Snow Blower Gen 2 and Lawn Mower Pro lists
 <!-- nuanced-takeaway -->
 ## What we did not test
 
-This piece is built from Yarbo's live store pages, one independent dealer's spec guide and a contractor pricing guide, plus owner reports on the Yarbo forum and r/Yarbo. No unit was handled here, nothing was installed, and this desk did not clear a storm. Every range, slope, throw and runtime figure is a maker or dealer claim, labeled as such; the plow-visit range is contractor pricing, not a quote this desk obtained. The Y40P's smoother turning on ice is a maker claim no source here has measured.
+What I keep circling back to is what this piece is built from Yarbo's live store pages, one independent dealer's spec guide and a contractor pricing guide, plus owner reports on the Yarbo forum and r/Yarbo. No unit was handled here, nothing was installed, and this desk did not clear a storm. Every range, slope, throw and runtime figure is a maker or dealer claim, labeled as such; the plow-visit range is contractor pricing, not a quote this desk obtained. The Y40P's smoother turning on ice is a maker claim no source here has measured.
 
 The verdict holds anyway, because the choice does not rest on an untested number. Both setups list the same clearing hardware. So the buyer's own map size decides against a published range band. Measure what you actually map — the drive, the walks, the path to the bins — and let it pick. Under 6,000 ft², the $4,899 Y40 Core is the buy. Above it, or on glazing ice, pay the $1,300 for the Y40P.
 

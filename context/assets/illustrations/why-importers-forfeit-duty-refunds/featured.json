@@ -1,6 +1,6 @@
 {
   "slug": "why-importers-forfeit-duty-refunds",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Duty Drawback Paperwork Flatlay",
       "bytes": 491412,
       "sha256": "sha256:12906a75ee67ebab55ed8b9a9129a319"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Duty Drawback Math. A customs drawback filing dossier and export manifest arranged on a dark oak desk.",
+      "caption": "Duty Drawback Math: Why unrecovered duty refunds skew reshoring math.",
+      "title": "Duty Drawback Math",
+      "bytes": 292840,
+      "sha256": "sha256:fcd8cdd407d6b6de731ce4f2198fa17c2aa3d862a978bd3974d8938de90ba2f3"
     }
   ],
   "style": "document_flatlay",
@@ -39,8 +47,8 @@
   "local_path": "context/assets/illustrations/why-importers-forfeit-duty-refunds/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 292840,
-  "sha256": "sha256:fcd8cdd407d6b6de731ce4f2198fa17c2aa3d862a978bd3974d8938de90ba2f3",
+  "bytes": 400811,
+  "sha256": "sha256:c72ef13fd981180d34a056bb79e8596480d7cfd67b554de4469586f1781074f4",
   "source_hash": "sha256:74ca5addfa82f0261f169f06f1b6fe6e",
   "source_chars": 4134,
   "task_id": "3af9889f582a5c1be5f9e540d940fdea",
@@ -60,26 +68,42 @@
     "kicker": "RESHORING MATH // DUTY REFUNDS",
     "title": "DUTY DRAWBACK MATH",
     "hook": "Why unrecovered duty refunds skew reshoring math",
-    "anchor": "bottom-left",
+    "anchor": "bottom-right",
     "light": true,
-    "scrim": 150,
-    "contrast": 6.44,
-    "target": 5.5,
-    "clutter": 0.607,
+    "scrim": 120,
+    "contrast": 6.52,
+    "target": 4.5,
+    "clutter": 0.086,
     "region_rgb": [
-      145,
-      142,
-      134
+      73,
+      67,
+      62
     ],
     "binding_rgb": [
-      208,
-      206,
-      194
+      93,
+      82,
+      76
     ],
     "title_lines": [
       "DUTY DRAWBACK",
       "MATH"
     ],
+    "subject": 0.107,
+    "ink_subject": 0.015,
+    "spike": 0.057,
     "generated_at": "2026-10-10T18:08:32+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 400811,
+    "quality": 76,
+    "sha256": "sha256:c72ef13fd981180d34a056bb79e8596480d7cfd67b554de4469586f1781074f4",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

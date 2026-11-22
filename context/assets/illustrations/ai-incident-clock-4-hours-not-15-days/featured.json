@@ -1,6 +1,6 @@
 {
   "slug": "ai-incident-clock-4-hours-not-15-days",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "AI-Incident-Clock-Flatlay",
       "bytes": 344771,
       "sha256": "sha256:a905fc44d1b89fcb3f6179bbcb025da9"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The 4-Hour AI Deadline. A mechanical stopwatch resting on a stack of regulatory documents on a plain desk",
+      "caption": "The 4-Hour AI Deadline: The real deadline for enterprise AI incidents is 4 hours.",
+      "title": "The 4-Hour AI Deadline",
+      "bytes": 207884,
+      "sha256": "sha256:fc795da80c033ed17787c5c96ce63564c99e5d76043556733bfecd542ea5ab7b"
     }
   ],
   "style": "document_flatlay",
@@ -39,8 +47,8 @@
   "local_path": "context/assets/illustrations/ai-incident-clock-4-hours-not-15-days/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 207884,
-  "sha256": "sha256:fc795da80c033ed17787c5c96ce63564c99e5d76043556733bfecd542ea5ab7b",
+  "bytes": 400182,
+  "sha256": "sha256:32ccebc757ff5afad53e4ff5e60fca3d165c4fa90a9168e46751bac46a957d13",
   "source_hash": "sha256:04c120424a3768ef272ffaf6145fa734",
   "source_chars": 5470,
   "task_id": "c510a062bcc15342c37e1cb49704f937",
@@ -62,27 +70,40 @@
     "hook": "The real deadline for enterprise AI incidents is 4 hours",
     "anchor": "bottom-right",
     "light": true,
-    "scrim": 0,
-    "contrast": 9.23,
+    "scrim": 120,
+    "contrast": 9.09,
     "target": 4.5,
-    "clutter": 0.028,
+    "clutter": 0.027,
     "region_rgb": [
-      61,
-      55,
-      54
+      62,
+      56,
+      56
     ],
     "binding_rgb": [
-      65,
-      61,
-      62
+      66,
+      62,
+      63
     ],
     "title_lines": [
       "THE 4-HOUR AI",
       "DEADLINE"
     ],
-    "subject": 0.001,
+    "subject": 0.023,
     "ink_subject": 0.001,
-    "spike": 0.0,
+    "spike": 0.003,
     "generated_at": "2026-10-12T18:12:28+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 400182,
+    "quality": 84,
+    "sha256": "sha256:32ccebc757ff5afad53e4ff5e60fca3d165c4fa90a9168e46751bac46a957d13",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

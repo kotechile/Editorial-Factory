@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T14:11:11Z",
+  "updated_at": "2026-11-22T14:27:52Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -306,8 +306,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-03",
-      "public": true,
-      "url": "https://wellroost.com/heat-pumps-cheaper-to-run-pricier-to-buy/"
+      "public": false
     },
     {
       "slug": "2026-10-03_heloc-at-8-vs-battery-that-earns",
@@ -7483,7 +7482,8 @@
       ],
       "target_persona": "systems_tinkerer_pro",
       "date": "2026-11-21",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/your-2-minute-task-never-pays-back-a-script/"
     },
     {
       "slug": "2026-11-21_your-899-blowers-9-day-window",
@@ -7519,7 +7519,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-21",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-gas-mowers-90-day-fuel-trap/"
     },
     {
       "slug": "2026-11-21_your-mowers-313-year-four-battery",
@@ -7537,7 +7538,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-21",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-mowers-313-year-four-battery/"
     },
     {
       "slug": "2026-11-21_your-ram-kit-costs-22-filament-spool",
@@ -7593,7 +7595,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-22",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-snow-cores-1300-apart/"
     }
   ]
 }
