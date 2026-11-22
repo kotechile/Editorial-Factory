@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T14:51:28Z",
+  "updated_at": "2026-11-22T15:14:36Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7578,6 +7578,24 @@
       "date": "2026-11-21",
       "public": true,
       "url": "https://wellroost.com/your-robot-costs-775-a-month/"
+    },
+    {
+      "slug": "2026-11-22_your-199-thermal-cameras-90-step",
+      "title": "Your $199 Thermal Camera's $90 Step",
+      "vertical": "home_diagnostics_tech",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why the headline resolution is the decoy spec",
+        "By the numbers",
+        "Where each camera wins",
+        "The catch",
+        "What we did not test"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-22",
+      "public": false
     },
     {
       "slug": "2026-11-22_your-battery-snow-blowers-1650-depth-gap",

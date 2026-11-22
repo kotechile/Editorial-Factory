@@ -412,6 +412,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-21 | outdoor_power_equipment | your-gas-mowers-90-day-fuel-trap | Your Gas Mower's 90-Day Fuel Trap | https://pressflow.aichieve.net/published/2026-11-21_your-gas-mowers-90-day-fuel-trap.md | reader site only |
 | 2026-11-22 | yard_robotics | your-snow-cores-1300-apart | Your Snow Cores Are $1,300 Apart, One Blower | https://pressflow.aichieve.net/published/2026-11-22_your-snow-cores-1300-apart.md | reader site only |
 | 2026-11-22 | outdoor_power_equipment | your-battery-snow-blowers-1650-depth-gap | Your Battery Snow Blower's $1,650 Depth Gap | https://pressflow.aichieve.net/published/2026-11-22_your-battery-snow-blowers-1650-depth-gap.md | reader site only |
+| 2026-11-22 | home_diagnostics_tech | your-199-thermal-cameras-90-step | Your $199 Thermal Camera's $90 Step | https://pressflow.aichieve.net/published/2026-11-22_your-199-thermal-cameras-90-step.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

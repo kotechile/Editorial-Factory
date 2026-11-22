@@ -16,7 +16,7 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-battery-snow-blowers-1650-depth-gap/featured.jpg"
 image_style: "clay_render"
 image_model: "nanobanana"
-image_alt: "Battery Snow Blowers' $1,650 DEPTH Gap. Three battery snow blowers lined up on a concrete garage floor, their intake housings stepped in"
+image_alt: "Three battery snow blowers lined up on a concrete garage floor, their intake housings stepped in rising heights under raking light."
 image_caption: "Battery Snow Blowers' $1,650 DEPTH Gap: Three prices, one 24-inch promise — the $1,650.99 gap buys intake depth, not width."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
