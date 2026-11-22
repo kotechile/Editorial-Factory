@@ -1088,6 +1088,14 @@
   "note": "g) the 2\u20133 % portable-scale accuracy and the 5 % allowance cap); `ops.fhwa.dot.gov/freight/publications/brdg_frm_wghts/index.htm` (FHWA-HOP-19-028 \u2014 the formula's definitions, the worked che"
  },
  {
+  "host": "fieldcamp.ai",
+  "url": "https://fieldcamp.ai",
+  "verdict": "fetchable",
+  "as_of": "2026-11-22",
+  "vertical": "yard_robotics",
+  "note": ""
+ },
+ {
   "host": "fincen.gov",
   "url": "",
   "verdict": "unreachable",
@@ -2896,6 +2904,14 @@
   "note": "t coverage with actual cash value\", though the page prints no date); `thehartford.com/aarp/homeowners-insurance/recoverable-depreciation` (a carrier's own explainer \u2014 the right home for a ve"
  },
  {
+  "host": "therobotdirect.com",
+  "url": "https://therobotdirect.com",
+  "verdict": "fetchable",
+  "as_of": "2026-11-22",
+  "vertical": "yard_robotics",
+  "note": ""
+ },
+ {
   "host": "tomshardware.com",
   "url": "",
   "verdict": "fetchable",
@@ -3294,6 +3310,14 @@
   "as_of": "2026-11-18",
   "vertical": "enterprise_build_vs_buy",
   "note": "read at source this run"
+ },
+ {
+  "host": "www.yarbo.com",
+  "url": "https://www.yarbo.com",
+  "verdict": "fetchable",
+  "as_of": "2026-11-22",
+  "vertical": "yard_robotics",
+  "note": ""
  },
  {
   "host": "zapier.com",
