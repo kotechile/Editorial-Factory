@@ -555,3 +555,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-21 | `your-mowers-313-year-four-battery` | yard_robotics | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-mowers-313-year-four-battery/featured.jpg` |
 | 2026-11-22 | `your-snow-cores-1300-apart` | yard_robotics | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-snow-cores-1300-apart/featured.jpg` |
 | 2026-11-22 | `air-freight-wont-price-a-year` | meio_working_capital_tco | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/air-freight-wont-price-a-year/featured.jpg` |
+| 2026-11-22 | `your-battery-snow-blowers-1650-depth-gap` | outdoor_power_equipment | `clay_render` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-battery-snow-blowers-1650-depth-gap/featured.jpg` |

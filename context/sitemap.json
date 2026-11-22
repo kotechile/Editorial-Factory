@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T14:27:52Z",
+  "updated_at": "2026-11-22T14:51:28Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7578,6 +7578,25 @@
       "date": "2026-11-21",
       "public": true,
       "url": "https://wellroost.com/your-robot-costs-775-a-month/"
+    },
+    {
+      "slug": "2026-11-22_your-battery-snow-blowers-1650-depth-gap",
+      "title": "Your $1,650 Battery Snow Blower Gap",
+      "vertical": "outdoor_power_equipment",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The big picture: width is the decoy spec",
+        "By the numbers",
+        "What I'd watch: where each machine wins",
+        "The catch",
+        "What we did not test",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-22",
+      "public": false
     },
     {
       "slug": "2026-11-22_your-snow-cores-1300-apart",
