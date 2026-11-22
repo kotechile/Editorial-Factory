@@ -198,7 +198,20 @@ def structure_findings(text: str, reg: dict) -> list[str]:
                 "tactical-insight / nuanced-takeaway"]
     missing = [m for m in MARKER_ORDER if m not in order]
     if missing:
-        fails.append("missing section marker(s): " + ", ".join(f"<!-- {m} -->" for m in missing))
+        # A marker can also sit after `## Related reading` — raw_body cuts there, so it reads as
+        # missing. Live evidence (2026-11-22): an 'At a glance' block at the foot of the piece
+        # reported only "missing <!-- tldr -->". Name the real defect, which the order check below
+        # can never see because the section is already gone.
+        body = raw_body(text)
+        after_cut = re.split(r"^##\s*Related reading\s*$", body, flags=re.M | re.I)[-1]
+        misplaced = [m for m in missing if _MARKER_RE.search(after_cut)]
+        if misplaced:
+            fails.append("'At a glance' sits at the foot of the piece, after Related reading — it "
+                         "is the second thing the reader sees: move the <!-- tldr --> block "
+                         "directly under the lede (owner order, 2026-11-06)")
+            missing = [m for m in missing if m not in misplaced]
+        if missing:
+            fails.append("missing section marker(s): " + ", ".join(f"<!-- {m} -->" for m in missing))
 
     seen = [m for m in order if m in MARKER_ORDER]
     if seen != [m for m in MARKER_ORDER if m in seen]:

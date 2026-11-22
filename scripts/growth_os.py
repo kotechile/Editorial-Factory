@@ -254,6 +254,19 @@ def generate_internal_link_map(target_keyword, vertical=None, max_links=3, exclu
     target_words = _subject_tokens(target_keyword)
     self_slug = re.sub(r"[^a-z0-9]+", "-", (target_keyword or "").lower()).strip("-")
 
+    # One article can sit in the index under two slugs: the artifact's dated one
+    # (2026-10-08_token-price-record-low-budget-overrun) and the CMS post_name the front actually
+    # serves (token-price-record-low-budget-overrun). The live defect 2026-11-22 — Related reading
+    # linking the article to itself — came from the exact-match exclusions above missing the alias.
+    # Compare every slug date-prefix-stripped as well, so an alias can never pass the self filter.
+    _DATE_PREFIX = re.compile(r"^\d{4}-\d{2}-\d{2}[_-]")
+
+    def _alias(slug: str | None) -> str:
+        return _DATE_PREFIX.sub("", (slug or "").lower())
+
+    excluded_aliases = {_alias(s) for s in excluded} | {_alias(self_slug)}
+    self_alias = _alias(self_slug)
+
     index = load_internal_link_index()
     category_names: dict[str, str] = {}
     if index:
@@ -294,9 +307,10 @@ def generate_internal_link_map(target_keyword, vertical=None, max_links=3, exclu
 
     scored = []
     for candidate in candidates:
-        if self_slug and candidate.get("slug") == self_slug:
+        cand_alias = _alias(candidate.get("slug"))
+        if (self_slug and candidate.get("slug") == self_slug) or (cand_alias and cand_alias == self_alias):
             continue                                            # never link an article to itself
-        if candidate.get("slug") in excluded:
+        if candidate.get("slug") in excluded or (cand_alias and cand_alias in excluded_aliases):
             continue                                            # ...nor to another of the caller's own pages
         if destination and candidate.get("site") and candidate["site"] != destination:
             continue                                            # internal links stay on the domain

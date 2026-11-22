@@ -92,12 +92,29 @@ gos.INTERNAL_LINK_INDEX = INDEX_FILE
 gos._site_for_vertical = lambda vertical: ({"site_domain": "a.com", "frontend_url": "https://a.com",
                                            "wp_category_id": 9} if vertical else None)
 
+# The dated-alias defect (live 2026-11-22): one article can sit in the index twice — the artifact's
+# dated slug and the CMS post_name the front serves. Live evidence:
+# aichieve.net/2026-10-08_token-price-record-low-budget-overrun/ carried a Related-reading link to
+# itself because the exclusion matched only one of the two slug forms.
+FIXTURE["candidates"].insert(
+    1, article("a.com", "2026-10-08_agent-routing-benchmarks", "The Agent Routing Benchmarks",
+               "https://a.com/2026-10-08_agent-routing-benchmarks/",
+               ["Autonomous & Agentic Workflows"], [9], "routing benchmarks"))
+INDEX_FILE.write_text(json.dumps(FIXTURE), encoding="utf-8")
+
 print("candidate selection")
 links = gos.generate_internal_link_map("agent routing benchmarks", "agentic_ai", max_links=5)
 urls = [l["url"] for l in links]
 check("links are proposed from the real corpus", bool(links), links)
 check("an article is never linked to itself",
       "https://a.com/agent-routing-benchmarks/" not in urls, urls)
+alias_links = gos.generate_internal_link_map(
+    "agent routing benchmarks", "agentic_ai", max_links=5,
+    exclude_slugs=("2026-10-08_agent-routing-benchmarks",))
+alias_urls = [l["url"] for l in alias_links]
+check("a dated-slug alias of the article itself is never linked (the 2026-11-22 live defect)",
+      not any(u.rstrip("/").endswith("2026-10-08_agent-routing-benchmarks") for u in alias_urls),
+      alias_urls)
 check("a cross-site page is never offered as an internal link",
       not any("b.com" in u for u in urls), urls)
 check("a page that is not live is never offered",
