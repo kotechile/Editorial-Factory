@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T19:15:12Z",
+  "updated_at": "2026-11-22T14:11:11Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7576,6 +7576,24 @@
       "date": "2026-11-21",
       "public": true,
       "url": "https://wellroost.com/your-robot-costs-775-a-month/"
+    },
+    {
+      "slug": "2026-11-22_your-snow-cores-1300-apart",
+      "title": "Your Snow Cores Are $1,300 Apart, One Blower",
+      "vertical": "yard_robotics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why the gap exists at all",
+        "By the numbers",
+        "What actually decides it",
+        "What we did not test",
+        "Related reading"
+      ],
+      "target_persona": "homeowner_pro",
+      "date": "2026-11-22",
+      "public": false
     }
   ]
 }

@@ -1,0 +1,115 @@
+{
+  "slug": "your-snow-cores-1300-apart",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Identical snow blower module latched onto two different tracked yard-robot chassis, split side by side on a concrete garage floor.",
+      "caption": "The same 24-inch blower ships on both Cores \u2014 the $1,300 buys the base beneath it.",
+      "title": "One blower module, two chassis: the $1,300 step",
+      "bytes": 381010,
+      "sha256": "sha256:3968dbbddb291df811f718e4c3cf62a2"
+    }
+  ],
+  "style": "component_assembly",
+  "style_label": "Modular component assembly",
+  "style_when": "the story is a single number, rule, gate or shift and restraint is the point \u2014 with no scene to photograph, the frame must still be a real assembly: a modular bay, an unlatched inspection gate, a rack of blades, an interlocking connector",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen diptych, clean vertical seam down the middle, staged inside a garage on a weathered concrete floor. Left half: a compact tracked yard-robot chassis in matte graphite polymer, the 24-inch two-stage snow blower module latched on top, brushed-steel intake and raised discharge chute. Right half: the identical snow blower module latched onto a larger chassis with exposed brushless hub motors at each track. One directional key light raking from the upper left throws long cast shadows across the concrete; matte muted palette of graphite, bone white and a single ochre accent on the chute; moulding seams, contact shadows, hard clean edges, unlettered surfaces.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos",
+  "rationale": "The story is a single number \u2014 the $1,300 chassis step \u2014 and a modularity fact: one blower, two bases. component_assembly is the treatment built for exactly that restraint, and the split-screen diptych makes the unchanged module and the differing chassis legible in a single glance at card size. It also rotates the desk away from the four photographic looks used most recently.",
+  "cue": "Your Snow Cores Are $1,300 Apart, One Blower",
+  "subject": "the identical 24-inch snow blower module mounted on two different tracked yard-robot chassis",
+  "core_thesis": "Yarbo's $1,300 gap between the Y40 Core and Y40P Core snow bundles buys brushless hub motors and 1,000 extra square feet of range \u2014 never a bigger blower \u2014 so the mapped area, not the marketing, should pick the Core.",
+  "core_conflict": "Identical snow-clearing hardware versus a $1,300 chassis premium: the same 24-inch two-stage module rides both Cores, and only the base unit \u2014 motors and range \u2014 sets the bill.",
+  "composition": "split-screen diptych with left-right scenario contrast, identical blower module on each side of a clean vertical seam",
+  "alt_text": "Your Snow Cores Are $1,300 Apart, One Blower. Identical snow blower module latched onto two different tracked yard-robot chassis, split",
+  "caption": "Your Snow Cores Are $1,300 Apart, One Blower: The $1,300 buys motors and range, not a bigger blower \u2014 your mapped area picks the Core.",
+  "title": "Your Snow Cores Are $1,300 Apart, One Blower",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-snow-cores-1300-apart/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407385,
+  "sha256": "sha256:1fcf7a7704e5a0c727d154f042faf177f88dd39a95fab7982b050f98fc969bc6",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407385,
+    "quality": 76,
+    "sha256": "sha256:1fcf7a7704e5a0c727d154f042faf177f88dd39a95fab7982b050f98fc969bc6",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:29801b110121015856bde23f6644afdf94e85b7910569d6158c60cf89e370b31",
+  "render_phash": "e0f0e0f082c01e8f4e6f2aa321b435bc98dac8cac8c8c849627239198cccc6c6",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-screen diptych showing a tracked yard-robot chassis fitted with a snow blower module (front auger and top discharge chute) photographed in a garage, with the left panel showing one chassis/top-unit configuration and the right panel showing a slightly different chassis configuration carrying the same blower module.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image literally shows the article's own mechanism \u2014 the identical snow blower module mounted on two different tracked robot base units in a left-right split \u2014 matching the headline's same-blower-different-base price story."
+  },
+  "source_hash": "sha256:8e7493befdc9c5597ead50911252f9cc",
+  "source_chars": 5714,
+  "task_id": "fed00e9d575005ca3f354b78070aa043",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_4a7240dd8a8053b494d358b7f82364c1.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Split-screen diptych, clean vertical seam down the middle, staged inside a garage on a weathered concrete floor. Left half: a compact tracked yard-robot chassis in matte graphite polymer, the 24-inch two-stage snow blower module latched on top, brushed-steel intake and raised discharge chute. Right half: the identical snow blower module latched onto a larger chassis with exposed brushless hub motors at each track. One directional key light raking from the upper left throws long cast shadows across the concrete; matte muted palette of graphite, bone white and a single ochre accent on the chute; moulding seams, contact shadows, hard clean edges, unlettered surfaces.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-22T14:10:35+00:00",
+  "overlay": {
+    "kicker": "YARBO SNOW BLOWERS // CORE PRICE GAP",
+    "title": "YOUR SNOW CORES ARE $1,300 APART, ONE BLOWER",
+    "hook": "The $1,300 buys motors and range, not a bigger blower \u2014 your mapped area picks the Core",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.82,
+    "target": 5.5,
+    "clutter": 0.284,
+    "region_rgb": [
+      88,
+      82,
+      71
+    ],
+    "binding_rgb": [
+      131,
+      118,
+      102
+    ],
+    "title_lines": [
+      "YOUR SNOW CORES",
+      "ARE $1,300 APART,",
+      "ONE BLOWER"
+    ],
+    "subject": 0.211,
+    "ink_subject": 0.041,
+    "spike": 0.241,
+    "generated_at": "2026-11-22T14:10:35+00:00"
+  }
+}

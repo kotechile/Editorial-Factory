@@ -2416,6 +2416,14 @@
   "note": "vergreen).** Carries the figure as plain text and fetches first try: `postgresql.org/docs/current/runtime-config-connection.html` (\"The default is typically 100 connections\") and `\u2026/runtime-"
  },
  {
+  "host": "poweredbymoyer.com",
+  "url": "https://poweredbymoyer.com/products/husqvarna-529606802-5-2ah-18v-lithium-ion-battery-kit-automower-430x-440-450x",
+  "verdict": "fetchable",
+  "as_of": "2026-11-21",
+  "vertical": "yard_robotics",
+  "note": "Parts retailer product page fetches first try as plain text with the price in one run ('by Husqvarna 13.36 Sold out'); stock status rides beside the price \u2014 cite as a dealer listing, not the maker's price of record."
+ },
+ {
   "host": "powerplusparts.com",
   "url": "",
   "verdict": "fetchable",

@@ -553,3 +553,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-21 | `your-2-minute-task-never-pays-back-a-script` | personal_microeconomics_tinkering_tax | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-2-minute-task-never-pays-back-a-script/featured.jpg` |
 | 2026-11-21 | `your-gas-mowers-90-day-fuel-trap` | outdoor_power_equipment | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-gas-mowers-90-day-fuel-trap/featured.jpg` |
 | 2026-11-21 | `your-mowers-313-year-four-battery` | yard_robotics | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-mowers-313-year-four-battery/featured.jpg` |
+| 2026-11-22 | `your-snow-cores-1300-apart` | yard_robotics | `component_assembly` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-snow-cores-1300-apart/featured.jpg` |

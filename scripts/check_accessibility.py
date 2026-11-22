@@ -211,9 +211,12 @@ def undefined_acronyms(text):
     # Agent-to-Agent protocol — shipped unexpanded through every gate on 2026-11-07 while the piece
     # read it as a bare "A2A" from the second section on. Only the letter-digit-letter shape is taken
     # (A2A), never a product code (H100, A100, GPT4): a part number is not an abbreviation and
-    # demanding an expansion for it holds legitimate hardware copy.
+    # demanding an expansion for it holds legitimate hardware copy. The letter-digit-letter scan
+    # therefore takes only a SINGLE interior digit: two digits inside the token mark a maker part
+    # code, not an initialism — observed 2026-11-22 on the Yarbo Y40P Core, a product code the
+    # old regex flagged as an undefined acronym and no gloss could clear.
     cands = re.findall(r"\b([A-Z][A-Z&]{1,7})\b", text)
-    cands += re.findall(r"\b([A-Z]+[0-9]+[A-Z]+)\b", text)
+    cands += re.findall(r"\b([A-Z]+[0-9][A-Z]+)\b", text)
     roman = re.compile(r"^[IVXLCDM]+$")  # Phase II / Phase III / etc. — ordinals, not acronyms
     for acr in set(cands):
         if len(acr) < 2:

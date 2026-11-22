@@ -410,6 +410,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-21 | personal_microeconomics_tinkering_tax | your-2-minute-task-never-pays-back-a-script | Your 2-Minute Task Never Pays Back a Script | https://pressflow.aichieve.net/published/2026-11-21_your-2-minute-task-never-pays-back-a-script.md | reader site only |
 | 2026-11-21 | yard_robotics | your-mowers-313-year-four-battery | Your Robot Mower's Hidden $313 Bill | https://pressflow.aichieve.net/published/2026-11-21_your-mowers-313-year-four-battery.md | reader site only |
 | 2026-11-21 | outdoor_power_equipment | your-gas-mowers-90-day-fuel-trap | Your Gas Mower's 90-Day Fuel Trap | https://pressflow.aichieve.net/published/2026-11-21_your-gas-mowers-90-day-fuel-trap.md | reader site only |
+| 2026-11-22 | yard_robotics | your-snow-cores-1300-apart | Your Snow Cores Are $1,300 Apart, One Blower | https://pressflow.aichieve.net/published/2026-11-22_your-snow-cores-1300-apart.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
