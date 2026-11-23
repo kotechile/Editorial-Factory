@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T15:14:36Z",
+  "updated_at": "2026-11-23T10:41:50Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7634,6 +7634,23 @@
       "date": "2026-11-22",
       "public": true,
       "url": "https://wellroost.com/your-snow-cores-1300-apart/"
+    },
+    {
+      "slug": "2026-11-23_your-memory-tier-is-solved-29-of-199",
+      "title": "29 Distilled Guidelines Beat All 199 \u2014 Pick Your Memory Tier",
+      "vertical": "agentic_ai",
+      "primary_keyword": "agent memory management",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The week memory closed",
+        "By the numbers",
+        "Where this bites",
+        "The catch"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-11-23",
+      "public": false
     }
   ]
 }
