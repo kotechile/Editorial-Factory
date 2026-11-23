@@ -1,0 +1,115 @@
+{
+  "slug": "your-agent-executes-before-it-verifies",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A striped barrier gate lowered to pin one punch card while queued program cards wait behind it.",
+      "caption": "The cheapest fix is a code-level gate that holds every command until it passes the check.",
+      "title": "The Gate That Catches Commands Before They Run",
+      "bytes": 396309,
+      "sha256": "sha256:f6d44439682c1770a48b1bb7249c1bd2"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist editorial cut-paper collage arranged on the dark console desk of a control room. A lowered checkpoint barrier arm of safety-yellow and graphite striped paper crosses the left third of the frame, its tip pinning one bone-white computer punch card mid-pass; a short queue of identical punch cards with clipped corners waits behind the arm. Hand-torn rag paper with visible fibre, halftone newsprint texture on the dark shapes, crisp cut edges, physical cast shadows under every layer. One raking light from the left throwing long soft shadows. Muted palette of bone white, graphite and safety yellow, generous empty margin on the right, no people, no legible print.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "This is a purely conceptual software-architecture story with no physical facility to photograph, so an editorial cut-paper collage states the mechanism cleanly. The article's own noun \u2014 the gate that catches calls before they run \u2014 becomes a striped barrier pinning a program card, legible at card size and in the site's palette. It also rotates the desk back to an illustrative medium after four photographic flux headers.",
+  "cue": "a deterministic gate in program logic",
+  "subject": "a striped barrier gate pinning a computer punch card of a shell command",
+  "core_thesis": "An ungated agent executes its worst calls harmfully at a 74.83% rate, and the cheapest fix is a deterministic gate in program logic that checks every action before it runs \u2014 not a bigger model.",
+  "core_conflict": "Unchecked execution speed versus pre-execution verification: the agent's proposal fires before anything verifies it, and a 0.34 ms code-level gate must stand between the model's call and the tool.",
+  "composition": "asymmetric low horizontal composition with the striped gate arm crossing the left third, its tip pinning one caught card, a short card queue behind it, and large empty rag-paper margin on the right",
+  "alt_text": "The 74.83% Cost Of Ungated Agents. A striped barrier gate lowered to pin one punch card while queued program cards wait behind it.",
+  "caption": "The 74.83% Cost Of Ungated Agents: Ungated agents ran harmful commands at 74.83% \u2014 the cheap fix checks the call.",
+  "title": "The 74.83% Cost Of Ungated Agents",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-agent-executes-before-it-verifies/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 403720,
+  "sha256": "sha256:58639dfc6fd075a2026a2b13af4bd1e111048811683e5c79fae10eb8d73acdd6",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 403720,
+    "quality": 68,
+    "sha256": "sha256:58639dfc6fd075a2026a2b13af4bd1e111048811683e5c79fae10eb8d73acdd6",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:0a145a69621a41df55b752a2a25c56d956661dd9d48375ab317f556cc8d13f69",
+  "render_phash": "99ffdbffd3ffd0dff2dfa3ffa3bfdbffd7bfc7ffc6ffa6ff3e7f3fbe3fff7fff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A yellow-and-black striped barrier gate arm extending from a yellow post on the left, its tip pinning one white card with perforated/punched edges, with a short fanned queue of similar cards stacked behind it on a dark gray surface with empty space at right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The striped gate arm blocking a punch-card-style command card directly visualizes the article's mechanism of a deterministic gate that catches and holds each shell command before it executes."
+  },
+  "source_hash": "sha256:d62437c0cbad5336c2c18aaba9c549df",
+  "source_chars": 5079,
+  "task_id": "0a613e699b30baa65200fff0e493d646",
+  "credits": 18.0,
+  "cost_ms": 33,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_b8f1b32cb492d0cccd0ae7f7dfcbc699.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist editorial cut-paper collage arranged on the dark console desk of a control room. A lowered checkpoint barrier arm of safety-yellow and graphite striped paper crosses the left third of the frame, its tip pinning one bone-white computer punch card mid-pass; a short queue of identical punch cards with clipped corners waits behind the arm. Hand-torn rag paper with visible fibre, halftone newsprint texture on the dark shapes, crisp cut edges, physical cast shadows under every layer. One raking light from the left throwing long soft shadows. Muted palette of bone white, graphite and safety yellow, generous empty margin on the right, no people, no legible print.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-23T17:42:14+00:00",
+  "overlay": {
+    "kicker": "AGENT SAFETY // PRE-EXECUTION VERIFICATION",
+    "title": "THE 74.83% COST OF UNGATED AGENTS",
+    "hook": "Ungated agents ran harmful commands at 74.83% \u2014 the cheap fix checks the call",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 10.11,
+    "target": 4.5,
+    "clutter": 0.07,
+    "region_rgb": [
+      44,
+      44,
+      46
+    ],
+    "binding_rgb": [
+      56,
+      56,
+      56
+    ],
+    "title_lines": [
+      "THE 74.83% COST",
+      "OF UNGATED",
+      "AGENTS"
+    ],
+    "subject": 0.021,
+    "ink_subject": 0.001,
+    "spike": 0.0,
+    "generated_at": "2026-11-23T17:42:14+00:00"
+  }
+}

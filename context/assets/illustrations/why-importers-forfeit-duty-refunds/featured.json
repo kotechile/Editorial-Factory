@@ -1,6 +1,6 @@
 {
   "slug": "why-importers-forfeit-duty-refunds",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -17,6 +17,14 @@
       "title": "Duty Drawback Math",
       "bytes": 292840,
       "sha256": "sha256:fcd8cdd407d6b6de731ce4f2198fa17c2aa3d862a978bd3974d8938de90ba2f3"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Duty Drawback Math. A customs drawback filing dossier and export manifest arranged on a dark oak desk.",
+      "caption": "Duty Drawback Math: Why unrecovered duty refunds skew reshoring math.",
+      "title": "Duty Drawback Math",
+      "bytes": 400811,
+      "sha256": "sha256:c72ef13fd981180d34a056bb79e8596480d7cfd67b554de4469586f1781074f4"
     }
   ],
   "style": "document_flatlay",

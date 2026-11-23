@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T13:12:10Z",
+  "updated_at": "2026-11-23T17:42:46Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -287,8 +287,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-03",
-      "public": true,
-      "url": "https://wellroost.com/cloud-update-bricked-the-fridge-local-first/"
+      "public": false
     },
     {
       "slug": "2026-10-03_heat-pumps-cheaper-to-run-pricier-to-buy",
@@ -7595,7 +7594,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-22",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-199-thermal-cameras-90-step/"
     },
     {
       "slug": "2026-11-22_your-battery-snow-blowers-1650-depth-gap",
@@ -7614,7 +7614,8 @@
       ],
       "target_persona": "homeowner_pro",
       "date": "2026-11-22",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-battery-snow-blowers-1650-depth-gap/"
     },
     {
       "slug": "2026-11-22_your-snow-cores-1300-apart",
@@ -7651,7 +7652,8 @@
       ],
       "target_persona": "enterprise_cai",
       "date": "2026-11-23",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/agents-names-not-brakes/"
     },
     {
       "slug": "2026-11-23_your-8-48-remodel-exits-closed",
@@ -7667,6 +7669,25 @@
         "The catch"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-23",
+      "public": true,
+      "url": "https://wellroost.com/your-8-48-remodel-exits-closed/"
+    },
+    {
+      "slug": "2026-11-23_your-agent-executes-before-it-verifies",
+      "title": "Your Agent Executes Before It Verifies: The 74.83% Cost",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "What the gate catches",
+        "By the numbers",
+        "What the closest teams buy",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-11-23",
       "public": false
     },
@@ -7686,7 +7707,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-23",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-fuel-decided-your-winter-bill/"
     },
     {
       "slug": "2026-11-23_your-memory-tier-is-solved-29-of-199",
@@ -7703,7 +7725,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-23",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-memory-tier-is-solved-29-of-199/"
     },
     {
       "slug": "2026-11-23_your-otif-never-sees-the-pick",
@@ -7721,7 +7744,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-23",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-otif-never-sees-the-pick/"
     }
   ]
 }

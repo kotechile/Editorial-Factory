@@ -1,6 +1,6 @@
 {
   "slug": "ai-incident-clock-4-hours-not-15-days",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -17,6 +17,14 @@
       "title": "The 4-Hour AI Deadline",
       "bytes": 207884,
       "sha256": "sha256:fc795da80c033ed17787c5c96ce63564c99e5d76043556733bfecd542ea5ab7b"
+    },
+    {
+      "revision": 3,
+      "alt_text": "The 4-Hour AI Deadline. A mechanical stopwatch resting on a stack of regulatory documents on a plain desk",
+      "caption": "The 4-Hour AI Deadline: The real deadline for enterprise AI incidents is 4 hours.",
+      "title": "The 4-Hour AI Deadline",
+      "bytes": 400182,
+      "sha256": "sha256:32ccebc757ff5afad53e4ff5e60fca3d165c4fa90a9168e46751bac46a957d13"
     }
   ],
   "style": "document_flatlay",

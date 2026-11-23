@@ -1,6 +1,6 @@
 {
   "slug": "diesel-620-electric-freight-certificate-gap",
-  "revision": 7,
+  "revision": 8,
   "history": [
     {
       "revision": 1,
@@ -46,6 +46,14 @@
     },
     {
       "revision": 6,
+      "alt_text": "The Electric Freight Gap. Unbranded heavy electric semi-truck connected to an industrial charging station at dusk.",
+      "caption": "The Electric Freight Gap: Why fuel savings alone cannot fund the electric fleet.",
+      "title": "The Electric Freight Gap",
+      "bytes": 394515,
+      "sha256": "sha256:04b3f32430b1743cdd33b81e464c2b234f96cc952de7b661851ea05c636dd761"
+    },
+    {
+      "revision": 7,
       "alt_text": "The Electric Freight Gap. Unbranded heavy electric semi-truck connected to an industrial charging station at dusk.",
       "caption": "The Electric Freight Gap: Why fuel savings alone cannot fund the electric fleet.",
       "title": "The Electric Freight Gap",

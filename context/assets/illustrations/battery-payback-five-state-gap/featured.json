@@ -1,6 +1,6 @@
 {
   "slug": "battery-payback-five-state-gap",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -17,6 +17,14 @@
       "title": "The 5-State Battery Gap",
       "bytes": 161456,
       "sha256": "sha256:f187d83dc1eda4cde1321972ea03b4cf25755bbc7a9dd987148dad82b01ecccd"
+    },
+    {
+      "revision": 3,
+      "alt_text": "The 5-State Battery Gap. Two identical home battery units shown in a split screen, one brightly lit and the other in deep sha",
+      "caption": "The 5-State Battery Gap: Why home backup power now depends on local utilities.",
+      "title": "The 5-State Battery Gap",
+      "bytes": 329845,
+      "sha256": "sha256:7741e75285fe58a162b14be088d7d62f1ab56014ec0b1a933939f0d313d94bff"
     }
   ],
   "style": "cinematic_still",

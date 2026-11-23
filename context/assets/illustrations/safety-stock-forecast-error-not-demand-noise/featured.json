@@ -1,6 +1,6 @@
 {
   "slug": "safety-stock-forecast-error-not-demand-noise",
-  "revision": 9,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -64,6 +64,14 @@
     },
     {
       "revision": 8,
+      "alt_text": "Safety Stock Should Use Forecast Error. Safety Stock Sizing. Towering warehouse pallet racks stacked deep with shrink-wrapped inventory",
+      "caption": "Safety Stock Should Use Forecast Error: Demand spread over-buffers, raw RMSE under-sizes: the middle term decides idle inventory.",
+      "title": "Safety Stock Should Use Forecast Error",
+      "bytes": 382394,
+      "sha256": "sha256:69fdaf5baf88dc2ce0d54c5876aab69a719ee208a93baaf971e0e3898f1d2db1"
+    },
+    {
+      "revision": 9,
       "alt_text": "Safety Stock Should Use Forecast Error. Safety Stock Sizing. Towering warehouse pallet racks stacked deep with shrink-wrapped inventory",
       "caption": "Safety Stock Should Use Forecast Error: Demand spread over-buffers, raw RMSE under-sizes: the middle term decides idle inventory.",
       "title": "Safety Stock Should Use Forecast Error",

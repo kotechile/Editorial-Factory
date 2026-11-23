@@ -10,10 +10,10 @@ evergreen: true
 meta_title: "Water Damage: Your $15,400 Silent Loss"
 meta_description: "Water damage and freezing hits 1.50% of insured homes a year at an average $15,400 a claim, while the parts that cause it carry published service lives."
 image_path: "context/assets/illustrations/silent-15400-home-loss/featured.jpg"
-image_style: "editorial_macro"
+image_style: "studio_object"
 image_model: "flux"
-image_alt: "The Price Of Skipped Upkeep. A calcified brass pressure relief valve on an aging water heater in extreme close-up."
-image_caption: "The Price Of Skipped Upkeep: Why deferred home maintenance behaves like debt."
+image_alt: "Water Damage Runs On A Published Clock. An aging white water heater in a dim basement, rust streaking its base, water pooling in the drip"
+image_caption: "Water Damage Runs On A Published Clock: The average claim runs $15,400, and the parts that fail carry published service lives."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

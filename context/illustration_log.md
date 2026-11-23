@@ -562,3 +562,6 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-23 | `your-8-48-remodel-exits-closed` | home_equity_tco | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-8-48-remodel-exits-closed/featured.jpg` |
 | 2026-11-23 | `your-fuel-decided-your-winter-bill` | home_infrastructure_lifecycle_tco | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-fuel-decided-your-winter-bill/featured.jpg` |
 | 2026-11-23 | `your-otif-never-sees-the-pick` | sales_order_service_level_otif | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-otif-never-sees-the-pick/featured.jpg` |
+| 2026-11-23 | `one-skill-too-many-green-test` | agentic_ai | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/one-skill-too-many-green-test/featured.jpg` |
+| 2026-11-23 | `silent-15400-home-loss` | home_equity_tco | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/silent-15400-home-loss/featured.jpg` |
+| 2026-11-23 | `your-agent-executes-before-it-verifies` | agentic_ai | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-agent-executes-before-it-verifies/featured.jpg` |

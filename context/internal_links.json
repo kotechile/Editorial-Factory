@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T14:23:10+00:00",
+  "generated_at": "2026-11-23T14:31:46+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -1843,29 +1843,6 @@
     },
     {
       "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
-      "slug": "borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid",
-      "title": "Borrow at 8% to remodel, or let your battery earn on the grid",
-      "url": "https://wellroost.com/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/",
-      "path": "/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/",
-      "sites_live": {
-        "wellroost.com": "/borrow-at-8-to-remodel-or-let-your-battery-earn-on-the-grid/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "The average Home Equity Line of Credit (HELOC) just hit 8.194%.",
-      "modified": "2026-10-31T05:02:57",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
       "kind": "tool",
       "id": null,
       "slug": "capital-sinking-fund",
@@ -2361,29 +2338,6 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
-      "slug": "cloud-update-bricked-the-fridge-local-first",
-      "title": "A Cloud Patch Bricked the Fridge. Local-First Just Stopped Saying \u2018Cloud.",
-      "url": "https://wellroost.com/cloud-update-bricked-the-fridge-local-first/",
-      "path": "/cloud-update-bricked-the-fridge-local-first/",
-      "sites_live": {
-        "wellroost.com": "/cloud-update-bricked-the-fridge-local-first/"
-      },
-      "categories": [
-        "Smart Home & Security"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "smart-home-security"
-      ],
-      "excerpt": "A software patch sent through the Samsung SmartThings network broke fridges on Sept. 22.",
-      "modified": "2026-10-31T04:49:16",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
       "slug": "discredited-proof-costs-1-2-million",
       "title": "Discredited Proof Costs $1.2 Million",
       "url": "https://wellroost.com/discredited-proof-costs-1-2-million/",
@@ -2446,29 +2400,6 @@
       ],
       "excerpt": "The national mechanic's lien index fell to 47 in the third quarter, matching its 2022 low, after remodeling spending dropped 13.0 percent in a single month.",
       "modified": "2026-11-05T12:50:21",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
-      "slug": "heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy",
-      "title": "Heat Pumps Just Got Cheaper to Run \u2014 and Pricier to Buy",
-      "url": "https://wellroost.com/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/",
-      "path": "/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/",
-      "sites_live": {
-        "wellroost.com": "/heat-pumps-just-got-cheaper-to-run-and-pricier-to-buy/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "A new study shows heat pumps can save Maryland oil and propane users up to $1,600 a year, just as Heating, Ventilation, and Air Conditioning (HVAC) makers raise equipment prices again [1][3]. The two numbers a homeowner needs to plan a system switch are moving in opposite ways at the exact same time.",
-      "modified": "2026-10-31T05:02:57",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2867,29 +2798,6 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
-      "slug": "the-remodel-that-pays-you-back-isnt-the-one-you-want",
-      "title": "The Remodel That Pays You Back Isn\u2019t the One You Want",
-      "url": "https://wellroost.com/the-remodel-that-pays-you-back-isnt-the-one-you-want/",
-      "path": "/the-remodel-that-pays-you-back-isnt-the-one-you-want/",
-      "sites_live": {
-        "wellroost.com": "/the-remodel-that-pays-you-back-isnt-the-one-you-want/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "Garage doors and front doors recoup more than they cost at resale, while a major kitchen remodel recovers about half \u2014 and most of it is financed with home equity.",
-      "modified": "2026-10-31T05:02:55",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
       "slug": "water-leak-monitor-rate-threshold",
       "title": "Water Leak Monitors: The Flow Rate That Decides If It Pays",
       "url": "https://wellroost.com/water-leak-monitor-rate-threshold/",
@@ -3120,6 +3028,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-8-48-remodel-exits-closed",
+      "title": "Your 8.48% Remodel: The Exits That Funded It Closed",
+      "url": "https://wellroost.com/your-8-48-remodel-exits-closed/",
+      "path": "/your-8-48-remodel-exits-closed/",
+      "sites_live": {
+        "wellroost.com": "/your-8-48-remodel-exits-closed/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "Builder confidence hit 25, the lowest since 2012, while a fixed home equity loan averages 8.48%. The remodel you planned to refinance now has to pay for itself.",
+      "modified": "2026-11-23T11:39:45",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-16-53-tester-blind-spot",
       "title": "Your $16.53 Tester's Blind Spot",
       "url": "https://wellroost.com/your-16-53-tester-blind-spot/",
@@ -3327,6 +3258,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-199-thermal-cameras-90-step",
+      "title": "Your $199 Thermal Camera's $90 Step",
+      "url": "https://wellroost.com/your-199-thermal-cameras-90-step/",
+      "path": "/your-199-thermal-cameras-90-step/",
+      "sites_live": {
+        "wellroost.com": "/your-199-thermal-cameras-90-step/"
+      },
+      "categories": [
+        "Home Diagnostic Tools"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-diagnostics-tools"
+      ],
+      "excerpt": "The cart charges $199.00 for the RISION (the phone thermal-camera brand) Magic Pro as of 2026-11-22, and $109.00 for the RISION Magic, its entry sibling.",
+      "modified": "2026-11-22T15:14:35",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-250-imager-needs-15-degrees",
       "title": "Your $250 Imager Needs 15 Degrees",
       "url": "https://wellroost.com/your-250-imager-needs-15-degrees/",
@@ -3527,6 +3481,29 @@
       ],
       "excerpt": "Two homes on the same street can face a payback gap of 38.1\u00a2 per unit of power, and the reason is how their bills are built.",
       "modified": "2026-10-31T04:48:58",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-battery-snow-blowers-1650-depth-gap",
+      "title": "Your Battery Snow Blower's $1,650 Depth Gap",
+      "url": "https://wellroost.com/your-battery-snow-blowers-1650-depth-gap/",
+      "path": "/your-battery-snow-blowers-1650-depth-gap/",
+      "sites_live": {
+        "wellroost.com": "/your-battery-snow-blowers-1650-depth-gap/"
+      },
+      "categories": [
+        "Outdoor Power & Snow Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "outdoor-power-equipment"
+      ],
+      "excerpt": "The battery snow aisle carries three prices for roughly one 24-inch promise, and the gap between the cheapest and the dearest is $1,650.99.",
+      "modified": "2026-11-22T14:51:27",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3757,6 +3734,29 @@
       ],
       "excerpt": "The window to close your flood gap has 44 days in it. A federal flood policy does not start for 30 days, so the last day to buy one that is in force before\u2026",
       "modified": "2026-10-31T04:48:56",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-fuel-decided-your-winter-bill",
+      "title": "Your Fuel Decided Your Winter Bill: $686 or $2,977",
+      "url": "https://wellroost.com/your-fuel-decided-your-winter-bill/",
+      "path": "/your-fuel-decided-your-winter-bill/",
+      "sites_live": {
+        "wellroost.com": "/your-fuel-decided-your-winter-bill/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "The same winter now bills a household $686 or $2,977, and the only thing that picks is the fuel the house already burns.",
+      "modified": "2026-11-23T12:20:29",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4930,6 +4930,29 @@
       ],
       "excerpt": "Forty percent of billion-dollar companies now deploy AI agents across their operations\u2014up from just 27 percent a year ago. That's not incremental growth. That's a strategic inflection point, and IT leaders who treat agentic AI adoption as a wait-and-see proposition are already behind. Agentic AI is defined as autonomous software systems that perceive their environment, make decisions, and execute multi-step tasks with minimal human intervention\u2014distinct from generative AI's content creation and traditional automation's rigid rule-following. The enterprises pulling ahead aren't just experimenting. They're delegating routine workflows to agents while repositioning human talent toward judgment, oversight, and strategy. The payoff is measurable: operational efficiency gains, faster cycle times, and workforce augmentation that multiplies output without proportional headcount growth. But scaling requires more than procurement\u2014it demands governance frameworks, security protocols, and a phased roadmap that moves from pilot to production without exposing the enterprise to runaway autonomy or compliance failure. The adoption window is narrowing. Competitors are already building the playbooks, and the gap between early movers and laggards compounds quarterly.",
       "modified": "2026-10-31T05:02:45",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "agents-names-not-brakes",
+      "title": "Named, Not Stopped: Your Agent's Missing Brake",
+      "url": "https://aichieve.net/agents-names-not-brakes/",
+      "path": "/agents-names-not-brakes/",
+      "sites_live": {
+        "aichieve.net": "/agents-names-not-brakes/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "The industry just built AI agents a passport, but left the brake as an option. The Linux Foundation has named every AI agent that wants a name: its Agent\u2026",
+      "modified": "2026-11-23T11:13:32",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9748,6 +9771,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-memory-tier-is-solved-29-of-199",
+      "title": "Agent Memory Management: Your Memory Tier Is Solved: 29 of 199",
+      "url": "https://aichieve.net/your-memory-tier-is-solved-29-of-199/",
+      "path": "/your-memory-tier-is-solved-29-of-199/",
+      "sites_live": {
+        "aichieve.net": "/your-memory-tier-is-solved-29-of-199/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "A model beat itself using 29 distilled guidelines instead of all 199 \u2014 the same week a quarter of MCP registry hosts changed a tool. The memory tier is closed; the\u2026",
+      "modified": "2026-11-23T10:59:59",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-mexico-hedge-renewal-risk",
       "title": "Your Mexico Hedge: A 2027 Renewal Risk",
       "url": "https://aichieve.net/your-mexico-hedge-renewal-risk/",
@@ -9787,6 +9833,29 @@
       ],
       "excerpt": "Late and short store deliveries cost North American suppliers roughly $100 billion a year, against $10 billion to $11 billion they can bill, rush or dispute.",
       "modified": "2026-10-31T04:48:14",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-otif-never-sees-the-pick",
+      "title": "Your OTIF Never Sees the Pick",
+      "url": "https://aichieve.net/your-otif-never-sees-the-pick/",
+      "path": "/your-otif-never-sees-the-pick/",
+      "sites_live": {
+        "aichieve.net": "/your-otif-never-sees-the-pick/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Walmart told investors this week that its 30-minute deliveries almost tripled, because store staff can pick an order in about 15 minutes and still make the\u2026",
+      "modified": "2026-11-23T13:12:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -10758,6 +10827,48 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1825,
+      "slug": "your-otif-never-sees-the-pick",
+      "title": "Your OTIF Never Sees the Pick",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-23T13:12:09",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1822,
+      "slug": "agents-names-not-brakes",
+      "title": "Named, Not Stopped: Your Agent&#8217;s Missing Brake",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-23T11:13:32",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1818,
+      "slug": "your-memory-tier-is-solved-29-of-199",
+      "title": "Agent Memory Management: Your Memory Tier Is Solved: 29 of 199",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-23T10:59:59",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -11875,48 +11986,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-11-03T11:18:11",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1400,
-      "slug": "your-cheapest-part-needs-four-sigma",
-      "title": "Your 98% Target Hides Four Sigma",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-02T20:18:20",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1396,
-      "slug": "your-30-inventory-cut-is-13-4",
-      "title": "Double Orders, Cut 13.4%: Not 30%",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-02T20:03:26",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1393,
-      "slug": "your-90-day-key-is-two-live-keys",
-      "title": "Your 90-Day Key: Still Live",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-02T18:23:31",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
