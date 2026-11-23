@@ -17,8 +17,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/your-otif-never-sees-the-pick/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Your OTIF Never Sees The Pick. Order-picking cart with stacked grey totes mid-aisle in a big-box store aisle of stocked steel shelf"
-image_caption: "Your OTIF Never Sees The Pick: The 30-minute promise rests on a 15-minute store pick no supplier scorecard controls."
+image_alt: "Order-picking cart with stacked grey totes mid-aisle in a big-box store aisle of stocked steel shelf gondolas under raking light."
+image_caption: "The delivery promise is now kept or lost in the aisle, where the pick clock runs and the scorecard never looks."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
