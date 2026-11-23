@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T18:43:39Z",
+  "updated_at": "2026-11-23T20:08:04Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7654,6 +7654,29 @@
       "date": "2026-11-23",
       "public": true,
       "url": "https://aichieve.net/agents-names-not-brakes/"
+    },
+    {
+      "slug": "2026-11-23_your-200-sqep-fine",
+      "title": "Your $200 SQEP Fine: The Cheap Part That Bills Most",
+      "vertical": "sales_order_service_level_otif",
+      "primary_keyword": "SQEP fine",
+      "secondary_keywords": [
+        "Walmart OTIF",
+        "SQEP fines",
+        "Walmart chargebacks",
+        "OTIF penalty"
+      ],
+      "h2_topics": [
+        "At a glance",
+        "The bill arrives in three classes",
+        "By the numbers",
+        "Where the fee classes split control",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-11-23",
+      "public": false
     },
     {
       "slug": "2026-11-23_your-8-48-remodel-exits-closed",

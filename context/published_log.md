@@ -420,6 +420,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-23 | sales_order_service_level_otif | your-otif-never-sees-the-pick | Your OTIF Never Sees the Pick | https://pressflow.aichieve.net/published/2026-11-23_your-otif-never-sees-the-pick.md | reader site only |
 | 2026-11-23 | agentic_ai | your-agent-executes-before-it-verifies | Your Agent Executes Before It Verifies: The 74.83% Cost | https://pressflow.aichieve.net/published/2026-11-23_your-agent-executes-before-it-verifies.md | reader site only |
 | 2026-11-23 | home_equity_tco | your-heat-pump-quote-buys-the-floor | Your Heat Pump's 20% Silent Leak | https://pressflow.aichieve.net/published/2026-11-23_your-heat-pump-quote-buys-the-floor.md | reader site only |
+| 2026-11-23 | sales_order_service_level_otif | your-200-sqep-fine | Your $200 SQEP Fine: The Cheap Part That Bills Most | https://pressflow.aichieve.net/published/2026-11-23_your-200-sqep-fine.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

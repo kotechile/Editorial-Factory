@@ -1,0 +1,113 @@
+{
+  "slug": "your-200-sqep-fine",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A supplier deduction statement fanned over purchase-order and shipping forms on a steel receiving desk, a red pen circling one line.",
+      "caption": "Three fee classes wear one deduction statement \u2014 and the $200 data defect is the line to kill first.",
+      "title": "SQEP fee schedule: deduction statement flat-lay on a receiving desk",
+      "bytes": 365357,
+      "sha256": "sha256:f7b521bbe7dcc3377da88296260ef13d"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph, 90-degree top-down, of a supplier deduction statement on a brushed-steel receiving desk in a loading bay office. The bone-white fee-schedule sheet lies off-centre on the right third, fanned across a printed purchase-order form and an advance-ship-notice printout, one lower sheet pulled askew as if handled, faint illegible print, a red ballpoint pen resting across a circled line item, generous bare brushed steel at the left. Even diffused daylight from the left through a high window, soft graphite shadows pooling at the sheet edges, oxidised-red annotation marks the only colour, polymer clipboard clipped at the frame edge, 50mm, fine film grain, no legible text, no people, no logos.",
+  "negative_prompt": "garbled text, legible words, legible numbers, watermarks, logos",
+  "rationale": "The story's protagonist is a printed artefact of price and policy \u2014 a fee schedule on a deduction statement sitting on top of purchase orders and ship notices \u2014 which is exactly the regulatory/contractual territory the document still life was built for. A top-down flat-lay makes the three-class arithmetic legible as three distinct sheets with the cheap, red-circled data-defect page on top, and it rotates the desk onto its only never-used treatment.",
+  "cue": "three separate cost curves wearing one deduction statement",
+  "subject": "a supplier's printed deduction statement fanned over purchase-order and advance-ship-notice forms on a brushed-steel receiving desk",
+  "core_thesis": "Walmart's supplier fine schedule is three fee classes, not one 3% number \u2014 and the cheapest class, billed $200 per data defect a supplier can fix in-house, makes the arithmetic itself pick the first spend.",
+  "core_conflict": "Cheap in-house data hygiene (EDI, ASN, master data) that can retire the $200-per-defect class versus the expensive fill-rate class that only real safety-stock money can close \u2014 while ops leaders keep budgeting 'the Walmart fine' as one line.",
+  "composition": "Top-down 90-degree flat-lay, hero deduction statement off-centre on the right third, secondary sheets fanned beneath with one pulled askew, a red pen crossing the frame diagonally, generous bare desk at the left",
+  "alt_text": "Walmart'S Three-Class Supplier Fine Schedule. A supplier deduction statement fanned over purchase-order and shipping forms on a steel",
+  "caption": "Walmart'S Three-Class Supplier Fine Schedule: The cheapest fines are in-house fixes, so Walmart's schedule picks your first spend.",
+  "title": "Walmart'S Three-Class Supplier Fine Schedule",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-200-sqep-fine/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 408349,
+  "sha256": "sha256:018cd77d43232975de9ec18114647859fefda8bd03119d8b8592e0c3bd20f32f",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 408349,
+    "quality": 88,
+    "sha256": "sha256:018cd77d43232975de9ec18114647859fefda8bd03119d8b8592e0c3bd20f32f",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:a67f1e426fa9794b2d9e63378678458a261c182cb76c5f149053d02278a8d718",
+  "render_phash": "78067c007c847c9431300014002c00240024003401360136012e011600100060",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Top-down flat-lay of a fanned stack of printed statement and form pages on a clipboard, with a red pen lying diagonally across the top sheet and a red oval circling one line item, set on a plain gray desk with empty space at the left.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.8,
+    "reason": "The frame depicts the article's own protagonist object \u2014 a supplier's billed statement with a flagged charge under a red pen \u2014 matching the ordered document still-life, though no Walmart/SQEP wording is legible to confirm the specific fee document."
+  },
+  "source_hash": "sha256:4b244db06cde679f12ea4ed76ffd9f3f",
+  "source_chars": 4189,
+  "task_id": "d9c5bd2d90da0bfe56ac4af1b4a342a9",
+  "credits": 5.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/d9c5bd2d90da0bfe56ac4af1b4a342a9_1795464441553.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph, 90-degree top-down, of a supplier deduction statement on a brushed-steel receiving desk in a loading bay office. The bone-white fee-schedule sheet lies off-centre on the right third, fanned across a printed purchase-order form and an advance-ship-notice printout, one lower sheet pulled askew as if handled, faint illegible print, a red ballpoint pen resting across a circled line item, generous bare brushed steel at the left. Even diffused daylight from the left through a high window, soft graphite shadows pooling at the sheet edges, oxidised-red annotation marks the only colour, polymer clipboard clipped at the frame edge, 50mm, fine film grain, no legible text, no people, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-23T20:07:33+00:00",
+  "overlay": {
+    "kicker": "WALMART SUPPLIER FINES // SQEP FEE CLASSES",
+    "title": "WALMART'S THREE-CLASS SUPPLIER FINE SCHEDULE",
+    "hook": "The cheapest fines are in-house fixes, so Walmart's schedule picks your first spend",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 4.86,
+    "target": 4.5,
+    "clutter": 0.197,
+    "region_rgb": [
+      130,
+      131,
+      131
+    ],
+    "binding_rgb": [
+      103,
+      105,
+      104
+    ],
+    "title_lines": [
+      "WALMART'S",
+      "THREE-CLASS SUPPLIER",
+      "FINE SCHEDULE"
+    ],
+    "subject": 0.061,
+    "ink_subject": 0.021,
+    "spike": 0.1,
+    "generated_at": "2026-11-23T20:07:33+00:00"
+  }
+}

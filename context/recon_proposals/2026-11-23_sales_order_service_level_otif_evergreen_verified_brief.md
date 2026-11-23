@@ -1,0 +1,17 @@
+# Verified Brief: sales_order_service_level_otif — 2026-11-23 (evergreen)
+
+Source brief: `2026-11-23_sales_order_service_level_otif_evergreen_brief.md` (evergreen gate PASS, marker 2026-11-23T20:03:07+00:00).
+
+| # | Signal Leg | Claim | Status | Source URL | Verbatim |
+|---|------------|-------|--------|-----------|----------|
+| 1 | Walmart SQEP document-accuracy fees | ASN-not-downloaded defect is billed as a flat fee per defective PO ($200 for DSDC and Pharmacy, $25 for other departments); other document inaccuracies bill $200 per defect + $1 per case | VERIFIED | https://vendormint.com/blog/walmart-supplier-quality-excellence-program-sqep | "ASN Not Downloaded (DSDC and Pharmacy): $200 flat fee per defective PO. All other departments: $25 flat fee per defective PO. All other document inaccuracies: $200 per defect + $1 per case" |
+| 2 | Walmart SQEP pallet/load fees | Pallet compliance bills a $200 administrative fee per PO plus $4 per pallet; load compliance bills $200 per PO plus $20 per load | VERIFIED | https://harvestgroup.com/prevent-common-sqep-and-otif-fines-walmart | "Pallet Compliance: $200 administrative fee per PO + $4 per pallet. Load Compliance: $200 administrative fee per PO + $20 per load" |
+| 3 | Walmart OTIF penalty rate | Cases that arrive outside the delivery window or short bill 3% of the cost of goods on the non-compliant cases, when the supplier's monthly score falls below target | VERIFIED | https://www.coldstreamlogistics.com/blog/walmart-sqep-explained | "OTIF fine — OTIF — Cases that arrive outside the delivery window or short, when the supplier's monthly score falls below target — 3% of the cost of goods on the non-compliant cases" |
+| 4 | Walmart OTIF thresholds and cadence | Compliance requires 98% Collect Ready, 90% On-Time Prepaid and 95% In-Full; missing thresholds triggers the 3% COGS penalty on non-compliant cases; OTIF billing moved to quarterly in February 2024 | VERIFIED | https://blog.inymbus.com/walmart-otif-performance-metrics | "suppliers must meet Walmart's published thresholds of 98% Collect Ready, 90% On-Time Prepaid, and 95% In-Full. Missing any of these thresholds can trigger a 3% penalty on the cost of goods for non-compliant cases" + "Billing cadence: Quarterly (Walmart shifted from monthly billing in February 2024)" |
+| 5 | OTIF penalty is per-case, not per-PO | The 3% penalty applies to the specific non-compliant cases, not the entire shipment or PO | VERIFIED | https://blog.inymbus.com/walmart-otif-performance-metrics | "The penalty applies to the specific non-compliant cases, not the entire shipment or PO" |
+
+**Drafter notes:**
+- All four sources are supplier-services firms reporting Walmart's published program terms — every figure is labelled *vendor claim (retailer-published policy terms as reported)*; none is a measurement. The article must say "Walmart's published schedule," never "suppliers report being fined."
+- The three component thresholds (98/90/95) and the 3% COGS rate come from the same program; Harvest Group gives the monthly-goal figure as "typically 98%" and bills monthly per its page, while Inymbus gives quarterly billing since February 2024 — do not reconcile the two billing cadences in one sentence; use Inymbus's dated quarterly line for cadence.
+- Derived arithmetic allowed as explicitly derived: a PO with one rework defect and one ASN inaccuracy on 12 cases = $412 (Vendormint's own worked example) — present it as the source's example, not our arithmetic.
+- No hands-on claims; no figures beyond the table's without a source.

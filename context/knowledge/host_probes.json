@@ -248,6 +248,14 @@
   "note": "vergreen).** Carries the figure as plain text and fetches first try: `blog.arkieva.com/replenishment-frequency` (the arithmetic that makes the topic \u2014 \"New SS = (1/\u221a2) * Original SS = 0.707"
  },
  {
+  "host": "blog.inymbus.com",
+  "url": "https://blog.inymbus.com/walmart-otif-performance-metrics",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "sales_order_service_level_otif",
+  "note": "20KB text, HIT 3% COGS OTIF penalty + 95% in-full threshold 2026-11-23"
+ },
+ {
   "host": "blog.se.com",
   "url": "",
   "verdict": "unreachable",
@@ -1382,6 +1390,14 @@
   "as_of": "2026-10-20",
   "vertical": "workstation_compute_economics",
   "note": "sing policy's \"limited to 8 per system\" on non-qualified cards); and `handbrake.fr/docs/en/latest/technical/performance.html` (an independent 1080p encoder comparison with fps *and* realtime"
+ },
+ {
+  "host": "harvestgroup.com",
+  "url": "https://harvestgroup.com/prevent-common-sqep-and-otif-fines-walmart",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "sales_order_service_level_otif",
+  "note": "7.3KB text, HIT $200+$1/case, $4/pallet, $20/load SQEP table 2026-11-23"
  },
  {
   "host": "health.ny.gov",
@@ -3064,6 +3080,14 @@
   "note": "ual-office acoustic beat still has **no** fetchable measured anchor (`usg.com`'s Quiet Zone page fetches as navigation only, `rockwool.com` and `nationalgypsum.com` are unreachable, and `nrc"
  },
  {
+  "host": "vendormint.com",
+  "url": "https://vendormint.com/blog/walmart-supplier-quality-excellence-program-sqep",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "sales_order_service_level_otif",
+  "note": "9.3KB text, HIT $200/defect + $25 flat ASN fee SQEP fine table as plain text 2026-11-23"
+ },
+ {
   "host": "vulcanvents.com",
   "url": "",
   "verdict": "fetchable",
@@ -3216,6 +3240,14 @@
   "note": "SPCC sections fetch first try with the verifier UA: \u00a7112.1 prints the 1,320-gal and 42,000-gal exemption conditions plus the 55-gal counting rule in one run, \u00a7112.3 the Tier I/II rungs and the PE certification, \u00a7112.5 th"
  },
  {
+  "host": "www.energystar.gov",
+  "url": "https://www.energystar.gov/products/heat_pump_water_heaters",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "home_infrastructure_lifecycle_tco",
+  "note": "7.9 KB as plain text; carries the 40-90 F operating window and the 1,000-cubic-feet air-space requirement. The sibling page /products/heat_pump_water_heaters/benefits-savings also fetches (3.0 KB: $550/yr household-of-4,"
+ },
+ {
   "host": "www.epa.gov",
   "url": "https://www.epa.gov/spcc",
   "verdict": "unreachable",
@@ -3240,6 +3272,14 @@
   "note": "undated first-party home-blog guide; date by observation, winter-anchored copy"
  },
  {
+  "host": "www.hotwater.com",
+  "url": "https://www.hotwater.com/info-center/when-to-repair-or-replace.html",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "home_infrastructure_lifecycle_tco",
+  "note": "19 KB; A.O. Smith states the manufacturer's suggested service life as 'about 8 to 12 years'. Matcher trap: a cell leading on '8 to 12 years' evidences on the stray 8 inside the page's reCAPTCHA key - lead the cell on '12"
+ },
+ {
   "host": "www.ibhs.org",
   "url": "",
   "verdict": "mentioned",
@@ -3254,6 +3294,14 @@
   "as_of": "2026-11-17",
   "vertical": "nhil_infrastructure_ops",
   "note": "Cornell LII mirrors of 40 CFR 112.1/.2/.3/.5/.6 and 280.10/.12 fetch first try (4-20 KB, operative sentences as plain text); the \u00a7280.12 definition page carries the heating-oil consumptive-use exclusion."
+ },
+ {
+  "host": "www.law.cornell.edu",
+  "url": "https://www.law.cornell.edu/uscode/text/26/25D",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "home_infrastructure_lifecycle_tco",
+  "note": "25 KB; \u00a725D(h) as amended by Pub. L. 119-21 \u00a7 70506(a) reads 'expenditures made after December 31, 2025' for the termination - the anchor for post-2025 solar-credit economics."
  },
  {
   "host": "www.mapbox.com",
