@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T17:42:46Z",
+  "updated_at": "2026-11-23T18:43:39Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7709,6 +7709,28 @@
       "date": "2026-11-23",
       "public": true,
       "url": "https://wellroost.com/your-fuel-decided-your-winter-bill/"
+    },
+    {
+      "slug": "2026-11-23_your-heat-pump-quote-buys-the-floor",
+      "title": "Your New Heat Pump Loses 15\u201320% in Ducts",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "heat pump",
+      "secondary_keywords": [
+        "HSPF2",
+        "duct leakage",
+        "federal tax credit"
+      ],
+      "h2_topics": [
+        "At a glance",
+        "Why the floor changed",
+        "By the numbers",
+        "Where the money leaks",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "",
+      "date": "2026-11-23",
+      "public": false
     },
     {
       "slug": "2026-11-23_your-memory-tier-is-solved-29-of-199",

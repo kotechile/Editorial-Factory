@@ -1,0 +1,113 @@
+{
+  "slug": "your-heat-pump-quote-buys-the-floor",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A heat pump condenser beside a house at blue hour, warm light leaking from an attic vent above it.",
+      "caption": "The floor-rated machine hums outside all night while the attic quietly exhales the heat it was bought to save.",
+      "title": "Heat pump at blue hour, warmth escaping the attic vent",
+      "bytes": 395558,
+      "sha256": "sha256:5d7b03b2866e4690ca6812fc5aa62015"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural night photograph, 35mm lens at f/4, low-angle asymmetric composition: an unbranded modern heat pump condenser in a galvanised steel cabinet on a concrete pad along the driveway side of a suburban stucco house at deep blue hour, placed off-centre right with the two-storey wall and asphalt shingle roofline filling the left of frame. Deep slate grey ambient light falls from the left; warm ochre light spills outward from the kitchen windows, and higher up an attic gable vent glows the same amber, a faint plume of heated air bleeding into the cold night. Frost dusts the concrete, bone white trim, long calm exposure, fine film grain, no people.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos",
+  "rationale": "The 'silent leak' happens at night, while the machine runs and the house sleeps \u2014 exactly the after-hours story architectural_night exists to tell. Blue-hour calm, lit windows as the only warm source, and a low-angle composition let the heat pump itself be the hero machine while the glowing attic vent carries the leak the quote never itemizes. Editorial_macro would strip the environment that makes the house-versus-duct conflict legible, and a document flat-lay could not carry the running machine at all.",
+  "cue": "Your Heat Pump's 20% Silent Leak",
+  "subject": "an unbranded heat pump condenser running on its concrete pad at blue hour while warm air bleeds from the attic vent above",
+  "core_thesis": "A heat pump quoted at the 7.5 HSPF2 legal floor is the weakest machine you can legally install, and the unlabeled ductwork feeding it silently wastes more energy than the upgrade recovers.",
+  "core_conflict": "The labeled, rated, itemized machine on the quote versus the unlabeled, uninspectable duct run in the attic \u2014 the only line with a label on it gets the money, while the hole in the system costs more than half of what the model upgrade saves.",
+  "composition": "Low-angle asymmetric composition: condenser off-centre right in the foreground, the stucco wall and glowing asphalt-shingle roofline rising to fill the left of frame, generous dark sky above",
+  "alt_text": "Your Heat Pump'S 20% Silent Leak. A heat pump condenser beside a house at blue hour, warm light leaking from an attic vent above it.",
+  "caption": "Your Heat Pump'S 20% Silent Leak: The 7.5 HSPF2 floor guarantees legality, never economy \u2014 the deciding number.",
+  "title": "Your Heat Pump'S 20% Silent Leak",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-heat-pump-quote-buys-the-floor/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 372523,
+  "sha256": "sha256:548b3f6ed27d959685fe7ddf6ad130f47e8ca5473eb18c45fea242f8e7cb5112",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 372523,
+    "quality": 76,
+    "sha256": "sha256:548b3f6ed27d959685fe7ddf6ad130f47e8ca5473eb18c45fea242f8e7cb5112",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ade422c9e151e132427155408f248130eb532a17e018e3b115117b6c79dd6afa",
+  "render_phash": "30e728e32ccb2dc927492f1c6b1c033d032d032f832f033f1b2318ed063c08be",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A two-story house at blue hour with warm glowing windows, a heat pump condenser standing on a concrete pad in the right foreground, a faint warm glow bleeding near the roofline, and dark sky above.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The frame shows the article's own protagonist\u2014an outdoor heat pump condenser running at dusk on its pad beside the house\u2014matching the ordered treatment of lit architecture with the unit off-centre right, so a reader would recognize the heat-pump-leak story."
+  },
+  "source_hash": "sha256:bf3125fb83955244449f0b6023e19448",
+  "source_chars": 3797,
+  "task_id": "f47219c255c93269ff0dec0a7be862e7",
+  "credits": 5.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/f47219c255c93269ff0dec0a7be862e7_1795459377521.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural night photograph, 35mm lens at f/4, low-angle asymmetric composition: an unbranded modern heat pump condenser in a galvanised steel cabinet on a concrete pad along the driveway side of a suburban stucco house at deep blue hour, placed off-centre right with the two-storey wall and asphalt shingle roofline filling the left of frame. Deep slate grey ambient light falls from the left; warm ochre light spills outward from the kitchen windows, and higher up an attic gable vent glows the same amber, a faint plume of heated air bleeding into the cold night. Frost dusts the concrete, bone white trim, long calm exposure, fine film grain, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-23T18:43:06+00:00",
+  "overlay": {
+    "kicker": "HEAT PUMPS // DUCT LEAKAGE",
+    "title": "YOUR HEAT PUMP'S 20% SILENT LEAK",
+    "hook": "The 7.5 HSPF2 floor guarantees legality, never economy \u2014 the deciding number",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 8.75,
+    "target": 4.5,
+    "clutter": 0.157,
+    "region_rgb": [
+      38,
+      53,
+      67
+    ],
+    "binding_rgb": [
+      50,
+      67,
+      85
+    ],
+    "title_lines": [
+      "YOUR HEAT",
+      "PUMP'S 20%",
+      "SILENT LEAK"
+    ],
+    "subject": 0.192,
+    "ink_subject": 0.054,
+    "spike": 0.243,
+    "generated_at": "2026-11-23T18:43:06+00:00"
+  }
+}

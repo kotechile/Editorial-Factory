@@ -24,6 +24,14 @@
   "note": "trial banner's \"30 days\" \u2014 not usable as a row without re-phrasing. `about.gitlab.com/pricing/ci-cd/` is unreachable; the docs page above is the working substitute. A price-class comparison"
  },
  {
+  "host": "aclanthology.org",
+  "url": "https://aclanthology.org/2026.findings-acl.1850/",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "agentic_ai",
+  "note": "aclanthology.org landing page carries the abstract's measured figures as plain text (65%, ~10%); first probed 2026-11-23 agentic_ai evergreen gate, all row figures verified first try"
+ },
+ {
   "host": "adjustersinternational.com",
   "url": "",
   "verdict": "fetchable",
