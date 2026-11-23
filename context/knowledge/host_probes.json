@@ -496,6 +496,14 @@
   "note": "orado.gov`, `ny.dfs.ny.gov`, `tdi.texas.gov`, `content.naic.org` and `corelogic.com` (all unreachable), `firststreet.org/risk-factor/fire-factor/` (HTTP 200 with a 260-character body), `moen"
  },
  {
+  "host": "corporate.target.com",
+  "url": "https://corporate.target.com",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "sales_order_service_level_otif",
+  "note": ""
+ },
+ {
   "host": "countryeconomy.com",
   "url": "",
   "verdict": "unreachable",
@@ -1222,6 +1230,14 @@
   "as_of": "2026-10-15",
   "vertical": "",
   "note": "number, but the guardrail is on the host: `cbp.gov` (ISF/10+2 page), `fmcsa.dot.gov`, `transportation.gov`, `iata.org`, `nmfta.org` and `portoflosangeles.org`/`polb.com` are all unreachable"
+ },
+ {
+  "host": "fool.com",
+  "url": "https://fool.com",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "sales_order_service_level_otif",
+  "note": ""
  },
  {
   "host": "fred.stlouisfed.org",
@@ -3326,6 +3342,14 @@
   "as_of": "2026-11-17",
   "vertical": "control_tower_exception_orchestration",
   "note": "Independent liner research house; press-room releases are primary for schedule-reliability figures, and its corrections publish their own mechanism and affected counts."
+ },
+ {
+  "host": "www.sec.gov",
+  "url": "https://www.sec.gov",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "sales_order_service_level_otif",
+  "note": ""
  },
  {
   "host": "www.silicondata.com",

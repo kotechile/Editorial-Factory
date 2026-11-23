@@ -1,0 +1,112 @@
+{
+  "slug": "your-otif-never-sees-the-pick",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Order-picking cart with stacked grey totes mid-aisle in a big-box store aisle of stocked steel shelf gondolas under raking light.",
+      "caption": "The delivery promise is now kept or lost in the aisle, where the pick clock runs and the scorecard never looks.",
+      "title": "In-store pick aisle, 200mm compression",
+      "bytes": 402572,
+      "sha256": "sha256:0dbd2f5dec746f0cc4e3cdc5b9cc7b65"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression looking dead down a long big-box store aisle, the sales floor now a warehouse aisle pick path. A multi-tier order-picking cart with grey stack totes stands mid-aisle on the right third, one tote open; plain unbranded boxed goods sit fully stocked on steel shelf gondolas stacked in flat overlapping layers to a bright far doorway. Hard directional light rakes low from the left, laying long clean shadows across polished concrete; crisp crystalline air, deep contrast, prominent steel edge highlights. Palette of safety yellow, graphite and bone white. One-point-perspective asymmetry with generous negative space above the shelving, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, legible print, watermarks",
+  "rationale": "This is a systemic operational story about where fulfillment now happens, so the environment must stay legible \u2014 a macro detail or studio still would strip the store away. Telephoto compression stacks the shelf gondolas into flat overlapping layers that make the aisle read as fulfillment infrastructure, and the picking cart mid-aisle names the 15-minute pick as the hero. It also breaks the desk's recent treatment run with a depth-and-scale frame.",
+  "cue": "Your OTIF Never Sees the Pick",
+  "subject": "an order-picking cart with stacked totes stopped mid-aisle in a big-box store aisle of stocked shelf gondolas",
+  "core_thesis": "The service level an online order feels is now set inside the store \u2014 at a 15-minute pick against a stocked shelf \u2014 past the point where a supplier's OTIF scorecard stops looking.",
+  "core_conflict": "The measured supplier half (on-time in-full to the dock) versus the unmeasured store half (pick speed and shelf availability) that actually owns the delivery promise, staffed and funded entirely on the retailer's side of the wall.",
+  "composition": "one-point telephoto perspective dead down the aisle, picking cart off-centre on the right third, shelf layers stacked flat to a bright far doorway, generous negative space above the gondolas",
+  "alt_text": "Your OTIF Never Sees The Pick. Order-picking cart with stacked grey totes mid-aisle in a big-box store aisle of stocked steel shelf",
+  "caption": "Your OTIF Never Sees The Pick: The 30-minute promise rests on a 15-minute store pick no supplier scorecard controls.",
+  "title": "Your OTIF Never Sees The Pick",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-otif-never-sees-the-pick/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407811,
+  "sha256": "sha256:ef0b5c08168479e92fc9be42a990dfa0b89bbf217c102d24135fb10aa2f8283e",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407811,
+    "quality": 80,
+    "sha256": "sha256:ef0b5c08168479e92fc9be42a990dfa0b89bbf217c102d24135fb10aa2f8283e",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:94f81ff3114a0dbb47dce6c35ea755284e2dbcd5331c2205fa5c635ec686372d",
+  "render_phash": "813ed0f5487d417d1967c8edc0f5c8e500e70ce5c8f546ed8ce408e708e708f7",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A metal order-picking cart with stacked grey totes stands in a wide concrete aisle between tall industrial shelving racks filled with plain cardboard boxes, with bright light coming from a doorway at the far end of the aisle.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.78,
+    "reason": "The picking cart with stacked totes stopped mid-aisle of stocked shelves is the article's own mechanism (the in-store pick that OTIF never sees), even though the racking reads slightly more warehouse than retail gondola."
+  },
+  "source_hash": "sha256:957f36acd78a4b8c68917ee2c7cadea0",
+  "source_chars": 4419,
+  "task_id": "210fd567a457f0ecc90e7372244b74b1",
+  "credits": 5.0,
+  "cost_ms": 51,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/210fd567a457f0ecc90e7372244b74b1_1795439479995.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression looking dead down a long big-box store aisle, the sales floor now a warehouse aisle pick path. A multi-tier order-picking cart with grey stack totes stands mid-aisle on the right third, one tote open; plain unbranded boxed goods sit fully stocked on steel shelf gondolas stacked in flat overlapping layers to a bright far doorway. Hard directional light rakes low from the left, laying long clean shadows across polished concrete; crisp crystalline air, deep contrast, prominent steel edge highlights. Palette of safety yellow, graphite and bone white. One-point-perspective asymmetry with generous negative space above the shelving, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-23T13:11:36+00:00",
+  "overlay": {
+    "kicker": "OTIF SCORECARD // THE IN-STORE PICK",
+    "title": "YOUR OTIF NEVER SEES THE PICK",
+    "hook": "The 30-minute promise rests on a 15-minute store pick no supplier scorecard controls",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 150,
+    "contrast": 6.02,
+    "target": 5.5,
+    "clutter": 0.51,
+    "region_rgb": [
+      129,
+      125,
+      121
+    ],
+    "binding_rgb": [
+      220,
+      215,
+      209
+    ],
+    "title_lines": [
+      "YOUR OTIF NEVER",
+      "SEES THE PICK"
+    ],
+    "subject": 0.243,
+    "ink_subject": 0.073,
+    "spike": 0.394,
+    "generated_at": "2026-11-23T13:11:36+00:00"
+  }
+}
