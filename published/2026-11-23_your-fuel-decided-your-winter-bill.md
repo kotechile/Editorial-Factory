@@ -15,6 +15,12 @@ meta_title: "Your Fuel Decided Your Winter Bill: $686 or $2,977"
 meta_title_source: "derived_from_title"
 meta_description: "The same winter now bills a household $686 or $2,977, and the only thing that picks is the fuel the house already burns."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-fuel-decided-your-winter-bill/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "Your Fuel Sets Your Winter Bill. A brass gas valve on clean drywall beside a rusted heating-oil tank with an amber sight gauge."
+image_caption: "Your Fuel Sets Your Winter Bill: the same winter bills a gas household $686 and a heating-oil household $2,977."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

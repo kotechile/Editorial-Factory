@@ -11,6 +11,12 @@ sources:
   - https://neada.org/wp-content/uploads/2026/11/NEADA-Winter-Heating-Press-Release-Nov-10-2026.pdf
   - https://www.eia.gov/petroleum/heatingoilpropane/
   - https://neada.org/wp-content/uploads/2026/09/Press-Release-Winter-2026-27-Heating-Costs.pdf
+image_path: "context/assets/illustrations/your-fuel-decided-your-winter-bill/featured.jpg"
+image_style: "editorial_macro"
+image_model: "flux"
+image_alt: "Your Fuel Sets Your Winter Bill. A brass gas valve on clean drywall beside a rusted heating-oil tank with an amber sight gauge."
+image_caption: "Your Fuel Sets Your Winter Bill: the same winter bills a gas household $686 and a heating-oil household $2,977."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

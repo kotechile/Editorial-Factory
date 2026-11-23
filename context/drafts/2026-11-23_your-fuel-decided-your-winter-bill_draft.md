@@ -40,3 +40,8 @@ For the household, the fuel list orders itself. An oil-heated home now faces a s
 <!-- nuanced-takeaway -->
 ## The catch in the number
 What I would not do is treat $2,977 as a price you can fight. It is a projected seasonal expenditure — an assumed volume of oil at an assumed price — and NEADA's own release shows how soft those assumptions are, citing prices that fell after its basis week [1]. The honest comparison sits on your own meter: last winter's actual gallons at this winter's price. The 2026–27 lesson is narrower than the headline. The fuel mix you inherited decided most of this winter for you, and every other choice on the table is small against it.
+
+## Sources
+- [1] NEADA, "Winter Heating Press Release, Nov 10 2026" — https://neada.org/wp-content/uploads/2026/11/NEADA-Winter-Heating-Press-Release-Nov-10-2026.pdf
+- [2] EIA, "Heating Oil and Propane Update" — https://www.eia.gov/petroleum/heatingoilpropane/
+- [3] NEADA, "Press Release: Winter 2026-27 Heating Costs" — https://neada.org/wp-content/uploads/2026/09/Press-Release-Winter-2026-27-Heating-Costs.pdf

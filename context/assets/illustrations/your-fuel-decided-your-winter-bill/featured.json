@@ -1,0 +1,115 @@
+{
+  "slug": "your-fuel-decided-your-winter-bill",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A brass gas shutoff valve beside a rusted home heating-oil tank with an amber-oil sight gauge, split across a vertical seam.",
+      "caption": "The same winter bills two houses $686 or $2,977, and the only thing that chooses is the fuel each house already burns.",
+      "title": "Gas Valve vs Heating-Oil Tank: Two Fuel Ports, One Winter",
+      "bytes": 324274,
+      "sha256": "sha256:8d377c17adf04ea0345aa15e901abe0d"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Split-screen macro photograph divided by a clean vertical seam, both halves of one basement mechanical corner, 100mm macro lens at f/2.8, razor-thin focal plane. Left: a brass shutoff valve with an ochre handle on a copper gas line, spotless against bone-white painted drywall. Right: a rust-streaked galvanised steel home heating-oil tank, its fill pipe and glass sight gauge holding amber heating oil. One soft basement-window light rakes from the upper left across both halves; graphite shadows, ochre and rust accents; backgrounds fall away in shallow depth of field, fine film grain, no people, no legible text.",
+  "negative_prompt": "garbled text, random lettering, numerals, watermarks, logos",
+  "rationale": "The roster forces editorial_macro, and it genuinely fits: this story turns on one physical thing \u2014 the fuel port each house already has \u2014 and what that thing costs. A macro diptych states the $686-versus-$2,977 split through material contrast alone: calm brass on clean drywall against rusted steel and amber oil, with no numbers needed.",
+  "cue": "the fuel the house already burns",
+  "subject": "a split-pair of residential fuel ports \u2014 a clean brass gas shutoff valve on a copper line versus a rust-streaked galvanised heating-oil tank's fill pipe and amber sight gauge in a basement",
+  "core_thesis": "NEADA's November 10 forecast prices the same winter four ways \u2014 $686 flat for a natural-gas household, $2,977 up 70.2 percent for a heating-oil household \u2014 because the fuel already plumbed into the house, not anything bought this month, sets the bill.",
+  "core_conflict": "Flat, domestically priced natural gas versus heating oil tied to global diesel markets through the Strait of Hormuz \u2014 one winter, two fuels, season bills sitting 4.3 times apart.",
+  "composition": "Split-screen diptych with a clean vertical seam: left half the pristine gas valve on bone-white drywall, right half the rusted oil tank and amber sight gauge; hero details sit on the thirds with generous negative space under one raking light.",
+  "alt_text": "Your Fuel Sets Your Winter Bill. A brass gas valve on clean drywall beside a rusted heating-oil tank with an amber sight gauge.",
+  "caption": "Your Fuel Sets Your Winter Bill: the same winter bills a gas household $686 and a heating-oil household $2,977.",
+  "title": "Your Fuel Sets Your Winter Bill",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {
+    "style": "editorial_macro"
+  },
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-fuel-decided-your-winter-bill/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 372022,
+  "sha256": "sha256:72114acc299d712b39591d7be6864fcd6afb6a1da9a7a0766b8a2c10f14475f9",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 372022,
+    "quality": 88,
+    "sha256": "sha256:72114acc299d712b39591d7be6864fcd6afb6a1da9a7a0766b8a2c10f14475f9",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:375b5543de6d7f152d4fe9efc770804e0a4e9939b3ef18d0d8cdcd70729249f0",
+  "render_phash": "3fb71fa64f834789339c339b159b119b2d9f359f359f1797159f159b359b359b",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split-frame image: on the left, a brass gas shutoff valve with a yellow handle mounted on copper piping against a white wall lit by raking light; on the right, a rusted metal heating-oil tank with a fill pipe and a vertical amber sight gauge in a dark basement.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.93,
+    "reason": "The image directly depicts the article's own mechanism \u2014 the two heating fuels (a natural-gas line versus a heating-oil tank) whose type alone sets the $686 versus $2,977 winter bill."
+  },
+  "source_hash": "sha256:ec8e207174c1bdfd241bed067f170fde",
+  "source_chars": 4036,
+  "task_id": "4a09494a8b2cf19a4abd39b22ad1189a",
+  "credits": 5.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/4a09494a8b2cf19a4abd39b22ad1189a_1795436358902.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Split-screen macro photograph divided by a clean vertical seam, both halves of one basement mechanical corner, 100mm macro lens at f/2.8, razor-thin focal plane. Left: a brass shutoff valve with an ochre handle on a copper gas line, spotless against bone-white painted drywall. Right: a rust-streaked galvanised steel home heating-oil tank, its fill pipe and glass sight gauge holding amber heating oil. One soft basement-window light rakes from the upper left across both halves; graphite shadows, ochre and rust accents; backgrounds fall away in shallow depth of field, fine film grain, no people, no legible text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-23T12:19:26+00:00",
+  "overlay": {
+    "kicker": "HOME HEATING // FUEL-LOCKED BILLS",
+    "title": "YOUR FUEL SETS YOUR WINTER BILL",
+    "hook": "The same winter bills gas homes $686 and oil homes $2,977 \u2014 the furnace",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.89,
+    "target": 5.5,
+    "clutter": 0.271,
+    "region_rgb": [
+      57,
+      56,
+      52
+    ],
+    "binding_rgb": [
+      98,
+      104,
+      102
+    ],
+    "title_lines": [
+      "YOUR FUEL SETS",
+      "YOUR WINTER",
+      "BILL"
+    ],
+    "subject": 0.215,
+    "ink_subject": 0.067,
+    "spike": 0.246,
+    "generated_at": "2026-11-23T12:19:26+00:00"
+  }
+}
