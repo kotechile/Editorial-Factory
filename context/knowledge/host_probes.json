@@ -3200,6 +3200,14 @@
   "note": "epa.gov SPCC paths (/spcc, /emergency-response/..., /oil-spills-prevention-and-preparedness-regulations/...) all unreachable to the verifier on 2026-11-17; a /sites/default/files PDF came back unsupported. Build an SPCC "
  },
  {
+  "host": "www.forbes.com",
+  "url": "https://www.forbes.com",
+  "verdict": "partial",
+  "as_of": "2026-11-23",
+  "vertical": "home_equity_tco",
+  "note": "2026-11-23: advisor rate pages 403 on curl but readable via web_extract; fetch the rate page through web_extract, not curl"
+ },
+ {
   "host": "www.hikmicrotech.com",
   "url": "https://www.hikmicrotech.com/en/explore/home-blog/Places-Your-Home-Might-Be-Losing-Heat",
   "verdict": "fetchable",
@@ -3246,6 +3254,22 @@
   "as_of": "2026-11-17",
   "vertical": "workstation_compute_economics",
   "note": "workstation_compute_economics 2026-11-17: plain fetch returned the full page (measurements / daily index table); registered in source_quality.primary_hosts as an origin host."
+ },
+ {
+  "host": "www.mortgagenewsdaily.com",
+  "url": "https://www.mortgagenewsdaily.com",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "home_equity_tco",
+  "note": "2026-11-23: news article pages fetch clean with curl + Chrome UA"
+ },
+ {
+  "host": "www.nahb.org",
+  "url": "https://www.nahb.org",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "home_equity_tco",
+  "note": "2026-11-23: press-release pages fetch clean with curl + Chrome UA"
  },
  {
   "host": "www.nicholsequipment.com",

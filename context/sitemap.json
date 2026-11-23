@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T11:13:33Z",
+  "updated_at": "2026-11-23T11:39:12Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7650,6 +7650,23 @@
         "Related reading"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-11-23",
+      "public": false
+    },
+    {
+      "slug": "2026-11-23_your-8-48-remodel-exits-closed",
+      "title": "Your 8.48% Remodel: The Exits That Funded It Closed",
+      "vertical": "home_equity_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The funding loop runs backward",
+        "By the numbers",
+        "What the lenders are holding, and what spring answers",
+        "The catch"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-23",
       "public": false
     },

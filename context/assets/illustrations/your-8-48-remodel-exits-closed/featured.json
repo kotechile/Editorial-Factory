@@ -1,0 +1,113 @@
+{
+  "slug": "your-8-48-remodel-exits-closed",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A weathered asphalt-shingle roof above a dusk-lit house, ladder at the eaves and a shingle bundle waiting on the driveway.",
+      "caption": "The shingles wait on the driveway because the refinance that would have carried them now costs 8.48%.",
+      "title": "Worn roof and staged shingles at blue hour \u2014 the remodel that must self-fund",
+      "bytes": 380316,
+      "sha256": "sha256:a23e09d24b1740e00ab0044460464f45"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "A suburban house exterior at blue hour, its roofline covered in worn, curling asphalt shingles streaked rust and ochre, a weathered timber fascia, a galvanised steel extension ladder leaning against the eaves, and a strapped bundle of new asphalt shingles waiting on the concrete driveway below. The only warm light is ochre lamplight glowing from two windows and the doorway, spilling outward across the driveway onto the shingle bundle; the sky deepens from slate grey to charcoal. Shot on a 35mm lens, deep focus, long-exposure stillness, fine film grain. Wide 16:9 framing with the house off-centre on the right third and generous empty dusk sky on the left. No people, no signage.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos",
+  "rationale": "architectural_night makes the kept house \u2014 the one you neither sell nor abandon \u2014 the protagonist, and stages the article's named hero (the roof past its wear-out date) at the day's end. The long-exposure dusk stillness carries the frozen exit; the warm windows carry the household that stays and must now self-fund the repair. After recent close-up, flat-lay and collage treatments, a wide blue-hour exterior gives the card range.",
+  "cue": "The Exits That Funded It Closed",
+  "subject": "a worn asphalt-shingle roof past its wear-out date above a lit-house driveway at dusk, with a ladder and a bundle of new shingles waiting",
+  "core_thesis": "With resale frozen at a 13-year-low confidence reading of 25 and fixed home equity money at 8.48%, the exits that used to fund a remodel are closed \u2014 the repair must now pay for itself out of running costs, not resale recovery.",
+  "core_conflict": "A closed funding loop (record-low contracts, 7.35% first-lien money, refis down 54%) collides with 8.48% second-lien borrowing, so the aging roof or compressor must self-justify on payback within the ownership window.",
+  "composition": "off-centre right-third placement with the worn roofline commanding the frame, wide 16:9, generous slate dusk sky as editorial negative space on the left",
+  "alt_text": "The Remodel Funding Loop Closed. A weathered asphalt-shingle roof above a dusk-lit house, ladder at the eaves and a shingle bundle waiting",
+  "caption": "The Remodel Funding Loop Closed: With selling and refinancing repriced, the repair you planned must now pay for itself.",
+  "title": "The Remodel Funding Loop Closed",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-8-48-remodel-exits-closed/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406970,
+  "sha256": "sha256:0efac4e653c339049b3d34ebcdd4984c98f7e078c48b885f1087727d63bd05d3",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406970,
+    "quality": 76,
+    "sha256": "sha256:0efac4e653c339049b3d34ebcdd4984c98f7e078c48b885f1087727d63bd05d3",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:022e7bd91cf11564ad9e85c13acfa0dda6523c2a7c2e24a3af355ddf2aa14789",
+  "render_phash": "844e0017000f001b007501ed0391219124190c290b89040b006c03ec00f8007f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A single-story house at dusk with a weathered asphalt-shingle roof, a ladder leaning against the roofline, and a plastic-wrapped bundle of new shingles sitting on the driveway beside warmly lit windows under a dark sky.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The worn roof, ladder, and waiting shingle bundle depict the exact remodel project the article says must now pay for itself, matching the ordered frame of a roof past its wear-out date at dusk."
+  },
+  "source_hash": "sha256:196f8020446238519fac0e56b0025912",
+  "source_chars": 3502,
+  "task_id": "11dba843aac83f5f0d64bf868c7f9198",
+  "credits": 5.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/11dba843aac83f5f0d64bf868c7f9198_1795433915402.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "A suburban house exterior at blue hour, its roofline covered in worn, curling asphalt shingles streaked rust and ochre, a weathered timber fascia, a galvanised steel extension ladder leaning against the eaves, and a strapped bundle of new asphalt shingles waiting on the concrete driveway below. The only warm light is ochre lamplight glowing from two windows and the doorway, spilling outward across the driveway onto the shingle bundle; the sky deepens from slate grey to charcoal. Shot on a 35mm lens, deep focus, long-exposure stillness, fine film grain. Wide 16:9 framing with the house off-centre on the right third and generous empty dusk sky on the left. No people, no signage.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-23T11:38:41+00:00",
+  "overlay": {
+    "kicker": "HOME EQUITY // REPAIR PAYBACK MATH",
+    "title": "THE REMODEL FUNDING LOOP CLOSED",
+    "hook": "With selling and refinancing repriced, the repair you planned must now pay for itself",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.8,
+    "target": 4.5,
+    "clutter": 0.119,
+    "region_rgb": [
+      56,
+      62,
+      67
+    ],
+    "binding_rgb": [
+      77,
+      82,
+      88
+    ],
+    "title_lines": [
+      "THE REMODEL",
+      "FUNDING LOOP",
+      "CLOSED"
+    ],
+    "subject": 0.054,
+    "ink_subject": 0.018,
+    "spike": 0.084,
+    "generated_at": "2026-11-23T11:38:41+00:00"
+  }
+}
