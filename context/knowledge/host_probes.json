@@ -2112,6 +2112,14 @@
   "note": "/ 20 percent equity on a refinance, and the payment mechanics); and `nerdwallet.com/article/mortgages/pmi-private-mortgage-insurance` (the price anchor as a **labelled secondary** row: \"The"
  },
  {
+  "host": "nestdaddy.com",
+  "url": "https://nestdaddy.com/blog/state-of-remote-mcp-servers-2026",
+  "verdict": "fetchable",
+  "as_of": "2026-11-23",
+  "vertical": "agentic_ai",
+  "note": "Plain fetch works, no bot wall; the 2026-11-22 MCP-registry audit serves full figures in HTML \u2014 use direct fetch for future tool-fabric beats."
+ },
+ {
   "host": "netstock.com",
   "url": "",
   "verdict": "fetchable",

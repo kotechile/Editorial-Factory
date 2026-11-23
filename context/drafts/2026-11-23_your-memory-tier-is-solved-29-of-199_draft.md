@@ -10,7 +10,7 @@ date: 2026-11-23
 slug: your-memory-tier-is-solved-29-of-199
 meta_title: "Your Memory Tier Is Solved: 29 of 199"
 meta_description: "A model beat itself using 29 distilled guidelines instead of all 199 — the same week a quarter of MCP registry hosts changed a tool. The memory tier is closed; the tool fabric is not."
-primary_keyword: "agent memory management"
+primary_keyword: "memory tier"
 sources:
   - https://arxiv.org/abs/2611.26361
   - https://nestdaddy.com/blog/state-of-remote-mcp-servers-2026

@@ -1,0 +1,112 @@
+{
+  "slug": "your-memory-tier-is-solved-29-of-199",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Printed guideline cards stacked under a desk lamp in a dark control room, a server blade half-pulled from the rack row behind the glass.",
+      "caption": "The memory tier closed this week \u2014 the rack row those guidelines describe is still being rewritten underneath.",
+      "title": "Guideline cards still, blade mid-swap \u2014 memory closed, tool fabric churning",
+      "bytes": 235842,
+      "sha256": "sha256:3e0bfb9a3f680b5c698418bbd4ea58d5"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still in a night control room: a small squared stack of blank printed guideline cards sits finished and motionless under a single warm desk lamp raking from the left, bone white card stock on a brushed steel console. Beyond the observation glass to the right, a rack row in the data hall where one server blade is pulled halfway out on its rails, empty bay gap lit weathered orange against steel blue status LEDs, cable sheathing coiled at its foot. Palette of charcoal, steel blue and weathered orange. 35mm anamorphic with gentle edge falloff, shallow depth of field, wide 16:9 with heavy negative space, hero stack on the lower-left third, fine film grain, no people, no logos.",
+  "negative_prompt": "garbled text, random lettering, printed numbers, watermarks, logos, human faces or hands",
+  "rationale": "The story is one decisive moment in one place: the week the memory tier closed while the tool fabric kept moving underneath it. A cinematic still lets both halves coexist in a single believable frame \u2014 the settled artefact in the lamplight foreground and the churning rack row beyond the glass \u2014 giving the abstract software thesis physical presence, material weight and an implied split along the window mullion. As a photographic treatment it also avoids the constructed-render look used on recent headers.",
+  "cue": "29 Distilled Guidelines Beat All 199",
+  "subject": "a squared stack of printed guideline cards under a desk lamp in a control room, with a server blade half-pulled from a rack row behind the glass",
+  "core_thesis": "Agent memory just resolved into a solved engineering problem \u2014 a model does better with 29 distilled guidelines than with all 199, and a plain-text log with search beats every structured stack \u2014 while the MCP tool fabric those guidelines describe is still being rewritten under a quarter of registry hosts with no change feed to watch.",
+  "core_conflict": "Effort and certainty are pouring into the closed, settled half of the agent stack (distilled memory) while the churning half underneath (remote MCP hosts whose tools keep changing, 11% missing a daily check) has no change feed \u2014 memory is stable prose about an unstable fabric.",
+  "composition": "extreme asymmetric staging within one frame: the closed card stack small and still in the lower-left third, the churning rack row stretching away to the right beyond the observation glass, the window mullion acting as the dividing seam",
+  "alt_text": "Agent Memory Is Solved, Tools. Printed guideline cards stacked under a desk lamp in a dark control room, a server blade half-pulled from",
+  "caption": "Agent Memory Is Solved, Tools: Three papers settle agent memory the same week a quarter of MCP hosts changed a tool.",
+  "title": "Agent Memory Is Solved, Tools",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-memory-tier-is-solved-29-of-199/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 298822,
+  "sha256": "sha256:4a431a6726c91cfb5cd5af2ce62f66cb1800081faf6db01db3909437692fcb7b",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 298822,
+    "quality": 88,
+    "sha256": "sha256:4a431a6726c91cfb5cd5af2ce62f66cb1800081faf6db01db3909437692fcb7b",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:f537630169e45ef768af061f219ea454106c232cb785dc5546cab703bd5b0bc0",
+  "render_phash": "10e590ed30ed70e918f938a5106d001f009b2061063b1f9b19ff1b3f7e3fe09f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A desk lamp lights a small stack of white cards on a desk in the lower-left foreground, while behind a glass partition with a vertical mullion a server rack row recedes to the right with one server blade half-pulled out and orange indicator lights glowing.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image literally shows the article's own two protagonists \u2014 the closed, distilled guideline card stack and the churning MCP server-rack fabric behind the glass \u2014 staged exactly as the article's memory-tier-versus-tool-fabric divide."
+  },
+  "source_hash": "sha256:7fa5c1322ff3b1c1a447264921d1851f",
+  "source_chars": 6359,
+  "task_id": "579e6b84bf56a09a7ad022e51be80189",
+  "credits": 5.0,
+  "cost_ms": 36,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/579e6b84bf56a09a7ad022e51be80189_1795431554068.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still in a night control room: a small squared stack of blank printed guideline cards sits finished and motionless under a single warm desk lamp raking from the left, bone white card stock on a brushed steel console. Beyond the observation glass to the right, a rack row in the data hall where one server blade is pulled halfway out on its rails, empty bay gap lit weathered orange against steel blue status LEDs, cable sheathing coiled at its foot. Palette of charcoal, steel blue and weathered orange. 35mm anamorphic with gentle edge falloff, shallow depth of field, wide 16:9 with heavy negative space, hero stack on the lower-left third, fine film grain, no people, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-23T10:59:20+00:00",
+  "overlay": {
+    "kicker": "AGENT MEMORY // MCP TOOL CHURN",
+    "title": "AGENT MEMORY IS SOLVED, TOOLS",
+    "hook": "Three papers settle agent memory the same week a quarter of MCP hosts changed a tool",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 10.09,
+    "target": 4.5,
+    "clutter": 0.131,
+    "region_rgb": [
+      44,
+      42,
+      37
+    ],
+    "binding_rgb": [
+      45,
+      58,
+      66
+    ],
+    "title_lines": [
+      "AGENT MEMORY",
+      "IS SOLVED, TOOLS"
+    ],
+    "subject": 0.079,
+    "ink_subject": 0.027,
+    "spike": 0.084,
+    "generated_at": "2026-11-23T10:59:20+00:00"
+  }
+}

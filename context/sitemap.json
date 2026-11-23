@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T10:41:50Z",
+  "updated_at": "2026-11-23T11:13:33Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7636,10 +7636,28 @@
       "url": "https://wellroost.com/your-snow-cores-1300-apart/"
     },
     {
+      "slug": "2026-11-23_agents-names-not-brakes",
+      "title": "Your Rogue Agent: 82.5% Can't Stop It",
+      "vertical": "enterprise_ai_governance",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The Name Shipped, the Brake Lagged",
+        "By the numbers",
+        "The number nobody publishes",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-11-23",
+      "public": false
+    },
+    {
       "slug": "2026-11-23_your-memory-tier-is-solved-29-of-199",
       "title": "29 Distilled Guidelines Beat All 199 \u2014 Pick Your Memory Tier",
       "vertical": "agentic_ai",
-      "primary_keyword": "agent memory management",
+      "primary_keyword": "memory tier",
       "secondary_keywords": [],
       "h2_topics": [
         "At a glance",

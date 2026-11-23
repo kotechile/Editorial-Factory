@@ -1,0 +1,115 @@
+{
+  "slug": "agents-names-not-brakes",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Cut-paper passport standing beside a flat emergency-stop button with a torn, disconnected cable on a dark console desk.",
+      "caption": "The industry cut agents a passport and left the stop button lying flat, its cable never wired in.",
+      "title": "Passport Cut, Brake Unwired \u2014 Paper Collage Header",
+      "bytes": 407319,
+      "sha256": "sha256:c27f8bfa8a7a6d10140df91ccf6e6475"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Editorial cut-paper collage laid on the dark brushed-steel console desk of a control room, a vertical seam dividing the frame. Left half: a crisp bone-white cut-paper passport silhouette standing upright on fanned rag-paper pages, a small cobalt circular emblem cut into its cover, one long clean cast shadow. Right half: an oxidised-red cut-paper emergency-stop button lying flat, its paper cable torn short, ending before a small graphite paper socket, its cast shadow broken. Hand-torn edges with visible fibre, halftone newsprint texture, muted palette of bone white, cobalt and oxidised red over graphite. A single low raking key light from the upper left, warm and soft, throwing long shadows under every layer. Split-screen diptych, generous negative space, no lettering.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible print",
+  "rationale": "This is a standards-and-governance dilemma with no facility, machine or supply chain to photograph, which is exactly when a paper silhouette states the idea best. The article supplies its own two heroes \u2014 passport and stop button \u2014 so the collage shows the finished passport against an unwired brake, the split-screen seam carrying the 'named, not stopped' duality. Nano-banana renders crisp cut edges and clean geometry where flux would smear delicate paper detail.",
+  "cue": "Identity shipped first; the brake is still optional",
+  "subject": "a cut-paper passport standing finished beside a flat cut-paper emergency-stop button whose cable is torn short of its socket",
+  "core_thesis": "The industry gave AI agents a verifiable identity \u2014 a passport \u2014 thirteen days of news cycle before anyone could stop one: only 17.5% of enterprises can halt a rogue agent, so identity shipped first and the brake is still optional.",
+  "core_conflict": "Naming an agent is a paperwork job a consortium can ship in months; stopping an agent is a wiring job that must reach WAFs, API gateways and guardrail policies on gear the standard's authors do not own \u2014 so the ANS spec's seven documents contain no containment control at all.",
+  "composition": "split-screen diptych with a vertical seam: passport standing on the left third, flat stop button on the right third, generous negative space",
+  "alt_text": "AI Agents Got Names, Not Brakes. Cut-paper passport standing beside a flat emergency-stop button with a torn, disconnected cable on a dark",
+  "caption": "AI Agents Got Names, Not Brakes: Only 17.5% of firms can halt a rogue agent \u2014 identity shipped first, the brake didn't.",
+  "title": "AI Agents Got Names, Not Brakes",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/agents-names-not-brakes/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 393710,
+  "sha256": "sha256:a4b2c27a9d6d136e158319dbae577e896a0aa241effa08db68025873d6d93dc9",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 393710,
+    "quality": 72,
+    "sha256": "sha256:a4b2c27a9d6d136e158319dbae577e896a0aa241effa08db68025873d6d93dc9",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:0b9dbe4706ba7ce2d4a843268f046380b5c0655fb7edfc783ef913985b7790a1",
+  "render_phash": "fffffe6dfe7de67dc67d8e7d8e7d965f0e668e64ce65e675da71ce75667d3b68",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split diptych on dark torn-edge paper: on the left, a fanned stack of cream cut-paper cards with a blank blue oval on the front card; on the right, a red square plate with a circular emergency-stop button whose cable runs frayed and torn toward a small dark socket, with generous negative space around both.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.85,
+    "reason": "The image pairs an identity-document object with an emergency-stop button whose cable is severed short of its socket, directly mirroring the article's claim that agent identity shipped while the stop/brake mechanism remains unfinished."
+  },
+  "source_hash": "sha256:301c816ce2b56adaa61bda70cf5837ea",
+  "source_chars": 4846,
+  "task_id": "02222bd898e7b25d034020daa910f58f",
+  "credits": 18.0,
+  "cost_ms": 30,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_c609a0ee212d032192d501cd3b15b62a.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Editorial cut-paper collage laid on the dark brushed-steel console desk of a control room, a vertical seam dividing the frame. Left half: a crisp bone-white cut-paper passport silhouette standing upright on fanned rag-paper pages, a small cobalt circular emblem cut into its cover, one long clean cast shadow. Right half: an oxidised-red cut-paper emergency-stop button lying flat, its paper cable torn short, ending before a small graphite paper socket, its cast shadow broken. Hand-torn edges with visible fibre, halftone newsprint texture, muted palette of bone white, cobalt and oxidised red over graphite. A single low raking key light from the upper left, warm and soft, throwing long shadows under every layer. Split-screen diptych, generous negative space, no lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-23T11:13:01+00:00",
+  "overlay": {
+    "kicker": "AI AGENTS // IDENTITY WITHOUT A BRAKE",
+    "title": "AI AGENTS GOT NAMES, NOT BRAKES",
+    "hook": "Only 17.5% of firms can halt a rogue agent \u2014 identity shipped first, the brake didn't",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 8.64,
+    "target": 4.5,
+    "clutter": 0.181,
+    "region_rgb": [
+      48,
+      45,
+      38
+    ],
+    "binding_rgb": [
+      69,
+      66,
+      59
+    ],
+    "title_lines": [
+      "AI AGENTS GOT",
+      "NAMES, NOT",
+      "BRAKES"
+    ],
+    "subject": 0.107,
+    "ink_subject": 0.025,
+    "spike": 0.125,
+    "generated_at": "2026-11-23T11:13:01+00:00"
+  }
+}

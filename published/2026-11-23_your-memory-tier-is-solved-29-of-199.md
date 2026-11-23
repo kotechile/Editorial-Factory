@@ -10,10 +10,16 @@ date: 2026-11-23
 slug: your-memory-tier-is-solved-29-of-199
 meta_title: "29 Distilled Guidelines Beat All 199 — Pick Your Memory Tier"
 meta_description: "A model beat itself using 29 distilled guidelines instead of all 199 — the same week a quarter of MCP registry hosts changed a tool. The memory tier is closed; the tool fabric is not."
-primary_keyword: "agent memory management"
+primary_keyword: "memory tier"
 sources:
   - https://arxiv.org/abs/2611.26361
   - https://nestdaddy.com/blog/state-of-remote-mcp-servers-2026
+image_path: "context/assets/illustrations/your-memory-tier-is-solved-29-of-199/featured.jpg"
+image_style: "cinematic_still"
+image_model: "flux"
+image_alt: "Agent Memory Is Solved, Tools. Printed guideline cards stacked under a desk lamp in a dark control room, a server blade half-pulled from"
+image_caption: "Agent Memory Is Solved, Tools: Three papers settle agent memory the same week a quarter of MCP hosts changed a tool."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
