@@ -22,7 +22,7 @@ In one 26-day stretch, vendors set a standard for who an AI agent is. Their fiel
 
 <!-- tension -->
 ## Identity shipped first, brake shipped second
-The order of arrival tells the story. On June 23, the Linux Foundation announced its plan for the Agent Name Service [1]. On October 28, Salt Security rolled out Autonomous Defense, controls that can cut off an agent's tool access [2]. The identity standard then formally launched at the KubeCon conference on November 10, backed by 11 organizations including Cisco, Cloudflare and Salesforce.
+What I keep circling is the order of arrival. On June 23, the Linux Foundation announced its plan for the Agent Name Service [1]. On October 28, Salt Security rolled out Autonomous Defense, controls that can cut off an agent's tool access [2]. The identity standard then formally launched at the KubeCon conference on November 10, backed by 11 organizations including Cisco, Cloudflare and Salesforce.
 
 Why does the stop side lag? Naming an agent is a paperwork job. Stopping one is a wiring job. A registry only holds records. A stop control must reach the web application firewalls (WAFs) and application programming interfaces (APIs) that the agent touches [2]. Vendors can settle a naming format within weeks. Cutting off a rogue agent means rewiring gear they do not own. Salt's field data shows how thin the stop side is. Only 12.5% of its 383 respondents can trace a full agent path from start to end. Over 60% would need hours or days to rebuild what one agent did yesterday [3].
 
@@ -39,7 +39,7 @@ Here is what I find hard to square. The chief information officer (CIO) who adop
 
 <!-- nuanced-takeaway -->
 ## The catch
-The honest reading cuts both ways. An identity standard thirteen days old has no install base. Eleven backers is intent, not deployment. The same youth applies to Salt's stop button, which works only on gear the customer already owns. And the headline share is my own math, not a published figure: 82.5% is just the flip side of Salt's 17.5%. So the defensible conclusion is narrower than the headline. Buy the fence and the name on the same purchase order, because each is worth little alone.
+My read: the honest reading cuts both ways. An identity standard thirteen days old has no install base. Eleven backers is intent, not deployment. The same youth applies to Salt's stop button, which works only on gear the customer already owns. And the headline share is my own math, not a published figure: 82.5% is just the flip side of Salt's 17.5%. So the defensible conclusion is narrower than the headline. Buy the fence and the name on the same purchase order, because each is worth little alone.
 
 ## Sources
 - [1] The Linux Foundation, "Linux Foundation Welcomes Agent Name Service to Bring Verifiable Identity and Discovery to AI Agents", 2026-11-10 — https://www.linuxfoundation.org/press/linux-foundation-welcomes-agent-name-service-to-bring-verifiable-identity-and-discovery-to-ai-agents

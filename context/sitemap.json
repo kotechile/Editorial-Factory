@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T11:39:12Z",
+  "updated_at": "2026-11-23T12:14:56Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7665,6 +7665,24 @@
         "By the numbers",
         "What the lenders are holding, and what spring answers",
         "The catch"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-23",
+      "public": false
+    },
+    {
+      "slug": "2026-11-23_your-fuel-decided-your-winter-bill",
+      "title": "Your Fuel Decided Your Winter Bill: $686 or $2,977",
+      "vertical": "home_infrastructure_lifecycle_tco",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "How the forecast moved",
+        "By the numbers",
+        "Where the season lands on you",
+        "The catch in the number",
+        "Related reading"
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-23",
