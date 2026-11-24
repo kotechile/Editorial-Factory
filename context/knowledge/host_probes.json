@@ -3288,6 +3288,14 @@
   "note": "the 6-inch siding line, the $125 fee and the three-year designation; `www.ibhs.org/wildfire/` for a field count like \"destroyed 615\"), while the dual-office acoustic beat still has **no** fe"
  },
  {
+  "host": "www.langchain.com",
+  "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
+  "verdict": "fetchable",
+  "as_of": "2026-11-24",
+  "vertical": "ai_observability_qa",
+  "note": "probed 2026-11-24, web_extract first try, full claim text + date on page"
+ },
+ {
   "host": "www.law.cornell.edu",
   "url": "https://www.law.cornell.edu/cfr/text/40/112.3",
   "verdict": "fetchable",
@@ -3414,6 +3422,14 @@
   "as_of": "2026-11-17",
   "vertical": "workstation_compute_economics",
   "note": "workstation_compute_economics 2026-11-17: plain fetch returned the full page (measurements / daily index table); registered in source_quality.primary_hosts as an origin host."
+ },
+ {
+  "host": "www.snowflake.com",
+  "url": "https://www.snowflake.com/en/blog/ai-agent-observability-monitor-debug-optimize-llm-applications",
+  "verdict": "fetchable",
+  "as_of": "2026-11-24",
+  "vertical": "ai_observability_qa",
+  "note": "probed 2026-11-24, web_extract first try, preview date in italic note"
  },
  {
   "host": "www.theregister.com",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T20:08:04Z",
+  "updated_at": "2026-11-24T10:48:06Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7791,6 +7791,28 @@
       "date": "2026-11-23",
       "public": true,
       "url": "https://aichieve.net/your-otif-never-sees-the-pick/"
+    },
+    {
+      "slug": "2026-11-24_your-online-judge-votes-for-itself",
+      "title": "Your LLM Judge Silently Votes: 9%\u201381% Undecided",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "LLM judge",
+      "secondary_keywords": [
+        "online evaluation",
+        "LLM-as-a-judge",
+        "production observability"
+      ],
+      "h2_topics": [
+        "At a glance",
+        "A metric before a rule",
+        "By the numbers",
+        "Where this bites first",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "evals_infra_eng",
+      "date": "2026-11-24",
+      "public": false
     }
   ]
 }

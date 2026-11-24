@@ -567,3 +567,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-23 | `your-agent-executes-before-it-verifies` | agentic_ai | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-agent-executes-before-it-verifies/featured.jpg` |
 | 2026-11-23 | `your-heat-pump-quote-buys-the-floor` | home_equity_tco | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-heat-pump-quote-buys-the-floor/featured.jpg` |
 | 2026-11-23 | `your-200-sqep-fine` | sales_order_service_level_otif | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-200-sqep-fine/featured.jpg` |
+| 2026-11-24 | `your-online-judge-votes-for-itself` | ai_observability_qa | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-online-judge-votes-for-itself/featured.jpg` |

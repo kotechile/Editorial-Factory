@@ -1,0 +1,113 @@
+{
+  "slug": "your-online-judge-votes-for-itself",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Empty observability control room at night; a wall of live score charts holds flat blue baselines while one amber trace breaks rank.",
+      "caption": "The wall reads drift; the judge read a rule nobody wrote.",
+      "title": "Control room wall with one judge-score trace off baseline",
+      "bytes": 305062,
+      "sha256": "sha256:b382ee9ab66a2338a0bb5452385d6f1f"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "An empty observability control room at night: a wide monitoring wall of live judge score charts fills the right two-thirds, wordless steel-blue line traces holding flat baselines while one panel's trace has stepped upward into amber \u2014 a hard call no rule asked for. Below, a brushed-steel console desk with a single warm lamp lighting an unattended chair, cable sheathing and graphite floor falling into deep shadow. Anamorphic 35mm look, wide asymmetric framing with the wall off-centre and dark negative space on the left, mid depth of field, cool screen glow raking from the right, fine film grain, steel-blue and amber palette over graphite, no people, no legible words on the screens.",
+  "negative_prompt": "garbled text, random lettering, legible numbers, UI labels, watermarks",
+  "rationale": "This is a systemic operational story \u2014 scores becoming watched metrics, alert paths inheriting hidden opinions \u2014 so it needs an environment, not a macro detail. Cinematic still stages the control room where those scores are actually monitored, and the single amber trace breaking a flat baseline carries the undeclared vote legibly even at card size.",
+  "cue": "voting on rules nobody wrote",
+  "subject": "an empty observability control room at night, its wall of live judge score charts holding flat baselines while one amber trace breaks rank",
+  "core_thesis": "LLM judges that pass every stated control still silently pick winners on 9%\u201381% of conflicts no rubric resolved \u2014 and the same week those scores were promoted into standing production metrics that teams alert on.",
+  "core_conflict": "the decisive look of a monitored score versus the undeclared value choice underneath it \u2014 a dashboard reading model drift while the judge votes on a rule nobody wrote",
+  "composition": "Wide asymmetric composition: the glowing monitoring wall commands the right two-thirds off-centre, while the unattended console desk and deep shadow hold the left third as breathing room.",
+  "alt_text": "LLM Judges Pick Winners No Rubric Backs. Empty observability control room at night; a wall of live score charts holds flat blue baselines",
+  "caption": "LLM Judges Pick Winners No Rubric Backs: The judge scores now watched as production metrics may carry a choice no one declared.",
+  "title": "LLM Judges Pick Winners No Rubric Backs",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-online-judge-votes-for-itself/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 383417,
+  "sha256": "sha256:8b46da57486cbe16b41bbc2933cdd60a113a9a317adfcadb6d927cd1c8e5b45d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 383417,
+    "quality": 88,
+    "sha256": "sha256:8b46da57486cbe16b41bbc2933cdd60a113a9a317adfcadb6d927cd1c8e5b45d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:0047123b11150c34c69a2f7aa9a7a1b98f4727b8c82d58b7ffdd95156edd2e9c",
+  "render_phash": "03270037081f0837085f081f0877083f081b083f081f0036042701b301a70526",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An empty dark control room at night with a wall of monitors on the right displaying mostly flat blue line charts and one amber highlighted chart, an unattended desk with a chair and console equipment in the foreground, and deep shadow filling the left third.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.85,
+    "reason": "The image shows the article's own mechanism \u2014 a monitoring wall of score charts with one anomalous amber trace breaking flat baselines \u2014 matching the story about judge scores silently deviating as production metrics, though no on-screen text confirms the charts are specifically judge scores."
+  },
+  "source_hash": "sha256:42f04a7f6374b982dabfd28aecfe99b8",
+  "source_chars": 4244,
+  "task_id": "7f39791d13fe1ae3fb3879081ab03526",
+  "credits": 5.0,
+  "cost_ms": 120,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/7f39791d13fe1ae3fb3879081ab03526_1795517238900.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "An empty observability control room at night: a wide monitoring wall of live judge score charts fills the right two-thirds, wordless steel-blue line traces holding flat baselines while one panel's trace has stepped upward into amber \u2014 a hard call no rule asked for. Below, a brushed-steel console desk with a single warm lamp lighting an unattended chair, cable sheathing and graphite floor falling into deep shadow. Anamorphic 35mm look, wide asymmetric framing with the wall off-centre and dark negative space on the left, mid depth of field, cool screen glow raking from the right, fine film grain, steel-blue and amber palette over graphite, no people, no legible words on the screens.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-24T10:47:31+00:00",
+  "overlay": {
+    "kicker": "LLM JUDGES // UNDECLARED VOTES",
+    "title": "LLM JUDGES PICK WINNERS NO RUBRIC BACKS",
+    "hook": "The judge scores now watched as production metrics may carry a choice no one declared",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 12.77,
+    "target": 4.5,
+    "clutter": 0.13,
+    "region_rgb": [
+      19,
+      25,
+      29
+    ],
+    "binding_rgb": [
+      33,
+      41,
+      44
+    ],
+    "title_lines": [
+      "LLM JUDGES PICK",
+      "WINNERS NO",
+      "RUBRIC BACKS"
+    ],
+    "subject": 0.058,
+    "ink_subject": 0.011,
+    "spike": 0.122,
+    "generated_at": "2026-11-24T10:47:31+00:00"
+  }
+}

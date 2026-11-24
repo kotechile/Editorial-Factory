@@ -1,0 +1,12 @@
+# Run log — 2026-11-23 sales_order_service_level_otif evergreen — your-200-sqep-fine
+
+**Mode:** evergreen (Loop 1E). Generation gate OK at 20:01 UTC.
+**Brief:** `context/recon_proposals/2026-11-23_sales_order_service_level_otif_evergreen_brief.md` — gate PASS 20:03:07 (marker written).
+**Thesis:** Walmart's supplier fine schedule is three fee classes, not one 3% number — the per-defect SQEP classes punish data and packaging work the supplier controls cheaply, the 3% COGS OTIF class costs real inventory money — so the fee arithmetic itself sets the spending order. Scores U9 D9 E8 A9 → 8.9 (hand-audited).
+**Evidence:** 4 rows / 4 sources / 4 hosts, all fetched with figure evidence (Vendormint, Harvest Group, Coldstream Logistics, Inymbus). All labelled vendor claim (Walmart's published program terms as reported). Host ledger updated for the three new hosts via learn.py.
+**De-dup:** nearest prior evergreen `2026-11-02_your-cheapest-part-needs-four-sigma` (per-SKU newsvendor target); cross-vertical `2026-10-27_your-miss-costs-9x-the-chargeback` cites Walmart's 3%/98% once inside a total-miss-cost argument but never opens the per-defect SQEP arithmetic — named in the brief.
+**Draft:** `2026-11-23_your-200-sqep-fine_draft.md` — pre-tuned: accessibility PASS (Flesch 50.8), critic clean, shape clean, headline 100 STRONG lead_ok.
+**Review:** attempt 1 HELD (hard=2: Flesch 49.9, bare "PO" in the rewrite). Rhythm improved, 0 regressions → **adopted and repaired by hand**: removed the rewrite's invented "thresholds last moved 2018, 85%→87%" figure (not in the verified brief; Supply Chain Dive unreachable — would have failed source_gate), restored the dropped internal link `/your-miss-costs-9x-the-chargeback/`, spelled out "PO", added `evergreen: true` flag the rewrite dropped.
+**Gates:** all pass (accessibility Flesch 50.7, shape, critic, headline, sources, review_audit, voice, publish_gate).
+**Publish:** live CMS post 1831 (status publish, kind tag evergreen), Supabase row d134973e-f968-4c26-b9e1-942eb75a709b, featured media 1830, internal-links block stamped for aichieve.net and written back to the row.
+**Lesson:** frontier rewrite silently (a) dropped the hand-written inline internal link and the `evergreen: true` flag, and (b) re-imported an unverified figure from the brief's Durability prose ("last moved in 2018") that no verified row carried — only the verified rows and the brief's flagged claims are safe to re-voice; anything else in the brief's prose is off-limits to the reviewer. Recorded via learn.py.
