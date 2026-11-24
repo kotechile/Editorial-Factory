@@ -248,6 +248,14 @@
   "note": "vergreen).** Carries the figure as plain text and fetches first try: `blog.arkieva.com/replenishment-frequency` (the arithmetic that makes the topic \u2014 \"New SS = (1/\u221a2) * Original SS = 0.707"
  },
  {
+  "host": "blog.emailengine.app",
+  "url": "https://blog.emailengine.app/how-ai-changed-the-build-vs-buy-equation-in-saas/",
+  "verdict": "fetchable",
+  "as_of": "2026-11-24",
+  "vertical": "enterprise_tech_leadership",
+  "note": "Ghost blog; date via article:published_time; plain GET works."
+ },
+ {
   "host": "blog.inymbus.com",
   "url": "https://blog.inymbus.com/walmart-otif-performance-metrics",
   "verdict": "fetchable",
@@ -1440,6 +1448,14 @@
   "note": "note by design, never a hold) \u2014 expect it and say so in the run log. `help.ui.com`'s UniFi VLAN articles are unreachable to the verifier, so a bare IoT-VLAN privacy piece has no numeric prim"
  },
  {
+  "host": "hissingkitty.com",
+  "url": "https://hissingkitty.com/research/build-vs-buy-october-2026",
+  "verdict": "fetchable",
+  "as_of": "2026-11-24",
+  "vertical": "enterprise_tech_leadership",
+  "note": "SaaS build-vs-buy monthly report; first edition 2026-10-19, final 2026-10-31; self-selected bills/builds, self-reported savings; plain GET works."
+ },
+ {
   "host": "homeguide.com",
   "url": "",
   "verdict": "unreachable",
@@ -2302,6 +2318,14 @@
   "as_of": "2026-10-15",
   "vertical": "",
   "note": "st as-of anchor for an indexed figure). Fails or cannot carry a row: `oecd.org`, `ssa.gov` and `ato.gov.au` (all HTTP 403 to the verifier), `canada.ca` (unreachable), guessed `tax.ny.gov` te"
+ },
+ {
+  "host": "one2n.io",
+  "url": "https://one2n.io/blog/ai-inference-costs",
+  "verdict": "fetchable",
+  "as_of": "2026-11-24",
+  "vertical": "enterprise_tech_leadership",
+  "note": "Framer-hosted engineering blog; date via JSON-LD datePublished; plain GET works."
  },
  {
   "host": "onetonline.org",

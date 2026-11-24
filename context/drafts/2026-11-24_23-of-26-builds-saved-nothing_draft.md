@@ -45,6 +45,6 @@ The catch is that this cohort measures savings reporting, not savings. Twenty-si
 <!-- internal-links -->
 
 ## Sources
-- [1] Christine James, "The State of SaaS: Build vs. Buy, October 2026" — https://hissingkitty.com/research/build-vs-buy-october-2026
+- [1] Christine James, "The State of SaaS — Build vs. Buy, October 2026" — https://hissingkitty.com/research/build-vs-buy-october-2026
 - [2] Srivatsa RV, "AI inference costs: five decisions for engineering leaders" — https://one2n.io/blog/ai-inference-costs
 - [3] Andris Reinman, "How AI Changed the Build vs. Buy Equation in SaaS" — https://blog.emailengine.app/how-ai-changed-the-build-vs-buy-equation-in-saas/
