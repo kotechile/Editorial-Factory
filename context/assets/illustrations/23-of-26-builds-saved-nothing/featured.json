@@ -1,0 +1,115 @@
+{
+  "slug": "23-of-26-builds-saved-nothing",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Cut-paper diptych: a sealed vendor software box with a renewal invoice beside a half-built assembly of gears and modules",
+      "caption": "Twenty-six teams built instead of bought \u2014 and 23 of them logged no saving at all.",
+      "title": "Build vs Buy: The Savings Case Still Unproven",
+      "bytes": 404700,
+      "sha256": "sha256:67e2c1c68b7356fbf7df5e571de3a431"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Editorial cut-paper collage diptych arranged on a brushed-steel console desk in a control room. A torn vertical seam splits the frame: on the left, a crisp vendor software box with a wax-stamped renewal invoice and a hanging blank price tag, cut from slate-grey and bone-white rag paper; on the right, a half-assembled mechanism silhouette \u2014 flat-packed modules, gear wheels and a spanner fanned out in copper and graphite paper, one loose gear resting on the seam. Hand-torn fibre edges, halftone newsprint texture, physical cast shadows beneath every layer. A single raking key light from the left, muted slate, bone and copper palette, generous negative space, 16:9 split-screen diptych framing.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible print",
+  "rationale": "Build vs buy is a pure procurement dilemma with no facility, machine or supply chain to photograph \u2014 exactly the case the collage catalogue names, and the desk rules explicitly list 'build vs buy' as a split-screen duality. Cut-paper silhouettes make both scenarios instantly nameable at card size while keeping the B2B register, and the treatment avoids repeating the last four headers.",
+  "cue": "price the build like a renewal",
+  "subject": "a split-paper diptych of a sealed vendor software box with a renewal invoice versus a half-assembled mechanism of parts",
+  "core_thesis": "The first measured cohort of the AI build-vs-buy reset logged 26 in-house builds in two weeks and 23 report no saving at all, with zero verified payback reports \u2014 so the shift to building is real, the savings case is not, and a build must be priced with the same scrutiny as a renewal bill before committing.",
+  "core_conflict": "The pull of cheap AI-assisted building against the unverified promise of savings \u2014 build-it-yourself momentum colliding with the disciplined arithmetic of the yearly vendor renewal.",
+  "composition": "split-screen diptych with a torn vertical seam \u2014 vendor box and invoice on the left, sprawling half-built mechanism on the right, one loose gear resting on the seam",
+  "alt_text": "23 Of 26 In-House AI Builds Saved Nothing. Cut-paper diptych: a sealed vendor software box with a renewal invoice beside a half-built",
+  "caption": "23 Of 26 In-House AI Builds Saved Nothing: The switch to building is real, the savings are not \u2014 price the build like a renewal.",
+  "title": "23 Of 26 In-House AI Builds Saved Nothing",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/23-of-26-builds-saved-nothing/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 388574,
+  "sha256": "sha256:b0076b0ddca5a65316987e11f230f15f6acfc8a1978bb57988c7a62649e8c26e",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 388574,
+    "quality": 72,
+    "sha256": "sha256:b0076b0ddca5a65316987e11f230f15f6acfc8a1978bb57988c7a62649e8c26e",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:3e7f8bc661d3dd6e9c3ef88735f6c8478d2085e096d5864faf6eb1dc3ed80030",
+  "render_phash": "6259b9bf67b97bbd39b5359635b039b83b9833f825e425b201b225ed03be024f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A paper-collage diptych on a metal surface: the left panel holds a grey paper model of a sealed software box with a blank tag and an envelope bearing a red wax seal, the right panel holds a copper cutout of gears, cogs and wrenches arranged as a half-assembled mechanism, and the two panels are divided by a torn vertical seam with a loose gear at it.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image literally shows the article's own buy-versus-build metaphor \u2014 a sealed vendor box with an invoice-like sealed letter on one side of a torn seam and a sprawling half-built gear mechanism on the other \u2014 matching the art director's ordered frame and the headline's build-vs-buy subject."
+  },
+  "source_hash": "sha256:58dfbe89ca84f8b31875830e85940737",
+  "source_chars": 4295,
+  "task_id": "81b61d2a83e5f87d316a683875431f40",
+  "credits": 18.0,
+  "cost_ms": 35,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_710e5ec4a309b8b18fe652ec9a81088c.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Editorial cut-paper collage diptych arranged on a brushed-steel console desk in a control room. A torn vertical seam splits the frame: on the left, a crisp vendor software box with a wax-stamped renewal invoice and a hanging blank price tag, cut from slate-grey and bone-white rag paper; on the right, a half-assembled mechanism silhouette \u2014 flat-packed modules, gear wheels and a spanner fanned out in copper and graphite paper, one loose gear resting on the seam. Hand-torn fibre edges, halftone newsprint texture, physical cast shadows beneath every layer. A single raking key light from the left, muted slate, bone and copper palette, generous negative space, 16:9 split-screen diptych framing.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-24T11:42:27+00:00",
+  "overlay": {
+    "kicker": "ENTERPRISE SOFTWARE // BUILD VS BUY",
+    "title": "23 OF 26 IN-HOUSE AI BUILDS SAVED NOTHING",
+    "hook": "The switch to building is real, the savings are not \u2014 price the build like a renewal",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.83,
+    "target": 4.5,
+    "clutter": 0.234,
+    "region_rgb": [
+      89,
+      76,
+      68
+    ],
+    "binding_rgb": [
+      133,
+      104,
+      90
+    ],
+    "title_lines": [
+      "23 OF 26 IN-HOUSE",
+      "AI BUILDS SAVED",
+      "NOTHING"
+    ],
+    "subject": 0.207,
+    "ink_subject": 0.015,
+    "spike": 0.107,
+    "generated_at": "2026-11-24T11:42:27+00:00"
+  }
+}

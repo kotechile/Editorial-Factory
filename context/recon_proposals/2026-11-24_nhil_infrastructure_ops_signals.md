@@ -31,6 +31,7 @@
 <!-- synthesis-seed:end -->
 
 ## Dated background
+- https://aichieve.net/kill-switch-misses-half-your-agents/ — published internal back-catalogue page on the aichieve.net front; cited as the earned inline internal link in the draft/final body (agent-boundary kill-switch gap), not a sourcing anchor.
 - https://www.nokia.com/newsroom/nokia-advances-ai-ran-toward-commercial-deployment-and-physical-ai-launches-sovereign-agentic-ai-platform-for-telco-autonomy-with-nvidia — 2026-10-21, four days before window start. Sovereign agentic platform with NVIDIA (Nemotron models, on-prem deployment, governed cross-domain agents). Context for the sovereignty angle only; not an anchor.
 - https://a16z.com/why-texas-is-making-data-centers-wait — 2026-10-07. ERCOT large-load queue 474 GW by June (5× record peak, ~90% data centers); permit freeze.
 - https://www.ascendanalytics.com/blog/large-load-interconnection-queues-data-center-grid-access — 2026-05-05. BTM BESS coverage modeling.

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T11:16:11Z",
+  "updated_at": "2026-11-24T11:42:49Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7791,6 +7791,25 @@
       "date": "2026-11-23",
       "public": true,
       "url": "https://aichieve.net/your-otif-never-sees-the-pick/"
+    },
+    {
+      "slug": "2026-11-24_23-of-26-builds-saved-nothing",
+      "title": "AI Build vs Buy: 23 of 26 Builds Saved Nothing",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "AI build vs buy",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Where the build bet lands",
+        "By the numbers",
+        "What the closest teams do",
+        "The catch",
+        "Related reading",
+        "Related reading"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-11-24",
+      "public": false
     },
     {
       "slug": "2026-11-24_nobody-owns-your-ais-power-feed",
