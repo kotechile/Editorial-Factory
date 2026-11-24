@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T18:09:19Z",
+  "updated_at": "2026-11-24T18:39:54Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7831,6 +7831,24 @@
       "date": "2026-11-24",
       "public": true,
       "url": "https://aichieve.net/nobody-owns-your-ais-power-feed/"
+    },
+    {
+      "slug": "2026-11-24_your-backup-tier-holds-a-365-day-lease",
+      "title": "Your Backup Tier: A 365-Day Trap",
+      "vertical": "enterprise_tech_leadership",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The clock behind the cheap price",
+        "By the numbers",
+        "Where the decision actually lands",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "eng_leader",
+      "date": "2026-11-24",
+      "public": false
     },
     {
       "slug": "2026-11-24_your-doorbell-wont-need-the-cloud",

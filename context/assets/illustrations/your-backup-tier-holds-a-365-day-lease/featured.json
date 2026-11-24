@@ -1,0 +1,113 @@
+{
+  "slug": "your-backup-tier-holds-a-365-day-lease",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Rows of sealed tape-archive cabinets in a dark data hall, one cabinet open with an amber worklight inside its tape slot.",
+      "caption": "The cheap tier looks fine on the price dashboard until the day you have to open it.",
+      "title": "Deep archive hall: one slow door in a sealed cold-storage row",
+      "bytes": 368245,
+      "sha256": "sha256:abd457040263db4284c96707b1d3ea59"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression down a cold-storage data hall aisle: tall tape-library archive cabinets stacked in flat overlapping layers, brushed steel and graphite-grey panels with round inspection portholes receding toward a far doorway. On the right third one cabinet stands open, an amber worklight glowing inside its tape slot \u2014 the single retrieval in a hall of sealed, dormant deep-archive storage. Hard directional light rakes from the far end of the aisle, deep shadows between rows, crystal-clear air, no haze. Steel blue, charcoal and one safety-yellow floor stripe; polished concrete floor, long cast shadows. Wide 16:9 framing, open cabinet off-centre, breathing room above the cabinet line, no people, no text, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos, haze, fog",
+  "rationale": "The story's protagonist is a storage tier, a facility-scale system, so it belongs in its real environment \u2014 the cold archive hall \u2014 not a studio sweep. Telephoto compression stacks the sealed cabinet rows into flat layers that read as massed cheap capacity, while the single lit open cabinet carries the governing tension: cheap to store, expensive to open. Rule 6 sanctions long_lens_industry for systemic capacity topics, and it breaks the desk's recent run of cinematic, flatlay, night and collage treatments.",
+  "cue": "cheap to store and expensive to open",
+  "subject": "a deep-archive tape-library hall with one sealed storage cabinet opened mid-retrieval",
+  "core_thesis": "The cheapest backup storage tier bills its real cost at restore time, not at list price: a 365-day minimum storage lock and a 15-hour rehydration clock \u2014 not $1 per terabyte-month \u2014 decide whether the disaster plan actually works.",
+  "core_conflict": "Deferral economics: vendors batch restore work behind paying jobs, so teams save pennies per terabyte on storage and borrow against the hour they actually need the bytes back.",
+  "composition": "telephoto one-point perspective down the archive aisle, sealed cabinet rows stacked left, the single open cabinet holding the right third, generous negative space above the cabinet line",
+  "alt_text": "The 365-DAY Backup Tier Trap. Rows of sealed tape-archive cabinets in a dark data hall, one cabinet open with an amber worklight inside its",
+  "caption": "The 365-DAY Backup Tier Trap: A 365-day lock and a 15-hour restore, not the list price, decide your disaster plan.",
+  "title": "The 365-DAY Backup Tier Trap",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-backup-tier-holds-a-365-day-lease/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 386787,
+  "sha256": "sha256:c59c73343d396fcf84f5a95b5fdff407ced2a09a8234bae011378ca13dedda7e",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 386787,
+    "quality": 84,
+    "sha256": "sha256:c59c73343d396fcf84f5a95b5fdff407ced2a09a8234bae011378ca13dedda7e",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:9fbf479947a3dc73b6cbb0279757b6cfe9bff398026dd7f082ac3acd61e38180",
+  "render_phash": "0b27092f096e097f08e368df689e08bf08ff08f308f608e308f700f604db04db",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A long corridor in one-point perspective between two rows of grey sealed metal storage cabinets, with a single cabinet door standing open on the right third revealing a lit interior, yellow guide lines on the floor, and fluorescent ceiling lights above.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.85,
+    "reason": "The image shows the article's own mechanism\u2014an archive of sealed storage cabinets with exactly one opened mid-retrieval\u2014matching the ordered frame of a deep-archive hall, though the cabinets read slightly more as safe-deposit lockers than tape library racks."
+  },
+  "source_hash": "sha256:ad37537088fd2e8da28db25f0a71d15d",
+  "source_chars": 3763,
+  "task_id": "ad1f92a7ba4fb1d8463e89c1084b9a2f",
+  "credits": 5.0,
+  "cost_ms": 38,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/ad1f92a7ba4fb1d8463e89c1084b9a2f_1795545553935.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression down a cold-storage data hall aisle: tall tape-library archive cabinets stacked in flat overlapping layers, brushed steel and graphite-grey panels with round inspection portholes receding toward a far doorway. On the right third one cabinet stands open, an amber worklight glowing inside its tape slot \u2014 the single retrieval in a hall of sealed, dormant deep-archive storage. Hard directional light rakes from the far end of the aisle, deep shadows between rows, crystal-clear air, no haze. Steel blue, charcoal and one safety-yellow floor stripe; polished concrete floor, long cast shadows. Wide 16:9 framing, open cabinet off-centre, breathing room above the cabinet line, no people, no text, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-24T18:39:25+00:00",
+  "overlay": {
+    "kicker": "COLD STORAGE // DISASTER RECOVERY ECONOMICS",
+    "title": "THE 365-DAY BACKUP TIER TRAP",
+    "hook": "A 365-day lock and a 15-hour restore, not the list price, decide your disaster plan",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.66,
+    "target": 5.5,
+    "clutter": 0.273,
+    "region_rgb": [
+      63,
+      68,
+      71
+    ],
+    "binding_rgb": [
+      94,
+      116,
+      130
+    ],
+    "title_lines": [
+      "THE 365-DAY",
+      "BACKUP TIER",
+      "TRAP"
+    ],
+    "subject": 0.162,
+    "ink_subject": 0.028,
+    "spike": 0.2,
+    "generated_at": "2026-11-24T18:39:25+00:00"
+  }
+}
