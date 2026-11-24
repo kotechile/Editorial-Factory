@@ -1,0 +1,113 @@
+{
+  "slug": "your-substation-waits-55-months",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "High-voltage substation under construction at dusk, steel gantry and wrapped transformer under one amber worklight, dark data hall beyond.",
+      "caption": "With median feed waits past four years and most requests never going live, the substation is a five-year bet placed before the first rack is ordered.",
+      "title": "Substation under construction at blue hour before a dark data hall",
+      "bytes": 362380,
+      "sha256": "sha256:c626c40e4576ea7c6862970753a51d15"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Anamorphic 35mm cinematic film still, wide low-angle establishing shot at blue hour: a high-voltage substation under construction on a gravel yard, its galvanised steel lattice gantry and stacked porcelain insulators rising off-centre on the left third, copper busbars lacing between steel posts, a transformer waiting wrapped in shipping tarp on its poured concrete pad, a mobile crane silhouetted behind, string-lined foundation outlines in the gravel. A vast teal dusk sky and a dark unfinished data hall shell fill the right of the frame as negative space. One amber worklight rakes across the yard from the left, deep shadows, steel blue, graphite and weathered orange palette, crisp atmospheric depth, fine film grain, no people, no logos.",
+  "negative_prompt": "garbled text, random lettering, legible signage, watermarks",
+  "rationale": "The story turns on one place and one timeline \u2014 the substation a team must start paying for now and wait on for four-plus years \u2014 so a wide cinematic establishing shot carries the scale and the wait better than any close-up or constructed render. Blue-hour worklight on active construction beside a dark data hall shell states the sequencing conflict \u2014 power built before the building \u2014 with no invented apparatus.",
+  "cue": "Your Substation Waits 55 Months",
+  "subject": "a high-voltage substation under construction beside a dark, unfinished data hall shell",
+  "core_thesis": "The median wait from grid-queue request to a live power feed has doubled past four years \u2014 55 months for feeds over 200 megawatts \u2014 so the substation commitment is a five-year capital bet placed at project start, not a detail settled when the racks are ordered.",
+  "core_conflict": "The multi-year interconnection queue versus the hardware build schedule: capital must be committed years before the feed (or the 77% drop-out) is known, and no reform clears the wait.",
+  "composition": "Low-angle extreme asymmetry: the substation commanding the left third of the frame, vast dusk sky and the dark data hall shell filling the right as editorial negative space.",
+  "alt_text": "Your Substation Waits 55 Months. High-voltage substation under construction at dusk, steel gantry and wrapped transformer under one amber",
+  "caption": "Your Substation Waits 55 Months: Queue waits doubled past four years \u2014 the feed, not the racks, sets your build clock.",
+  "title": "Your Substation Waits 55 Months",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-substation-waits-55-months/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 404127,
+  "sha256": "sha256:e859f3e5248c91af1e0a4b176de9e7ef9ed1101940e07943c0b9a9a1ac3efa4d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 404127,
+    "quality": 80,
+    "sha256": "sha256:e859f3e5248c91af1e0a4b176de9e7ef9ed1101940e07943c0b9a9a1ac3efa4d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:1e6f572d808f86f94f9dc81ec2d6529c5070affdab30d8e9e80e98de20b1cbd9",
+  "render_phash": "211f881f801f18034c1f64fe6da169bf09ab4b9c0bf71f730589730bc0d283a5",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A high-voltage substation under construction with lattice transmission towers, insulators, a transformer unit and a crane on the left, beside a large dark unfinished building shell on the right, over bare dirt with rebar formwork in the foreground at dusk.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The frame depicts the article's own protagonist\u2014a substation being built next to an unfinished data hall\u2014directly visualizing the story's claim that the grid connection, not the hardware, is the long-lead decision."
+  },
+  "source_hash": "sha256:a1e1ccb1eba22646021203f62f582dd5",
+  "source_chars": 3564,
+  "task_id": "0379c8687839e0dfaa5eef0d17b99851",
+  "credits": 5.0,
+  "cost_ms": 30,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/0379c8687839e0dfaa5eef0d17b99851_1795543720310.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Anamorphic 35mm cinematic film still, wide low-angle establishing shot at blue hour: a high-voltage substation under construction on a gravel yard, its galvanised steel lattice gantry and stacked porcelain insulators rising off-centre on the left third, copper busbars lacing between steel posts, a transformer waiting wrapped in shipping tarp on its poured concrete pad, a mobile crane silhouetted behind, string-lined foundation outlines in the gravel. A vast teal dusk sky and a dark unfinished data hall shell fill the right of the frame as negative space. One amber worklight rakes across the yard from the left, deep shadows, steel blue, graphite and weathered orange palette, crisp atmospheric depth, fine film grain, no people, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-24T18:08:49+00:00",
+  "overlay": {
+    "kicker": "GRID INTERCONNECTION // QUEUE TIMING",
+    "title": "YOUR SUBSTATION WAITS 55 MONTHS",
+    "hook": "Queue waits doubled past four years \u2014 the feed, not the racks, sets your build clock",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 9.87,
+    "target": 4.5,
+    "clutter": 0.155,
+    "region_rgb": [
+      29,
+      37,
+      40
+    ],
+    "binding_rgb": [
+      46,
+      60,
+      63
+    ],
+    "title_lines": [
+      "YOUR",
+      "SUBSTATION",
+      "WAITS 55 MONTHS"
+    ],
+    "subject": 0.184,
+    "ink_subject": 0.046,
+    "spike": 0.205,
+    "generated_at": "2026-11-24T18:08:49+00:00"
+  }
+}

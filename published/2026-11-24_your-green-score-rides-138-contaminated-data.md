@@ -12,6 +12,12 @@ meta_title: "Your Green Score's Hidden 7.0-Point Drop"
 meta_title_source: "derived_from_title"
 meta_description: "Six frontier models lost 7.0 points when they were re-tested on re-worded MMLU (the multiple-choice general-knowledge benchmark) questions, because the…"
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-green-score-rides-138-contaminated-data/featured.jpg"
+image_style: "document_flatlay"
+image_model: "flux"
+image_alt: "MMLU Contamination Hides A 7-Point Drop. Two multiple-choice answer sheets side by side: one neatly filled and stamped green, its re-worded"
+image_caption: "MMLU Contamination Hides A 7-Point Drop: Six frontier models lost 7 points on re-worded MMLU — your green score may be recall."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

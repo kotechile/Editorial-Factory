@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T17:40:46Z",
+  "updated_at": "2026-11-24T18:09:19Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7891,6 +7891,24 @@
       "date": "2026-11-24",
       "public": true,
       "url": "https://aichieve.net/your-online-judge-votes-for-itself/"
+    },
+    {
+      "slug": "2026-11-24_your-substation-waits-55-months",
+      "title": "Your Substation Waits 55 Months",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The queue quietly became the build schedule",
+        "By the numbers",
+        "Where this bites",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-11-24",
+      "public": false
     }
   ]
 }

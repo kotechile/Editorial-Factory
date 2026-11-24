@@ -571,3 +571,5 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-24 | `nobody-owns-your-ais-power-feed` | nhil_infrastructure_ops | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/nobody-owns-your-ais-power-feed/featured.jpg` |
 | 2026-11-24 | `23-of-26-builds-saved-nothing` | enterprise_tech_leadership | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/23-of-26-builds-saved-nothing/featured.jpg` |
 | 2026-11-24 | `your-doorbell-wont-need-the-cloud` | smart_home_telemetry | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-doorbell-wont-need-the-cloud/featured.jpg` |
+| 2026-11-24 | `your-green-score-rides-138-contaminated-data` | ai_observability_qa | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-green-score-rides-138-contaminated-data/featured.jpg` |
+| 2026-11-24 | `your-substation-waits-55-months` | nhil_infrastructure_ops | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-substation-waits-55-months/featured.jpg` |

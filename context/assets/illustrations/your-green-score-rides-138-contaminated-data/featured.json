@@ -1,0 +1,109 @@
+{
+  "slug": "your-green-score-rides-138-contaminated-data",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two multiple-choice answer sheets side by side: one neatly filled and stamped green, its re-worded mirror twin marked down in red pen.",
+      "caption": "The green benchmark number is partly memory; the re-worded mirror run on the right is where the release gate belongs.",
+      "title": "Answer sheet vs re-worded mirror: the benchmark-leak diptych",
+      "bytes": 381992,
+      "sha256": "sha256:95b04ebf6e7f50f6da24a5b9f2d28e28"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph, top-down 90-degree view of two multiple-choice answer sheets on a graphite desk in a control room, split-screen diptych with a clean vertical seam of empty desk between them. Left: a pristine printed exam sheet, bubbles neatly filled in graphite pencil, a green check stamp at its corner. Right: its re-worded mirror twin, same answer grid but altered question blocks, several bubbles erased and struck through in red ballpoint, a red pen resting across the sheet, rotated slightly out of alignment. Blank, illegibly cropped print, muted paper tones, even diffused daylight from the left, bone white, graphite and oxidised red palette, brushed-steel console edge blurred at the frame, 50mm, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, legible numbers, watermarks, logos",
+  "rationale": "The story turns on a named paper artefact \u2014 the multiple-choice benchmark sheet \u2014 and on the collision between two runs of it, which a top-down flat-lay diptych states at a glance. The green stamp against the red-marked mirror carries the hidden 7.0-point drop without a single legible number, which flux would only garble.",
+  "cue": "Gate on a fresh mirror run",
+  "subject": "two multiple-choice answer sheets \u2014 a green-stamped original benchmark sheet beside its red-marked re-worded mirror \u2014 the published number against the fresh mirror run",
+  "core_thesis": "A model's published benchmark score is partly memorized test data, so the release decision must gate on a fresh mirror run of re-worded questions \u2014 not on the benchmark number and not on a contamination detector.",
+  "core_conflict": "The green benchmark number (looks like reasoning, but is recall of leaked originals) versus the fresh mirror run on re-worded questions (matched difficulty, honest score) \u2014 gating on memorized performance versus gating on the delta between two runs.",
+  "composition": "split-screen diptych flat-lay with left-right contrast: the original answer sheet on the left, its re-worded mirror on the right, divided by a clean vertical seam of empty desk, the red pen anchoring the right half",
+  "alt_text": "MMLU Contamination Hides A 7-Point Drop. Two multiple-choice answer sheets side by side: one neatly filled and stamped green, its re-worded",
+  "caption": "MMLU Contamination Hides A 7-Point Drop: Six frontier models lost 7 points on re-worded MMLU \u2014 your green score may be recall.",
+  "title": "MMLU Contamination Hides A 7-Point Drop",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-green-score-rides-138-contaminated-data/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 389745,
+  "sha256": "sha256:2643a6012ed601ef66951e2288f4009c9b9c109624ce28d7517215ae39defe06",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 389745,
+    "quality": 80,
+    "sha256": "sha256:2643a6012ed601ef66951e2288f4009c9b9c109624ce28d7517215ae39defe06",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:290a7d9ff9682b6a1ad6cb534158e5d321755352779daec2cc4540887fd95b5d",
+  "render_phash": "fe931b9e039f1b931b1b133b1b3b1327132f1b121b360366130e13c72ef72727",
+  "review": {
+    "ok": true,
+    "skipped": true,
+    "reason": "render review unavailable (render review failed: frontier returned no text (finish_reason=length)) \u2014 the brief gate ran, the picture was not checked"
+  },
+  "source_hash": "sha256:496c86a3ad12677ed902993f17ec5a7c",
+  "source_chars": 3768,
+  "task_id": "92681fd08a14d427bb93245ba60c6a77",
+  "credits": 5.0,
+  "cost_ms": 40,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/92681fd08a14d427bb93245ba60c6a77_1795542205390.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph, top-down 90-degree view of two multiple-choice answer sheets on a graphite desk in a control room, split-screen diptych with a clean vertical seam of empty desk between them. Left: a pristine printed exam sheet, bubbles neatly filled in graphite pencil, a green check stamp at its corner. Right: its re-worded mirror twin, same answer grid but altered question blocks, several bubbles erased and struck through in red ballpoint, a red pen resting across the sheet, rotated slightly out of alignment. Blank, illegibly cropped print, muted paper tones, even diffused daylight from the left, bone white, graphite and oxidised red palette, brushed-steel console edge blurred at the frame, 50mm, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-24T17:43:47+00:00",
+  "overlay": {
+    "kicker": "AI EVALS // BENCHMARK CONTAMINATION",
+    "title": "MMLU CONTAMINATION HIDES A 7-POINT DROP",
+    "hook": "Six frontier models lost 7 points on re-worded MMLU \u2014 your green score may be recall",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 6.01,
+    "target": 5.5,
+    "clutter": 0.327,
+    "region_rgb": [
+      155,
+      156,
+      151
+    ],
+    "binding_rgb": [
+      102,
+      106,
+      107
+    ],
+    "title_lines": [
+      "MMLU",
+      "CONTAMINATION",
+      "HIDES A 7-POINT DROP"
+    ],
+    "subject": 0.448,
+    "ink_subject": 0.275,
+    "spike": 0.561,
+    "generated_at": "2026-11-24T17:43:47+00:00"
+  }
+}

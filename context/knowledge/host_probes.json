@@ -1488,6 +1488,14 @@
   "note": "-a-mortgage-insurance-premium-en-125/` all answer `unreachable`, and `hsh.com`, `mgic.com`, `essent.us`, `radian.com` and `bankrate.com` return nothing usable, so a PMI rate card cannot carr"
  },
  {
+  "host": "huggingface.co",
+  "url": "https://huggingface.co/papers/2405.00332",
+  "verdict": "fetchable",
+  "as_of": "2026-11-24",
+  "vertical": "ai_observability_qa",
+  "note": "Hugging Face Papers abstract page fetches first try and carries the paper's abstract figures verbatim \u2014 useful second host when the primary is arXiv-only"
+ },
+ {
   "host": "husqvarna.com",
   "url": "",
   "verdict": "fetchable",
@@ -2510,6 +2518,14 @@
   "as_of": "2026-10-31",
   "vertical": "outdoor_power_equipment",
   "note": "ce hosts for a platform-economics version of this beat do retrieve \u2014 `powerplusparts.com/collections/ego-batteries` prints the EGO ladder as one run (2.5Ah $159 \u2192 12Ah $659, with the 4Ah at"
+ },
+ {
+  "host": "proceedings.neurips.cc",
+  "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/53384f2090c6a5cac952c598fd67992f-Paper-Datasets_and_Benchmarks_Track.pdf",
+  "verdict": "no_figures",
+  "as_of": "2026-11-24",
+  "vertical": "ai_observability_qa",
+  "note": "Peer-reviewed PDF of a NeurIPS D&B paper; the gate's fetcher returns empty text (PDF unsupported) \u2014 cite the arXiv HTML mirror instead"
  },
  {
   "host": "prod.org.br",
