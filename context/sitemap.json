@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T10:48:06Z",
+  "updated_at": "2026-11-24T11:16:11Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7791,6 +7791,24 @@
       "date": "2026-11-23",
       "public": true,
       "url": "https://aichieve.net/your-otif-never-sees-the-pick/"
+    },
+    {
+      "slug": "2026-11-24_nobody-owns-your-ais-power-feed",
+      "title": "Nobody Owns Your AI's Power Feed",
+      "vertical": "nhil_infrastructure_ops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Power and control leave together",
+        "By the numbers",
+        "Where improvised supply meets delegated control",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "it_ops_leader",
+      "date": "2026-11-24",
+      "public": false
     },
     {
       "slug": "2026-11-24_your-online-judge-votes-for-itself",

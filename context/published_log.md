@@ -422,6 +422,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-23 | home_equity_tco | your-heat-pump-quote-buys-the-floor | Your Heat Pump's 20% Silent Leak | https://pressflow.aichieve.net/published/2026-11-23_your-heat-pump-quote-buys-the-floor.md | reader site only |
 | 2026-11-23 | sales_order_service_level_otif | your-200-sqep-fine | Your $200 SQEP Fine: The Cheap Part That Bills Most | https://pressflow.aichieve.net/published/2026-11-23_your-200-sqep-fine.md | reader site only |
 | 2026-11-24 | ai_observability_qa | your-online-judge-votes-for-itself | Your LLM Judge Silently Votes: 9%–81% Undecided | https://pressflow.aichieve.net/published/2026-11-24_your-online-judge-votes-for-itself.md | reader site only |
+| 2026-11-24 | nhil_infrastructure_ops | nobody-owns-your-ais-power-feed | Nobody Owns Your AI's Power Feed | https://pressflow.aichieve.net/published/2026-11-24_nobody-owns-your-ais-power-feed.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

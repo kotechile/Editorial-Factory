@@ -1,0 +1,113 @@
+{
+  "slug": "nobody-owns-your-ais-power-feed",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Rebuilt airliner jet engines in steel containers powering a vast data hall at dusk, distant grid pylon behind.",
+      "caption": "Eight retired airliner cores now light a data center the grid could not reach \u2014 improvised power no one owns.",
+      "title": "Jet engines powering a data hall at dusk",
+      "bytes": 372976,
+      "sha256": "sha256:d458c9f70ba9a14f462c5c938ab97eea"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Telephoto film still, 200mm long-lens compression stacking layers at a Mississippi data center site: a row of rebuilt airliner jet engines mounted as turbine gensets in long weathered-orange steel containers, parked on cracked asphalt in the power yard, commanding the right third of frame. Behind them a vast graphite-grey data hall of corrugated steel rises flat and compressed; one distant transmission pylon sits small in the stacked layers. Last low sun rakes hard from the left, long cast shadows across the yard, rim light on the engine cowlings, steel-blue dusk above. Crystal-clear air, deep industrial contrast, everything sharp. Extreme asymmetric composition, generous sky negative space. Fine film grain, no people, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, signage, logos",
+  "rationale": "Scale is the story: eight 50-megawatt machines standing in for a utility, so telephoto compression stacks the improvised turbine row flat against the permanent data hall and shrinks the absent grid to a distant pylon. It is a real energy-infrastructure scene, not a metaphor, and it rotates the desk away from the recent cinematic and flatlay treatments.",
+  "cue": "Eight retired jet engines now power xAI's Mississippi data center",
+  "subject": "A row of rebuilt airliner jet engines mounted as turbine gensets in steel containers, powering a data center site",
+  "core_thesis": "AI infrastructure is switching to improvised local generation \u2014 scavenged jet engines on a pad \u2014 because the grid cannot arrive in time, while nobody owns the power feed beneath the edge sites being handed to agents.",
+  "core_conflict": "Grid interconnection speed versus data-center build speed: improvised combustion fills the gap, and a single permit challenge can silence the whole feed.",
+  "composition": "Extreme asymmetry: the turbine row commands the right third, the compressed data hall stacked flat behind it, a distant pylon small in the telephoto layers, generous sky negative space left",
+  "alt_text": "Nobody Owns Your AI's Power Feed. Rebuilt airliner jet engines in steel containers powering a vast data hall at dusk, distant grid pylon",
+  "caption": "Nobody Owns Your AI's Power Feed: AI runs on retired jet engines while agents take its networks, and no one owns the feed.",
+  "title": "Nobody Owns Your AI's Power Feed",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/nobody-owns-your-ais-power-feed/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 389171,
+  "sha256": "sha256:34400ca56f98ac718117a5fb1246d1f5fa37f2a0fd4779903135b1cb5588d0d1",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 389171,
+    "quality": 80,
+    "sha256": "sha256:34400ca56f98ac718117a5fb1246d1f5fa37f2a0fd4779903135b1cb5588d0d1",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:0b3a90ec265033ee53ff489a5cb59e484b6eaa62d8810add4037ea355899eb0f",
+  "render_phash": "7fff7fff7fff9dff69f366336957e9dd6e956a153d1521b5011d0d830123081f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A row of shipping containers with jet turbine engines mounted inside them stands on a concrete lot in front of a large windowless industrial building, with an electricity transmission pylon visible in the distance and open sky filling the left of the frame.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image literally shows repurposed jet engines housed in containers beside a data-center-scale building and a grid pylon, which is exactly the article's mechanism of improvised jet-turbine power feeding AI infrastructure."
+  },
+  "source_hash": "sha256:65a98cce8551667f3ee3b0da2e232639",
+  "source_chars": 5250,
+  "task_id": "cd709194d8b59c719de4b2e04c32c8d5",
+  "credits": 5.0,
+  "cost_ms": 121,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/cd709194d8b59c719de4b2e04c32c8d5_1795518916435.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Telephoto film still, 200mm long-lens compression stacking layers at a Mississippi data center site: a row of rebuilt airliner jet engines mounted as turbine gensets in long weathered-orange steel containers, parked on cracked asphalt in the power yard, commanding the right third of frame. Behind them a vast graphite-grey data hall of corrugated steel rises flat and compressed; one distant transmission pylon sits small in the stacked layers. Last low sun rakes hard from the left, long cast shadows across the yard, rim light on the engine cowlings, steel-blue dusk above. Crystal-clear air, deep industrial contrast, everything sharp. Extreme asymmetric composition, generous sky negative space. Fine film grain, no people, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-24T11:15:24+00:00",
+  "overlay": {
+    "kicker": "AI INFRASTRUCTURE // OFF-GRID POWER",
+    "title": "NOBODY OWNS YOUR AI'S POWER FEED",
+    "hook": "AI runs on retired jet engines while agents take its networks, and no one owns the feed",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 7.49,
+    "target": 4.5,
+    "clutter": 0.136,
+    "region_rgb": [
+      53,
+      55,
+      56
+    ],
+    "binding_rgb": [
+      66,
+      77,
+      83
+    ],
+    "title_lines": [
+      "NOBODY OWNS",
+      "YOUR AI'S POWER",
+      "FEED"
+    ],
+    "subject": 0.107,
+    "ink_subject": 0.019,
+    "spike": 0.115,
+    "generated_at": "2026-11-24T11:15:24+00:00"
+  }
+}

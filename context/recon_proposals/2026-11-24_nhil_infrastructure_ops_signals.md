@@ -1,0 +1,38 @@
+# Signals: nhil_infrastructure_ops — 2026-11-24
+**Window:** 2026-10-25 → 2026-11-24
+**Queries run:** 15 (web fan-out across datacenter_knowledge / open_compute / nanog / arXiv API / HN Algolia / vendor changelogs; date-agnostic fallbacks after empty date-filtered sets)
+**Dropped at Stage 1 (out of window, publisher date verified):** Nokia sovereign-agentic-platform release (2026-10-21 — four days before window start, carried as dated background); a16z "Why Texas Is Making Data Centers Wait" (2026-10-07); Ascend Analytics interconnection-queue analysis (2026-05-05); Nokia NSP agentic-AI framework announcement (June 2026 — commercially-available-by-end-2026 carried as dated background); FERC/PJM large-load definition acceptance (2026-10-09).
+
+| # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity |
+|---|--------|-----------|------|--------------|-------|-----------|
+| 1 | xAI installs eight scavenged jet engines to power Mississippi data center | https://www.tomshardware.com/tech-industry/data-centers/elon-musks-xai-installs-eight-converted-jet-engines-to-power-mississippi-data-center-permits-allow-25-percent-higher-limit-for-pollutants-concerns-raised-over-carbon-monoxide | 2026-11-03 | 8 converted jet-engine turbines (ProEnergy-refurbished GE units), each up to 50 MW (~15,000 homes apiece); state permits allow a 25% higher volatile-organic-compound limit; Southern Environmental Law Center has challenged the approval and alleges undercounted projected emissions (formaldehyde among the pollutants in dispute). Installed because demand for energy was outpacing what the utility grid can deliver to new sites. | substation interconnection queues and behind-the-meter power | 86 |
+| 2 | Old, polluting jet engines are being scavenged to power data centers (NYT companion piece to #1) | https://www.nytimes.com/2026/11/03/climate/jet-engines-ai-data-center-generators-boneyard.html | 2026-11-03 | Same event as row #1 from the primary national desk: retired Boeing-aircraft turbine cores are being repurposed as data-center generators because grid power availability cannot keep pace with demand; reports the SELC legal challenge. | substation interconnection queues and behind-the-meter power | 82 |
+| 3 | Agentic Wireless Optimization: workflow automation, algorithm design, multi-timescale network operations | https://arxiv.org/abs/2611.05887v1 | 2026-11-04 | LLM-based agents automate the optimization loop end to end (problem formulation, code generation, numerical solution, result verification in a closed loop); multicast beamforming case study shows gains in execution time; a network energy-saving example coordinates dynamic base-station activation, user association and beamforming across time scales — closed-loop agents deciding where actual radio infrastructure spends energy. | closed-loop self-healing telemetry boundaries | 78 |
+| 4 | Ubuntu/Canonical global service interruption — "infrastructure outage in one of our data centers" | https://discourse.ubuntu.com/t/service-interruption-affecting-canonical-websites/91653 | 2026-11-11 | Outage began 2026-11-11 11:06 UTC, resolved 18:40 UTC (~7.5 h, human-confirmed recovery); Canonical attributed it to an infrastructure outage in one of its data centers; launchpad.net, login.ubuntu.com, snapcraft API and Livepatch API among the affected properties; third-party Flathub installs broke transitively because their manifests pin snapcraft URLs. | data residency and air-gapped agent runtime; cascading single-vendor dependency | 75 |
+| 5 | EMA research: enterprises deploying edge AI inference, network readiness gap | https://www.prnewswire.com/news-releases/new-research-reveals-network-readiness-gap-in-enterprise-edge-ai-302944747.html | 2026-11-19 | Survey of 319 IT professionals involved in edge inference strategy (commissioned by Scale Computing from Enterprise Management Associates): enterprises deploy AI inference at the edge to keep sensitive data local, cut latency and bandwidth cost; 72% of those adapting their networks for edge inference plan to adopt AI-powered or agentic network management tools, and 67% will integrate their existing tools; 40% of enterprises (separate EMA research) expect to deploy edge inference workloads within two years. **Caveat:** vendor-commissioned; the survey's fielding window is not disclosed in the release — record as release-dated 2026-11-19. | sovereign localized SLM inference vs confidential cloud | 76 |
+
+**Dating note:** all five rows are event- or release-dated inside the window; none are observation-dated standing records.
+
+## Candidate Synthesis Pairs
+<!-- synthesis-seed:start -->
+<!-- pair-seeding: helper=synthesize_topics.py rows=5 candidates=2 heuristic=0.86-0.86 window=2026-10-25..2026-11-24 -->
+> Advisory: mechanical pre-filter only. The Judge (`skills/virality_judge.md` §2.5) owns the collision vector
+> and the >= 8 publish gate. `emergence_heuristic` is a hint, not a score; it cannot clear any gate.
+> Seeded mechanically from this file's own rows by `python3 scripts/synthesize_topics.py --seed <this file>`; re-run it after adding or removing a signal row. The Judge scores the rows and writes the collision vector per `skills/virality_judge.md` §2.5.
+
+| Pair | Signals | Shared axis | Contrasting axis | Anchor URLs | Heuristic | Flags |
+|---|---|---|---|---|---|---|
+| 1 | #1 ⨂ #5 | compute_bottleneck_x_distillation | A: substation interconnection queues and behind-the-meter power | B: sovereign localized SLM inference vs confidential cloud | https://www.tomshardware.com/tech-industry/data-centers/elon-musks-xai-installs-eight-converted-jet-engines-to-power-mississippi-data-center-permits-allow-25-percent-higher-limit-for-pollutants-concerns-raised-over-carbon-monoxide https://www.prnewswire.com/news-releases/new-research-reveals-network-readiness-gap-in-enterprise-edge-ai-302944747.html | 0.86 | - |
+| 2 | #2 ⨂ #5 | compute_bottleneck_x_distillation | A: substation interconnection queues and behind-the-meter power | B: sovereign localized SLM inference vs confidential cloud | https://www.nytimes.com/2026/11/03/climate/jet-engines-ai-data-center-generators-boneyard.html https://www.prnewswire.com/news-releases/new-research-reveals-network-readiness-gap-in-enterprise-edge-ai-302944747.html | 0.86 | - |
+
+**Heuristic terms (advisory):**
+- #1: token_coverage=0.75 intensity=0.81 angle_fit=1.0 contrast=1.0 → 0.86 (compute_bottleneck_x_distillation)
+- #2: token_coverage=0.75 intensity=0.79 angle_fit=1.0 contrast=1.0 → 0.86 (compute_bottleneck_x_distillation)
+<!-- synthesis-seed:end -->
+
+## Dated background
+- https://www.nokia.com/newsroom/nokia-advances-ai-ran-toward-commercial-deployment-and-physical-ai-launches-sovereign-agentic-ai-platform-for-telco-autonomy-with-nvidia — 2026-10-21, four days before window start. Sovereign agentic platform with NVIDIA (Nemotron models, on-prem deployment, governed cross-domain agents). Context for the sovereignty angle only; not an anchor.
+- https://a16z.com/why-texas-is-making-data-centers-wait — 2026-10-07. ERCOT large-load queue 474 GW by June (5× record peak, ~90% data centers); permit freeze.
+- https://www.ascendanalytics.com/blog/large-load-interconnection-queues-data-center-grid-access — 2026-05-05. BTM BESS coverage modeling.
+- https://www.nokia.com/newsroom/nokia-introduces-agentic-ai-framework-in-network-services-platform-to-enable-trust-based-ai-operations-for-ip-networks — June 2026. NSP agentic framework, commercially available by end of 2026; MCP for external agents.
+- https://status.canonical.com/#/incident/KNms6QK9ewuzz-7xUsPsNylV20jEt5kyKsd8A-3ptQFX-3WclTLkuMGEkQ0cQPf-nRNYHaA8K7mU9EKLLx1dRw%3D%3D — Canonical status incident for row #4 (raw status URL).

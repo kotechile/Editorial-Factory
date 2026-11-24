@@ -29,7 +29,7 @@ That same week moved the eval stack twice. Snowflake's Observe team put Agent Ob
 
 The study looked at judges that weigh several goals at once, like relevance and faithfulness. Sometimes two goals pull against each other and the rubric does not say which one wins. Six open judges passed every test the authors set, yet picked winners those tests could not back on 9%–81% of 1,345 clashes [1]. All 577 choice sets with a stable winner order followed a majority rule the rubric in plain words banned [1]. The calls look decisive; the rule behind them was never stated.
 
-That is the friction. Once a judge score becomes a watched metric, it inherits what every metric gets — a dashboard, a threshold, a weekly baseline. A drop in quality then reads as model drift. It may instead be the judge picking a trade-off it never told. The team with the best tracing stack can still be reading an opinion that was never on paper.
+That is the friction. Once a judge score becomes a watched metric, it inherits what every metric gets — a dashboard, a threshold, a weekly baseline. A drop in quality then reads as model drift. It may instead be the judge picking a trade-off it never told. I read the 577 figure twice before taking it in: every single stable choice broke a rule the rubric had named and forbidden. The team with the best tracing stack can still be reading an opinion that was never on paper.
 
 ## By the numbers
 - **9%–81% of conflicts:** the share where six open-weight judges picked a winner no criterion set supported [1]
