@@ -1,6 +1,6 @@
 {
   "slug": "kill-switch-misses-half-your-agents",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -20,6 +20,14 @@
     },
     {
       "revision": 3,
+      "alt_text": "Flawed Agent Kill Switch. Isometric cutaway of a routing bay with a precision mechanical containment gate severing a glowing",
+      "caption": "Flawed Agent Kill Switch: The new kill switch misses agents without known owners.",
+      "title": "Flawed Agent Kill Switch",
+      "bytes": 401090,
+      "sha256": "sha256:4696f73d7c8de55dedd725dc9957a4bd575fbe64fedf5104591189897a04bb65"
+    },
+    {
+      "revision": 4,
       "alt_text": "Flawed Agent Kill Switch. Isometric cutaway of a routing bay with a precision mechanical containment gate severing a glowing",
       "caption": "Flawed Agent Kill Switch: The new kill switch misses agents without known owners.",
       "title": "Flawed Agent Kill Switch",

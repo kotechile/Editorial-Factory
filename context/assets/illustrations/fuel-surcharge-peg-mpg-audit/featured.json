@@ -1,6 +1,6 @@
 {
   "slug": "fuel-surcharge-peg-mpg-audit",
-  "revision": 17,
+  "revision": 18,
   "history": [
     {
       "revision": 1,
@@ -132,6 +132,14 @@
     },
     {
       "revision": 16,
+      "alt_text": "The Freight Fuel Formula. The Freight Fuel Formula. The Freight Fuel Formula. Modular mechanical gauge assembly with three di",
+      "caption": "The Freight Fuel Formula: Three carrier numbers that decide your freight fuel bill.",
+      "title": "The Freight Fuel Formula",
+      "bytes": 381379,
+      "sha256": "sha256:b33a489ff3930c33c479ab16346c8b070a57df5a41ab5c6a0d16fc861e178d45"
+    },
+    {
+      "revision": 17,
       "alt_text": "The Freight Fuel Formula. The Freight Fuel Formula. The Freight Fuel Formula. Modular mechanical gauge assembly with three di",
       "caption": "The Freight Fuel Formula: Three carrier numbers that decide your freight fuel bill.",
       "title": "The Freight Fuel Formula",

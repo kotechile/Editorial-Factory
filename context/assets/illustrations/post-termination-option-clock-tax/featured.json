@@ -1,6 +1,6 @@
 {
   "slug": "post-termination-option-clock-tax",
-  "revision": 9,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -63,6 +63,14 @@
     },
     {
       "revision": 8,
+      "alt_text": "Your 26% AMT Bill On Exercised Isos. IRS Form 6251 tax worksheet and Form 3921 exercise notice on a warm oak desk.",
+      "caption": "Your 26% AMT Bill On Exercised Isos: Three months after a job ends, an ISO spread can trigger a 26% AMT bill.",
+      "title": "Your 26% AMT Bill On Exercised Isos",
+      "bytes": 407391,
+      "sha256": "sha256:5b0a864defe1681a04eb6503ebd8c7e8b00652e4c3aecdfdc6c71e64fee537b4"
+    },
+    {
+      "revision": 9,
       "alt_text": "Your 26% AMT Bill On Exercised Isos. IRS Form 6251 tax worksheet and Form 3921 exercise notice on a warm oak desk.",
       "caption": "Your 26% AMT Bill On Exercised Isos: Three months after a job ends, an ISO spread can trigger a 26% AMT bill.",
       "title": "Your 26% AMT Bill On Exercised Isos",

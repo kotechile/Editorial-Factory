@@ -1,6 +1,6 @@
 {
   "slug": "one-skill-too-many-green-test",
-  "revision": 4,
+  "revision": 5,
   "history": [
     {
       "revision": 1,
@@ -28,6 +28,14 @@
       "title": "All-green status board in a dark control room",
       "bytes": 348878,
       "sha256": "sha256:403c47c8cabeacd3140fad9e3e59d4cb"
+    },
+    {
+      "revision": 4,
+      "alt_text": "Agent SKILL Attacks Slip Past Green Tests. All-green wall of indicator lamps glowing over an empty operator console in a dark control room",
+      "caption": "Agent SKILL Attacks Slip Past Green Tests: A look-alike skill can strip an agent's guardrails, and the green test still passes.",
+      "title": "Agent SKILL Attacks Slip Past Green Tests",
+      "bytes": 382193,
+      "sha256": "sha256:538df876f3a3da8a5d130ef1ff138a67cbd140d513b0686890fe3cfd6c06b680"
     }
   ],
   "style": "cinematic_still",

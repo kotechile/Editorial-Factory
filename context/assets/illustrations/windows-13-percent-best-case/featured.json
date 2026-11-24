@@ -1,6 +1,6 @@
 {
   "slug": "windows-13-percent-best-case",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Window-Replacement-TCO-Comfort",
       "bytes": 1788047,
       "sha256": "sha256:62bf5cd0430803756f332fe8a1cc2e91"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The 13 Percent Window Myth. A modular cross-section of a heavy double-pane architectural window frame resting on a steel surf",
+      "caption": "The 13 Percent Window Myth: Why new windows are a comfort buy, not an energy one.",
+      "title": "The 13 Percent Window Myth",
+      "bytes": 1322378,
+      "sha256": "sha256:28e1dd03df2cd7e73d78f27963749bcbef576c5c8d80a8feb1becacd815cee50"
     }
   ],
   "style": "component_assembly",
@@ -35,12 +43,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/windows-13-percent-best-case/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1322378,
-  "sha256": "sha256:28e1dd03df2cd7e73d78f27963749bcbef576c5c8d80a8feb1becacd815cee50",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/windows-13-percent-best-case/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 392483,
+  "sha256": "sha256:b0e0b8a3a234eccfcaf8825b0d9d4dc273b7aaddaa800234a84738f67c182faf",
   "source_hash": "sha256:33fd0683a77437bef7734184dec6ff46",
   "source_chars": 4553,
   "task_id": "4f4b5deff20b2c3491f482ef91384c0b",
@@ -62,29 +70,42 @@
     "kicker": "HOME ENERGY // WINDOW UPGRADES",
     "title": "THE 13 PERCENT WINDOW MYTH",
     "hook": "Why new windows are a comfort buy, not an energy one",
-    "anchor": "top-right",
+    "anchor": "bottom-right",
     "light": false,
-    "scrim": 30,
-    "contrast": 4.5,
+    "scrim": 120,
+    "contrast": 4.65,
     "target": 4.5,
-    "clutter": 0.148,
+    "clutter": 0.121,
     "region_rgb": [
-      155,
-      159,
-      167
+      134,
+      137,
+      145
     ],
     "binding_rgb": [
-      131,
-      138,
-      148
+      115,
+      124,
+      133
     ],
     "title_lines": [
       "THE 13 PERCENT",
       "WINDOW MYTH"
     ],
-    "subject": 0.002,
-    "ink_subject": 0.002,
-    "spike": 0.004,
+    "subject": 0.046,
+    "ink_subject": 0.01,
+    "spike": 0.053,
     "generated_at": "2026-10-12T19:14:18+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 392483,
+    "quality": 84,
+    "sha256": "sha256:b0e0b8a3a234eccfcaf8825b0d9d4dc273b7aaddaa800234a84738f67c182faf",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

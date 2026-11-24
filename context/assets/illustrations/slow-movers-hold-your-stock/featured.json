@@ -1,6 +1,6 @@
 {
   "slug": "slow-movers-hold-your-stock",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "Isometric Warehouse Long Tail Inventory",
       "bytes": 8271728,
       "sha256": "sha256:0234b70ce2ac4161ce22dd900e64c915"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Hidden Costs Of Slow Stock. Isometric cutaway of massive dark storage racks dwarfing a small active loading bay, showing disp",
+      "caption": "Hidden Costs Of Slow Stock: How the long tail silently drains floor space and cash.",
+      "title": "Hidden Costs Of Slow Stock",
+      "bytes": 3412363,
+      "sha256": "sha256:d440122ab10795f574b500856b7577b3c80a319d0416df87a9f0f29202b5b57a"
     }
   ],
   "style": "technical_isometric",
@@ -35,12 +43,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/slow-movers-hold-your-stock/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 3412363,
-  "sha256": "sha256:d440122ab10795f574b500856b7577b3c80a319d0416df87a9f0f29202b5b57a",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/slow-movers-hold-your-stock/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 404641,
+  "sha256": "sha256:62206a84b4c4c08ec54c6c2d73a3fec061835dc909ed4910e7618a1d4a4cfa98",
   "source_hash": "sha256:9f13c22e6fbb22c123339f3091a722be",
   "source_chars": 5115,
   "task_id": "6e859ebc0a4611389605ee868889952f",
@@ -62,29 +70,42 @@
     "kicker": "INVENTORY MANAGEMENT // SLOW STOCK",
     "title": "HIDDEN COSTS OF SLOW STOCK",
     "hook": "How the long tail silently drains floor space and cash",
-    "anchor": "bottom-left",
+    "anchor": "bottom-right",
     "light": false,
-    "scrim": 15,
-    "contrast": 5.54,
+    "scrim": 120,
+    "contrast": 5.85,
     "target": 5.5,
-    "clutter": 0.356,
+    "clutter": 0.438,
     "region_rgb": [
-      224,
-      220,
-      214
+      210,
+      200,
+      189
     ],
     "binding_rgb": [
-      159,
-      164,
-      170
+      126,
+      128,
+      140
     ],
     "title_lines": [
       "HIDDEN COSTS OF",
       "SLOW STOCK"
     ],
-    "subject": 0.236,
-    "ink_subject": 0.131,
-    "spike": 0.653,
+    "subject": 0.266,
+    "ink_subject": 0.11,
+    "spike": 0.469,
     "generated_at": "2026-10-12T19:40:54+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 404641,
+    "quality": 64,
+    "sha256": "sha256:62206a84b4c4c08ec54c6c2d73a3fec061835dc909ed4910e7618a1d4a4cfa98",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

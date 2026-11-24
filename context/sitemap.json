@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T12:12:52Z",
+  "updated_at": "2026-11-24T17:40:46Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -679,8 +679,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-06",
-      "public": true,
-      "url": "https://wellroost.com/local-first-smart-home-cost-squeeze/"
+      "public": false
     },
     {
       "slug": "2026-10-06_rack-power-density-ceiling-build-before-you-buy",
@@ -717,8 +716,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-06",
-      "public": true,
-      "url": "https://wellroost.com/water-leak-monitor-rate-threshold/"
+      "public": false
     },
     {
       "slug": "2026-10-07_agent-memory-poisoning-write-path",
@@ -7676,7 +7674,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-23",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-200-sqep-fine/"
     },
     {
       "slug": "2026-11-23_your-8-48-remodel-exits-closed",
@@ -7712,7 +7711,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-23",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-agent-executes-before-it-verifies/"
     },
     {
       "slug": "2026-11-23_your-fuel-decided-your-winter-bill",
@@ -7753,7 +7753,8 @@
       ],
       "target_persona": "",
       "date": "2026-11-23",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-heat-pump-quote-buys-the-floor/"
     },
     {
       "slug": "2026-11-23_your-memory-tier-is-solved-29-of-199",
@@ -7809,7 +7810,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-24",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/23-of-26-builds-saved-nothing/"
     },
     {
       "slug": "2026-11-24_nobody-owns-your-ais-power-feed",
@@ -7827,7 +7829,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-11-24",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/nobody-owns-your-ais-power-feed/"
     },
     {
       "slug": "2026-11-24_your-doorbell-wont-need-the-cloud",
@@ -7844,6 +7847,25 @@
         "Related reading"
       ],
       "target_persona": "pro_homeowner",
+      "date": "2026-11-24",
+      "public": true,
+      "url": "https://wellroost.com/your-doorbell-wont-need-the-cloud/"
+    },
+    {
+      "slug": "2026-11-24_your-green-score-rides-138-contaminated-data",
+      "title": "Your Green Score's Hidden 7.0-Point Drop",
+      "vertical": "ai_observability_qa",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "How the leak got measured",
+        "By the numbers",
+        "Where this bites",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "evals_infra_eng",
       "date": "2026-11-24",
       "public": false
     },
@@ -7867,7 +7889,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-11-24",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-online-judge-votes-for-itself/"
     }
   ]
 }

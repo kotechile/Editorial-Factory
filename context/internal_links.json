@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T14:31:46+00:00",
+  "generated_at": "2026-11-24T14:22:23+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -2499,29 +2499,6 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
-      "slug": "local-first-smart-home-cost-squeeze",
-      "title": "The local-first smart home cost squeeze: Cloud and hardware prices rise",
-      "url": "https://wellroost.com/local-first-smart-home-cost-squeeze/",
-      "path": "/local-first-smart-home-cost-squeeze/",
-      "sites_live": {
-        "wellroost.com": "/local-first-smart-home-cost-squeeze/"
-      },
-      "categories": [
-        "Smart Home & Security"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "smart-home-security"
-      ],
-      "excerpt": "Both ways to run a smart home got more expensive in the same week.",
-      "modified": "2026-10-31T04:49:15",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
       "slug": "mechanics-lien-clock-payment-release",
       "title": "The Hidden Lien Clock Behind Your Remodel Payments",
       "url": "https://wellroost.com/mechanics-lien-clock-payment-release/",
@@ -2791,29 +2768,6 @@
       ],
       "excerpt": "The Yarbo Y40 Core with the Snow Blower Module Gen 2 is listed at $5,599 as of 2026-10-25, and the number that decides the purchase sits one line under the\u2026",
       "modified": "2026-10-31T04:49:01",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
-      "slug": "water-leak-monitor-rate-threshold",
-      "title": "Water Leak Monitors: The Flow Rate That Decides If It Pays",
-      "url": "https://wellroost.com/water-leak-monitor-rate-threshold/",
-      "path": "/water-leak-monitor-rate-threshold/",
-      "sites_live": {
-        "wellroost.com": "/water-leak-monitor-rate-threshold/"
-      },
-      "categories": [
-        "Smart Home & Security"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "smart-home-security"
-      ],
-      "excerpt": "A tiny hole in a slab leaks about 0.08 gallons a minute, putting roughly 115 gallons a day into the dirt.",
-      "modified": "2026-10-31T04:49:15",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3672,6 +3626,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-doorbell-wont-need-the-cloud",
+      "title": "Your Doorbell Won't Need the Cloud",
+      "url": "https://wellroost.com/your-doorbell-wont-need-the-cloud/",
+      "path": "/your-doorbell-wont-need-the-cloud/",
+      "sites_live": {
+        "wellroost.com": "/your-doorbell-wont-need-the-cloud/"
+      },
+      "categories": [
+        "Smart Home & Security"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "smart-home-security"
+      ],
+      "excerpt": "Your doorbell no longer needs a vendor's cloud to hold a conversation. Home Assistant, the open smart-home hub, shipped its November release on 2026-11-04\u2026",
+      "modified": "2026-11-24T12:12:52",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-equity-stuck-at-7-18",
       "title": "Your Equity Stuck at 7.18%",
       "url": "https://wellroost.com/your-equity-stuck-at-7-18/",
@@ -3803,6 +3780,29 @@
       ],
       "excerpt": "Your heat pump cuts home electric rates by 13% in states where the grid peaks in summer, because it fills winter headroom that would otherwise sit idle.",
       "modified": "2026-11-02T12:38:28",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-heat-pump-quote-buys-the-floor",
+      "title": "Your Heat Pump's 20% Silent Leak",
+      "url": "https://wellroost.com/your-heat-pump-quote-buys-the-floor/",
+      "path": "/your-heat-pump-quote-buys-the-floor/",
+      "sites_live": {
+        "wellroost.com": "/your-heat-pump-quote-buys-the-floor/"
+      },
+      "categories": [
+        "Energy & Efficiency"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "energy-efficiency"
+      ],
+      "excerpt": "A heat pump quote priced at exactly 7.5 HSPF2 (heating seasonal performance factor, version 2 \u2014 the federal test of how much heat a unit delivers per unit of\u2026",
+      "modified": "2026-11-23T18:43:38",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -4470,6 +4470,29 @@
       ],
       "excerpt": "A spot card hour costs up to 91% less and can vanish on a 30-second warning. Price the hours the job loses, not the hours it rents: save every 19 minutes.",
       "modified": "2026-11-17T19:52:47",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "23-of-26-builds-saved-nothing",
+      "title": "AI Build vs Buy: 23 of 26 Builds Saved Nothing",
+      "url": "https://aichieve.net/23-of-26-builds-saved-nothing/",
+      "path": "/23-of-26-builds-saved-nothing/",
+      "sites_live": {
+        "aichieve.net": "/23-of-26-builds-saved-nothing/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "The first measured cohort of the AI build-vs-buy reset: 26 documented builds in two weeks, 23 with no saving reported, and zero verified payback reports. Price the\u2026",
+      "modified": "2026-11-24T11:42:48",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6323,6 +6346,29 @@
       ],
       "excerpt": "Two U.S. trade cases opened against Mexico on the same day. On September 30, 2026, the U.S.",
       "modified": "2026-10-31T04:48:44",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "nobody-owns-your-ais-power-feed",
+      "title": "Nobody Owns Your AI's Power Feed",
+      "url": "https://aichieve.net/nobody-owns-your-ais-power-feed/",
+      "path": "/nobody-owns-your-ais-power-feed/",
+      "sites_live": {
+        "aichieve.net": "/nobody-owns-your-ais-power-feed/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Eight retired jet engines now power xAI's Mississippi data center, because the utility grid cannot deliver power to new sites fast enough.",
+      "modified": "2026-11-24T11:16:09",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8483,6 +8529,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-200-sqep-fine",
+      "title": "Your $200 SQEP Fine: The Cheap Part That Bills Most",
+      "url": "https://aichieve.net/your-200-sqep-fine/",
+      "path": "/your-200-sqep-fine/",
+      "sites_live": {
+        "aichieve.net": "/your-200-sqep-fine/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Walmart's supplier deduction bill starts at $200 per defect, and that SQEP (Supplier Quality Excellence Program) fine punishes the cheapest work a supplier\u2026",
+      "modified": "2026-11-23T20:08:01",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-200k-prompts-hidden-rate-cliff",
       "title": "Your 200K Prompt's Hidden Rate Cliff",
       "url": "https://aichieve.net/your-200k-prompts-hidden-rate-cliff/",
@@ -8660,6 +8729,29 @@
       ],
       "excerpt": "60.7% of agent deletes ask nobody, because the approval step an architect draws on a slide is really three defaults, and all three are off.",
       "modified": "2026-11-04T11:18:12",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-agent-executes-before-it-verifies",
+      "title": "Your Agent Executes Before It Verifies: The 74.83% Cost",
+      "url": "https://aichieve.net/your-agent-executes-before-it-verifies/",
+      "path": "/your-agent-executes-before-it-verifies/",
+      "sites_live": {
+        "aichieve.net": "/your-agent-executes-before-it-verifies/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Your agent executes each action before anything verifies it, and that gap costs more than a bad day: on a 600-command test track, an agent with no guard ran\u2026",
+      "modified": "2026-11-23T17:42:44",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -9840,6 +9932,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-online-judge-votes-for-itself",
+      "title": "Your LLM Judge Silently Votes: 9%\u201381% Undecided",
+      "url": "https://aichieve.net/your-online-judge-votes-for-itself/",
+      "path": "/your-online-judge-votes-for-itself/",
+      "sites_live": {
+        "aichieve.net": "/your-online-judge-votes-for-itself/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "A new benchmark shows LLM judges that pass every control still pick winners on 9%\u201381% of conflicts no rubric resolved \u2014 the same week vendors made those scores\u2026",
+      "modified": "2026-11-24T10:48:05",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-otif-never-sees-the-pick",
       "title": "Your OTIF Never Sees the Pick",
       "url": "https://aichieve.net/your-otif-never-sees-the-pick/",
@@ -10827,6 +10942,76 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1840,
+      "slug": "23-of-26-builds-saved-nothing",
+      "title": "AI Build vs Buy: 23 of 26 Builds Saved Nothing",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-24T11:42:48",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1837,
+      "slug": "nobody-owns-your-ais-power-feed",
+      "title": "Nobody Owns Your AI&#8217;s Power Feed",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-24T11:16:09",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1834,
+      "slug": "your-online-judge-votes-for-itself",
+      "title": "Your LLM Judge Silently Votes: 9%\u201381% Undecided",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-24T10:48:05",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1831,
+      "slug": "your-200-sqep-fine",
+      "title": "Your $200 SQEP Fine: The Cheap Part That Bills Most",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-23T20:08:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1828,
+      "slug": "your-agent-executes-before-it-verifies",
+      "title": "Your Agent Executes Before It Verifies: The 74.83% Cost",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-23T17:42:44",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -11916,76 +12101,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-11-03T19:51:10",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1425,
-      "slug": "your-9-day-notice-9-day-queue",
-      "title": "Your 9-Day Notice, 9-Day Queue",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-03T13:32:47",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1423,
-      "slug": "your-128gb-laptop-2319-memory-bill",
-      "title": "Your 128GB Laptop: A $2,319 Memory Bill",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-03T13:00:24",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1420,
-      "slug": "your-ai-roi-28-rising-28-stalled",
-      "title": "Your AI ROI Trap: 28% Both Ways",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-03T11:56:22",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1415,
-      "slug": "your-plant-was-1n-and-blind",
-      "title": "Your Plant Was 1N and Blind",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-03T11:38:42",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1413,
-      "slug": "your-grader-adds-22-points",
-      "title": "Your Grader Adds 22 Silent Points",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-03T11:18:11",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

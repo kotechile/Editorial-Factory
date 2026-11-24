@@ -425,6 +425,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-24 | nhil_infrastructure_ops | nobody-owns-your-ais-power-feed | Nobody Owns Your AI's Power Feed | https://pressflow.aichieve.net/published/2026-11-24_nobody-owns-your-ais-power-feed.md | reader site only |
 | 2026-11-24 | enterprise_tech_leadership | 23-of-26-builds-saved-nothing | AI Build vs Buy: 23 of 26 Builds Saved Nothing | https://pressflow.aichieve.net/published/2026-11-24_23-of-26-builds-saved-nothing.md | reader site only |
 | 2026-11-24 | smart_home_telemetry | your-doorbell-wont-need-the-cloud | Your Doorbell Won't Need the Cloud | https://pressflow.aichieve.net/published/2026-11-24_your-doorbell-wont-need-the-cloud.md | reader site only |
+| 2026-11-24 | ai_observability_qa | your-green-score-rides-138-contaminated-data | Your Green Score's Hidden 7.0-Point Drop | https://pressflow.aichieve.net/published/2026-11-24_your-green-score-rides-138-contaminated-data.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
