@@ -38,7 +38,7 @@ Where the two clocks bite next is a ransomware tabletop or a DR renewal. Someone
 
 <!-- nuanced-takeaway -->
 ## The catch
-None of this makes the cheap tier wrong; it makes it a lease with a term. AWS's 11-nines durability claim is a design objective, not a service level, so the tier promises the bytes survive rather than the restore behaving [1]. The missing divisor in flat price comparisons is how often you restore. A terabyte (TB) opened once a year is a rounding error. The same terabyte opened during an outage becomes a fifteen-hour outage of its own [5]. Pick the class from the restore-time requirement, then let it drive the price, and the price table stops being the decision.
+My read on the cheap tier is that it is not wrong — it is a lease with a term. it makes it a lease with a term. AWS's 11-nines durability claim is a design objective, not a service level, so the tier promises the bytes survive rather than the restore behaving [1]. The missing divisor in flat price comparisons is how often you restore. A terabyte (TB) opened once a year is a rounding error. The same terabyte opened during an outage becomes a fifteen-hour outage of its own [5]. Pick the class from the restore-time requirement, then let it drive the price, and the price table stops being the decision.
 
 ## Sources
 - [1] AWS, "Amazon S3 FAQs" — https://aws.amazon.com/s3/faqs/
