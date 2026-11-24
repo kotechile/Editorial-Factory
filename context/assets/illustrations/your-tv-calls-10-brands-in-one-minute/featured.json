@@ -1,0 +1,115 @@
+{
+  "slug": "your-tv-calls-10-brands-in-one-minute",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Router on a utility-closet shelf with a firewall gate separating a smart TV and doorbell from a laptop and files",
+      "caption": "One router, one boundary: the cheapest trust upgrade in the house is keeping smart gear off the network your computers use.",
+      "title": "Firewalled Guest List \u2014 Router Splits the Home Network",
+      "bytes": 257142,
+      "sha256": "sha256:030c964101aca4ca6ad16e592c93579c"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Isometric technical cutaway illustration of a home network split in two. An unbranded matte router sits on a plywood shelf in a utility closet at centre-left; thin cable lines run from it two ways: one passes through a raised partition gate to a flat-screen smart TV and a video doorbell on the low side, the other runs to a closed laptop and a document stack on the high side. The partition casts a long shadow across the shelf. Flat muted palette of graphite and bone white with a rust accent on the gate, thin consistent line weight over visible plywood grain, one directional light from the upper left. Wide 16:9 framing, router off-centre on the thirds, generous empty margin, unlabelled.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos",
+  "rationale": "The article is an explainer of how a system works \u2014 a flat network redrawn into a guest network and a firewalled IoT VLAN \u2014 which is exactly the trigger for a technical isometric cutaway. An axonometric diagram with the router at a partition gate makes the boundary, not any single device, the hero, and it rotates the desk away from its recent photographic and collage treatments.",
+  "cue": "A guest network is the floor",
+  "subject": "An unbranded router on a utility-closet shelf routing cables through a firewall partition that separates a smart TV and doorbell from a laptop and document stack",
+  "core_thesis": "A smart TV that nobody has signed into still phones ten outside brands in its first powered-on minute, so a home network must be redrawn \u2014 guest network as the floor, a firewalled IoT VLAN as the fix \u2014 because a device trusted with nothing sits inside a network trusted with everything.",
+  "core_conflict": "The convenience of a flat home Wi-Fi, where every gadget can reach every other device, versus the trust boundary owners must build \u2014 keeping computers off the network their smart gear uses.",
+  "composition": "Wide 16:9 isometric cutaway, router off-centre on the left third with the partition gate running through the frame, generous empty margin around the assembly",
+  "alt_text": "Your TV Calls 10 Brands Before You Sign. Router on a utility-closet shelf with a firewall gate separating a smart TV and doorbell from a",
+  "caption": "Your TV Calls 10 Brands Before You Sign: Untrusted gadgets share your main Wi-Fi \u2014 moving them out is the cheapest trust upgrade.",
+  "title": "Your TV Calls 10 Brands Before You Sign",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-tv-calls-10-brands-in-one-minute/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 335886,
+  "sha256": "sha256:8e0d4d90ab502fca09753e3c874ea4248812ceb2e9f8ae748eb5df4a4b66aa04",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 335886,
+    "quality": 88,
+    "sha256": "sha256:8e0d4d90ab502fca09753e3c874ea4248812ceb2e9f8ae748eb5df4a4b66aa04",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:dfd6a7cac88c81ce1c1808ae909f3c7aa697925ccbee46f51cb7aeab103fc535",
+  "render_phash": "010002002c101e6036c4b4d0bc903590e324d72a72603cc45ca41228010001a1",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric cutaway of a room interior with a Wi-Fi router on a shelf at the left, its cables running to a red lattice firewall partition across the middle, which separates a television on a stand at the right from a laptop and papers on a desk at the upper right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The frame depicts the article's own mechanism literally \u2014 a router whose cables pass through a firewall partition isolating a smart TV from a laptop \u2014 matching the story's network-segmentation advice."
+  },
+  "source_hash": "sha256:94b6af8e9f9f957487318d0fa91d4221",
+  "source_chars": 4770,
+  "task_id": "d1eabc34a252ef728f918b63d685d49e",
+  "credits": 18.0,
+  "cost_ms": 16,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_8c5eb2478f33ab01dd6af85ae499a271.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Isometric technical cutaway illustration of a home network split in two. An unbranded matte router sits on a plywood shelf in a utility closet at centre-left; thin cable lines run from it two ways: one passes through a raised partition gate to a flat-screen smart TV and a video doorbell on the low side, the other runs to a closed laptop and a document stack on the high side. The partition casts a long shadow across the shelf. Flat muted palette of graphite and bone white with a rust accent on the gate, thin consistent line weight over visible plywood grain, one directional light from the upper left. Wide 16:9 framing, router off-centre on the thirds, generous empty margin, unlabelled.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-24T19:15:56+00:00",
+  "overlay": {
+    "kicker": "SMART TV TELEMETRY // NETWORK SEGMENTATION",
+    "title": "YOUR TV CALLS 10 BRANDS BEFORE YOU SIGN",
+    "hook": "Untrusted gadgets share your main Wi-Fi \u2014 moving them out is the cheapest trust upgrade",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 6.82,
+    "target": 5.5,
+    "clutter": 0.25,
+    "region_rgb": [
+      224,
+      217,
+      205
+    ],
+    "binding_rgb": [
+      191,
+      187,
+      176
+    ],
+    "title_lines": [
+      "YOUR TV CALLS",
+      "10 BRANDS",
+      "BEFORE YOU SIGN"
+    ],
+    "subject": 0.192,
+    "ink_subject": 0.083,
+    "spike": 0.395,
+    "generated_at": "2026-11-24T19:15:56+00:00"
+  }
+}

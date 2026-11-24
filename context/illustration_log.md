@@ -574,3 +574,5 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-24 | `your-green-score-rides-138-contaminated-data` | ai_observability_qa | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-green-score-rides-138-contaminated-data/featured.jpg` |
 | 2026-11-24 | `your-substation-waits-55-months` | nhil_infrastructure_ops | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-substation-waits-55-months/featured.jpg` |
 | 2026-11-24 | `your-backup-tier-holds-a-365-day-lease` | enterprise_tech_leadership | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-backup-tier-holds-a-365-day-lease/featured.jpg` |
+| 2026-11-24 | `your-tv-calls-10-brands-in-one-minute` | smart_home_telemetry | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-tv-calls-10-brands-in-one-minute/featured.jpg` |
+| 2026-11-24 | `one-build-costs-81-3-is-compute` | workstation_compute_economics | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/one-build-costs-81-3-is-compute/featured.jpg` |

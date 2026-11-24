@@ -1,0 +1,113 @@
+{
+  "slug": "one-build-costs-81-3-is-compute",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A compact build-runner workstation box on a data-hall floor, its long shadow stretching far beyond the machine across the concrete.",
+      "caption": "The machine is the cheap part \u2014 one 92-minute build billed $2.94 of compute and $77.94 of someone waiting on it.",
+      "title": "Build runner box with the payroll-length shadow",
+      "bytes": 326210,
+      "sha256": "sha256:98b7f1b0f5793dcf0ac0478be95898c0"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Editorial product photograph: a compact unbranded build-runner workstation tower \u2014 matte polymer chassis, brushed steel faceplate, one small safety-yellow status LED \u2014 standing on sealed concrete at the edge of a data hall, a dark rack row blurred far behind it. A single softbox key light rakes in low from the left, its soft directional falloff throwing a cast shadow many times the box's own length, stretching right across the empty graphite floor. Extreme asymmetric 16:9 framing: the box low in the left third, vast negative space above the long shadow. 35mm lens, moderate depth of field, fine film grain, cool graphite and bone-white palette. No people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, printed numbers, watermark, logo",
+  "rationale": "The story turns on the price of a purchasable machine \u2014 the runner or workstation box that pays itself back in weeks \u2014 so a product treatment is the honest match, provided it sits in a material world. One low raking key light makes the $2.94 box cast the $77.94 shadow: the machine barely shows, and the long dark mass carries the bill. studio_object is unused in the recent set, keeping the desk varied after isometric, telephoto, cinematic and flat-lay.",
+  "cue": "the wait is billed as salary",
+  "subject": "an unbranded build-runner workstation tower casting a shadow far longer than itself",
+  "core_thesis": "A build's true cost is billed in salary, not machine time \u2014 GitHub's 92-minute build cost $81 total, of which only $2.94 was compute and $77.94 was the developer's waiting time, a 26.5x payroll multiple.",
+  "core_conflict": "Cheap visible machine minutes ($2.94 of compute on an 8-core runner) against the invisible payroll of interrupted attention ($77.94 of developer time plus a 23-minute re-entry tax per wait)",
+  "composition": "Extreme asymmetric 16:9: the runner box small and low in the left third, its long shadow raking right across the empty floor, blurred rack row behind, generous negative space above",
+  "alt_text": "One Build Costs $81 \u2014 $3 Is Compute. A compact build-runner workstation box on a data-hall floor, its long shadow stretching far beyond the",
+  "caption": "One Build Costs $81 \u2014 $3 Is Compute: The wait bills as salary \u2014 hardware that shaves build minutes pays back in weeks.",
+  "title": "One Build Costs $81 \u2014 $3 Is Compute",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/one-build-costs-81-3-is-compute/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 389844,
+  "sha256": "sha256:95670172158f16928cb0d31faf4ed593c26441abefbd366ff37cb58f56a71fb4",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 389844,
+    "quality": 88,
+    "sha256": "sha256:95670172158f16928cb0d31faf4ed593c26441abefbd366ff37cb58f56a71fb4",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:2d7cb4cf20545f08c201d6714b311ff627a0fa9f88bdca7d4ab6a77d7c87abff",
+  "render_phash": "ca8e4a034a018600920c9304931492041600160074f8745f3c031fe112cf1e07",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A small dark unbranded computer tower standing low in the left third of a polished concrete floor, casting a long shadow raking to the right, with a blurred row of server racks and ceiling lights in the background and empty space above.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The frame depicts the article's own protagonist \u2014 a build-runner tower whose shadow far exceeds its size, matching the story's mechanism that machine time is tiny relative to the waiting cost it imposes."
+  },
+  "source_hash": "sha256:7f22370ae427accf2967e7fb3904ddbf",
+  "source_chars": 4593,
+  "task_id": "6880816c2e7d8aa87e4015f62f2a4193",
+  "credits": 5.0,
+  "cost_ms": 49,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/6880816c2e7d8aa87e4015f62f2a4193_1795549473337.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Editorial product photograph: a compact unbranded build-runner workstation tower \u2014 matte polymer chassis, brushed steel faceplate, one small safety-yellow status LED \u2014 standing on sealed concrete at the edge of a data hall, a dark rack row blurred far behind it. A single softbox key light rakes in low from the left, its soft directional falloff throwing a cast shadow many times the box's own length, stretching right across the empty graphite floor. Extreme asymmetric 16:9 framing: the box low in the left third, vast negative space above the long shadow. 35mm lens, moderate depth of field, fine film grain, cool graphite and bone-white palette. No people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-24T19:44:41+00:00",
+  "overlay": {
+    "kicker": "CI ECONOMICS // THE HIDDEN PAYROLL BILL",
+    "title": "ONE BUILD COSTS $81 \u2014 $3 IS COMPUTE",
+    "hook": "The wait bills as salary \u2014 hardware that shaves build minutes pays back in weeks",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 7.31,
+    "target": 4.5,
+    "clutter": 0.213,
+    "region_rgb": [
+      46,
+      49,
+      55
+    ],
+    "binding_rgb": [
+      73,
+      77,
+      86
+    ],
+    "title_lines": [
+      "ONE BUILD COSTS",
+      "$81 \u2014 $3 IS",
+      "COMPUTE"
+    ],
+    "subject": 0.143,
+    "ink_subject": 0.031,
+    "spike": 0.236,
+    "generated_at": "2026-11-24T19:44:41+00:00"
+  }
+}

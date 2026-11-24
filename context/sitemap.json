@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T19:14:04Z",
+  "updated_at": "2026-11-24T19:45:11Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7831,6 +7831,24 @@
       "date": "2026-11-24",
       "public": true,
       "url": "https://aichieve.net/nobody-owns-your-ais-power-feed/"
+    },
+    {
+      "slug": "2026-11-24_one-build-costs-81-3-is-compute",
+      "title": "One Build Costs $81 \u2014 $3 Is Compute",
+      "vertical": "workstation_compute_economics",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Where the money actually goes",
+        "By the numbers",
+        "What teams that fixed it did",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "infra_engineer",
+      "date": "2026-11-24",
+      "public": false
     },
     {
       "slug": "2026-11-24_your-backup-tier-holds-a-365-day-lease",

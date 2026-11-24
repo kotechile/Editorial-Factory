@@ -12,6 +12,12 @@ meta_title: "Your TV Calls 10 Brands: The Hidden Guest List"
 meta_title_source: "derived_from_title"
 meta_description: "Within one minute of powering on, a Samsung smart TV calls 10 outside brands, and nobody has signed in to any of them."
 meta_description_source: "derived_from_lead"
+image_path: "context/assets/illustrations/your-tv-calls-10-brands-in-one-minute/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Your TV Calls 10 Brands Before You Sign. Router on a utility-closet shelf with a firewall gate separating a smart TV and doorbell from a"
+image_caption: "Your TV Calls 10 Brands Before You Sign: Untrusted gadgets share your main Wi-Fi — moving them out is the cheapest trust upgrade."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

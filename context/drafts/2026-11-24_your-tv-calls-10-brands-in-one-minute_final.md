@@ -8,6 +8,12 @@ persona: pro_homeowner
 one_big_thing: "A smart TV phones ten outside services in its first power-on minute, and the FBI's standing advice is to stop sharing a Wi-Fi with them. A guest network is the floor; a firewalled IoT VLAN is the fix."
 date: 2026-11-24
 slug: your-tv-calls-10-brands-in-one-minute
+image_path: "context/assets/illustrations/your-tv-calls-10-brands-in-one-minute/featured.jpg"
+image_style: "technical_isometric"
+image_model: "nanobanana"
+image_alt: "Your TV Calls 10 Brands Before You Sign. Router on a utility-closet shelf with a firewall gate separating a smart TV and doorbell from a"
+image_caption: "Your TV Calls 10 Brands Before You Sign: Untrusted gadgets share your main Wi-Fi — moving them out is the cheapest trust upgrade."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->
