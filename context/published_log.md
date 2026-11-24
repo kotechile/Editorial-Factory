@@ -428,6 +428,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-24 | ai_observability_qa | your-green-score-rides-138-contaminated-data | Your Green Score's Hidden 7.0-Point Drop | https://pressflow.aichieve.net/published/2026-11-24_your-green-score-rides-138-contaminated-data.md | reader site only |
 | 2026-11-24 | nhil_infrastructure_ops | your-substation-waits-55-months | Your Substation Waits 55 Months | https://pressflow.aichieve.net/published/2026-11-24_your-substation-waits-55-months.md | reader site only |
 | 2026-11-24 | enterprise_tech_leadership | your-backup-tier-holds-a-365-day-lease | Your Backup Tier: A 365-Day Trap | https://pressflow.aichieve.net/published/2026-11-24_your-backup-tier-holds-a-365-day-lease.md | reader site only |
+| 2026-11-24 | smart_home_telemetry | your-tv-calls-10-brands-in-one-minute | Your TV Calls 10 Brands: The Hidden Guest List | https://pressflow.aichieve.net/published/2026-11-24_your-tv-calls-10-brands-in-one-minute.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
