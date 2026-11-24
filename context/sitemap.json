@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T11:42:49Z",
+  "updated_at": "2026-11-24T12:12:52Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7826,6 +7826,24 @@
         "Related reading"
       ],
       "target_persona": "it_ops_leader",
+      "date": "2026-11-24",
+      "public": false
+    },
+    {
+      "slug": "2026-11-24_your-doorbell-wont-need-the-cloud",
+      "title": "Your Doorbell Won't Need the Cloud",
+      "vertical": "smart_home_telemetry",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The last paid feature",
+        "By the numbers",
+        "What the makers decide next",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-24",
       "public": false
     },

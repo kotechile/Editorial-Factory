@@ -1,0 +1,109 @@
+{
+  "slug": "your-doorbell-wont-need-the-cloud",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A video doorbell camera mounted beside a front door at blue hour, its lens ring lit by warm light from inside the house",
+      "caption": "The conversation at the door now runs on the house's own light and network, not a vendor's cloud.",
+      "title": "Video doorbell at a front door, blue hour, warm sidelight",
+      "bytes": 321079,
+      "sha256": "sha256:4d833bd302d6c4e13608e6ebff6bcffa"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural night photograph, front entrance seen from the driveway at blue hour. An unbranded matte video doorbell camera with a brushed-steel faceplate is mounted on the painted-wood trim of a deep pine green front door, placed off-centre on the left third. Warm ochre light from the hallway inside spills through the sidelight beside it, catching a soft rim highlight on the camera's lens ring; that interior glow is the only warm light against a deep graphite-blue dusk. Bone-white trim, clean stucco wall falling into shadow, crisp night air. 35mm lens at f/2.8 with gentle edge falloff, deep focus on the door plane, long-exposure calm, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos",
+  "rationale": "The protagonist is a machine at the home's threshold \u2014 the doorbell camera \u2014 and architectural_night places it in its true narrative context: the front door at dusk, where lit windows are the only warm light, mirroring the story's point that the conversation now runs on the home's own network rather than a distant cloud. The blue-hour calm with the small camera as focal anchor gives cover-grade atmosphere without stock datacenter clich\u00e9s, and the treatment has not appeared in the last four headers.",
+  "cue": "Your Doorbell Won't Need the Cloud",
+  "subject": "an unbranded video doorbell camera mounted on painted-wood trim beside a front door at blue hour, its lens ring catching warm hallway light through the sidelight",
+  "core_thesis": "Home Assistant 2026.11 made Matter 1.5 cameras first-class devices with two-way talk, so the doorbell conversation vendors fold into subscriptions now runs entirely on your own network.",
+  "core_conflict": "vendor cloud plans that relayed video and carried your voice back to the door versus a direct browser-to-camera WebRTC stream hosted on the homeowner's own hub and network.",
+  "composition": "tight exterior three-quarter view at eye level, the doorbell camera commanding the left third of the door trim, deep blue dusk wall and unlit porch filling the right two-thirds as editorial negative space",
+  "alt_text": "Your Doorbell Won'T Need The Cloud. A video doorbell camera mounted beside a front door at blue hour, its lens ring lit by warm light from",
+  "caption": "Your Doorbell Won'T Need The Cloud: Talking to the door \u2014 the last thing a camera plan sold \u2014 now runs on your own network.",
+  "title": "Your Doorbell Won'T Need The Cloud",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-doorbell-wont-need-the-cloud/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 382489,
+  "sha256": "sha256:c2b12f97c8f982a756d9d2678b8ecbfde7915a08f580bf9df45c0011ca0a4a73",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 382489,
+    "quality": 88,
+    "sha256": "sha256:c2b12f97c8f982a756d9d2678b8ecbfde7915a08f580bf9df45c0011ca0a4a73",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b8a15cf339e65887c762797de8b32f1c3727de6779c6d7d9dbc41453d25a622f",
+  "render_phash": "81370d370d370d370d370d370d370d370d3f0d3f0d3f0d3f0f3f073f05310e3f",
+  "review": {
+    "ok": true,
+    "skipped": true,
+    "reason": "render review unavailable (render review failed: frontier returned no text (finish_reason=length)) \u2014 the brief gate ran, the picture was not checked"
+  },
+  "source_hash": "sha256:9c0a25ee3e40dd94aef71e9f8a494b9f",
+  "source_chars": 4163,
+  "task_id": "323b48c74227530b954305d0c2d71711",
+  "credits": 5.0,
+  "cost_ms": 50,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/323b48c74227530b954305d0c2d71711_1795522280105.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural night photograph, front entrance seen from the driveway at blue hour. An unbranded matte video doorbell camera with a brushed-steel faceplate is mounted on the painted-wood trim of a deep pine green front door, placed off-centre on the left third. Warm ochre light from the hallway inside spills through the sidelight beside it, catching a soft rim highlight on the camera's lens ring; that interior glow is the only warm light against a deep graphite-blue dusk. Bone-white trim, clean stucco wall falling into shadow, crisp night air. 35mm lens at f/2.8 with gentle edge falloff, deep focus on the door plane, long-exposure calm, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-24T12:12:18+00:00",
+  "overlay": {
+    "kicker": "SMART HOME // MATTER 1.5 CAMERAS",
+    "title": "YOUR DOORBELL WON'T NEED THE CLOUD",
+    "hook": "Talking to the door \u2014 the last thing a camera plan sold \u2014 now runs on your own network",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.64,
+    "target": 4.5,
+    "clutter": 0.211,
+    "region_rgb": [
+      35,
+      57,
+      75
+    ],
+    "binding_rgb": [
+      58,
+      85,
+      115
+    ],
+    "title_lines": [
+      "YOUR DOORBELL",
+      "WON'T NEED THE",
+      "CLOUD"
+    ],
+    "subject": 0.115,
+    "ink_subject": 0.023,
+    "spike": 0.121,
+    "generated_at": "2026-11-24T12:12:18+00:00"
+  }
+}
