@@ -1,0 +1,113 @@
+{
+  "slug": "your-rent-cap-20-and-24-months",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Half-rebuilt fire-scarred house at dusk, plywood and tarp over the roofline, one warm worklight inside dark boarded windows.",
+      "caption": "The rebuild can keep running long after the rent line's dollar cap and 24-month clock run dry.",
+      "title": "Rebuild at blue hour: the clock behind the rent cap",
+      "bytes": 393996,
+      "sha256": "sha256:47abab77fe2f7c140130d8334faf715c"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Architectural night photograph, blue hour: a suburban house mid-rebuild after a fire, seen low from the driveway. Charred timber and soot-stained stucco on one side, fresh bare plywood sheathing and a half-stripped asphalt-shingle roofline on the other, poly tarp taut over the gable, one window opening boarded dark. A single warm ochre worklight glows deep inside the open frame \u2014 the only warm light against deep charcoal-blue dusk. Slate grey sky, rust-toned burn stains, concrete driveway edge in the foreground. 24mm wide lens, straight verticals, gentle vignette at the frame edges, long-exposure calm, fine film grain, house pushed to the right third with wide empty dusk sky on the left, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, numbers, signage, watermarks",
+  "rationale": "The story's stake is not paper but time: a rebuild running after dark while the family lives elsewhere on a capped rent line. architectural_night is the only allowed treatment that can hold that after-hours tension \u2014 a dark, unlivable house against deep blue dusk with a single warm worklight \u2014 and it matches the vertical's own suggested scene of a house envelope at dusk lit by a workman's site lamp.",
+  "cue": "the rent money can run out",
+  "subject": "a fire-damaged house half-rebuilt under scaffolding and tarp, dark inside at blue hour",
+  "core_thesis": "Loss-of-use coverage pays the rent while the rebuild runs, but it is capped twice \u2014 at about 20% of the dwelling limit and on a 12-to-24-month clock \u2014 so the rent money can run out before the house is ready.",
+  "core_conflict": "Two stacked caps \u2014 a dollar cap and a calendar cap \u2014 squeezing against the real, unpredictable duration and cost of a fire rebuild (contractor shortages, debris removal, permitting, testing).",
+  "composition": "extreme asymmetry: the half-rebuilt house commands the right third of the frame from a low driveway angle, roofline against a deep dusk sky, generous empty blue negative space upper-left, no people",
+  "alt_text": "Your Rent Cap Is 20% And Two Years. Half-rebuilt fire-scarred house at dusk, plywood and tarp over the roofline, one warm worklight inside",
+  "caption": "Your Rent Cap Is 20% And Two Years: The rent line is capped twice \u2014 divide it by monthly rent to see if it outlasts.",
+  "title": "Your Rent Cap Is 20% And Two Years",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-rent-cap-20-and-24-months/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 380681,
+  "sha256": "sha256:7fe817583c77ce79f5b831f5191c1bfef130ec0ee20262ddf3f799ea30b0f976",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 380681,
+    "quality": 76,
+    "sha256": "sha256:7fe817583c77ce79f5b831f5191c1bfef130ec0ee20262ddf3f799ea30b0f976",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:298a3978b9ea50077dbe6e0cf9187fd937ddc1abe1770828110d422aa468636c",
+  "render_phash": "01ff01ff036f00d6039f0f0d1d8f1e63166f1663565352cf824f04ef04ec161f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A fire-damaged house at blue hour: the left half is charred with exposed burnt framing and a stripped roofline, the right half is re-clad in fresh plywood sheathing with one warmly lit window, viewed from a low driveway angle across wet empty pavement under a dark dusk sky with open blue negative space upper-left and no people.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The frame depicts the article's own protagonist and mechanism \u2014 a fire-damaged house caught mid-rebuild at dusk, the exact situation loss-of-use rent coverage is meant to bridge \u2014 with no off-topic industry or contradicting scene."
+  },
+  "source_hash": "sha256:887bedd3e47e0c7e2f1c3465d4efb73b",
+  "source_chars": 4562,
+  "task_id": "9bb6c844ba01513d1705ecf5de30c816",
+  "credits": 5.0,
+  "cost_ms": 79,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/9bb6c844ba01513d1705ecf5de30c816_1795637624578.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Architectural night photograph, blue hour: a suburban house mid-rebuild after a fire, seen low from the driveway. Charred timber and soot-stained stucco on one side, fresh bare plywood sheathing and a half-stripped asphalt-shingle roofline on the other, poly tarp taut over the gable, one window opening boarded dark. A single warm ochre worklight glows deep inside the open frame \u2014 the only warm light against deep charcoal-blue dusk. Slate grey sky, rust-toned burn stains, concrete driveway edge in the foreground. 24mm wide lens, straight verticals, gentle vignette at the frame edges, long-exposure calm, fine film grain, house pushed to the right third with wide empty dusk sky on the left, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-25T20:13:54+00:00",
+  "overlay": {
+    "kicker": "HOMEOWNERS INSURANCE // LOSS-OF-USE COVERAGE",
+    "title": "YOUR RENT CAP IS 20% AND TWO YEARS",
+    "hook": "The rent line is capped twice \u2014 divide it by monthly rent to see if it outlasts",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.6,
+    "target": 4.5,
+    "clutter": 0.232,
+    "region_rgb": [
+      84,
+      103,
+      121
+    ],
+    "binding_rgb": [
+      111,
+      132,
+      153
+    ],
+    "title_lines": [
+      "YOUR RENT CAP",
+      "IS 20% AND TWO",
+      "YEARS"
+    ],
+    "subject": 0.255,
+    "ink_subject": 0.164,
+    "spike": 0.393,
+    "generated_at": "2026-11-25T20:13:54+00:00"
+  }
+}

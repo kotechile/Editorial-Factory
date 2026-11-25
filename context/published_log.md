@@ -438,6 +438,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-25 | multi_agent_enterprise_fabric | your-workflow-repair-pays-twice | Why Your Workflow Repair Pays Twice: 12 Calls vs 7 | https://pressflow.aichieve.net/published/2026-11-25_your-workflow-repair-pays-twice.md | reader site only |
 | 2026-11-25 | enterprise_build_vs_buy | your-egress-bill-six-times-storage | Egress Pricing: Six Times the Storage Line | https://pressflow.aichieve.net/published/2026-11-25_your-egress-bill-six-times-storage.md | reader site only |
 | 2026-11-25 | warehouse_automation_robotics_capex | your-labor-line-replaces-40-percent | Your 40% Churn Bills $21,800 | https://pressflow.aichieve.net/published/2026-11-25_your-labor-line-replaces-40-percent.md | reader site only |
+| 2026-11-25 | property_loss_insurance_mitigation | your-rent-cap-20-and-24-months | Your Rent Cap: 20% and Two Years | https://pressflow.aichieve.net/published/2026-11-25_your-rent-cap-20-and-24-months.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

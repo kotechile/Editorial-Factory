@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T19:47:50Z",
+  "updated_at": "2026-11-25T20:14:31Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -8106,6 +8106,24 @@
       "date": "2026-11-25",
       "public": true,
       "url": "https://aichieve.net/your-renewal-is-escrow-60-days-notice-or-zero/"
+    },
+    {
+      "slug": "2026-11-25_your-rent-cap-20-and-24-months",
+      "title": "Your Rent Cap: 20% and Two Years",
+      "vertical": "property_loss_insurance_mitigation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Cap by cap, then one division",
+        "By the numbers",
+        "Where the math bites",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-25",
+      "public": false
     },
     {
       "slug": "2026-11-25_your-workflow-repair-pays-twice",
