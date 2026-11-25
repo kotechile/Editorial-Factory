@@ -21,8 +21,8 @@ meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/22-3-billion-pre-sells-your-savings/featured.jpg"
 image_style: "long_lens_industry"
 image_model: "flux"
-image_alt: "Automation'S Next Decade Is Already Sold. Towering robotic warehouse storage racks with orange shuttle robots, receding in compressed rows"
-image_caption: "Automation'S Next Decade Is Already Sold: Payback cases built on wage inflation assume a labor line that now shrinks by plan."
+image_alt: "Tall robotic storage racks with orange shuttle robots receding down a warehouse aisle, with no people in sight."
+image_caption: "The backlog sells the next decade of robot work forward while buyers commit to smaller supply staffs."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

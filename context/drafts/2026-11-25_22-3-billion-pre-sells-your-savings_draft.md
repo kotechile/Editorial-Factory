@@ -56,7 +56,7 @@ The people closest to this are re-reading contracts rather than celebrating. One
 
 ## The catch
 
-Neither document proves what the pairing implies. The backlog is a record of demand already contracted. It says nothing about whether the promised productivity arrives, and the disclosure warns that contracts can be adjusted for inflation and revalidation [1]. Procter & Gamble's cut is a plan running to 2030, not a done deal, and its productivity projection is the company's own [4]. What both documents do establish is direction. Capital is contracted forward; headcount is committed down. Whether the savings hold at contract prices, or fade after the first cuts, is a question neither company must answer. The buyer pays either way.
+My read: neither document proves what the pairing implies. The backlog is a record of demand already contracted. It says nothing about whether the promised productivity arrives, and the disclosure warns that contracts can be adjusted for inflation and revalidation [1]. Procter & Gamble's cut is a plan running to 2030, not a done deal, and its productivity projection is the company's own [4]. What both documents do establish is direction. Capital is contracted forward; headcount is committed down. Whether the savings hold at contract prices, or fade after the first cuts, is a question neither company must answer. The buyer pays either way.
 
 ## Sources
 

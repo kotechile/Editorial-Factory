@@ -31,3 +31,6 @@ _No mechanically valid pair. That is a legitimate answer, not a failure: the Jud
 - PRNewswire copy of the Exotec release: https://www.prnewswire.com/news-releases/one-in-four-supply-chain-leaders-regret-their-warehouse-automation-decision-and-94-say-switching-would-be-prohibitively-expensive-302921670.html
 - Locus Array launch (April 2026, outside window; useful friction on RaaS vs capex): https://www.businesswire.com/news/home/20260410524554/en/Locus-Robotics-Launches-Locus-Array-a-New-Class-of-Physical-AI-Robotics-for-Fully-Autonomous-Fulfillment
 - AutoStore Fall 2026 product announcement (FlexBinsPort, AutoCase, VersaAI; undated video page): https://www.youtube.com/watch?v=iyiYGB9Vfc0
+- Symbotic FY26 Form 10-K (filed 2026-11-23; backlog $22.3B, ~16% FY27 recognition, Walmart 47%/87%, MAA history) — cited in the draft's Sources: https://www.sec.gov/Archives/edgar/data/1837240/000183724026000049/sym-20260926.htm
+- Symbotic Q4 FY2026 earnings call transcript, Nov. 23, 2026 (CFO: nearly $7B backlog addition next quarter) — https://stockanalysis.com/stocks/sym/transcripts/707599-q4-2026
+- Earned inline internal link target in the draft — https://aichieve.net/wage-floor-sets-robot-payback/
