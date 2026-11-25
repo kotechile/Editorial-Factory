@@ -624,6 +624,14 @@
   "note": "hub-level inventory reductions while spokes \u2026 contributed only 2%\"); `demand-planning.com/<date>/<slug>` (13 KB, the practitioner case: 60 locations, 13 echelons, \"a EUR 20 million saving\","
  },
  {
+  "host": "developers.cloudflare.com",
+  "url": "https://developers.cloudflare.com/r2/pricing/",
+  "verdict": "fetchable",
+  "as_of": "2026-11-25",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "R2 pricing page fetches clean as text with 'Last updated' line: storage $0.015/GB-mo, Class A $4.50/M, Class B $0.36/M, IA $0.01/GB retrieval, 'no charges for egress bandwidth', free tier, rounding rules \u2014 a one-page gol"
+ },
+ {
   "host": "dfpc.colorado.gov",
   "url": "",
   "verdict": "fetchable",
@@ -3286,6 +3294,14 @@
   "as_of": "2026-11-18",
   "vertical": "warehouse_automation_robotics_capex",
   "note": "curl answers 403 but a browser-UA reader (web_extract) returns the full product page, which is where 'ISO 21423:2026 is not a safety standard' is stated. source_gate reports the 403 as UNVERIFIED, not as a dead citation:"
+ },
+ {
+  "host": "www.backblaze.com",
+  "url": "https://www.backblaze.com/cloud-storage/pricing",
+  "verdict": "fetchable",
+  "as_of": "2026-11-25",
+  "vertical": "enterprise_build_vs_buy",
+  "note": "B2 pricing page fetches as plain text: .95/TB-mo, free egress up to 3x stored then $0.01/GB, no duration fees; rate calculator widgets carry JS but the prose rows verify. Lead figure cells on 6.95 / 0.01, never 3x (nav c"
  },
  {
   "host": "www.barroso.org",
