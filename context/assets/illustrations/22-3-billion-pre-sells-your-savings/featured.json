@@ -1,0 +1,113 @@
+{
+  "slug": "22-3-billion-pre-sells-your-savings",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Towering robotic warehouse storage racks with orange shuttle robots, receding in compressed rows toward an unfinished concrete bay.",
+      "caption": "The decade's warehouse automation is already sold \u2014 racked, booked and waiting to be built.",
+      "title": "Pre-sold automation racks receding to an unfinished bay",
+      "bytes": 392757,
+      "sha256": "sha256:c01bc00c1e353b56f85d1710ed94367f"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto photograph inside a vast distribution warehouse aisle, flat compressed perspective stacking row upon row of towering high-bay aluminum storage racks \u2014 Symbotic-style automation \u2014 densely slotted with grey totes, weathered-orange autonomous shuttle robots climbing the rail tracks inside the rack bays. Hard directional daylight from high skylights upper-left, raking across rack faces into long deep shadows down the polished concrete aisle; graphite and charcoal steel, safety-yellow floor lines, weathered orange, fine film grain. No people anywhere. At the far right the last rack row meets bare concrete where palletized steel beams wait unassembled. Extreme asymmetry: the rack system commands the left two-thirds, rows compressing toward the shadowed unfinished bay, gentle lens falloff.",
+  "negative_prompt": "garbled text, random lettering, numbers, logos, watermark",
+  "rationale": "The story's protagonist is the warehouse robotics system itself, already sold at $22.3 billion scale, so the machine must command the frame in its real environment. Telephoto compression is the one optic that makes backlog feel physical \u2014 rack rows stacking into the distance like contracted years \u2014 and the unstaffed, half-built hall carries the workforce tension without a single figure.",
+  "cue": "booked robot work already signed",
+  "subject": "towering warehouse automation racks with climbing shuttle robots inside a distribution center, receding toward bare unfinished floor",
+  "core_thesis": "A decade of warehouse automation has already been sold \u2014 Symbotic's $22.3 billion backlog is booked robot work signed before the labor cuts it was priced against ever land.",
+  "core_conflict": "Robot payback cases built on ever-rising wage inflation versus a labor line now shrinking by plan (P&G's 20\u201330% cut) \u2014 once headcount falls on schedule the savings stop compounding while the capital is still owed, with nearly half of all booked work riding on a single buyer.",
+  "composition": "extreme asymmetry \u2014 the rack-and-robot system commands the left two-thirds, its rows compressing toward a shadowed unfinished bay at the right",
+  "alt_text": "Automation'S Next Decade Is Already Sold. Towering robotic warehouse storage racks with orange shuttle robots, receding in compressed rows",
+  "caption": "Automation'S Next Decade Is Already Sold: Payback cases built on wage inflation assume a labor line that now shrinks by plan.",
+  "title": "Automation'S Next Decade Is Already Sold",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/22-3-billion-pre-sells-your-savings/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 407196,
+  "sha256": "sha256:3ce2421e3b6c6845d4bd09426b8093211f9be36fa44d9acfea6777897b6bdab5",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 407196,
+    "quality": 76,
+    "sha256": "sha256:3ce2421e3b6c6845d4bd09426b8093211f9be36fa44d9acfea6777897b6bdab5",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:ea02c1e2c251af00bc53a483115d00701f57f387305da0ac856dc492cc335925",
+  "render_phash": "1f961d961dcf0ce706e704a704a704a706af062f071f060700ff207f04070067",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "Tall multi-level warehouse storage racks filled with orange and gray robotic shuttle vehicles inside a distribution center, the rack rows receding toward a bare, empty concrete floor on the right side of the frame.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The frame depicts the article's own protagonist and mechanism \u2014 warehouse automation racks with shuttle robots, exactly Symbotic's product \u2014 and the bare unfinished floor at right visually echoes the booked-but-not-yet-delivered backlog the headline references."
+  },
+  "source_hash": "sha256:c20a8873a743e2946da0bdabd709e95f",
+  "source_chars": 4427,
+  "task_id": "5930c0d8aba810189f679b3b07cf713d",
+  "credits": 5.0,
+  "cost_ms": 81,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/5930c0d8aba810189f679b3b07cf713d_1795610299703.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto photograph inside a vast distribution warehouse aisle, flat compressed perspective stacking row upon row of towering high-bay aluminum storage racks \u2014 Symbotic-style automation \u2014 densely slotted with grey totes, weathered-orange autonomous shuttle robots climbing the rail tracks inside the rack bays. Hard directional daylight from high skylights upper-left, raking across rack faces into long deep shadows down the polished concrete aisle; graphite and charcoal steel, safety-yellow floor lines, weathered orange, fine film grain. No people anywhere. At the far right the last rack row meets bare concrete where palletized steel beams wait unassembled. Extreme asymmetry: the rack system commands the left two-thirds, rows compressing toward the shadowed unfinished bay, gentle lens falloff.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-25T12:38:27+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE ROBOTICS // BACKLOG MEETS HEADCOUNT",
+    "title": "AUTOMATION'S NEXT DECADE IS ALREADY SOLD",
+    "hook": "Payback cases built on wage inflation assume a labor line that now shrinks by plan",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.17,
+    "target": 4.5,
+    "clutter": 0.223,
+    "region_rgb": [
+      68,
+      72,
+      74
+    ],
+    "binding_rgb": [
+      95,
+      100,
+      103
+    ],
+    "title_lines": [
+      "AUTOMATION'S",
+      "NEXT DECADE IS",
+      "ALREADY SOLD"
+    ],
+    "subject": 0.261,
+    "ink_subject": 0.049,
+    "spike": 0.236,
+    "generated_at": "2026-11-25T12:38:27+00:00"
+  }
+}
