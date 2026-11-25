@@ -578,3 +578,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-24 | `one-build-costs-81-3-is-compute` | workstation_compute_economics | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/one-build-costs-81-3-is-compute/featured.jpg` |
 | 2026-11-25 | `agent-detector-precision-66-days` | agentic_resilience_failure | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/agent-detector-precision-66-days/featured.jpg` |
 | 2026-11-25 | `your-mcp-mandate-ships-100-wrong-tool-risk` | multi_agent_enterprise_fabric | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-mcp-mandate-ships-100-wrong-tool-risk/featured.jpg` |
+| 2026-11-25 | `your-renewal-is-escrow-60-days-notice-or-zero` | enterprise_build_vs_buy | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-renewal-is-escrow-60-days-notice-or-zero/featured.jpg` |

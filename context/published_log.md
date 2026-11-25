@@ -432,6 +432,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-24 | workstation_compute_economics | one-build-costs-81-3-is-compute | One Build Costs $81 — $3 Is Compute | https://pressflow.aichieve.net/published/2026-11-24_one-build-costs-81-3-is-compute.md | reader site only |
 | 2026-11-25 | agentic_resilience_failure | agent-detector-precision-66-days | 91% Precision, 66 Days Late: Agent Failures Nobody Sees | https://pressflow.aichieve.net/published/2026-11-25_agent-detector-precision-66-days.md | reader site only |
 | 2026-11-25 | multi_agent_enterprise_fabric | your-mcp-mandate-ships-100-wrong-tool-risk | Your MCP Mandate: A 100% Wrong-Tool Risk | https://pressflow.aichieve.net/published/2026-11-25_your-mcp-mandate-ships-100-wrong-tool-risk.md | reader site only |
+| 2026-11-25 | enterprise_build_vs_buy | your-renewal-is-escrow-60-days-notice-or-zero | Your Renewal Is Escrow: 60 Days' Notice, or Zero | https://pressflow.aichieve.net/published/2026-11-25_your-renewal-is-escrow-60-days-notice-or-zero.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

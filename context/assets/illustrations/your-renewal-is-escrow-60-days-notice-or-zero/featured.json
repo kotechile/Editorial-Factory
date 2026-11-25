@@ -1,0 +1,114 @@
+{
+  "slug": "your-renewal-is-escrow-60-days-notice-or-zero",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A severed paper key on the left, a blank contract certificate fenced behind a barred gate with an hourglass on the right.",
+      "caption": "One exit happens in a night; the other is fenced behind sixty days' written notice and half of what remains.",
+      "title": "Severed key beside fenced renewal certificate",
+      "bytes": 392883,
+      "sha256": "sha256:9bafad9deea3f5cb0c0fd325422f0b7d"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Editorial cut-paper collage laid on the brushed-steel console desk of a dark control room. Split-screen diptych with a clean vertical torn-paper seam: on the left, one large bone-white paper key silhouette snapped into two halves, the pieces drifting slightly apart; on the right, a blank graphite renewal certificate of hand-torn rag paper with halftone newsprint texture, fenced behind a tall cut-paper gate of thin vertical bars, a small safety-yellow paper hourglass resting on its face. Crisp cut edges, visible paper fibre, deep physical cast shadows beneath every layer. One raking light from the left grazing across the layers. Palette of bone white, graphite charcoal and a single safety-yellow accent. Extreme asymmetric framing, generous negative space, macro-sharp detail, fine film grain.",
+  "negative_prompt": "garbled text, random lettering, watermarks, legible words or numbers",
+  "rationale": "The story's protagonist is a collision between two documents \u2014 a security notice and renewal clauses \u2014 with no physical facility or machine to photograph, so a conceptual cut-paper collage is the honest medium. The split diptych makes the exit asymmetry legible at card size: one side instant and unilateral, the other fenced, noticed and priced.",
+  "cue": "Your renewal is escrow",
+  "subject": "a severed paper token-key beside a renewal certificate fenced behind a cut-paper gate",
+  "core_thesis": "A SaaS vendor can invalidate every customer's API token in one night, while the customer's own exit from the renewal contract is fenced behind 60 days' written notice or half of what remains \u2014 renewal is credential escrow, and the seller holds the gate.",
+  "core_conflict": "Instant, unilateral vendor exit versus slow, written, priced buyer exit \u2014 the same custody power over live credentials, run at two different speeds.",
+  "composition": "Split-screen diptych: a clean vertical torn-paper seam divides the frame \u2014 severed key left, fenced certificate right \u2014 with extreme asymmetry and generous negative space",
+  "alt_text": "Your Renewal Is Escrow. A severed paper key on the left, a blank contract certificate fenced behind a barred gate with an hourglass on the",
+  "caption": "Your Renewal Is Escrow: One vendor killed every API token in a night \u2014 14 SaaS renewal clauses price your exit.",
+  "title": "Your Renewal Is Escrow",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-renewal-is-escrow-60-days-notice-or-zero/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 408873,
+  "sha256": "sha256:1f951d28da27a299bfb2320bd7ac96f6b360ddabb73d793ac774551efb3f82f8",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 408873,
+    "quality": 56,
+    "sha256": "sha256:1f951d28da27a299bfb2320bd7ac96f6b360ddabb73d793ac774551efb3f82f8",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:3b00154ab77e0812bbc6b1a0a69fd43d8dee8405aba0f0c076f2726b21cb4e69",
+  "render_phash": "3fff3fcf3f5f3f1f179f359b1d971d3f0d3f0f2b073f03170277005b01d70057",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A split frame divided by a torn-paper seam: on the left, a large broken metal key in two pieces on a dark textured ground; on the right, a torn paper patch bearing a yellow hourglass symbol next to vertical gate-like bars.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.8,
+    "reason": "The severed key matches the invalidated API token and the hourglass behind bars matches the time-fenced renewal exit, though the ordered renewal certificate itself is replaced by the hourglass."
+  },
+  "source_hash": "sha256:57a23d08f11df4377f091ea42630c7c4",
+  "source_chars": 6509,
+  "task_id": "8256fb277e777a185e47fdda22845bee",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_6fadf95c1f6bf82842606b840624350a.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Editorial cut-paper collage laid on the brushed-steel console desk of a dark control room. Split-screen diptych with a clean vertical torn-paper seam: on the left, one large bone-white paper key silhouette snapped into two halves, the pieces drifting slightly apart; on the right, a blank graphite renewal certificate of hand-torn rag paper with halftone newsprint texture, fenced behind a tall cut-paper gate of thin vertical bars, a small safety-yellow paper hourglass resting on its face. Crisp cut edges, visible paper fibre, deep physical cast shadows beneath every layer. One raking light from the left grazing across the layers. Palette of bone white, graphite charcoal and a single safety-yellow accent. Extreme asymmetric framing, generous negative space, macro-sharp detail, fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-25T12:10:56+00:00",
+  "overlay": {
+    "kicker": "SAAS CONTRACTS // RENEWAL EXIT CLAUSES",
+    "title": "YOUR RENEWAL IS ESCROW",
+    "hook": "One vendor killed every API token in a night \u2014 14 SaaS renewal clauses price your exit",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.73,
+    "target": 5.5,
+    "clutter": 0.487,
+    "region_rgb": [
+      48,
+      47,
+      44
+    ],
+    "binding_rgb": [
+      115,
+      112,
+      107
+    ],
+    "title_lines": [
+      "YOUR RENEWAL",
+      "IS ESCROW"
+    ],
+    "subject": 0.174,
+    "ink_subject": 0.065,
+    "spike": 0.449,
+    "generated_at": "2026-11-25T12:10:56+00:00"
+  }
+}
