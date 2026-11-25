@@ -1,0 +1,109 @@
+{
+  "slug": "your-mcp-mandate-ships-100-wrong-tool-risk",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Two identical fibre patch cords enter one server-room patch bay; the amber link light burns on the cord rising from the dark floor gap.",
+      "caption": "Every agent must now pass through one list \u2014 and the list cannot tell a real provider's cord from an attacker's identical twin.",
+      "title": "MCP Mandate: Twin Cords, One Gate",
+      "bytes": 346669,
+      "sha256": "sha256:73abdd184da9cdb6351f143b143bc946"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, 35mm anamorphic: a night server room, one rack row receding into blue darkness. Off-centre on the right third, an unlabelled fibre patch bay where two identical black patch cords curve side by side into twin ports \u2014 one cord runs back to an orderly lit server cabinet, the other sinks into the black seam of the raised floor, and its amber link light is the one that burns. A single worklight rakes in from the left, catching dust and the polished connectors. Graphite, steel-blue and restrained amber palette; brushed steel, cable-sheathing and concrete textures; shallow anamorphic depth, deep contact shadows, fine film grain, no people, no readable markings.",
+  "negative_prompt": "garbled text, random letters, numbers, watermarks, logos, readable markings",
+  "rationale": "The story turns on one decisive place \u2014 the convergence point every agent request must now cross \u2014 so a cinematic film still gives the abstract misbinding a physical gate and a wrong-pick moment without any lettering. Twin identical cords, one born in the lit rack, one rising from the floor void, stage tool-provider misbinding as something a reader can name at a glance, and it rotates the desk back to photography after constructed and flat-lay briefs.",
+  "cue": "MCP tool names resolve to an attacker's server",
+  "subject": "two identical unlabelled fibre patch cords converging into one server-room patch bay \u2014 one from a lit rack, one rising from the dark raised-floor seam",
+  "core_thesis": "Google's hard February 2027 mandate funnels every Workspace agent through MCP, yet the protocol still cannot bind a tool's name to its true owner \u2014 so under name collision an attacker's copied tool wins the pick 100% of the time.",
+  "core_conflict": "Mandated single-path adoption versus unverified tool identity: a protocol is being made compulsory before anyone has proven it can tell a real provider's tool from an attacker's exact copy.",
+  "composition": "Off-centre asymmetric 16:9: patch bay on the right third, twin cords sweeping left as leading lines, lit rack row receding into blue shadow, deep editorial negative space above the floor line",
+  "alt_text": "Google MCP Mandate Faces 100% Wrong-Tool Risk. Two identical fibre patch cords enter one server-room patch bay; the amber link light burns",
+  "caption": "Google MCP Mandate Faces 100% Wrong-Tool Risk: Agents reach Workspace only via MCP from February 2027, yet copied tool names steal.",
+  "title": "Google MCP Mandate Faces 100% Wrong-Tool Risk",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-mcp-mandate-ships-100-wrong-tool-risk/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 376062,
+  "sha256": "sha256:1d06c459b1d5c2e14d5a8e0cfafe9fe350c5f676c7e3def32e7812d10b54d6bf",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 376062,
+    "quality": 84,
+    "sha256": "sha256:1d06c459b1d5c2e14d5a8e0cfafe9fe350c5f676c7e3def32e7812d10b54d6bf",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:6ac3eefe30f80e68ec3e83e65c77dd7608b82530c7a9eb440fb02396d37dc84d",
+  "render_phash": "259905b925b964c7658d659d25bb25ad259d07b77f8377bd7b9d75b377e979b7",
+  "review": {
+    "ok": true,
+    "skipped": true,
+    "reason": "render review unavailable (render review failed: frontier returned no text (finish_reason=length)) \u2014 the brief gate ran, the picture was not checked"
+  },
+  "source_hash": "sha256:d6abe67897815c2d6413a7df579593f4",
+  "source_chars": 5166,
+  "task_id": "768286da3381d79a27e80f1cee9e1cd0",
+  "credits": 5.0,
+  "cost_ms": 119,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/768286da3381d79a27e80f1cee9e1cd0_1795605086442.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, 35mm anamorphic: a night server room, one rack row receding into blue darkness. Off-centre on the right third, an unlabelled fibre patch bay where two identical black patch cords curve side by side into twin ports \u2014 one cord runs back to an orderly lit server cabinet, the other sinks into the black seam of the raised floor, and its amber link light is the one that burns. A single worklight rakes in from the left, catching dust and the polished connectors. Graphite, steel-blue and restrained amber palette; brushed steel, cable-sheathing and concrete textures; shallow anamorphic depth, deep contact shadows, fine film grain, no people, no readable markings.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-25T11:11:46+00:00",
+  "overlay": {
+    "kicker": "AI AGENTS // MCP TOOL MISBINDING",
+    "title": "GOOGLE MCP MANDATE FACES 100% WRONG-TOOL RISK",
+    "hook": "Agents reach Workspace only via MCP from February 2027, yet copied tool names steal",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.77,
+    "target": 4.5,
+    "clutter": 0.213,
+    "region_rgb": [
+      43,
+      51,
+      57
+    ],
+    "binding_rgb": [
+      73,
+      83,
+      92
+    ],
+    "title_lines": [
+      "GOOGLE MCP",
+      "MANDATE FACES 100%",
+      "WRONG-TOOL RISK"
+    ],
+    "subject": 0.23,
+    "ink_subject": 0.063,
+    "spike": 0.215,
+    "generated_at": "2026-11-25T11:11:46+00:00"
+  }
+}

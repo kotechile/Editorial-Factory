@@ -3232,6 +3232,14 @@
   "note": "w in watts), and the vendor list-price pages `fastmail.com/pricing`, `workspace.google.com/pricing.html`, `digitalocean.com/pricing/droplets`, `support.apple.com/en-us/108047` and `tailscale"
  },
  {
+  "host": "workspaceupdates.googleblog.com",
+  "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+  "verdict": "fetchable",
+  "as_of": "2026-11-25",
+  "vertical": "multi_agent_enterprise_fabric",
+  "note": "2026-11-25 probe: Blogger page fetches with plain UA; canonical publish date via /feeds/posts/default?alt=json feed (2026-11-24T09:02:59-08:00). reddit.com unreachable - community reports cited from it read UNVERIFIED at"
+ },
+ {
   "host": "www.acehardware.com",
   "url": "https://www.acehardware.com/events/black-friday",
   "verdict": "unreachable",

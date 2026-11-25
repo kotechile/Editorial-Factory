@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T10:46:08Z",
+  "updated_at": "2026-11-25T11:12:14Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -7979,6 +7979,24 @@
         "Related reading"
       ],
       "target_persona": "infra_engineer",
+      "date": "2026-11-25",
+      "public": false
+    },
+    {
+      "slug": "2026-11-25_your-mcp-mandate-ships-100-wrong-tool-risk",
+      "title": "Your MCP Mandate: A 100% Wrong-Tool Risk",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Measured first, mandated second",
+        "By the numbers",
+        "What the field is doing",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-11-25",
       "public": false
     }
