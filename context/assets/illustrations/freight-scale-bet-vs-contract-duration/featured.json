@@ -1,6 +1,6 @@
 {
   "slug": "freight-scale-bet-vs-contract-duration",
-  "revision": 12,
+  "revision": 13,
   "history": [
     {
       "revision": 1,
@@ -84,6 +84,14 @@
     },
     {
       "revision": 11,
+      "alt_text": "C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet",
+      "caption": "C.H. Robinson'S $5.8B Freight Bet: A $5.8B network bet meets a market that won't commit beyond 90 days.",
+      "title": "C.H. Robinson'S $5.8B Freight Bet",
+      "bytes": 407521,
+      "sha256": "sha256:94a378b0698cc98bc975ecd7b29d75401e0541a0756be8f160298de77e0d6268"
+    },
+    {
+      "revision": 12,
       "alt_text": "C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet. C.H. Robinson'S $5.8B Freight Bet",
       "caption": "C.H. Robinson'S $5.8B Freight Bet: A $5.8B network bet meets a market that won't commit beyond 90 days.",
       "title": "C.H. Robinson'S $5.8B Freight Bet",

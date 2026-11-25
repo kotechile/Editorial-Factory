@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T14:22:23+00:00",
+  "generated_at": "2026-11-25T14:26:01+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -2499,29 +2499,6 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
-      "slug": "mechanics-lien-clock-payment-release",
-      "title": "The Hidden Lien Clock Behind Your Remodel Payments",
-      "url": "https://wellroost.com/mechanics-lien-clock-payment-release/",
-      "path": "/mechanics-lien-clock-payment-release/",
-      "sites_live": {
-        "wellroost.com": "/mechanics-lien-clock-payment-release/"
-      },
-      "categories": [
-        "Tools & Equipment"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "tools-equipment"
-      ],
-      "excerpt": "A California homeowner has exactly 15 days after a remodel ends to file one form: a Notice of Completion.",
-      "modified": "2026-10-31T04:49:14",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
       "slug": "monitor-77-percent-guess-where-it-fails",
       "title": "Your Monitor's 77% Guess: Where It Fails",
       "url": "https://wellroost.com/monitor-77-percent-guess-where-it-fails/",
@@ -4086,6 +4063,29 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
+      "slug": "your-nonrenewals-are-not-final",
+      "title": "Your 6,200 Nonrenewals Are Not Final",
+      "url": "https://wellroost.com/your-nonrenewals-are-not-final/",
+      "path": "/your-nonrenewals-are-not-final/",
+      "sites_live": {
+        "wellroost.com": "/your-nonrenewals-are-not-final/"
+      },
+      "categories": [
+        "Home Cost Decisions"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-cost-decisions"
+      ],
+      "excerpt": "New Mexico's record 6,200-plus non-renewals come with a documented reversal: verified wildfire mitigation. Without the file, the FAIR Plan pays actual cash value\u2026",
+      "modified": "2026-11-25T13:15:07",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
       "slug": "your-oil-heat-619-one-day-of-relief",
       "title": "Your $6.19 Oil Heat: The Reserve Trap",
       "url": "https://wellroost.com/your-oil-heat-619-one-day-of-relief/",
@@ -4477,6 +4477,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "22-3-billion-pre-sells-your-savings",
+      "title": "$22.3 Billion Pre-Sells Your Savings",
+      "url": "https://aichieve.net/22-3-billion-pre-sells-your-savings/",
+      "path": "/22-3-billion-pre-sells-your-savings/",
+      "sites_live": {
+        "aichieve.net": "/22-3-billion-pre-sells-your-savings/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Symbotic closed its fiscal year with $22.3 billion of booked robot work already signed. Four days earlier, Procter & Gamble told investors it will remove\u2026",
+      "modified": "2026-11-25T12:41:26",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "23-of-26-builds-saved-nothing",
       "title": "AI Build vs Buy: 23 of 26 Builds Saved Nothing",
       "url": "https://aichieve.net/23-of-26-builds-saved-nothing/",
@@ -4654,6 +4677,29 @@
       ],
       "excerpt": "An agent's log is only proof if it can replay the exact choice.",
       "modified": "2026-10-31T04:48:44",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "agent-detector-precision-66-days",
+      "title": "91% Precision, 66 Days Late: Agent Failures Nobody Sees",
+      "url": "https://aichieve.net/agent-detector-precision-66-days/",
+      "path": "/agent-detector-precision-66-days/",
+      "sites_live": {
+        "aichieve.net": "/agent-detector-precision-66-days/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "The tools that catch broken agents just got sharper \u2014 at the wrong misses. Apsis, a new code checker, reads an agent's task chain before anything runs and\u2026",
+      "modified": "2026-11-25T10:46:06",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -6438,6 +6484,29 @@
       ],
       "excerpt": "One paused approval answered by two workers can fire two payments.",
       "modified": "2026-10-31T04:48:37",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "one-build-costs-81-3-is-compute",
+      "title": "One Build Costs $81 \u2014 $3 Is Compute",
+      "url": "https://aichieve.net/one-build-costs-81-3-is-compute/",
+      "path": "/one-build-costs-81-3-is-compute/",
+      "sites_live": {
+        "aichieve.net": "/one-build-costs-81-3-is-compute/"
+      },
+      "categories": [
+        "Major Purchases & Assets"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "major-purchases-assets"
+      ],
+      "excerpt": "GitHub ran the bill on its own build fleet, and the machine barely shows. One 92-minute build on an 8-core runner cost $2.94 of compute and $77.94 of\u2026",
+      "modified": "2026-11-24T19:45:10",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8989,6 +9058,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-backup-tier-holds-a-365-day-lease",
+      "title": "Your Backup Tier: A 365-Day Trap",
+      "url": "https://aichieve.net/your-backup-tier-holds-a-365-day-lease/",
+      "path": "/your-backup-tier-holds-a-365-day-lease/",
+      "sites_live": {
+        "aichieve.net": "/your-backup-tier-holds-a-365-day-lease/"
+      },
+      "categories": [
+        "Mental Models & Strategy"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "mental-models-strategy"
+      ],
+      "excerpt": "Your backup tier should be picked by how fast a restore must work, because the real cost is paid when you open the copy, not when you store it.",
+      "modified": "2026-11-24T18:39:53",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-boxs-hidden-79-speed-cut",
       "title": "Your Box's Hidden 79% Speed Cut: Rent Is the Audit",
       "url": "https://aichieve.net/your-boxs-hidden-79-speed-cut/",
@@ -9702,6 +9794,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-green-score-rides-138-contaminated-data",
+      "title": "Your Green Score's Hidden 7.0-Point Drop",
+      "url": "https://aichieve.net/your-green-score-rides-138-contaminated-data/",
+      "path": "/your-green-score-rides-138-contaminated-data/",
+      "sites_live": {
+        "aichieve.net": "/your-green-score-rides-138-contaminated-data/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Six frontier models lost 7.0 points when they were re-tested on re-worded MMLU (the multiple-choice general-knowledge benchmark) questions, because the\u2026",
+      "modified": "2026-11-24T17:44:19",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-hidden-461-double-counts",
       "title": "Your Hidden 461 Double Counts",
       "url": "https://aichieve.net/your-hidden-461-double-counts/",
@@ -9856,6 +9971,29 @@
       ],
       "excerpt": "The duty on the robots and machine tools a reshoring project buys was neither set nor dropped this week. It went to trade talks after a Commerce Department\u2026",
       "modified": "2026-10-31T06:44:32",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-mcp-mandate-ships-100-wrong-tool-risk",
+      "title": "Your MCP Mandate: A 100% Wrong-Tool Risk",
+      "url": "https://aichieve.net/your-mcp-mandate-ships-100-wrong-tool-risk/",
+      "path": "/your-mcp-mandate-ships-100-wrong-tool-risk/",
+      "sites_live": {
+        "aichieve.net": "/your-mcp-mandate-ships-100-wrong-tool-risk/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "Google has set a hard date: from February 1, 2027, AI agents reach Workspace data only through the Model Context Protocol (MCP), the standard agents use to\u2026",
+      "modified": "2026-11-25T11:12:12",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -10254,6 +10392,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-renewal-is-escrow-60-days-notice-or-zero",
+      "title": "Your Renewal Is Escrow: 60 Days' Notice, or Zero",
+      "url": "https://aichieve.net/your-renewal-is-escrow-60-days-notice-or-zero/",
+      "path": "/your-renewal-is-escrow-60-days-notice-or-zero/",
+      "sites_live": {
+        "aichieve.net": "/your-renewal-is-escrow-60-days-notice-or-zero/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "One vendor invalidated every customer's API token in a night. The renewal clauses of 14 SaaS vendors show your own exit is fenced far slower. What the two documents\u2026",
+      "modified": "2026-11-25T12:11:23",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-replay-isnt-the-run",
       "title": "Your Replay Isn't the Run: 9 of 24 Differ",
       "url": "https://aichieve.net/your-replay-isnt-the-run/",
@@ -10592,6 +10753,29 @@
       ],
       "excerpt": "A spawned subagent inherits its parent's full authority in 45 of 45 measured runs, and the sender label on its report is text the child can forge.",
       "modified": "2026-11-12T11:08:10",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-substation-waits-55-months",
+      "title": "Your Substation Waits 55 Months",
+      "url": "https://aichieve.net/your-substation-waits-55-months/",
+      "path": "/your-substation-waits-55-months/",
+      "sites_live": {
+        "aichieve.net": "/your-substation-waits-55-months/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "The median queue request now takes over four years to a live feed, and 77% of the power that applied withdrew. Your build clock is the grid queue, not the hardware\u2026",
+      "modified": "2026-11-24T18:09:17",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -10942,6 +11126,118 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1864,
+      "slug": "22-3-billion-pre-sells-your-savings",
+      "title": "$22.3 Billion Pre-Sells Your Savings",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-25T12:41:26",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1861,
+      "slug": "your-renewal-is-escrow-60-days-notice-or-zero",
+      "title": "Your Renewal Is Escrow: 60 Days&#8217; Notice, or Zero",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-25T12:11:23",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1858,
+      "slug": "your-mcp-mandate-ships-100-wrong-tool-risk",
+      "title": "Your MCP Mandate: A 100% Wrong-Tool Risk",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-25T11:12:12",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1855,
+      "slug": "agent-detector-precision-66-days",
+      "title": "91% Precision, 66 Days Late: Agent Failures Nobody Sees",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-25T10:46:06",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1852,
+      "slug": "one-build-costs-81-3-is-compute",
+      "title": "One Build Costs $81 \u2014 $3 Is Compute",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-24T19:45:10",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1849,
+      "slug": "your-backup-tier-holds-a-365-day-lease",
+      "title": "Your Backup Tier: A 365-Day Trap",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-24T18:39:53",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1846,
+      "slug": "your-substation-waits-55-months",
+      "title": "Your Substation Waits 55 Months",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-24T18:09:17",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1842,
+      "slug": "your-green-score-rides-138-contaminated-data",
+      "title": "Your Green Score&#8217;s Hidden 7.0-Point Drop",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-24T17:44:19",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -11989,118 +12285,6 @@
       "category_ids": [],
       "excerpt": "",
       "modified": "2026-11-04T12:57:55",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1454,
-      "slug": "your-2-silent-agent-hooks",
-      "title": "Your 2 Silent Agent Hooks",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-04T12:34:34",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1452,
-      "slug": "18x-lpddr-isnt-18tbs",
-      "title": "18x LPDDR Isn&#8217;t 18 TB/s",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-04T11:52:46",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1449,
-      "slug": "your-agent-deletes-ask-nobody",
-      "title": "60.7% of Agent Deletes Ask Nobody",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-04T11:18:12",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1446,
-      "slug": "your-10-minute-spike-bills-an-hour",
-      "title": "Your 10-Minute Spike Bills an Hour",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-04T11:12:19",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1440,
-      "slug": "your-cold-chain-blind-spot",
-      "title": "Your Cold Chain Blind Spot: 45 Minutes",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-04T00:35:27",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1436,
-      "slug": "your-pool-becomes-2000-connections",
-      "title": "Your Pool Becomes 2,000: A Memory Trap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-03T18:44:56",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1432,
-      "slug": "your-backup-66-mw-permit-trap",
-      "title": "Your Backup&#8217;s 6.6 MW Permit Trap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-03T18:21:33",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1428,
-      "slug": "your-dedupe-cut-f1-by-74",
-      "title": "Your Dedupe Pass Costs 7.4 F1",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-03T19:51:10",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

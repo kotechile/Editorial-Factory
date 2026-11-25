@@ -1,6 +1,6 @@
 {
   "slug": "agent-timeout-false-alarm-budget",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -28,6 +28,14 @@
     },
     {
       "revision": 4,
+      "alt_text": "Agent Timeout Budgets. An intricate brass mechanical timer and steel calipers on a slate surface.",
+      "caption": "Agent Timeout Budgets: Why lazy timeout settings break agent retry loops.",
+      "title": "Agent Timeout Budgets",
+      "bytes": 399882,
+      "sha256": "sha256:20977a36a131a3736c8e26d002b5c0f6a5b9cb63b44a095d373f10525fee842f"
+    },
+    {
+      "revision": 5,
       "alt_text": "Agent Timeout Budgets. An intricate brass mechanical timer and steel calipers on a slate surface.",
       "caption": "Agent Timeout Budgets: Why lazy timeout settings break agent retry loops.",
       "title": "Agent Timeout Budgets",

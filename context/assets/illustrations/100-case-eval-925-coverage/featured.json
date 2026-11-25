@@ -1,6 +1,6 @@
 {
   "slug": "100-case-eval-925-coverage",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "CI Gate Accuracy Interval Tolerance",
       "bytes": 2050375,
       "sha256": "sha256:2ff7f838971e854d922245706c6e7496"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The 100-Case Eval Problem. Precision mechanical inspection gauge with brackets failing to span the full width of a modular te",
+      "caption": "The 100-Case Eval Problem: Why small test suites fail standard confidence intervals.",
+      "title": "The 100-Case Eval Problem",
+      "bytes": 1476849,
+      "sha256": "sha256:5231bf8e8977f43215c64e59063729559216e485811ba3bf327e01e561424ea1"
     }
   ],
   "style": "component_assembly",
@@ -35,12 +43,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/100-case-eval-925-coverage/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1476849,
-  "sha256": "sha256:5231bf8e8977f43215c64e59063729559216e485811ba3bf327e01e561424ea1",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/100-case-eval-925-coverage/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 386386,
+  "sha256": "sha256:e63f46e05bee28118c77829b5dc432a06bcdbe85c1bff690a1bb0217896171da",
   "source_hash": "sha256:29a5a2816295862c5bc8c626757dbabb",
   "source_chars": 5128,
   "task_id": "dcc4eead53ce2396e82dab8721b88578",
@@ -62,29 +70,42 @@
     "kicker": "MODEL EVALS // CONFIDENCE INTERVALS",
     "title": "THE 100-CASE EVAL PROBLEM",
     "hook": "Why small test suites fail standard confidence intervals",
-    "anchor": "top-right",
+    "anchor": "bottom-right",
     "light": false,
-    "scrim": 0,
-    "contrast": 5.34,
+    "scrim": 120,
+    "contrast": 5.82,
     "target": 4.5,
-    "clutter": 0.169,
+    "clutter": 0.204,
     "region_rgb": [
-      190,
-      190,
-      185
+      205,
+      205,
+      200
     ],
     "binding_rgb": [
-      165,
-      166,
-      161
+      174,
+      173,
+      169
     ],
     "title_lines": [
       "THE 100-CASE",
       "EVAL PROBLEM"
     ],
-    "subject": 0.009,
-    "ink_subject": 0.004,
-    "spike": 0.03,
+    "subject": 0.07,
+    "ink_subject": 0.003,
+    "spike": 0.021,
     "generated_at": "2026-10-13T17:38:43+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 386386,
+    "quality": 80,
+    "sha256": "sha256:e63f46e05bee28118c77829b5dc432a06bcdbe85c1bff690a1bb0217896171da",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

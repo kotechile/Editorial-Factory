@@ -1,6 +1,6 @@
 {
   "slug": "windows-13-percent-best-case",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -17,6 +17,14 @@
       "title": "The 13 Percent Window Myth",
       "bytes": 1322378,
       "sha256": "sha256:28e1dd03df2cd7e73d78f27963749bcbef576c5c8d80a8feb1becacd815cee50"
+    },
+    {
+      "revision": 3,
+      "alt_text": "The 13 Percent Window Myth. A modular cross-section of a heavy double-pane architectural window frame resting on a steel surf",
+      "caption": "The 13 Percent Window Myth: Why new windows are a comfort buy, not an energy one.",
+      "title": "The 13 Percent Window Myth",
+      "bytes": 392483,
+      "sha256": "sha256:b0e0b8a3a234eccfcaf8825b0d9d4dc273b7aaddaa800234a84738f67c182faf"
     }
   ],
   "style": "component_assembly",

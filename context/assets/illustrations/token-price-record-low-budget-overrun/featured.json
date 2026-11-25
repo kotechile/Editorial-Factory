@@ -1,6 +1,6 @@
 {
   "slug": "token-price-record-low-budget-overrun",
-  "revision": 9,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -60,6 +60,14 @@
     },
     {
       "revision": 8,
+      "alt_text": "Token Prices Fall, Enterprise AI Bills Rise. Mechanical limit switch and physical governor latch locking down a modular server bay cover.",
+      "caption": "Token Prices Fall, Enterprise AI Bills Rise: Vendors reprice on speed and access, so the CFO's bill keeps climbing.",
+      "title": "Token Prices Fall, Enterprise AI Bills Rise",
+      "bytes": 281042,
+      "sha256": "sha256:8c40134cf0a81d6489398fdb3452b7b9a2192d138ac3c97a9ace3080a57306ff"
+    },
+    {
+      "revision": 9,
       "alt_text": "Token Prices Fall, Enterprise AI Bills Rise. Mechanical limit switch and physical governor latch locking down a modular server bay cover.",
       "caption": "Token Prices Fall, Enterprise AI Bills Rise: Vendors reprice on speed and access, so the CFO's bill keeps climbing.",
       "title": "Token Prices Fall, Enterprise AI Bills Rise",

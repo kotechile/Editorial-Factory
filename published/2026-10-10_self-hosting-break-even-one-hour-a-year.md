@@ -12,10 +12,10 @@ meta_title_source: "derived_from_title"
 meta_description: "An hour of network admin work was worth $47.66 at the 2025 median wage. A year of managed email costs $60."
 meta_description_source: "derived_from_lead"
 image_path: "context/assets/illustrations/self-hosting-break-even-one-hour-a-year/featured.jpg"
-image_style: "editorial_macro"
+image_style: "document_flatlay"
 image_model: "flux"
-image_alt: "The Cost Of Self-Hosting. Network storage drive caddy and precision screwdriver resting on a metal surface."
-image_caption: "The Cost Of Self-Hosting: The hidden labor costs of running your own services."
+image_alt: "Self-Hosting Breaks Even At 1.26 Hours A Year. A slim mailbox bill on the left, a thick stack of maintenance log sheets with a wristwatch"
+image_caption: "Self-Hosting Breaks Even At 1.26 Hours A Year: Cost is a bad reason to self-host — your hours cost more than the bill you cancel."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 

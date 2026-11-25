@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T13:14:05Z",
+  "updated_at": "2026-11-25T18:19:31Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -1038,8 +1038,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-08",
-      "public": true,
-      "url": "https://wellroost.com/mechanics-lien-clock-payment-release/"
+      "public": false
     },
     {
       "slug": "2026-10-08_safety-stock-forecast-error-not-demand-noise",
@@ -7848,7 +7847,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-24",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/one-build-costs-81-3-is-compute/"
     },
     {
       "slug": "2026-11-24_your-backup-tier-holds-a-365-day-lease",
@@ -7866,7 +7866,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-24",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-backup-tier-holds-a-365-day-lease/"
     },
     {
       "slug": "2026-11-24_your-doorbell-wont-need-the-cloud",
@@ -7903,7 +7904,8 @@
       ],
       "target_persona": "evals_infra_eng",
       "date": "2026-11-24",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-green-score-rides-138-contaminated-data/"
     },
     {
       "slug": "2026-11-24_your-online-judge-votes-for-itself",
@@ -7944,7 +7946,8 @@
       ],
       "target_persona": "it_ops_leader",
       "date": "2026-11-24",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-substation-waits-55-months/"
     },
     {
       "slug": "2026-11-24_your-tv-calls-10-brands-in-one-minute",
@@ -7979,7 +7982,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-25",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/22-3-billion-pre-sells-your-savings/"
     },
     {
       "slug": "2026-11-25_agent-detector-precision-66-days",
@@ -7997,7 +8001,8 @@
       ],
       "target_persona": "infra_engineer",
       "date": "2026-11-25",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/agent-detector-precision-66-days/"
     },
     {
       "slug": "2026-11-25_your-mcp-mandate-ships-100-wrong-tool-risk",
@@ -8015,7 +8020,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-25",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-mcp-mandate-ships-100-wrong-tool-risk/"
     },
     {
       "slug": "2026-11-25_your-nonrenewals-are-not-final",
@@ -8033,7 +8039,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-25",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-nonrenewals-are-not-final/"
     },
     {
       "slug": "2026-11-25_your-renewal-is-escrow-60-days-notice-or-zero",
@@ -8050,6 +8057,30 @@
         "Related reading"
       ],
       "target_persona": "eng_leader",
+      "date": "2026-11-25",
+      "public": true,
+      "url": "https://aichieve.net/your-renewal-is-escrow-60-days-notice-or-zero/"
+    },
+    {
+      "slug": "2026-11-25_your-workflow-repair-pays-twice",
+      "title": "Why Your Workflow Repair Pays Twice: 12 Calls vs 7",
+      "vertical": "multi_agent_enterprise_fabric",
+      "primary_keyword": "workflow repair",
+      "secondary_keywords": [
+        "durable execution",
+        "replay",
+        "idempotency",
+        "agent workflow"
+      ],
+      "h2_topics": [
+        "At a glance",
+        "Replay remembers events, not intent",
+        "By the numbers",
+        "What the field does today",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-11-25",
       "public": false
     }

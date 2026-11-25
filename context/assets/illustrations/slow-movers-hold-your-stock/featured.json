@@ -1,6 +1,6 @@
 {
   "slug": "slow-movers-hold-your-stock",
-  "revision": 3,
+  "revision": 4,
   "history": [
     {
       "revision": 1,
@@ -17,6 +17,14 @@
       "title": "Hidden Costs Of Slow Stock",
       "bytes": 3412363,
       "sha256": "sha256:d440122ab10795f574b500856b7577b3c80a319d0416df87a9f0f29202b5b57a"
+    },
+    {
+      "revision": 3,
+      "alt_text": "Hidden Costs Of Slow Stock. Isometric cutaway of massive dark storage racks dwarfing a small active loading bay, showing disp",
+      "caption": "Hidden Costs Of Slow Stock: How the long tail silently drains floor space and cash.",
+      "title": "Hidden Costs Of Slow Stock",
+      "bytes": 404641,
+      "sha256": "sha256:62206a84b4c4c08ec54c6c2d73a3fec061835dc909ed4910e7618a1d4a4cfa98"
     }
   ],
   "style": "technical_isometric",

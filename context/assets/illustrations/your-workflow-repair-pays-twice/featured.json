@@ -1,0 +1,113 @@
+{
+  "slug": "your-workflow-repair-pays-twice",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "An industrial reel-to-reel data recorder mid-replay in a dark control room, a sealed fresh tape spool untouched on the bench beside it.",
+      "caption": "After a crash the engine replays its saved record, so the repair must prove which calls are the same calls before anything is paid again.",
+      "title": "The old record replays while the new tape stays sealed",
+      "bytes": 278592,
+      "sha256": "sha256:fe44a4325d03e0019ce90889e18f5463"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm wide shot of a dim control room at night. An unbranded industrial reel-to-reel data recorder dominates the right third of the frame, both reels mid-replay, tape threading past a glass window in a blank brushed-steel faceplate, a crimped lead seal on the canister latch; no lettering anywhere. On the lower-left bench a fresh tape spool still sealed in its wrapper sits untouched. One strong amber worklight rakes in from the left, deep steel-blue shadow elsewhere; graphite, steel blue and warm amber palette; perforated metal panels and cable sheathing in the background. Shallow depth of field, fine film grain, no people.",
+  "negative_prompt": "garbled text, random lettering, legible words, brand logos, watermarks",
+  "rationale": "The story turns on one decisive operational moment \u2014 the resume after the crash, where the engine replays its record instead of acting on new intent \u2014 which is exactly what a cinematic still holds. The reel-to-reel recorder makes 'replay keeps the old record' physically nameable, the sealed fresh spool carries the denied new intent, and the dark control-room environment gives the systemic runtime story the weight a product shot or building exterior would strip away.",
+  "cue": "keeps the old record, not your new intent",
+  "subject": "an industrial reel-to-reel data recorder mid-replay beside a sealed, untouched fresh tape spool",
+  "core_thesis": "A durable engine's replay serves the saved record rather than your new intent, so a natural repair re-pays calls that already ran \u2014 and only a call-identity contract stops the double bill for milliseconds of checking.",
+  "core_conflict": "The exactly-once promise of durable execution versus the rewritten code's inability to prove a call is the same call: replay fidelity preserves paid events, but the repair's new intent gets either re-billed (12 calls vs 7) or silently swapped with a stale artifact.",
+  "composition": "Extreme asymmetry: recorder commanding the right third, small sealed spool low on the left bench, wide dark negative space across the upper frame",
+  "alt_text": "Workflow Repair Pays Twice On Replay. An industrial reel-to-reel data recorder mid-replay in a dark control room, a sealed fresh tape spool",
+  "caption": "Workflow Repair Pays Twice On Replay: Replay re-bills paid calls or serves stale results; identity checks take milliseconds.",
+  "title": "Workflow Repair Pays Twice On Replay",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-workflow-repair-pays-twice/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 352552,
+  "sha256": "sha256:ad740ef332616fba44e6debcd289fae483aa4ee0580653fa635996662b185b3d",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 352552,
+    "quality": 88,
+    "sha256": "sha256:ad740ef332616fba44e6debcd289fae483aa4ee0580653fa635996662b185b3d",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b539f3dcc68fe02af45741aed57bfb444b081607d71d245edaee375abb3adda8",
+  "render_phash": "699db993690b690f390b392f39071b37091f0b170b17032f0f8f09e379f46393",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A reel-to-reel tape recorder with two large reels stands on the right side of a dark room, a small sealed tape spool sits on a table at the lower left, and a lit desk lamp is at the far left with empty dark space across the upper frame.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.85,
+    "reason": "The frame depicts the ordered metaphor directly: a recorder mid-replay standing in for the durable engine's replay of an old record, with the untouched sealed spool representing the new intent that is not re-executed, matching the article's replay-versus-repair mechanism."
+  },
+  "source_hash": "sha256:1953adc3adb9441f694ed88cc5756066",
+  "source_chars": 5858,
+  "task_id": "c6e055df5333da0ae1d7c4b4ccb829ca",
+  "credits": 5.0,
+  "cost_ms": 76,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/c6e055df5333da0ae1d7c4b4ccb829ca_1795630712737.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm wide shot of a dim control room at night. An unbranded industrial reel-to-reel data recorder dominates the right third of the frame, both reels mid-replay, tape threading past a glass window in a blank brushed-steel faceplate, a crimped lead seal on the canister latch; no lettering anywhere. On the lower-left bench a fresh tape spool still sealed in its wrapper sits untouched. One strong amber worklight rakes in from the left, deep steel-blue shadow elsewhere; graphite, steel blue and warm amber palette; perforated metal panels and cable sheathing in the background. Shallow depth of field, fine film grain, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-25T18:18:43+00:00",
+  "overlay": {
+    "kicker": "AGENT WORKFLOWS // DURABLE EXECUTION",
+    "title": "WORKFLOW REPAIR PAYS TWICE ON REPLAY",
+    "hook": "Replay re-bills paid calls or serves stale results; identity checks take milliseconds",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 11.19,
+    "target": 4.5,
+    "clutter": 0.08,
+    "region_rgb": [
+      31,
+      35,
+      35
+    ],
+    "binding_rgb": [
+      40,
+      51,
+      55
+    ],
+    "title_lines": [
+      "WORKFLOW",
+      "REPAIR PAYS",
+      "TWICE ON REPLAY"
+    ],
+    "subject": 0.04,
+    "ink_subject": 0.017,
+    "spike": 0.06,
+    "generated_at": "2026-11-25T18:18:43+00:00"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "slug": "your-ev-is-now-a-home-battery-behind-a-paywall",
-  "revision": 11,
+  "revision": 12,
   "history": [
     {
       "revision": 1,
@@ -81,6 +81,14 @@
     },
     {
       "revision": 10,
+      "alt_text": "Your EV Is A Home Battery \u2014 Behind A Paywall. Electric crossover parked on a driveway at dusk, its glowing charge cable linked to the only",
+      "caption": "Your EV Is A Home Battery \u2014 Behind A Paywall: The cheapest home backup sits in your driveway \u2014 and Tesla wants $8,200 for the key.",
+      "title": "Your EV Is A Home Battery \u2014 Behind A Paywall",
+      "bytes": 402261,
+      "sha256": "sha256:e14ba6508fc78ee97e4973b318fcc2658b3843301a5e0a92d85c135ab122f86a"
+    },
+    {
+      "revision": 11,
       "alt_text": "Your EV Is A Home Battery \u2014 Behind A Paywall. Electric crossover parked on a driveway at dusk, its glowing charge cable linked to the only",
       "caption": "Your EV Is A Home Battery \u2014 Behind A Paywall: The cheapest home backup sits in your driveway \u2014 and Tesla wants $8,200 for the key.",
       "title": "Your EV Is A Home Battery \u2014 Behind A Paywall",

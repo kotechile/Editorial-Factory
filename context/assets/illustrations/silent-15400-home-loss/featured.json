@@ -1,6 +1,6 @@
 {
   "slug": "silent-15400-home-loss",
-  "revision": 5,
+  "revision": 6,
   "history": [
     {
       "revision": 1,
@@ -31,6 +31,14 @@
     },
     {
       "revision": 4,
+      "alt_text": "Water Damage Runs On A Published Clock. An aging white water heater in a dim basement, rust streaking its base, water pooling in the drip",
+      "caption": "Water Damage Runs On A Published Clock: The average claim runs $15,400, and the parts that fail carry published service lives.",
+      "title": "Water Damage Runs On A Published Clock",
+      "bytes": 406176,
+      "sha256": "sha256:1ed523d5a891a9b0ec01df93414c6d1ed95ea8e6eed5e769bb8da54a8a0ae701"
+    },
+    {
+      "revision": 5,
       "alt_text": "Water Damage Runs On A Published Clock. An aging white water heater in a dim basement, rust streaking its base, water pooling in the drip",
       "caption": "Water Damage Runs On A Published Clock: The average claim runs $15,400, and the parts that fail carry published service lives.",
       "title": "Water Damage Runs On A Published Clock",
