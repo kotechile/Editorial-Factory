@@ -2448,6 +2448,14 @@
   "note": "rinkler clearance, charger circuits, floor flatness) cannot get past `osha.gov`/`ecfr.gov` code rows, and was dropped at 7.4 rather than written on general-industry statute. **A robot vendor"
  },
  {
+  "host": "osi.state.nm.us",
+  "url": "https://osi.state.nm.us/wp-content/uploads/2026/02/NM-FAIR-Plan-Consumer-Guide.pdf",
+  "verdict": "fetchable",
+  "as_of": "2026-11-25",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "NM OSI's own FAIR Plan consumer guide PDF (web_extract; direct curl 60s). 50k/00k residential caps, ACV-only, affidavit effective 11/4/2025, no liability, 50-mile active-fire closure. PRIMARY host."
+ },
+ {
   "host": "otexts.com",
   "url": "",
   "verdict": "unreachable",
@@ -2830,6 +2838,14 @@
   "as_of": "2026-10-24",
   "vertical": "outdoor_power_equipment",
   "note": "ials and labor\", and \"designed to melt 1\\\" - 3\\\" of snow per hour\"); `snowjoe.com/collections/snow-blowers` (the 11-inch 10-amp corded shovel at $124.99, the 24 V 4.0 Ah pack at $89.97 and t"
+ },
+ {
+  "host": "sourcenm.com",
+  "url": "https://sourcenm.com/2026/10/20/new-mexico-lawmaker-questions-industry-group-leaders-over-homeowners-insurance-non-renewals",
+  "verdict": "partial",
+  "as_of": "2026-11-25",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "Direct curl = Cloudflare JS wall; web_extract returns full text. Primary record of the 2026-10-20 NM hearing and the OSI 6,200+ non-renewal figure."
  },
  {
   "host": "span.io",
@@ -3494,6 +3510,14 @@
   "as_of": "2026-11-18",
   "vertical": "multi_agent_enterprise_fabric",
   "note": "RFC pages fetch first try under the verifier UA; the five problem-object members live under 3.1 with no numeric count in the text, so lead a figure cell on the RFC number itself"
+ },
+ {
+  "host": "www.riograndeins.com",
+  "url": "https://www.riograndeins.com/blog/2026/home-insurance-non-renewal-new-mexico",
+  "verdict": "fetchable",
+  "as_of": "2026-11-25",
+  "vertical": "property_loss_insurance_mitigation",
+  "note": "Fetchable via web_extract 2026-11-25. Licensed-agent page of record for Kane's mitigation-reversal testimony (summer 2026) and NM's 30-day non-renewal notice."
  },
  {
   "host": "www.sciencedaily.com",
