@@ -1,0 +1,115 @@
+{
+  "slug": "your-labor-line-replaces-40-percent",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Autonomous mobile robots working a warehouse picking line where several operator stations stand empty, shown as an isometric cutaway.",
+      "caption": "On a 40%-a-year churn floor, the robot fleet has to beat the replacement stream, not the wage bill.",
+      "title": "Churn vs capex on one warehouse aisle",
+      "bytes": 399081,
+      "sha256": "sha256:1e00678e93d2bbb50d622700385afc92"
+    }
+  ],
+  "style": "technical_isometric",
+  "style_label": "Technical isometric cutaway",
+  "style_when": "the article explains how a system, process or stack actually works \u2014 money flows, supply chains, pipelines, an agent assembly line",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Clean technical isometric cutaway of a warehouse aisle inside a distribution center, axonometric projection, thin consistent line weight, flat muted style. A modular picking line runs diagonally across the frame: galvanised steel rack modules with polymer tote trays, several operator bays standing empty with their vacant positions marked in safety yellow, others fed by conveyor. Two matte autonomous mobile robots travel the same aisle, the lead robot commanding the left foreground third, brushed-steel bodies with dark polymer bumpers. The cutaway sits flat on a concrete-grey plant floor texture. One directional light rakes from the upper left, throwing long clean shadows. Palette of concrete grey, graphite and one safety-yellow accent. Unlabelled, no text, generous empty margin, asymmetric off-centre composition.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos",
+  "rationale": "The article is a modeling story \u2014 how operators price the labor line \u2014 so an axonometric cutaway states the mechanism the way an ops desk actually draws it. Empty picking bays make the 40% churn visible while the robot fleet shares the same aisle, literalizing retention spend competing with robot capex. It also rotates the desk's medium mix after five photographic and collage headers.",
+  "cue": "A robot fleet has to beat this stream",
+  "subject": "autonomous mobile robots working a warehouse picking line whose modular operator stations stand partly empty",
+  "core_thesis": "A warehouse labor line is not a wage but a 40%-a-year replacement stream, so an automation payback must price labor from exit costs \u2014 and retention spend competes with robot capex for the same dollars.",
+  "core_conflict": "The calm wage line hides a $21,800-per-exit churn stream; retention programs and robot fleets now bid against each other for the same operating budget, and only one sits in the capital deck.",
+  "composition": "Asymmetric off-centre layout: picking line runs diagonally across the lower two-thirds, lead robot commanding the left foreground, empty bays receding to the right, generous empty margin above",
+  "alt_text": "Churn, Not Wages, Prices The Robot Case. Autonomous mobile robots working a warehouse picking line where several operator stations stand",
+  "caption": "Churn, Not Wages, Prices The Robot Case: At 40% churn and $21,800 an exit, turnover rivals a fleet order in the capital deck.",
+  "title": "Churn, Not Wages, Prices The Robot Case",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-labor-line-replaces-40-percent/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 400865,
+  "sha256": "sha256:d090b8439f546de35d6498a6c52b5432e85104535f07d88c91007ee5a69ea0f6",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 400865,
+    "quality": 80,
+    "sha256": "sha256:d090b8439f546de35d6498a6c52b5432e85104535f07d88c91007ee5a69ea0f6",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:8bf872438d4cda844790b724855522a7dc28318efdeafb34f7e0299bc5bf218c",
+  "render_phash": "7f63ff46fd8cfd31f672f464f149731336249c48d0907120b24058802d001200",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An isometric cutaway of a warehouse picking floor: shelving racks with bins, a conveyor, modular workstations with yellow-lit screens and no workers at them, and a small flat autonomous mobile robot in the left foreground on a gray platform.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image depicts the article's own protagonist and mechanism \u2014 an autonomous mobile robot working a warehouse picking line whose operator stations stand empty \u2014 matching the story of turnover-driven empty labor positions competing with automation."
+  },
+  "source_hash": "sha256:25ba197f96b2e6514694a7fe75e3f4d3",
+  "source_chars": 4068,
+  "task_id": "052340dff41de4a732045f673d22c0ce",
+  "credits": 18.0,
+  "cost_ms": 35,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_ece1eb820960b86ad7e1aefe743b604b.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Clean technical isometric cutaway of a warehouse aisle inside a distribution center, axonometric projection, thin consistent line weight, flat muted style. A modular picking line runs diagonally across the frame: galvanised steel rack modules with polymer tote trays, several operator bays standing empty with their vacant positions marked in safety yellow, others fed by conveyor. Two matte autonomous mobile robots travel the same aisle, the lead robot commanding the left foreground third, brushed-steel bodies with dark polymer bumpers. The cutaway sits flat on a concrete-grey plant floor texture. One directional light rakes from the upper left, throwing long clean shadows. Palette of concrete grey, graphite and one safety-yellow accent. Unlabelled, no text, generous empty margin, asymmetric off-centre composition.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-25T19:47:13+00:00",
+  "overlay": {
+    "kicker": "WAREHOUSE AUTOMATION // TURNOVER COSTS",
+    "title": "CHURN, NOT WAGES, PRICES THE ROBOT CASE",
+    "hook": "At 40% churn and $21,800 an exit, turnover rivals a fleet order in the capital deck",
+    "anchor": "bottom-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 8.01,
+    "target": 4.5,
+    "clutter": 0.185,
+    "region_rgb": [
+      225,
+      223,
+      216
+    ],
+    "binding_rgb": [
+      202,
+      203,
+      198
+    ],
+    "title_lines": [
+      "CHURN, NOT",
+      "WAGES, PRICES",
+      "THE ROBOT CASE"
+    ],
+    "subject": 0.102,
+    "ink_subject": 0.034,
+    "spike": 0.229,
+    "generated_at": "2026-11-25T19:47:13+00:00"
+  }
+}

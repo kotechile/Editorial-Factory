@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T19:21:04Z",
+  "updated_at": "2026-11-25T19:47:50Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -8024,6 +8024,29 @@
         "Related reading"
       ],
       "target_persona": "eng_leader",
+      "date": "2026-11-25",
+      "public": false
+    },
+    {
+      "slug": "2026-11-25_your-labor-line-replaces-40-percent",
+      "title": "Your 40% Churn Bills $21,800",
+      "vertical": "warehouse_automation_robotics_capex",
+      "primary_keyword": "",
+      "secondary_keywords": [
+        "warehouse labor turnover cost",
+        "loaded labor rate",
+        "automation payback",
+        "frontline retention"
+      ],
+      "h2_topics": [
+        "At a glance",
+        "The Floor Empties Every Year",
+        "By the numbers",
+        "How Operators Model the Line",
+        "The Catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-25",
       "public": false
     },
