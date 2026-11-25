@@ -11,8 +11,8 @@ meta_description: "New Mexico's record 6,200-plus non-renewals come with a docum
 image_path: "context/assets/illustrations/your-nonrenewals-are-not-final/featured.jpg"
 image_style: "editorial_macro"
 image_model: "flux"
-image_alt: "New Mexico'S 6,200 Nonrenewals Are Not Final. Embers caught against a galvanized 1/8-inch mesh screen fitted into a painted-wood soffit"
-image_caption: "New Mexico'S 6,200 Nonrenewals Are Not Final: Verified mitigation reverses some nonrenewals; without it, the FAIR Plan pays used value."
+image_alt: "Your 6,200 Nonrenewals Are Not Final. New Mexico'S 6,200 Nonrenewals Are Not Final. Embers caught against a galvanized 1/8-inch mesh screen"
+image_caption: "Your 6,200 Nonrenewals Are Not Final: Verified wildfire mitigation has reversed some letters."
 image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
