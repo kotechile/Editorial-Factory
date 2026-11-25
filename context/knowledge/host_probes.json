@@ -312,6 +312,14 @@
   "note": "lso there: network and storage at `420 credits per GB ($0.252/GB)`). `buildkite.com/pricing` fetches at ~20 KB but its per-seat and included-minute figures evidence on the trial banner's \"30"
  },
  {
+  "host": "buildkite.com",
+  "url": "https://buildkite.com/resources/case-studies/elastic",
+  "verdict": "fetchable",
+  "as_of": "2026-11-24",
+  "vertical": "workstation_compute_economics",
+  "note": "carries its brief figure as plain text; fetched first try by the gate UA on 2026-11-24"
+ },
+ {
   "host": "bunny.net",
   "url": "https://bunny.net",
   "verdict": "fetchable",
@@ -1312,6 +1320,14 @@
   "note": "but cannot carry a row: `docs.ottomotors.com` (1.4 KB landing stub), `geekplus.com` / `fetchrobotics.com` / `mecalux.com` root pages (nav only; a guessed `mecalux.com/blog/<slug>` is unreach"
  },
  {
+  "host": "github.blog",
+  "url": "https://github.blog/engineering/infrastructure/experiment-the-hidden-costs-of-waiting-on-slow-build-times",
+  "verdict": "fetchable",
+  "as_of": "2026-11-24",
+  "vertical": "workstation_compute_economics",
+  "note": "carries its brief figure as plain text; fetched first try by the gate UA on 2026-11-24"
+ },
+ {
   "host": "github.com",
   "url": "",
   "verdict": "fetchable",
@@ -2198,6 +2214,14 @@
   "as_of": "2026-10-26",
   "vertical": "sales_order_service_level_otif",
   "note": "n an order-level formula). Fails or cannot carry a row on this beat: `netsuite.com` resource articles (403 to the verifier), guessed `lokad.com` and `inflowinventory.com` safety-stock slugs"
+ },
+ {
+  "host": "news.gallup.com",
+  "url": "https://news.gallup.com/businessjournal/23146/too-many-interruptions-work.aspx",
+  "verdict": "fetchable",
+  "as_of": "2026-11-24",
+  "vertical": "workstation_compute_economics",
+  "note": "carries its brief figure as plain text; fetched first try by the gate UA on 2026-11-24"
  },
  {
   "host": "nfpa.org",

@@ -1,0 +1,112 @@
+{
+  "slug": "agent-detector-precision-66-days",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Filed issue reports in bright light beside an open incident ledger with blank pages and an unused red flag marker in shadow",
+      "caption": "The light falls on the half of the failure surface that files reports; the risk sits in the blank pages nobody writes.",
+      "title": "Agent Incident Ledger: Filed Reports vs Blank Pages",
+      "bytes": 283795,
+      "sha256": "sha256:d3fb4c5f3f35838fd8915c0725cc4de5"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Top-down flat-lay photograph on a brushed-steel control room desk, split-screen diptych with hard left-right contrast. Left half: a dense, neatly squared stack of filed issue reports, stamped covers, paperclipped corners, tactile bone-white paper stock, brightly lit. Right half: an open incident ledger logbook, its recent ruled pages blank, falling into shadow, one small oxidised-red flag marker lying unused on the empty page. A single soft directional light enters from the left edge of the frame and dies before the ledger. Graphite, bone white, oxidised red. 50mm, top-down 90-degree view, gentle vignette falloff, muted paper tones, blank and illegibly cropped pages, fine film grain, no people, no logos.",
+  "negative_prompt": "garbled text, random lettering, readable print, watermarks, logos",
+  "rationale": "The story's entire evidence chain is documentary \u2014 the Agent Incident Ledger, 861 issue reports, status pages, disclosures \u2014 so the artefact is the protagonist, and a top-down still life of the record itself is the truest embodiment. The split-screen diptych with light falling only on the filed half literally shows the detectors aimed at the wrong half: dense paper under the lamp, blank ledger pages in the dark.",
+  "cue": "aimed at the wrong half of the failure surface",
+  "subject": "an incident ledger's blank recent pages beside a stack of filed issue reports",
+  "core_thesis": "Static agent-failure detection just hit 91% precision on the bugs that file issues, while the median real agent incident waits 66 days for disclosure \u2014 the detectors are sharpening the wrong half of the failure surface.",
+  "core_conflict": "91% precision on failures that leave a bug report vs the 66-day silence of failures that leave nothing to read",
+  "composition": "split-screen diptych with left-right contrast: dense filed reports lit on the left, blank open ledger in shadow on the right",
+  "alt_text": "91% Precision, 66 Days Late. Filed issue reports in bright light beside an open incident ledger with blank pages and an unused red flag",
+  "caption": "91% Precision, 66 Days Late: Detection races ahead on agent failures that leave logs, not the ones that carry risk.",
+  "title": "91% Precision, 66 Days Late",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/agent-detector-precision-66-days/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 344806,
+  "sha256": "sha256:e1d6c8a4a374e824eb0c4519cb796adfa7506b7fd98bd8b52d886b701ba6065f",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 344806,
+    "quality": 88,
+    "sha256": "sha256:e1d6c8a4a374e824eb0c4519cb796adfa7506b7fd98bd8b52d886b701ba6065f",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:f4da63f1aaa0b77fce2cc65b9fff5e4b4c36a9e88d106ac6bcbcd30d6b92264c",
+  "render_phash": "ffbfffffff85f78df78df60df60db64d370d370d370d670de10d610d719a3180",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A stack of white paper sheets held together by metal binder clips under a bright light on the left, beside an open blank notebook with a small red bookmark tab in shadow on the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.85,
+    "reason": "The image delivers the ordered frame's own objects \u2014 a lit stack of filed paper reports contrasted with a shadowed blank open ledger \u2014 which maps directly onto the article's point that issues get filed while incidents go unrecorded, though the reports themselves are blank rather than dense with text."
+  },
+  "source_hash": "sha256:9427cff29f2ca0634fabb51f39c7f761",
+  "source_chars": 4983,
+  "task_id": "4198972fc1050f28e9bf50907934518a",
+  "credits": 5.0,
+  "cost_ms": 109,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/4198972fc1050f28e9bf50907934518a_1795603525370.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Top-down flat-lay photograph on a brushed-steel control room desk, split-screen diptych with hard left-right contrast. Left half: a dense, neatly squared stack of filed issue reports, stamped covers, paperclipped corners, tactile bone-white paper stock, brightly lit. Right half: an open incident ledger logbook, its recent ruled pages blank, falling into shadow, one small oxidised-red flag marker lying unused on the empty page. A single soft directional light enters from the left edge of the frame and dies before the ledger. Graphite, bone white, oxidised red. 50mm, top-down 90-degree view, gentle vignette falloff, muted paper tones, blank and illegibly cropped pages, fine film grain, no people, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-25T10:45:35+00:00",
+  "overlay": {
+    "kicker": "AGENT FAILURES // DETECTION VS DISCLOSURE",
+    "title": "91% PRECISION, 66 DAYS LATE",
+    "hook": "Detection races ahead on agent failures that leave logs, not the ones that carry risk",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.99,
+    "target": 5.5,
+    "clutter": 0.384,
+    "region_rgb": [
+      70,
+      71,
+      71
+    ],
+    "binding_rgb": [
+      138,
+      139,
+      133
+    ],
+    "title_lines": [
+      "91% PRECISION,",
+      "66 DAYS LATE"
+    ],
+    "subject": 0.17,
+    "ink_subject": 0.069,
+    "spike": 0.311,
+    "generated_at": "2026-11-25T10:45:35+00:00"
+  }
+}
