@@ -272,6 +272,14 @@
   "note": "`eaton.com` (unreachable), `ecmag.com` (403), `up.codes` (HTTP 500), `blog.se.com` (fetches at ~5.8 KB but the body carried no numeric tokens at all, so no row can lead on it), and guessed `"
  },
  {
+  "host": "blog.traversaal.ai",
+  "url": "https://blog.traversaal.ai/ai-agent-incident-postmortem-missing-deliverable-production-failure",
+  "verdict": "fetchable",
+  "as_of": "2026-11-25",
+  "vertical": "agentic_resilience_failure",
+  "note": "Traversaal blog \u2014 probed for the postmortem leg; used as dated background only."
+ },
+ {
   "host": "bls.gov",
   "url": "",
   "verdict": "fetchable",
@@ -3382,6 +3390,14 @@
   "as_of": "2026-11-23",
   "vertical": "home_infrastructure_lifecycle_tco",
   "note": "25 KB; \u00a725D(h) as amended by Pub. L. 119-21 \u00a7 70506(a) reads 'expenditures made after December 31, 2025' for the termination - the anchor for post-2025 solar-credit economics."
+ },
+ {
+  "host": "www.manifold.security",
+  "url": "https://www.manifold.security/blog/how-long-ai-agent-incidents-take-to-come-to-light",
+  "verdict": "fetchable",
+  "as_of": "2026-11-25",
+  "vertical": "agentic_resilience_failure",
+  "note": "Manifold Security blog (Agent Incident Ledger) \u2014 fetches fine, dated 2026-11-10, static Next.js; /incidents is the dataset behind the blog numbers."
  },
  {
   "host": "www.mapbox.com",
