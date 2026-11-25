@@ -1,0 +1,113 @@
+{
+  "slug": "your-nonrenewals-are-not-final",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Embers caught against a galvanized 1/8-inch mesh screen fitted into a painted-wood soffit vent at a home's roofline.",
+      "caption": "The cheapest item on the mitigation checklist is the one that slams the ember door shut.",
+      "title": "Ember-Mesh Soffit Vent at the Roofline",
+      "bytes": 229969,
+      "sha256": "sha256:05db26840bbe2af5edf81aa05177a089"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Editorial macro photograph at a home's roofline: a galvanized 1/8-inch steel mesh screen fitted into a painted-wood soffit vent, three wind-blown embers caught and dying in the weave. 100mm macro lens, razor-thin focal plane locked on the mesh, soffit boards and asphalt-shingle edge dissolving into soft falloff. Low raking dusk light from the left; charcoal-painted timber, graphite galvanised steel, rust-orange ember glow against deep shadow. Hero vent low on the left third of a wide 16:9 frame, generous negative space of darkening sky above the eave. Fine film grain, crisp night air, no people, no text.",
+  "negative_prompt": "garbled text, random lettering, legible numbers, watermarks, logos",
+  "rationale": "The article literally turns on one named physical artifact \u2014 the hardened vent, where 'a screen with wide gaps works as an ember door' \u2014 making it a legitimate macro subject rather than a systemic story stripped of context. A razor-sharp 100mm plane on the mesh with embers caught mid-intrusion compresses the whole governing conflict, hardened barrier versus ember entry, into one nameable frame. Studio object would strip the home environment and an architectural dusk shot would read as any house story; macro keeps the reader at the precise hardware an underwriter's inspector checks.",
+  "cue": "a screen with wide gaps works as an ember door",
+  "subject": "a galvanized 1/8-inch ember-mesh screen set into a home's painted-wood soffit vent at the roofline, embers caught in the weave",
+  "core_thesis": "A New Mexico non-renewal letter is not final: the state's insurance chief says some of the record 6,200-plus were reversed once owners documented wildfire mitigation \u2014 and the file of verified work is the only part an owner controls.",
+  "core_conflict": "Carrier risk-exit vs owner-controlled proof: insurers back away as risk maxes out their capacity, while the only lever a dropped owner holds is a third-party-verified mitigation file \u2014 skip it and the last-resort FAIR Plan pays used-house value under a hard cap.",
+  "composition": "extreme asymmetry: vent low on the left third with embers dying at the mesh, wide darkening-sky negative space above the eave",
+  "alt_text": "New Mexico'S 6,200 Nonrenewals Are Not Final. Embers caught against a galvanized 1/8-inch mesh screen fitted into a painted-wood soffit",
+  "caption": "New Mexico'S 6,200 Nonrenewals Are Not Final: Verified mitigation reverses some nonrenewals; without it, the FAIR Plan pays used value.",
+  "title": "New Mexico'S 6,200 Nonrenewals Are Not Final",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-nonrenewals-are-not-final/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 316384,
+  "sha256": "sha256:a7cb9f8735a13d4e4c41950169254737c7ce3d0f67989531a993010d203957d6",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 316384,
+    "quality": 88,
+    "sha256": "sha256:a7cb9f8735a13d4e4c41950169254737c7ce3d0f67989531a993010d203957d6",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:6da5f523aa8e0f501a33645ab29c73365034bca08676c32dface1dbdc6d6bcd6",
+  "render_phash": "50ff287f861f038f99c396d191fc947e9561917c9f3f017f084f01030c1c0be2",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A rectangular metal-framed wire-mesh soffit vent set into a dark roof eave at the roofline, with several small glowing orange embers caught behind the mesh, against a dark sky above.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image shows the article's own mechanism \u2014 an ember-mesh vent screen at a home's roofline with embers stopped at the weave \u2014 which is exactly the wildfire-mitigation detail that reverses the non-renewals the headline describes."
+  },
+  "source_hash": "sha256:ee7281f953c5307a4ebb3b1f5841c93b",
+  "source_chars": 5431,
+  "task_id": "0c74fc64e67973bd471d8ee214124b74",
+  "credits": 5.0,
+  "cost_ms": 118,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/0c74fc64e67973bd471d8ee214124b74_1795612399984.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Editorial macro photograph at a home's roofline: a galvanized 1/8-inch steel mesh screen fitted into a painted-wood soffit vent, three wind-blown embers caught and dying in the weave. 100mm macro lens, razor-thin focal plane locked on the mesh, soffit boards and asphalt-shingle edge dissolving into soft falloff. Low raking dusk light from the left; charcoal-painted timber, graphite galvanised steel, rust-orange ember glow against deep shadow. Hero vent low on the left third of a wide 16:9 frame, generous negative space of darkening sky above the eave. Fine film grain, crisp night air, no people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-25T13:13:29+00:00",
+  "overlay": {
+    "kicker": "HOMEOWNERS INSURANCE // NONRENEWAL REVERSALS",
+    "title": "NEW MEXICO'S 6,200 NONRENEWALS ARE NOT FINAL",
+    "hook": "Verified mitigation reverses some nonrenewals; without it, the FAIR Plan pays used value",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 11.55,
+    "target": 4.5,
+    "clutter": 0.182,
+    "region_rgb": [
+      24,
+      27,
+      32
+    ],
+    "binding_rgb": [
+      39,
+      48,
+      57
+    ],
+    "title_lines": [
+      "NEW MEXICO'S 6,200",
+      "NONRENEWALS ARE",
+      "NOT FINAL"
+    ],
+    "subject": 0.167,
+    "ink_subject": 0.075,
+    "spike": 0.298,
+    "generated_at": "2026-11-25T13:13:29+00:00"
+  }
+}

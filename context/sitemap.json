@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T12:39:18Z",
+  "updated_at": "2026-11-25T13:14:05Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -8014,6 +8014,24 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-11-25",
+      "public": false
+    },
+    {
+      "slug": "2026-11-25_your-nonrenewals-are-not-final",
+      "title": "Your 6,200 Nonrenewals Are Not Final",
+      "vertical": "property_loss_insurance_mitigation",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The record, and what answers it",
+        "By the numbers",
+        "What the dropped owners are doing",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
       "date": "2026-11-25",
       "public": false
     },
