@@ -8,6 +8,10 @@ you need.
 
 synthesize_topics --check-briefs reads every https URL in a draft body including the earned inline internal link's own href. A draft citing a 10-K, an earnings-call transcript and an internal link must list all three URLs in the _signals.md (Dated background) BEFORE the push, or the first --check-briefs after publish fails with 'anchor not traceable'. Observed 2026-11-25 on 22-3-billion-pre-sells-your-savings; fixed by appending the three URLs to the signals file.
 
+## 2026-11-25 · warehouse_automation_robotics_capex · pitfall
+
+The run_pipeline review stage can HOLD its own rewrite (hard=1) even after humanize_one already PASSed the same draft: the two loops write different candidates and the reviewer's held one often has the better shape notes applied. Path (2026-11-25, turnover-cost evergreen): adopt the _held.md from context/drafts/reviews/, repair the one hard failure by hand (missing first-person cue in the catch — write an original cue, never 'the part I keep circling'), de-duplicate any money figure the rewrite now repeats across 3+ sections (article_shape reads 2-section max), then re-run the full gate battery on the adopted file before publish. The _final.md from humanize_one was gate-clean, but the held text was the better article — gates pass either way, so the choice is by reading, not by gate color.
+
 ## 2026-11-25 · property_loss_insurance_mitigation · pitfall
 
 illustration_overlay.py re-composite REUSES the sidecar's stored overlay copy ('keep the copy stable'); its --dry-run derives fresh copy but the real run does not. After any title change, re-type the overlay by calling apply_to_slug(slug, force_copy={kicker,title,hook}) or the hero keeps the superseded headline. Then re-upload the binary to media (REST POST /media/<id>), regenerate the unregistered -1024x576 hero variant by hand (PIL crop from the new base; wp_generate_attachment_metadata does not make it), and redeploy all three fronts via giniloh_coolify_redeploy_all() from container wordpress-pwgow8ow48g88go880cs (the mu-plugin exists only there; the wellroost uploads live in container wordpress-o8gg8osos44sckk800owcc44, and both sites have their own media id 481).
@@ -16,9 +20,17 @@ illustration_overlay.py re-composite REUSES the sidecar's stored overlay copy ('
 
 Review-held rewrite (2026-11-25 MCP mandate piece): the frontier reviewer's own rewrite DEGRADED the article - Flesch 40.5, truncated the frontmatter Signal-A URL (dropped '-now-available', which would red --check-briefs), wrote MCP/REST as comma-appositives the acronym gate rejects as undefined, named bare 'GPT' (write 'OpenAI's flagship' instead), dropped the inline internal link and the first-person cue in the catch. Hand-repair from the _held.md, not the _draft: restore full URLs, parenthetical '(MCP)' gloss, kill all-caps brand tokens, re-add the [text](/path) link, one first-person cue per gated section, re-run accessibility + gate.
 
+## 2026-11-25 · multi_agent_enterprise_fabric · pitfall
+
+Evergreen hand-repair of a held frontier rewrite: the reviewer's long-word list (committed, identity, contract, runtime, recorded, attempt) is the repair surface — swap committed→paid, rewrite→fix, recorded→saved and keep the reviewer's citation repoints; Flesch moves 45→50 with word swaps alone, no re-generation needed.
+
 ## 2026-11-25 · enterprise_build_vs_buy · pitfall
 
 Hand-repairing a frontier rewrite: (1) an inline gloss inserted inside a verbatim quote ('API tokens — the keys...' inside the quotation marks) reads as a garbled appositive and the reviewer HELD the draft; expand acronyms outside the quoted span. (2) Word swaps into source paraphrases can collide with the source's own verbatim ('gained unauthorized access' → 'gained stolen access' is ungrammatical and unfaithful) — check each hand edit against the verified brief's verbatim column. (3) The humanizer sometimes appends a self-graded '## Gate report' section; strip it before review_audit, which holds on self-grading.
+
+## 2026-11-25 · enterprise_build_vs_buy · pitfall
+
+evergreen_gate.check_dedup accepts the FIRST ref in the De-dup line that resolves to any file in published/, drafts/ or recon_proposals — a mis-dated slug (2026-11-18 vs the real 2026-11-11 rate-limit piece) silently degrades the marker to dedup="evergreen" while still PASSing. After the gate, grep the marker and confirm it names the intended artifact's exact date-slug.
 
 ## 2026-11-25 · agentic_resilience_failure · pitfall
 
@@ -401,6 +413,7 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | cloud.google.com | fetchable | 2026-11-12 |  | iff brief.** Carries the figure as plain text and fetches first try: `cloud.google.com/vertex-ai/generative-ai/pricing`  |
 | cloud.google.com | fetchable | 2026-11-17 | enterprise_tech_leadership | node-capacity / retry-budget beat (2026-11-17 evergreen): fetches first try, figure in plain text. |
 | cmr.berkeley.edu | fetchable | 2026-10-22 | demand_sensing_advanced_sop | vergreen).** Carries the figure as plain text and fetches first try: `cmr.berkeley.edu` (a publisher's article record —  |
+| cognitops.com | fetchable | 2026-11-25 | warehouse_automation_robotics_capex | 18.5 KB: JOLTS ~40%/yr separations (BLS 2026), 50-150% of salary replacement band, $1.5M/200-person example, 60-70% firs |
 | coned.com | fetchable | 2026-10-26 | home_equity_tco | also pay for electric generation at prices determined by the CCA"); `coned.com/en/accounts-billing/your-bill/time-of-use |
 | consumerfinance.gov | fetchable | 2026-11-09 | home_equity_tco | — so never write "the servicer has no duty to volunteer the date"); `consumerfinance.gov/ask-cfpb/what-is-private-mortga |
 | consumerreports.org | fetchable | 2026-11-07 | outdoor_power_equipment | vergreen).** Carries the figure as plain text and fetches first try: `consumerreports.org/home-garden/lawn-mowers/gas-vs |
@@ -410,6 +423,7 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | ctl.mit.edu | fetchable | 2026-10-22 | supply_chain | r fillers, "Median wages (2025) $17.95 hourly, $37,330 annual"), and `ctl.mit.edu/publications/<slug>` — **a university  |
 | dclcorp.com | fetchable | 2026-10-26 | sales_order_service_level_otif | 0 = 75% — an illustration of a mechanic, never a current benchmark); `dclcorp.com/blog/fulfillment/fill-rate` (the 92-98 |
 | demand-planning.com | fetchable | 2026-11-12 | demand_sensing_advanced_sop | hub-level inventory reductions while spokes … contributed only 2%"); `demand-planning.com/<date>/<slug>` (13 KB, the pra |
+| developers.cloudflare.com | fetchable | 2026-11-25 | enterprise_build_vs_buy | R2 pricing page fetches clean as text with 'Last updated' line: storage $0.015/GB-mo, Class A $4.50/M, Class B $0.36/M,  |
 | dfpc.colorado.gov | fetchable | 2026-11-13 | resilient_home_assets | fm.fire.ca.gov` paths (404 shells), `iii.org/article/*`, `nist.gov`, `dfpc.colorado.gov` and `fema.gov` release paths al |
 | digicert.com | fetchable | 2026-11-10 | nhil_infrastructure_ops | It is currently 30 days, which will be reduced to 7 hours by 2028"); `digicert.com/blog/tls-certificate-lifetimes-will-o |
 | digitalocean.com | fetchable | 2026-10-10 |  | e pages `fastmail.com/pricing`, `workspace.google.com/pricing.html`, `digitalocean.com/pricing/droplets`, `support.apple |
@@ -573,12 +587,14 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | workspace.google.com | fetchable | 2026-10-10 |  | w in watts), and the vendor list-price pages `fastmail.com/pricing`, `workspace.google.com/pricing.html`, `digitalocean. |
 | workspaceupdates.googleblog.com | fetchable | 2026-11-25 | multi_agent_enterprise_fabric | 2026-11-25 probe: Blogger page fetches with plain UA; canonical publish date via /feeds/posts/default?alt=json feed (202 |
 | www.automate.org | fetchable | 2026-11-18 | warehouse_automation_robotics_capex | curl answers 403 but a browser-UA reader (web_extract) returns the full product page, which is where 'ISO 21423:2026 is  |
+| www.backblaze.com | fetchable | 2026-11-25 | enterprise_build_vs_buy | B2 pricing page fetches as plain text: .95/TB-mo, free egress up to 3x stored then $0.01/GB, no duration fees; rate calc |
 | www.briggsandstratton.com | fetchable | 2026-11-21 | outdoor_power_equipment | 6.2KB plain text; prints 'every 50 hours of use (whichever comes first)' plus the 5-hour break-in — carry the oil-interv |
 | www.california.public.law | fetchable | 2026-11-12 | expat_cross_border_relocation | prefix is the whole difference on the public.law mirrors:** `https://www.california.public.law/...` answers `unreachable |
 | www.datadoghq.com | fetchable | 2026-11-17 | ai_observability_qa | Datadog engineering blog answers 200 to a Chrome-UA fetch; the page renders 'Published' with an empty date, so a first-p |
 | www.digitalocean.com | fetchable | 2026-10-21 | enterprise_build_vs_buy | k costless, "GitHub Actions usage is free for self-hosted runners"); `www.digitalocean.com/pricing/droplets` (the full l |
 | www.ecfr.gov | fetchable | 2026-11-17 | nhil_infrastructure_ops | SPCC sections fetch first try with the verifier UA: §112.1 prints the 1,320-gal and 42,000-gal exemption conditions plus |
 | www.energystar.gov | fetchable | 2026-11-23 | home_infrastructure_lifecycle_tco | 7.9 KB as plain text; carries the 40-90 F operating window and the 1,000-cubic-feet air-space requirement. The sibling p |
+| www.fountain.com | fetchable | 2026-11-25 | warehouse_automation_robotics_capex | 17.8 KB: Gallup 40%-of-salary rule, $21,800/exit at warehousing $26.76/hr (Apr 2026), 43% gone within 90 days. Also cogn |
 | www.hikmicrotech.com | fetchable | 2026-11-21 | home_diagnostics_tech | undated first-party home-blog guide; date by observation, winter-anchored copy |
 | www.home-assistant.io | fetchable | 2026-11-24 | smart_home_telemetry | primary host (HA release notes); fetches clean |
 | www.hotwater.com | fetchable | 2026-11-23 | home_infrastructure_lifecycle_tco | 19 KB; A.O. Smith states the manufacturer's suggested service life as 'about 8 to 12 years'. Matcher trap: a cell leadin |
@@ -821,5 +837,6 @@ article_reviewer can return a byte-identical body and report ACCEPT hard=0: comp
 | www.epa.gov | unreachable | 2026-11-17 | nhil_infrastructure_ops | epa.gov SPCC paths (/spcc, /emergency-response/..., /oil-spills-prevention-and-preparedness-regulations/...) all unreach |
 | www.nysenate.gov | unreachable | 2026-10-15 |  | arry a row: `leginfo.legislature.ca.gov` and `law.justia.com` (403), `www.nysenate.gov/legislation/laws/...` (403), `le. |
 | www.opencompute.org | unreachable | 2026-11-17 | nhil_infrastructure_ops | OCP document PDFs answered unreachable to the verifier on 2026-11-17 (an OCP PDF did fetch on 2026-10-13), so probe befo |
+| www.pierpoint.com | unreachable | 2026-11-25 | warehouse_automation_robotics_capex | 0 chars to the verifier UA; same for dmsiworks.com mispick post. |
 | zebra.com | unreachable | 2026-10-21 | warehouse_automation_robotics_capex | reachable to the verifier on this beat: `mir-robots.com/products/…`, `zebra.com` AMR pages, `interlakemecalux.com`, `sto |
 

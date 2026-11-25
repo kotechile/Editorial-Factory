@@ -464,6 +464,14 @@
   "note": "ages that resolve are worth finding by search, not by guessing), and `codes.ohio.gov` prints its payment-timing statute with the deadlines in words (\"within ten calendar days\") plus an `eigh"
  },
  {
+  "host": "cognitops.com",
+  "url": "https://cognitops.com/warehouse-employee-turnover-costs",
+  "verdict": "fetchable",
+  "as_of": "2026-11-25",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "18.5 KB: JOLTS ~40%/yr separations (BLS 2026), 50-150% of salary replacement band, $1.5M/200-person example, 60-70% first-month ramp, $800-1,500 recruiting, $2,000-5,000 retention program."
+ },
+ {
   "host": "community.letsencrypt.org",
   "url": "",
   "verdict": "unreachable",
@@ -3376,6 +3384,14 @@
   "note": "2026-11-23: advisor rate pages 403 on curl but readable via web_extract; fetch the rate page through web_extract, not curl"
  },
  {
+  "host": "www.fountain.com",
+  "url": "https://www.fountain.com/posts/warehouse-turnover-rate",
+  "verdict": "fetchable",
+  "as_of": "2026-11-25",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "17.8 KB: Gallup 40%-of-salary rule, $21,800/exit at warehousing $26.76/hr (Apr 2026), 43% gone within 90 days. Also cognitops.com/warehouse-employee-turnover-costs (JOLTS ~40%/yr, 50-150% band, $1.5M example, 60-70% ramp"
+ },
+ {
   "host": "www.hikmicrotech.com",
   "url": "https://www.hikmicrotech.com/en/explore/home-blog/Places-Your-Home-Might-Be-Losing-Heat",
   "verdict": "fetchable",
@@ -3510,6 +3526,14 @@
   "as_of": "2026-11-17",
   "vertical": "nhil_infrastructure_ops",
   "note": "OCP document PDFs answered unreachable to the verifier on 2026-11-17 (an OCP PDF did fetch on 2026-10-13), so probe before building an ORV3 / rack-power row on opencompute.org."
+ },
+ {
+  "host": "www.pierpoint.com",
+  "url": "https://www.pierpoint.com/blog/warehouse-turnover-causes-fixes",
+  "verdict": "unreachable",
+  "as_of": "2026-11-25",
+  "vertical": "warehouse_automation_robotics_capex",
+  "note": "0 chars to the verifier UA; same for dmsiworks.com mispick post."
  },
  {
   "host": "www.prnewswire.com",
