@@ -1,0 +1,115 @@
+{
+  "slug": "your-egress-bill-six-times-storage",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A paper receipt coil with a long tape spooling across a steel bench, the exiting tape far larger than the stored coil",
+      "caption": "The bill's two lines: a small coil of data at rest, and a tape of leaving six times its size.",
+      "title": "Egress Pricing: Six Times the Storage Line \u2014 header",
+      "bytes": 408691,
+      "sha256": "sha256:2bce9c499d7c5feb1393a28581634175"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Minimalist editorial cut-paper collage on a brushed-steel workbench in a server room, dark hall receding behind. One continuous cut-paper receipt: a small tight bone-white coil resting at lower left, its single long tape spooling out and streaming right across the bench, piling into a soft drift at the far right frame edge, six times the coil's mass. Hand-torn rag paper with visible fibre, halftone newsprint texture suggesting line items, crisp cut edges. One thin copper cut-paper strip laid beneath the coil. One raking key light from upper left throwing long physical cast shadows under each paper layer. Graphite, bone white, copper palette. Extreme asymmetry, generous negative space, no legible print.",
+  "negative_prompt": "garbled text, random lettering, legible numbers, watermarks",
+  "rationale": "This is a pure pricing-concept synthesis with no facility or machine as protagonist \u2014 the article's own artefact is the monthly bill, and cut-paper states it with editorial restraint. The single receipt object carries both meters at once: a compact coil (at rest) against an unbounded spooling tape (egress), so the 6:1 ratio is visible before the headline is read. Paper collage also breaks the desk's run of photographic treatments without drifting into stock datacenter imagery.",
+  "cue": "the meter on the way out",
+  "subject": "a paper receipt roll unspooling off a workbench, its streaming tape dwarfing its coil",
+  "core_thesis": "The real price of object storage is not the storage line but the meter on the way out \u2014 one gigabyte leaving costs six times a month of keeping it, so offers must be ranked by the egress ratio, never the at-rest list price.",
+  "core_conflict": "Two meters on one bill \u2014 a cheap meter on the data at rest ($41) against a meter six times heavier on every byte that leaves ($492), with vendors who 'dropped' the egress fee quietly pricing it back into storage.",
+  "composition": "extreme asymmetric ratio: compact coil on the left third, one continuous tape streaming right across two-thirds of the frame and off the edge, small-to-vast contrast",
+  "alt_text": "Egress Pricing Six Times The Storage Line. A paper receipt coil with a long tape spooling across a steel bench, the exiting tape far larger",
+  "caption": "Egress Pricing Six Times The Storage Line: The meter that decides the bill is data leaving \u2014 buy on the egress ratio, not the list.",
+  "title": "Egress Pricing Six Times The Storage Line",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-egress-bill-six-times-storage/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 398494,
+  "sha256": "sha256:c6cfe28d2f19f978fe2bddc8beaaf3960db0614df2491817c1566e5f1ef713c1",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 398494,
+    "quality": 76,
+    "sha256": "sha256:c6cfe28d2f19f978fe2bddc8beaaf3960db0614df2491817c1566e5f1ef713c1",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:35ff5d3e8225edb1dd7cb8a7becb20f55bcec5b14df0f2f8182a21acc2fee903",
+  "render_phash": "07b90699069a061d06100702879f0f9b1f955f3450d4f387f6f3f1f3f9fbf9ff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A small roll of paper tape sits on a metal workbench in a data-center aisle, with one long strip unspooling rightward across the table and crumpling into a large pile, flanked by dark server racks.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image literally shows the article's own metaphor\u2014a receipt/billing tape whose unspooled length dwarfs the storage coil\u2014set against server racks, matching the cloud-storage egress-bill story and the ordered composition."
+  },
+  "source_hash": "sha256:3ba1d6febbab83aa81be3d19bb7869f6",
+  "source_chars": 5835,
+  "task_id": "642af75c4da45d3a25f6bf95d81568dc",
+  "credits": 18.0,
+  "cost_ms": 22,
+  "provider_url": "https://tempfile.aiquickdraw.com/workers/images/image_5198bee0613023050e37b9df59017b50.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Minimalist editorial cut-paper collage on a brushed-steel workbench in a server room, dark hall receding behind. One continuous cut-paper receipt: a small tight bone-white coil resting at lower left, its single long tape spooling out and streaming right across the bench, piling into a soft drift at the far right frame edge, six times the coil's mass. Hand-torn rag paper with visible fibre, halftone newsprint texture suggesting line items, crisp cut edges. One thin copper cut-paper strip laid beneath the coil. One raking key light from upper left throwing long physical cast shadows under each paper layer. Graphite, bone white, copper palette. Extreme asymmetry, generous negative space, no legible print.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-25T19:20:16+00:00",
+  "overlay": {
+    "kicker": "CLOUD PROCUREMENT // EGRESS PRICING",
+    "title": "EGRESS PRICING SIX TIMES THE STORAGE LINE",
+    "hook": "The meter that decides the bill is data leaving \u2014 buy on the egress ratio, not the list",
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 7.24,
+    "target": 5.5,
+    "clutter": 0.3,
+    "region_rgb": [
+      46,
+      46,
+      40
+    ],
+    "binding_rgb": [
+      78,
+      78,
+      70
+    ],
+    "title_lines": [
+      "EGRESS PRICING",
+      "SIX TIMES THE",
+      "STORAGE LINE"
+    ],
+    "subject": 0.181,
+    "ink_subject": 0.048,
+    "spike": 0.306,
+    "generated_at": "2026-11-25T19:20:16+00:00"
+  }
+}

@@ -583,3 +583,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-25 | `your-nonrenewals-are-not-final` | property_loss_insurance_mitigation | `editorial_macro` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-nonrenewals-are-not-final/featured.jpg` |
 | 2026-11-25 | `self-hosting-break-even-one-hour-a-year` | personal_microeconomics_tinkering_tax | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/self-hosting-break-even-one-hour-a-year/featured.jpg` |
 | 2026-11-25 | `your-workflow-repair-pays-twice` | multi_agent_enterprise_fabric | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-workflow-repair-pays-twice/featured.jpg` |
+| 2026-11-25 | `your-egress-bill-six-times-storage` | enterprise_build_vs_buy | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-egress-bill-six-times-storage/featured.jpg` |
