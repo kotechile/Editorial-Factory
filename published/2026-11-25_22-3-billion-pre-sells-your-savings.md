@@ -86,7 +86,7 @@ My reading, held loosely: neither document proves what the pairing implies. The 
 <!-- internal-link hint: "Your Robot Budget's 39-Year Gap" -> /your-robot-budget-39-year-gap/ [same site (aichieve.net); same category; topical overlap: robot, work] Link "Your Robot Budget's 39-Year Gap" in the section where the article touches robot, work. -->
 ## Related reading
 
-- [Your Stock Is the Cheaper Memory](/your-stock-is-the-cheaper-memory/) — more on Supply Chain & Operations
+- [Your Fleet's 8.3-Year Bill: The Wave Nobody Reserves For](/your-fleets-8-3-year-bill/) — more on Supply Chain & Operations
 - [$6 Billion, Same 25 Buildings](/second-layer-has-no-unit-price/) — more on Supply Chain & Operations
 - [Your Robot Budget's 39-Year Gap](/your-robot-budget-39-year-gap/) — more on Supply Chain & Operations
 <!-- internal-links:end -->
