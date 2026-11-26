@@ -11,7 +11,7 @@ slug: your-mcp-tax-2x-30x-tokens-per-turn
 ---
 
 <!-- lead -->
-Every MCP server an agent mounts adds to the bill. Model Context Protocol (MCP) is the hub-and-spoke layer that connects a model's tool calls to outside services, and measured agents show its calls inflate prompt tokens by 2x–30x over plain chat [1]. That wiring is a choice, not a fee you must pay. One measured fix cut tool tokens by 99.6% and still found the right tool 97.1% of the time [2].
+Every MCP server an agent mounts adds to the bill. Model Context Protocol (MCP) is the hub-and-spoke layer that connects a model's tool calls to outside services, and measured agents show its calls inflate prompt tokens by 2x–30x over plain chat [1]. That wiring is a choice, not a fee anyone has to accept. One measured fix cut tool tokens by 99.6% and still found the right tool 97.1% of the time [2].
 
 <!-- tldr -->
 ## At a glance

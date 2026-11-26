@@ -1,0 +1,113 @@
+{
+  "slug": "your-pilot-needs-a-scorecard",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Blank one-page scorecard form on a brushed-steel control room desk, pen resting across it beside a thick stack of review documents.",
+      "caption": "The page the survivors carry: one scorecard, priced in labor hours, that decides whether a demo ever earns production compute.",
+      "title": "One-page pilot scorecard on a control room desk",
+      "bytes": 290733,
+      "sha256": "sha256:233a08d732eeb1698cabe1850a1700e1"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead 90-degree flat-lay photograph on a brushed-steel desk in a control room: a single bone-white one-page scorecard form, faint grey printed rules, blank fields and empty checkbox rows, lying slightly askew across the frame's left third. Beneath its left corner a thin token-invoice printout; beneath its right edge the dense paper side of a thick contract-review stack bleeding off the right of frame. A heavy brushed-steel pen with a safety-yellow clip rests diagonally across the page, a soft shadow cast by diffused window light from the upper left. Graphite, bone white and safety-yellow palette, 50mm lens directly overhead, deep even focus, fine film grain, muted paper tones, generous negative space.",
+  "negative_prompt": "garbled text, random lettering, legible numbers, watermark, logo",
+  "rationale": "The story's protagonist is literally a written artefact \u2014 the one-page scorecard the surviving teams carry \u2014 so the document still life is the honest hero, not a metaphor. The top-down flat-lay lets the page act as the gate: the thin demo invoice beneath one corner, the heavy review stack beneath the other, the whole economics of the article weighed in one frame a reader names in three words.",
+  "cue": "one-page scorecard",
+  "subject": "a blank one-page scorecard form bridging a thin token-cost printout and a thick human-review document stack",
+  "core_thesis": "95% of companies get no measurable return from generative AI pilots not because the models fail but because nothing written down decides graduation \u2014 the fix is a one-page scorecard, priced in labor hours, with a dated payback threshold a demo must clear before it earns production compute.",
+  "core_conflict": "The cheap half of the bill (token inference cost shown on the demo dashboard) versus the expensive half (unmetered human review minutes inside the cost per resolved work-unit) \u2014 demo excitement renewed quarter after quarter against a written, dated payback gate.",
+  "composition": "Extreme asymmetric top-down flat-lay: the scorecard page commands the left third, the review stack bleeds off the right edge, generous graphite negative space above",
+  "alt_text": "AI Pilots Need A Graduation Scorecard. Blank one-page scorecard form on a brushed-steel control room desk, pen resting across it beside a",
+  "caption": "AI Pilots Need A Graduation Scorecard: 95% of GenAI pilots earn no measurable return because nobody writes the graduation rule.",
+  "title": "AI Pilots Need A Graduation Scorecard",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-pilot-needs-a-scorecard/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 355577,
+  "sha256": "sha256:412768c160e7f244d24e7bcd33c89f765ed1867a33c3babad78b0faee28b8d57",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 355577,
+    "quality": 88,
+    "sha256": "sha256:412768c160e7f244d24e7bcd33c89f765ed1867a33c3babad78b0faee28b8d57",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:c90fd178dc661eab22fb2afbcbcc346cee0f3ec642f06565665ca91b6f6152f3",
+  "render_phash": "801f002f0049004a004a014a044a064a034a052a0d8a08cb0c6b4c704c200c01",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A pen lies diagonally across a white one-page form next to a small thin paper slip, with a thick white document stack bleeding off the right edge, all arranged on a plain gray surface with empty space above.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.78,
+    "reason": "The frame depicts the article's own mechanism \u2014 a blank one-page scorecard form flanked by a thin printout and a thick human-review document stack \u2014 matching the ordered document still life, though the form's fields are too faint to confirm any scorecard wording."
+  },
+  "source_hash": "sha256:55e9fd7945eed852850da2917292d01b",
+  "source_chars": 5114,
+  "task_id": "b2da6ddd32fdea269797d61f9f93a42c",
+  "credits": 5.0,
+  "cost_ms": 62,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/b2da6ddd32fdea269797d61f9f93a42c_1795716516822.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead 90-degree flat-lay photograph on a brushed-steel desk in a control room: a single bone-white one-page scorecard form, faint grey printed rules, blank fields and empty checkbox rows, lying slightly askew across the frame's left third. Beneath its left corner a thin token-invoice printout; beneath its right edge the dense paper side of a thick contract-review stack bleeding off the right of frame. A heavy brushed-steel pen with a safety-yellow clip rests diagonally across the page, a soft shadow cast by diffused window light from the upper left. Graphite, bone white and safety-yellow palette, 50mm lens directly overhead, deep even focus, fine film grain, muted paper tones, generous negative space.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-26T18:08:54+00:00",
+  "overlay": {
+    "kicker": "GENAI PILOTS // ENTERPRISE FINOPS",
+    "title": "AI PILOTS NEED A GRADUATION SCORECARD",
+    "hook": "95% of GenAI pilots earn no measurable return because nobody writes the graduation rule",
+    "anchor": "top-right",
+    "light": false,
+    "scrim": 120,
+    "contrast": 7.18,
+    "target": 4.5,
+    "clutter": 0.141,
+    "region_rgb": [
+      197,
+      198,
+      198
+    ],
+    "binding_rgb": [
+      191,
+      192,
+      194
+    ],
+    "title_lines": [
+      "AI PILOTS NEED A",
+      "GRADUATION",
+      "SCORECARD"
+    ],
+    "subject": 0.098,
+    "ink_subject": 0.03,
+    "spike": 0.1,
+    "generated_at": "2026-11-26T18:08:54+00:00"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T17:42:36Z",
+  "updated_at": "2026-11-26T18:09:22Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -8248,6 +8248,24 @@
       "date": "2026-11-26",
       "public": true,
       "url": "https://aichieve.net/your-multi-agent-fan-out-bills-3-8x/"
+    },
+    {
+      "slug": "2026-11-26_your-pilot-needs-a-scorecard",
+      "title": "Your Pilot Needs a Scorecard: 95% Fail",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The demo never got a bill",
+        "By the numbers",
+        "What the surviving teams write down",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-11-26",
+      "public": false
     },
     {
       "slug": "2026-11-26_your-sku-cut-leaves-a-1-1b-bill",
