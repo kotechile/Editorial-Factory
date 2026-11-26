@@ -1,0 +1,17 @@
+# Run log — 2026-11-26 — demand_sensing_advanced_sop — your-sku-cut-leaves-a-1-1b-bill
+
+**Mode:** news · **Judge:** Single-Signal winner 8.1 (N8.5/A8/S7.5). Synthesis UA⨂SCMR-segmentation scored 8.2 but was DISQUALIFIED on dual-anchor grounding (segmentation leg is an authored framework, unmeasured — same class as the 2026-11-23 OWASP refusal); margin rule noted in the brief's runner-ups. Seeder: rows=6 candidates=0 ("no valid pair" — two planning-method legs share supplychaindive.com, so no cross-domain token pair), recorded as input.
+
+**De-dup:** P&G's 20–30% product-supply workforce cut (Investor Day 2026-11-19, dive 11-24) was the window's strongest signal but is a SIBLING RETREAD — `warehouse_automation_robotics_capex` published it as a load-bearing anchor yesterday (2026-11-25 "$22.3 Billion Pre-Sells Your Savings", same aichieve.net front). Carried at most as a corroborating line; here not used at all.
+
+**Date verification:** Arkieva's "Demand Sensing" post read as "November 3rd, 2026" in search but the page's own JSON-LD `datePublished` is **2026-08-11** (sidebar text fooled the snippet) — out of window, background only. Lapide's SCMR piece carries a September-October 2024 magazine date; the index "Nov 2, 2026" line is a re-surface. Cisco write-up figures date to the 2026-09-29 ASCM CHAINge deck — 12 days before the window. P&G dive post date 2026-11-24 confirmed on page; UA piece 2026-11-24 (call 2026-11-06), UA release 2026-11-06 (PR Newswire dateline, fetched: "Inventory increased 4 percent to $1.1 billion").
+
+**Verified brief:** 8 claim rows, 6 VERIFIED, 0 REMOVED; UA figures split correctly between the release (inventory/revenue/guidance) and the call (50% SKU goal, Taleghani/Plank quotes — the release carries no SKU figure).
+
+**Review:** Loop 3 HELD twice (Flesch 49.4/48.7 — the reviewer's own rewrite kept the long-word load: inventory, billion, forecast, guidance, assortment). The held rewrite's substantive notes were applied by hand (banned borrowed cue "What strikes me" kept? — replaced catch cue to "What I read out of the filing is"; tldr de-figured; tension 4% de-duplicated; carrying-cost link kept figure + direction), then plain-word swaps (trim, stock, cleanup, machinery, pile) took the final to Flesch 53.1. Gates after: 8/8 PASS (accessibility, shape, critic, headline 100/100 STRONG lead_ok, sources, review_audit, voice, publish_gate). Headline "Your SKU Cut Leaves $1.1B Hidden" scored 100 STRONG with body + lead_ok + keyword.
+
+**Artifacts:** signals → angle brief → verified brief → draft → held (reviews/) → final. Slug `your-sku-cut-leaves-a-1-1b-bill`.
+
+**Publish:** Supabase row 4c2078c5-349d-4214-914e-294e6a09c146; CMS post 1886 (two-call publish), vertical term 31, kind tag `news` (term 43), category 10 Supply Chain & Operations; media 1885 (flux-2 long_lens_industry, attempt 1 failed Internal Error, attempt 2 landed, 5 credits, sha256 3f209ff6…, 2400×1350); internal-links block written before ## Sources and synced to the row. Front aichieve.net: 404 at ~13:30, **200 with `<h1>` "Your SKU Cut Leaves $1.1B Hidden" by ~13:40** (static build lag, no forced deploy needed). "0 internal link(s)" in the delivery line is the known relative-href false alarm; the earned inline link `/inventory-carrying-cost-rate/` is in the body (canonical verified 200 pre-draft).
+
+**Notes:** Sibling-run WIP (turkiyes-150k + expat files) committed separately BEFORE the auto-deploy commit (33bcec4) so the publish commit (a8fd0c6) carried only this run's work.
