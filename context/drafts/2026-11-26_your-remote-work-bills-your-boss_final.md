@@ -8,6 +8,12 @@ persona: cross_border_expat
 one_big_thing: "Working remotely from another country can hand your employer its own tax bill there. Three different tests decide it, and none of them is the residency clock every expat guide repeats."
 date: 2026-11-26
 slug: your-remote-work-bills-your-boss
+image_path: "context/assets/illustrations/your-remote-work-bills-your-boss/featured.jpg"
+image_style: "paper_collage"
+image_model: "nanobanana"
+image_alt: "Your Remote Work Bills Your Employer. A paper-cut branch of rust and ochre leaves sprouting from a graphite briefcase on an oak desk, a"
+image_caption: "Your Remote Work Bills Your Employer: One engineer's desk in Spain left his employer a $110,000 tax bill — and no day-count."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

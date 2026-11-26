@@ -1,0 +1,123 @@
+{
+  "slug": "your-remote-work-bills-your-boss",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A paper-cut branch of rust and ochre leaves sprouting from a graphite briefcase on an oak desk, a torn paper clock face beneath it.",
+      "caption": "The residency clock never decides it \u2014 one signature abroad can grow the company a branch, and the host country taxes that branch where it sits.",
+      "title": "Paper branch growing from a briefcase \u2014 the employer's taxable presence",
+      "bytes": 370718,
+      "sha256": "sha256:76429d1fb7d78f225d7dbf1e52878520"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your Remote Work Bills Your Employer. A paper-cut branch of rust and ochre leaves sprouting from a graphite briefcase on an oak desk, a",
+      "caption": "Your Remote Work Bills Your Employer: One engineer's desk in Spain left his employer a $110,000 tax bill \u2014 and no day-count.",
+      "title": "Your Remote Work Bills Your Employer",
+      "bytes": 399743,
+      "sha256": "sha256:d2806adcc82ae5e39d76e4d8bcbf03e9b8f5c540ae0bc9d331d0e935d0cd71a2"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Editorial cut-paper collage on a warm oak home-office desk. Low in the right third sits a graphite paper briefcase with crisp cut edges and a small brass latch, and from that latch a leafy paper branch of ochre and rust leaves arcs up and left across the frame into wide empty space; beneath the case a torn bone-white paper clock face lies flat and ignored. Hand-torn rag paper with visible fibre and a faint halftone newsprint texture, physical cast shadows under each layer, one low raking light from the left throwing long shadows to the right. Muted palette of bone white, rust and graphite on warm oak. Generous negative space, no legible print.",
+  "negative_prompt": "garbled text, random lettering, legible words, handwritten signatures, watermarks",
+  "rationale": "This is a treaty-law mechanism with no facility, machine or document that can be photographed without legible text \u2014 and the previous frame was rejected precisely for generated lettering. Paper collage states the article's own metaphor, treaty law's 'branch-like presence', as a wordless physical assembly, and the ignored clock beneath the briefcase carries the article's sharpest contrast: the clock every guide repeats never decides.",
+  "cue": "hand your employer its own tax bill",
+  "subject": "a cut-paper branch sprouting from a closed employer's briefcase on a desk, above a torn paper clock face",
+  "core_thesis": "Working remotely from another country can plant your employer a branch abroad \u2014 a permanent establishment \u2014 and the host country's tax bill lands on the company, decided by contract-signing authority and presence tests, never by the 183-day residency clock.",
+  "core_conflict": "The residency clock every expat guide repeats versus the permanent-establishment tests that actually decide liability \u2014 signature authority and host-country activity generating a back-dated corporate tax bill for the employer, not the worker.",
+  "composition": "Extreme asymmetry \u2014 briefcase low in the right third, branch arcing up and left into wide negative space, clock face flat beneath the case, long raking shadows across the desk",
+  "alt_text": "Your Remote Work Bills Your Employer. A paper-cut branch of rust and ochre leaves sprouting from a graphite briefcase on an oak desk, a",
+  "caption": "Your Remote Work Bills Your Employer: One engineer's desk in Spain left his employer a $110,000 tax bill \u2014 and no day-count.",
+  "title": "Your Remote Work Bills Your Employer",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-remote-work-bills-your-boss/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 399743,
+  "sha256": "sha256:d2806adcc82ae5e39d76e4d8bcbf03e9b8f5c540ae0bc9d331d0e935d0cd71a2",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 399743,
+    "quality": 72,
+    "sha256": "sha256:d2806adcc82ae5e39d76e4d8bcbf03e9b8f5c540ae0bc9d331d0e935d0cd71a2",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:7fd655a1d9a387359f4b7e0da283adab277d8f4b1c37d44d0268f1918f92b1d4",
+  "render_phash": "68ff7d3f531f3a4f33871dd31af30b780b7e036a02ea02e6007a001c00a600cf",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A cut-paper collage of a dark grey briefcase with a gold clasp sitting low in the right of the frame on a wooden desk, a paper branch with red, orange, yellow and green leaves sprouting from behind it and arcing up and left across a blank white paper background, with a white torn-paper clock face marked only with tick marks lying flat beneath the briefcase and long raking shadows across the desk.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The branch growing out of the closed employer's briefcase literalizes the article's own mechanism \u2014 a permanent establishment ('branch-like presence') sprouting from the employer \u2014 while the clock face beneath evokes the day-count tests like the 183-day rule in the headline."
+  },
+  "source_hash": "sha256:9211835328d63122801d8f2692b5dff1",
+  "source_chars": 4696,
+  "task_id": "8a688f930f8825dd2514c782e784b643",
+  "credits": 18.0,
+  "cost_ms": 55,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1795722271862-oz95n5zhk5b.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Editorial cut-paper collage on a warm oak home-office desk. Low in the right third sits a graphite paper briefcase with crisp cut edges and a small brass latch, and from that latch a leafy paper branch of ochre and rust leaves arcs up and left across the frame into wide empty space; beneath the case a torn bone-white paper clock face lies flat and ignored. Hand-torn rag paper with visible fibre and a faint halftone newsprint texture, physical cast shadows under each layer, one low raking light from the left throwing long shadows to the right. Muted palette of bone white, rust and graphite on warm oak. Generous negative space, no legible print.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-26T19:44:41+00:00",
+  "overlay": {
+    "kicker": "REMOTE WORK // PERMANENT ESTABLISHMENT",
+    "title": "YOUR REMOTE WORK BILLS YOUR EMPLOYER",
+    "hook": "One engineer's desk in Spain left his employer a $110,000 tax bill \u2014 and no day-count",
+    "anchor": "bottom-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 7.28,
+    "target": 5.5,
+    "clutter": 0.321,
+    "region_rgb": [
+      220,
+      215,
+      200
+    ],
+    "binding_rgb": [
+      200,
+      193,
+      174
+    ],
+    "title_lines": [
+      "YOUR REMOTE",
+      "WORK BILLS",
+      "YOUR EMPLOYER"
+    ],
+    "subject": 0.074,
+    "ink_subject": 0.035,
+    "spike": 0.081,
+    "generated_at": "2026-11-26T19:44:41+00:00"
+  }
+}
