@@ -3648,6 +3648,14 @@
   "note": "probed 2026-11-24, web_extract first try, preview date in italic note"
  },
  {
+  "host": "www.spglobal.com",
+  "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2025/10/generative-ai-shows-rapid-growth-but-yields-mixed-results",
+  "verdict": "unreachable",
+  "as_of": "2026-11-26",
+  "vertical": "enterprise_ai_finops",
+  "note": "spglobal.com and gartner.com newsroom do not fetch for the desk verifier (fixed UA) as of 2026-11-26; quote their figures only through a fetchable carrier that prints the source verbatim (Fortune quoted MIT NANDA in body"
+ },
+ {
   "host": "www.theregister.com",
   "url": "https://www.theregister.com",
   "verdict": "fetchable",

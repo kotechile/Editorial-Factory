@@ -593,3 +593,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-26 | `your-sku-cut-leaves-a-1-1b-bill` | demand_sensing_advanced_sop | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-sku-cut-leaves-a-1-1b-bill/featured.jpg` |
 | 2026-11-26 | `your-mcp-tax-2x-30x-tokens-per-turn` | agentic_ai | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-mcp-tax-2x-30x-tokens-per-turn/featured.jpg` |
 | 2026-11-26 | `your-pilot-needs-a-scorecard` | enterprise_ai_finops | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-pilot-needs-a-scorecard/featured.jpg` |
+| 2026-11-26 | `hvac-maintenance-plan-math` | home_ops_execution | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/hvac-maintenance-plan-math/featured.jpg` |

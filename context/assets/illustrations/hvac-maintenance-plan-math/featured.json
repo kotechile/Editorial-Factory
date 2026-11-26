@@ -1,0 +1,113 @@
+{
+  "slug": "hvac-maintenance-plan-math",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Residential HVAC outdoor unit mid-tune-up, access panel open on clean coils, concrete pad beside a house at blue-hour dusk.",
+      "caption": "The annual agreement prepays the tune-up; whether it beats the $275 house call is arithmetic on one page.",
+      "title": "HVAC unit mid-tune-up at dusk \u2014 maintenance plan feature image",
+      "bytes": 329756,
+      "sha256": "sha256:3c4e3c3d507f854deade96d3d6b84870"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Anamorphic 35mm cinematic still: an unbranded bone-white residential HVAC outdoor unit on a cracked concrete pad beside the driveway, its access panel swung open to expose clean aluminium coil fins, a fresh pleated filter leaning against the stucco wall. Blue-hour dusk, one warm window light from the left raking across the coils and throwing a long shadow down the pad; graphite, ochre and deep pine green palette, hedge silhouette behind. Low-angle three-quarter view, the unit commanding the left third, generous empty dusk sky upper right, gentle anamorphic falloff, crisp atmosphere, fine film grain. No people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos",
+  "rationale": "The story's protagonist is the HVAC unit whose tune-up labor is being priced, so the machine must anchor the frame in its home setting. Cinematic_still gives the prepaid visit one decisive blue-hour moment with real environmental weight \u2014 dusk, concrete, stucco \u2014 rather than a sterile product shot or a macro that erases the yard around it.",
+  "cue": "A yearly HVAC service agreement is prepaid labor",
+  "subject": "an unbranded residential HVAC outdoor unit with its access panel open mid-tune-up",
+  "core_thesis": "A yearly HVAC maintenance agreement is prepaid labor \u2014 $75\u2013$150 up front against a $275 one-off visit \u2014 and it pays only if the tune-ups, priority dispatch and repair discount are worth more than the fee.",
+  "core_conflict": "$75\u2013$150 prepaid annual subscription versus $275 retail one-off visit \u2014 subscription arithmetic against pay-per-visit memory and self-discipline.",
+  "composition": "extreme asymmetry: low-angle three-quarter view, HVAC unit commanding the left third against the receding stucco wall, generous dusk-sky negative space upper right",
+  "alt_text": "The $75 HVAC Plan Vs The $275 Visit. Residential HVAC outdoor unit mid-tune-up, access panel open on clean coils, concrete pad beside a",
+  "caption": "The $75 HVAC Plan Vs The $275 Visit: A $75 plan beats a $275 call only if four clauses on the renewal sheet check out.",
+  "title": "The $75 HVAC Plan Vs The $275 Visit",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 3,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/hvac-maintenance-plan-math/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 386071,
+  "sha256": "sha256:9f1f0d83716548dcd4ca08de1ca5ba9a859fd51b8f95a9028dd9b5a274b6edb5",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 386071,
+    "quality": 88,
+    "sha256": "sha256:9f1f0d83716548dcd4ca08de1ca5ba9a859fd51b8f95a9028dd9b5a274b6edb5",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:d5df98b724e07b317357234e1b1e30dbcdcea5e5dc86b6f1d876f695c501ffc7",
+  "render_phash": "3e7f3e7f1e7f099f059f07dc05f708db08dd48cf0ccf84cf03bf00ef063c019f",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "An unbranded residential HVAC outdoor unit at dusk with its access panel removed and leaning against it, exposing the internal coil, positioned on the left against a receding stucco wall with dark sky above and a lit window at upper left.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.92,
+    "reason": "The image shows exactly the article's protagonist \u2014 a residential HVAC outdoor unit opened mid-tune-up \u2014 matching the ordered subject and composition, with no contradicting industry or generic filler."
+  },
+  "source_hash": "sha256:1d754a1b2a4592746a6f900fe5f544cc",
+  "source_chars": 4063,
+  "task_id": "22c675cc658a237642314c8d917ce55c",
+  "credits": 5.0,
+  "cost_ms": 25,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/22c675cc658a237642314c8d917ce55c_1795720172483.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Anamorphic 35mm cinematic still: an unbranded bone-white residential HVAC outdoor unit on a cracked concrete pad beside the driveway, its access panel swung open to expose clean aluminium coil fins, a fresh pleated filter leaning against the stucco wall. Blue-hour dusk, one warm window light from the left raking across the coils and throwing a long shadow down the pad; graphite, ochre and deep pine green palette, hedge silhouette behind. Low-angle three-quarter view, the unit commanding the left third, generous empty dusk sky upper right, gentle anamorphic falloff, crisp atmosphere, fine film grain. No people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-26T19:09:43+00:00",
+  "overlay": {
+    "kicker": "SERVICE CONTRACTS // HVAC PLAN MATH",
+    "title": "THE $75 HVAC PLAN VS THE $275 VISIT",
+    "hook": "A $75 plan beats a $275 call only if four clauses on the renewal sheet check out",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.81,
+    "target": 5.5,
+    "clutter": 0.282,
+    "region_rgb": [
+      51,
+      53,
+      61
+    ],
+    "binding_rgb": [
+      83,
+      80,
+      89
+    ],
+    "title_lines": [
+      "THE $75 HVAC",
+      "PLAN VS THE $275",
+      "VISIT"
+    ],
+    "subject": 0.235,
+    "ink_subject": 0.069,
+    "spike": 0.402,
+    "generated_at": "2026-11-26T19:09:43+00:00"
+  }
+}

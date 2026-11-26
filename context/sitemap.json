@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T18:09:22Z",
+  "updated_at": "2026-11-26T19:10:09Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -8149,6 +8149,27 @@
       "date": "2026-11-25",
       "public": true,
       "url": "https://aichieve.net/your-workflow-repair-pays-twice/"
+    },
+    {
+      "slug": "2026-11-26_hvac-maintenance-plan-math",
+      "title": "HVAC Maintenance Plan: Your $75 or $275 Bill",
+      "vertical": "home_ops_execution",
+      "primary_keyword": "HVAC maintenance plan",
+      "secondary_keywords": [
+        "HVAC service contract",
+        "annual HVAC tune-up cost"
+      ],
+      "h2_topics": [
+        "At a glance",
+        "What you are prepaying",
+        "By the numbers",
+        "Four clauses decide the math",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "pro_homeowner",
+      "date": "2026-11-26",
+      "public": false
     },
     {
       "slug": "2026-11-26_turkiyes-150k-permit-rents-a-country",
