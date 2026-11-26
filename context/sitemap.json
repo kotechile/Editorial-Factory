@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T20:14:31Z",
+  "updated_at": "2026-11-26T11:00:20Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -8146,6 +8146,27 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-25",
+      "public": false
+    },
+    {
+      "slug": "2026-11-26_your-multi-agent-fan-out-bills-3-8x",
+      "title": "Your Agent Fan-Out Bills 3.8\u00d7: 16 Agents, One Price Tag",
+      "vertical": "agentic_ai",
+      "primary_keyword": "agent fan-out",
+      "secondary_keywords": [
+        "parallel subagents",
+        "multi-agent orchestration"
+      ],
+      "h2_topics": [
+        "At a glance",
+        "The fan-out met its price tag",
+        "By the numbers",
+        "Where the bill is being trimmed",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
+      "date": "2026-11-26",
       "public": false
     }
   ]

@@ -1,0 +1,113 @@
+{
+  "slug": "your-multi-agent-fan-out-bills-3-8x",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Glass prism splitting one beam of light into sixteen parallel copper rays across a steel bench in a dark server room",
+      "caption": "One beam in, sixteen metered rays out \u2014 the fan-out finds its price tag.",
+      "title": "Beam-splitter fan-out: sixteen rays, one bill",
+      "bytes": 234799,
+      "sha256": "sha256:cf5ffbce3c31586bf01a974bfa5fdf14"
+    }
+  ],
+  "style": "studio_object",
+  "style_label": "Studio product shot",
+  "style_when": "the story is a product, a device, a price or a market for a thing the reader could buy \u2014 an appliance, a panel, a router, a robot arm",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Studio photograph in a dark server room, split-screen diptych divided by a heavy optical beam-splitter prism standing on a brushed-steel bench plate. Left third: near-black graphite quiet, a single copper-warm beam entering low from the left through thin air. On the seam the prism splits it into sixteen razor-thin parallel copper rays raking right across brushed steel toward a row of dim server racks, each ray landing in a small hard contact glow like a metered line item. Three-quarter angle, 85mm lens, shallow depth of field, graphite, charcoal and copper palette with steel-blue rack glow behind, visible long contact shadow, fine film grain, no people.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks, logos",
+  "rationale": "This is a pricing story \u2014 an effort level literally went on sale \u2014 so a product treatment of the mechanism-as-object fits, and the vertical's sanctioned metaphor for agent fan-out is photonic: one beam split into parallel rays. Studio staging on real brushed steel in a dark server room keeps physical weight and contact shadows instead of a floating render.",
+  "cue": "16 agents, one price tag",
+  "subject": "a beam-splitter prism dividing one beam of light into sixteen parallel rays \u2014 the agent fan-out made physical",
+  "core_thesis": "A vendor now sells a 16-agent fan-out as a quality tier the same week an equal-cost study priced that parallel pattern at 2.6\u20133.8\u00d7 one agent's spend for only 1\u20135 hidden-test points \u2014 headcount is a price dial, not a quality dial.",
+  "core_conflict": "Fan-out headcount sold as quality (up to 16 workers, one lead) versus the measured return (a lone, better-instructed agent matching it at a fraction of the cost)",
+  "composition": "split-screen diptych: dark quiet single-beam left third, prism on the seam, sixteen-ray fan-out blazing right, extreme asymmetry with wide negative space",
+  "alt_text": "Parallel Agents Bill 3.8X For Five Points. Glass prism splitting one beam of light into sixteen parallel copper rays across a steel bench",
+  "caption": "Parallel Agents Bill 3.8X For Five Points: Perplexity sells agent count as a tier while one instruction line buys the gain back.",
+  "title": "Parallel Agents Bill 3.8X For Five Points",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-multi-agent-fan-out-bills-3-8x/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 314429,
+  "sha256": "sha256:1a5ef85920e540c1e8197222746bc106a75418c5fdba21ff902a2d2b4ae8e5c5",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 314429,
+    "quality": 88,
+    "sha256": "sha256:1a5ef85920e540c1e8197222746bc106a75418c5fdba21ff902a2d2b4ae8e5c5",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:b5b184a142103aa6bd0e3eeaacfeec20b12c592f0af00aa9239eead7a66bc17b",
+  "render_phash": "041e44ac04da04ce04de04ee347ffc1dfc1d148d448d248d048944090409241e",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A single orange light beam enters from the left across a dark reflective studio surface, strikes a vertical transparent glass panel standing on the seam, and splits into a fan of parallel orange rays that converge onto a row of small glowing points on the right, with dark server racks with blue indicator lights in the background.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image physically renders the article's own mechanism \u2014 one input beam split into many parallel rays, i.e., the agent fan-out \u2014 in a server-room setting, with no text, competing industry, or contradictory scene."
+  },
+  "source_hash": "sha256:b35101a2cdae28c8c61ad131fab2e8f8",
+  "source_chars": 4280,
+  "task_id": "798c256f402016f9ea00d509e9f7d61c",
+  "credits": 5.0,
+  "cost_ms": 21,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/798c256f402016f9ea00d509e9f7d61c_1795690767424.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Studio photograph in a dark server room, split-screen diptych divided by a heavy optical beam-splitter prism standing on a brushed-steel bench plate. Left third: near-black graphite quiet, a single copper-warm beam entering low from the left through thin air. On the seam the prism splits it into sixteen razor-thin parallel copper rays raking right across brushed steel toward a row of dim server racks, each ray landing in a small hard contact glow like a metered line item. Three-quarter angle, 85mm lens, shallow depth of field, graphite, charcoal and copper palette with steel-blue rack glow behind, visible long contact shadow, fine film grain, no people.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-26T10:59:42+00:00",
+  "overlay": {
+    "kicker": "AGENT PLATFORMS // PRICED BY HEADCOUNT",
+    "title": "PARALLEL AGENTS BILL 3.8X FOR FIVE POINTS",
+    "hook": "Perplexity sells agent count as a tier while one instruction line buys the gain back",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 15.19,
+    "target": 4.5,
+    "clutter": 0.089,
+    "region_rgb": [
+      25,
+      23,
+      23
+    ],
+    "binding_rgb": [
+      28,
+      24,
+      23
+    ],
+    "title_lines": [
+      "PARALLEL",
+      "AGENTS BILL 3.8X",
+      "FOR FIVE POINTS"
+    ],
+    "subject": 0.035,
+    "ink_subject": 0.01,
+    "spike": 0.117,
+    "generated_at": "2026-11-26T10:59:42+00:00"
+  }
+}

@@ -586,3 +586,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-25 | `your-egress-bill-six-times-storage` | enterprise_build_vs_buy | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-egress-bill-six-times-storage/featured.jpg` |
 | 2026-11-25 | `your-labor-line-replaces-40-percent` | warehouse_automation_robotics_capex | `technical_isometric` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-labor-line-replaces-40-percent/featured.jpg` |
 | 2026-11-25 | `your-rent-cap-20-and-24-months` | property_loss_insurance_mitigation | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-rent-cap-20-and-24-months/featured.jpg` |
+| 2026-11-26 | `your-multi-agent-fan-out-bills-3-8x` | agentic_ai | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-multi-agent-fan-out-bills-3-8x/featured.jpg` |
