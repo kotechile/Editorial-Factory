@@ -595,3 +595,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-26 | `your-pilot-needs-a-scorecard` | enterprise_ai_finops | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-pilot-needs-a-scorecard/featured.jpg` |
 | 2026-11-26 | `hvac-maintenance-plan-math` | home_ops_execution | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/hvac-maintenance-plan-math/featured.jpg` |
 | 2026-11-26 | `your-remote-work-bills-your-boss` | expat_cross_border_relocation | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/your-remote-work-bills-your-boss/featured.jpg` |
+| 2026-11-26 | `your-mape-gain-80-buys-nothing` | demand_sensing_advanced_sop | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-mape-gain-80-buys-nothing/featured.jpg` |

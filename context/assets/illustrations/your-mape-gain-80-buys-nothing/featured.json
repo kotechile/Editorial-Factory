@@ -1,0 +1,113 @@
+{
+  "slug": "your-mape-gain-80-buys-nothing",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Pallet racks of shrink-wrapped stock stacked to the ceiling in a warehouse aisle, hard skylight raking the held inventory.",
+      "caption": "A score point is a cause with a payout rate, and the payout sits in the buffer, not the scorecard.",
+      "title": "Pallet-racked buffer stock under hard skylight",
+      "bytes": 363273,
+      "sha256": "sha256:50a41da2cddf3e31ec818bf839ac1608"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto film still down a warehouse aisle: galvanised steel racking stacked to the ceiling with shrink-wrapped palletised stock, the loaded bays compressing into dense overlapping layers of held inventory. Hard raking light falls from high skylights at upper left, cutting long diagonal shafts across the racks and throwing deep contact shadows down the polished concrete floor. Graphite steel uprights, bone-white polymer shrink wrap, one safety-yellow beam line as accent; crystal-clear air, deep industrial contrast, flat compressed perspective with the aisle vanishing just right of centre. Extreme asymmetric composition \u2014 the rack wall commands the right two thirds while a lone idle pallet jack rests in the lit lower-left foreground. Fine film grain, unmarked cartons, no people, no text.",
+  "negative_prompt": "garbled text, random lettering, numbers, watermarks",
+  "rationale": "The story's money sits in the buffer, so the hero is the buffer: telephoto compression stacks the loaded racks into dense overlapping layers so the reader feels the scale of stock a two-point MAPE promise claims to release. The bare aisle and the idle pallet jack state the thesis without a chart \u2014 most gains move nothing. Macro would strip the environment and a studio shot would turn a systemic operations story into a product photo.",
+  "cue": "Your MAPE Gain: 80% Buys Nothing",
+  "subject": "a towering steel-racked aisle of shrink-wrapped palletised stock \u2014 the safety-stock buffer whose carrying cost a MAPE point must beat",
+  "core_thesis": "80% of forecast-accuracy improvements changed no reorder decision at all, so a promised MAPE point is not cash until you price it against your own carrying cost of the stock it claims to shrink.",
+  "core_conflict": "Vendor-promised MAPE points versus the untouched safety-stock buffer and its carrying cost \u2014 a better forecast pays out in only about one order in eight.",
+  "composition": "extreme asymmetric telephoto framing: the compressed rack wall of stock commands the right two-thirds, the vanishing point sitting just right of centre, with the bare polished-concrete aisle and an idle pallet jack as breathing room in the lower-left foreground",
+  "alt_text": "80% Of Forecast Gains Buy Nothing. Pallet racks of shrink-wrapped stock stacked to the ceiling in a warehouse aisle, hard skylight raking",
+  "caption": "80% Of Forecast Gains Buy Nothing: A MAPE point pays only where it shifts an order \u2014 price it against your holding cost.",
+  "title": "80% Of Forecast Gains Buy Nothing",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-mape-gain-80-buys-nothing/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 397930,
+  "sha256": "sha256:a919e598cca0dc2449fb1b23a396faf2550a186a01de734fec43e177cab47454",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 397930,
+    "quality": 80,
+    "sha256": "sha256:a919e598cca0dc2449fb1b23a396faf2550a186a01de734fec43e177cab47454",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:24c9de0b467c336c7f367b390d97e0efb16ca81ca5f47add0b3334701a2b8dac",
+  "render_phash": "32bc353926e301cf0b3e08f909cf0c2b44ed44ff86d506ff44ff41ff00fb04ff",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A warehouse interior with a towering wall of steel pallet racks holding shrink-wrapped palletised stock filling the right two-thirds of the frame, a bare polished-concrete aisle receding to a vanishing point just right of centre, and an idle pallet jack in the lower-left foreground.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image depicts exactly the article's own object \u2014 the racked safety-stock buffer whose carrying cost a promised MAPE point must beat \u2014 matching the ordered telephoto rack-aisle frame with the idle pallet jack and empty aisle as breathing room."
+  },
+  "source_hash": "sha256:748bd8f2cfc585ed3f7de148f1fa983d",
+  "source_chars": 3892,
+  "task_id": "cead36ed7f94e64c992a6bd2a6697ca6",
+  "credits": 5.0,
+  "cost_ms": 20,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/cead36ed7f94e64c992a6bd2a6697ca6_1795723787602.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto film still down a warehouse aisle: galvanised steel racking stacked to the ceiling with shrink-wrapped palletised stock, the loaded bays compressing into dense overlapping layers of held inventory. Hard raking light falls from high skylights at upper left, cutting long diagonal shafts across the racks and throwing deep contact shadows down the polished concrete floor. Graphite steel uprights, bone-white polymer shrink wrap, one safety-yellow beam line as accent; crystal-clear air, deep industrial contrast, flat compressed perspective with the aisle vanishing just right of centre. Extreme asymmetric composition \u2014 the rack wall commands the right two thirds while a lone idle pallet jack rests in the lit lower-left foreground. Fine film grain, unmarked cartons, no people, no text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-26T20:09:55+00:00",
+  "overlay": {
+    "kicker": "DEMAND SENSING // MAPE ECONOMICS",
+    "title": "80% OF FORECAST GAINS BUY NOTHING",
+    "hook": "A MAPE point pays only where it shifts an order \u2014 price it against your holding cost",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.66,
+    "target": 5.5,
+    "clutter": 0.251,
+    "region_rgb": [
+      59,
+      62,
+      62
+    ],
+    "binding_rgb": [
+      102,
+      106,
+      107
+    ],
+    "title_lines": [
+      "80% OF",
+      "FORECAST GAINS",
+      "BUY NOTHING"
+    ],
+    "subject": 0.344,
+    "ink_subject": 0.103,
+    "spike": 0.284,
+    "generated_at": "2026-11-26T20:09:55+00:00"
+  }
+}

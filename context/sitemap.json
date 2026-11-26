@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T19:46:02Z",
+  "updated_at": "2026-11-26T20:10:31Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -8229,6 +8229,24 @@
       "date": "2026-11-26",
       "public": true,
       "url": "https://aichieve.net/your-ai-forecast-expires-december-1/"
+    },
+    {
+      "slug": "2026-11-26_your-mape-gain-80-buys-nothing",
+      "title": "Your MAPE Gain: 80% Buys Nothing",
+      "vertical": "demand_sensing_advanced_sop",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "The conversion rate nobody quotes",
+        "By the numbers",
+        "Price the point before you sign",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
+      "date": "2026-11-26",
+      "public": false
     },
     {
       "slug": "2026-11-26_your-mcp-tax-2x-30x-tokens-per-turn",

@@ -1,0 +1,15 @@
+# Run log — 2026-11-26 your-remote-work-bills-your-boss (expat_cross_border_relocation, evergreen)
+
+- Mode: evergreen (no 30-day window, no Judge). Gate STEP 0 generation_gate.py: on.
+- Brief: `context/recon_proposals/2026-11-26_expat_cross_border_relocation_evergreen_brief.md` — evergreen_gate PASS (marker 19:34), 3 sources / 3 hosts:
+  - Cornell LII 26 U.S.C. § 864(b)(2)(B): 90 days / $3,000 services de minimis.
+  - HMRC INTM264600: services PE normally needs presence > 183 days in any 12-month period.
+  - EUR-Lex Implementing Reg (EC) 987/2009 Art 15(8): < 25 % activity share is an indicator a substantial part of the work is not pursued in the residence state.
+  - Corroboration row (not a brief row): HMRC INTM264510 — dependent-agent PE = habitually exercised contract authority, no day count (used in body as [3]).
+- Candidate table: winner 8.8; FX-hedge candidate dropped 7.0 (no figure-bearing primary — broker rate cards only); healthcare gap dropped 7.2 (same evidence failure as 11-05 run).
+- De-dup: nearest prior `2026-11-12_move-abroad-still-a-resident-546-days` (personal/state layer); corpus grep `permanent establishment|dependent agent` unclaimed in published/. Releases the 10-15 hold (8.3) — second host-side primary now verified.
+- Draft → review HELD 1x (Flesch 49.5 < 50 on the rewrite). Held attempt adopted and hand-repaired: dropped unsourced "most treaties" claim, dropped "over seven months" flourish, threshold/authority word swaps → Flesch 50.6, critic/shape/headline(100)/sources/voice/publish_gate all pass.
+- Published: `published/2026-11-26_your-remote-work-bills-your-boss.md`, Supabase row d84fbbaa-b779-4d8c-aca4-1cabe1b1413e, CMS post 1894 (status publish, kind evergreen, vertical term 30, category 4).
+- Sequence defect found: post was created BEFORE the illustration pass ran, so post 1894 was hero-less. Fix executed: re-ran `publish.py` on the `_final.md` (illustration idempotent — new render sha256:76429d1f, 18 credits, paper_collage on nano-banana-pro; Supabase row updated with metadata.illustration, WP call correctly deduped), then `wp_draft.py --slug <slug> --refresh-live` → media 1896 attached to post 1894, live status untouched.
+- Verified on CMS REST: title, 158-char excerpt, 6456-char body, vertical term 30, tag 44, featured media 1896, inline internal link `/move-abroad-still-a-resident-546-days/` + generated Related-reading block (3 links) present in stored body.
+- Reader front verified (giniloh.com): HTTP 200 after the draft→publish rebuild toggle; hero `<img>` renders `your-remote-work-bills-your-boss-featured.jpg` with srcset through `-1024x576` (both 200), alt "Your Remote Work Bills Your Employer. A paper-cut branch…" present; inline internal link and Related-reading block on the page. `evergreen_gate.py --check-artifacts --no-network`: brief marker fresh (rows=3). Note: giniloh og:image is the default share image on every hero-bearing post (hvac/mcp/scorecard same) — the hero <img>, not og:image, is the verified header.

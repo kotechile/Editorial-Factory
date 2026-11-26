@@ -448,6 +448,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-26 | enterprise_ai_finops | your-pilot-needs-a-scorecard | Your Pilot Needs a Scorecard: 95% Fail | https://pressflow.aichieve.net/published/2026-11-26_your-pilot-needs-a-scorecard.md | reader site only |
 | 2026-11-26 | home_ops_execution | hvac-maintenance-plan-math | HVAC Maintenance Plan: Your $75 or $275 Bill | https://pressflow.aichieve.net/published/2026-11-26_hvac-maintenance-plan-math.md | reader site only |
 | 2026-11-26 | expat_cross_border_relocation | your-remote-work-bills-your-boss | Your Remote Work Bills Your Boss: 183 Days | https://pressflow.aichieve.net/published/2026-11-26_your-remote-work-bills-your-boss.md | reader site only |
+| 2026-11-26 | demand_sensing_advanced_sop | your-mape-gain-80-buys-nothing | Your MAPE Gain: 80% Buys Nothing | https://pressflow.aichieve.net/published/2026-11-26_your-mape-gain-80-buys-nothing.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 
