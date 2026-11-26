@@ -144,6 +144,14 @@
   "note": "t two, so it is not a row (the flakiest host seen on this vertical); `astm.org`, every `wildfireprepared.org` path (the technical standard is PDF-only), `readyforwildfire.org`, guessed `fire"
  },
  {
+  "host": "atexpress.net",
+  "url": "https://atexpress.net",
+  "verdict": "fetchable",
+  "as_of": "2026-11-26",
+  "vertical": "expat_cross_border_relocation",
+  "note": ""
+ },
+ {
   "host": "ato.gov.au",
   "url": "",
   "verdict": "unreachable",
@@ -1240,6 +1248,14 @@
   "note": "exas.gov`, `content.naic.org` and `corelogic.com` (all unreachable), `firststreet.org/risk-factor/fire-factor/` (HTTP 200 with a 260-character body), `moen.com` and `phyn.com` product pages"
  },
  {
+  "host": "flamingo.tax",
+  "url": "https://flamingo.tax",
+  "verdict": "fetchable",
+  "as_of": "2026-11-26",
+  "vertical": "expat_cross_border_relocation",
+  "note": ""
+ },
+ {
   "host": "floodsmart.gov",
   "url": "",
   "verdict": "unreachable",
@@ -1350,6 +1366,14 @@
   "as_of": "2026-10-21",
   "vertical": "warehouse_automation_robotics_capex",
   "note": "but cannot carry a row: `docs.ottomotors.com` (1.4 KB landing stub), `geekplus.com` / `fetchrobotics.com` / `mecalux.com` root pages (nav only; a guessed `mecalux.com/blog/<slug>` is unreach"
+ },
+ {
+  "host": "getwherenext.com",
+  "url": "https://getwherenext.com",
+  "verdict": "fetchable",
+  "as_of": "2026-11-26",
+  "vertical": "expat_cross_border_relocation",
+  "note": ""
  },
  {
   "host": "github.blog",

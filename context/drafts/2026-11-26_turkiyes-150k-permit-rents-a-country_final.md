@@ -14,6 +14,12 @@ synthesis: true
 sources:
   - https://www.imidaily.com/turkey-investor-residence-permit
   - https://flamingo.tax/blog/183-day-rule-for-tax-residency-367
+image_path: "context/assets/illustrations/turkiyes-150k-permit-rents-a-country/featured.jpg"
+image_style: "paper_collage"
+image_model: "nanobanana"
+image_alt: "Türkiye'S $150K Permit Is Not A Tax Plan. A residence permit card with a rust-red price tag beside a torn wall calendar of day squares on"
+image_caption: "Türkiye'S $150K Permit Is Not A Tax Plan: $150k buys three years of legal presence — the tax residency question stays unbought."
+image_credit: "Illustration: Editorial-Factory Intelligence Unit"
 ---
 
 <!-- lead -->

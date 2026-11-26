@@ -1,0 +1,115 @@
+{
+  "slug": "turkiyes-150k-permit-rents-a-country",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A residence permit card with a rust-red price tag beside a torn wall calendar of day squares on an oak desk.",
+      "caption": "One half of the move is cut clean and priced; the other half is settled only by counting days.",
+      "title": "Priced permit, torn calendar \u2014 cut-paper header",
+      "bytes": 406269,
+      "sha256": "sha256:64f2773988dea066ceeb57ab580fa9a8"
+    }
+  ],
+  "style": "paper_collage",
+  "style_label": "Editorial paper collage",
+  "style_when": "the article is a purely conceptual synthesis or policy dilemma where no physical facility, machine, or supply chain exists, and an elegant abstract paper silhouette states the idea. Never reach for paper collage when the story describes physical manufacturing, freight, energy, hardware, or heavy infrastructure \u2014 use cinematic still or telephoto industry instead",
+  "model": "nano-banana-pro",
+  "model_key": "nanobanana",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Editorial cut-paper collage arranged on a warm oak study desk, wide 16:9 framing. Split-screen diptych divided by a clean torn-paper seam: left half, a crisp cut-paper residence permit card in cream rag stock with a small rust-red price tag on a string, sharp die-cut edges; right half, a hand-torn wall calendar of blank graphite day squares, one square ripped away leaving ragged fibre. Halftone newsprint texture on every layer, physical cast shadows under each sheet, one raking light from the left, muted palette of bone white, graphite and rust red, generous negative space, no lettering.",
+  "negative_prompt": "garbled text, random lettering, legible numbers, watermark",
+  "rationale": "A pure policy dilemma with no facility, machine or supply chain is the catalogue's stated case for cut-paper collage. The split-screen diptych stages the article's own section heading \u2014 'priced permit, unpriced test' \u2014 as two paper artefacts: one die-cut clean and tagged with a price, the other torn, blank and unfinished. Raking light and real cast shadows on an oak desk keep the abstraction tactile and editorial rather than flat graphic.",
+  "cue": "Priced permit, unpriced test",
+  "subject": "a cut-paper residence permit card with a price tag beside a torn wall-calendar grid of day squares",
+  "core_thesis": "T\u00fcrkiye's $150,000 investor residence permit prices only legal presence \u2014 the tax-residency question stays unbought, because it is settled by day-counting machinery no permit can purchase.",
+  "core_conflict": "a residence permit with a clean quoted price versus the unpriced, unwritten tax-residency test \u2014 183 weighted days, UK statutory tests, Ireland's 280 days \u2014 that ignores the permit entirely.",
+  "composition": "Split-screen diptych: left half the crisp priced permit card, right half the torn day-count calendar, divided by a clean torn-paper seam, both off-centre with generous negative space",
+  "alt_text": "T\u00fcrkiye'S $150K Permit Is Not A Tax Plan. A residence permit card with a rust-red price tag beside a torn wall calendar of day squares on",
+  "caption": "T\u00fcrkiye'S $150K Permit Is Not A Tax Plan: $150k buys three years of legal presence \u2014 the tax residency question stays unbought.",
+  "title": "T\u00fcrkiye'S $150K Permit Is Not A Tax Plan",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/turkiyes-150k-permit-rents-a-country/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406180,
+  "sha256": "sha256:699abfd837bf527e9a6bc7f8009dd7d3ae4e101e3c487bf29ccd271410674be0",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406180,
+    "quality": 68,
+    "sha256": "sha256:699abfd837bf527e9a6bc7f8009dd7d3ae4e101e3c487bf29ccd271410674be0",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:3b09f8af6fad46bf7b69825727bc166aba844d8185fe8056991d3aab6874477d",
+  "render_phash": "ee3b66bfb22f923fce371e3f4e6d267526762e773c7c04990cc94cc9c6e622e7",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A cream cut-paper permit-style card with embossed placeholder lines and a blank red price tag on a string, lying on a wooden desk beside a torn paper sheet printed with a grid of dark day-square tiles, one tile torn out, separated by a torn-paper seam.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image depicts exactly the article's own mechanism \u2014 a priced residence-permit card (tag attached) next to a day-count calendar grid with a missing square (the unbought tax-residency day test) \u2014 matching the ordered diptych, though the card carries no country or currency markings."
+  },
+  "source_hash": "sha256:56fec1f5f503ca72632d87a622d45b14",
+  "source_chars": 4382,
+  "task_id": "4d14d4cbe5d3b9e8533c7000be0a80d2",
+  "credits": 18.0,
+  "cost_ms": 139,
+  "provider_url": "https://tempfile.aiquickdraw.com/models/nano-banana-pro/1795696912484-ziyahf9hx2h.png",
+  "provider_request": {
+    "model": "nano-banana-pro",
+    "input": {
+      "prompt": "Editorial cut-paper collage arranged on a warm oak study desk, wide 16:9 framing. Split-screen diptych divided by a clean torn-paper seam: left half, a crisp cut-paper residence permit card in cream rag stock with a small rust-red price tag on a string, sharp die-cut edges; right half, a hand-torn wall calendar of blank graphite day squares, one square ripped away leaving ragged fibre. Halftone newsprint texture on every layer, physical cast shadows under each sheet, one raking light from the left, muted palette of bone white, graphite and rust red, generous negative space, no lettering.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "image_input": [],
+      "output_format": "png"
+    }
+  },
+  "generated_at": "2026-11-26T12:42:10+00:00",
+  "overlay": {
+    "kicker": "T\u00dcRKIYE RESIDENCE PERMIT // TAX RESIDENCY",
+    "title": "T\u00dcRKIYE'S $150K PERMIT IS NOT A TAX PLAN",
+    "hook": "$150k buys three years of legal presence \u2014 the tax residency question stays unbought",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 6.02,
+    "target": 5.5,
+    "clutter": 0.291,
+    "region_rgb": [
+      185,
+      152,
+      117
+    ],
+    "binding_rgb": [
+      159,
+      112,
+      70
+    ],
+    "title_lines": [
+      "T\u00dcRKIYE'S $150K",
+      "PERMIT IS NOT A",
+      "TAX PLAN"
+    ],
+    "subject": 0.269,
+    "ink_subject": 0.091,
+    "spike": 0.455,
+    "generated_at": "2026-11-26T12:42:10+00:00"
+  }
+}
