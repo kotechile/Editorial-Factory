@@ -1,6 +1,6 @@
 {
   "slug": "split-year-two-clock-seam",
-  "revision": 9,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -62,6 +62,14 @@
     },
     {
       "revision": 8,
+      "alt_text": "Two Tax Clocks Decide Your First Year Abroad. Two overlapping, misaligned clock face paper silhouettes on a neutral background.",
+      "caption": "Two Tax Clocks Decide Your First Year Abroad: the US 330-day test and the UK 183-day test rarely sync, so timing decides the bill.",
+      "title": "Two Tax Clocks Decide Your First Year Abroad",
+      "bytes": 387264,
+      "sha256": "sha256:27106a1cbe04e4ba9a9f77be3ae4e54cbc2cb920dc16b129988e8fd3192c3bc0"
+    },
+    {
+      "revision": 9,
       "alt_text": "Two Tax Clocks Decide Your First Year Abroad. Two overlapping, misaligned clock face paper silhouettes on a neutral background.",
       "caption": "Two Tax Clocks Decide Your First Year Abroad: the US 330-day test and the UK 183-day test rarely sync, so timing decides the bill.",
       "title": "Two Tax Clocks Decide Your First Year Abroad",

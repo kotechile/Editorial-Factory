@@ -444,6 +444,7 @@ list a file that is not there. Rows are appended in publish order, not re-sorted
 | 2026-11-26 | home_ops_execution | winning-630500-buys-97-years-of-125-checks | Winning $630,500 Buys You 97 Years of $125 Checks | https://pressflow.aichieve.net/published/2026-11-26_winning-630500-buys-97-years-of-125-checks.md | reader site only |
 | 2026-11-26 | expat_cross_border_relocation | turkiyes-150k-permit-rents-a-country | Türkiye Investor Residence Permit: $150k, Not a Tax Plan | https://pressflow.aichieve.net/published/2026-11-26_turkiyes-150k-permit-rents-a-country.md | reader site only |
 | 2026-11-26 | demand_sensing_advanced_sop | your-sku-cut-leaves-a-1-1b-bill | Your SKU Cut Leaves $1.1B Hidden | https://pressflow.aichieve.net/published/2026-11-26_your-sku-cut-leaves-a-1-1b-bill.md | reader site only |
+| 2026-11-26 | agentic_ai | your-mcp-tax-2x-30x-tokens-per-turn | Your MCP Bill Grows 2x–30x Per Server | https://pressflow.aichieve.net/published/2026-11-26_your-mcp-tax-2x-30x-tokens-per-turn.md | reader site only |
 
 > Withdrawn 2026-10-01 by founder request: 5 articles removed from `published/` (and their draft/final pairs) — `ai-price-volatility-build-vs-buy-maintenance-tax`, `nvidia-hugging-face-moat`, `rollback-breaks-execution-continuity`, `temporal-durable-execution-12-55b`, `unfi-warehouse-automation-capex`. Rows above were removed to keep the "no row without a file" invariant; the full content remains in this repository's history.
 

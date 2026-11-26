@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T13:22:23Z",
+  "updated_at": "2026-11-26T17:42:36Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -490,8 +490,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-05",
-      "public": true,
-      "url": "https://wellroost.com/smart-irrigation-payback-water-tier/"
+      "public": false
     },
     {
       "slug": "2026-10-05_you-think-youre-governing-your-agents",
@@ -1208,8 +1207,7 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-10-09",
-      "public": true,
-      "url": "https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/"
+      "public": false
     },
     {
       "slug": "2026-10-10_home-assistant-cloud-rename-hardware-rent",
@@ -8025,7 +8023,8 @@
       ],
       "target_persona": "eng_leader",
       "date": "2026-11-25",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-egress-bill-six-times-storage/"
     },
     {
       "slug": "2026-11-25_your-labor-line-replaces-40-percent",
@@ -8048,7 +8047,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-25",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-labor-line-replaces-40-percent/"
     },
     {
       "slug": "2026-11-25_your-mcp-mandate-ships-100-wrong-tool-risk",
@@ -8123,7 +8123,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-25",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/your-rent-cap-20-and-24-months/"
     },
     {
       "slug": "2026-11-25_your-workflow-repair-pays-twice",
@@ -8146,7 +8147,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-25",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-workflow-repair-pays-twice/"
     },
     {
       "slug": "2026-11-26_turkiyes-150k-permit-rents-a-country",
@@ -8167,7 +8169,8 @@
       ],
       "target_persona": "cross_border_expat",
       "date": "2026-11-26",
-      "public": false
+      "public": true,
+      "url": "https://giniloh.com/turkiyes-150k-permit-rents-a-country/"
     },
     {
       "slug": "2026-11-26_winning-630500-buys-97-years-of-125-checks",
@@ -8185,7 +8188,8 @@
       ],
       "target_persona": "pro_homeowner",
       "date": "2026-11-26",
-      "public": false
+      "public": true,
+      "url": "https://wellroost.com/winning-630500-buys-97-years-of-125-checks/"
     },
     {
       "slug": "2026-11-26_your-ai-forecast-expires-december-1",
@@ -8201,6 +8205,25 @@
         "The catch"
       ],
       "target_persona": "enterprise_cai",
+      "date": "2026-11-26",
+      "public": true,
+      "url": "https://aichieve.net/your-ai-forecast-expires-december-1/"
+    },
+    {
+      "slug": "2026-11-26_your-mcp-tax-2x-30x-tokens-per-turn",
+      "title": "Your MCP Bill Grows 2x\u201330x Per Server",
+      "vertical": "agentic_ai",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "Why Every Turn Re-bills",
+        "By the numbers",
+        "How Teams Move the Payload",
+        "The Catch",
+        "Related reading"
+      ],
+      "target_persona": "ai_architect",
       "date": "2026-11-26",
       "public": false
     },
@@ -8223,7 +8246,8 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-26",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-multi-agent-fan-out-bills-3-8x/"
     },
     {
       "slug": "2026-11-26_your-sku-cut-leaves-a-1-1b-bill",
@@ -8245,7 +8269,8 @@
       ],
       "target_persona": "ops_leader",
       "date": "2026-11-26",
-      "public": false
+      "public": true,
+      "url": "https://aichieve.net/your-sku-cut-leaves-a-1-1b-bill/"
     }
   ]
 }

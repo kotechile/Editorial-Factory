@@ -1,6 +1,6 @@
 {
   "slug": "aws-cannot-restore-bahrain",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "severed-cloud-region-backup",
       "bytes": 2056123,
       "sha256": "sha256:82095d4b0535bc75ce6f6f0eaa8350d2"
+    },
+    {
+      "revision": 2,
+      "alt_text": "AWS Cannot Restore Bahrain. Severed modular data storage block resting on concrete, separated from a solitary intact backup d",
+      "caption": "AWS Cannot Restore Bahrain: When a cloud provider declares a region unrecoverable.",
+      "title": "AWS Cannot Restore Bahrain",
+      "bytes": 1582389,
+      "sha256": "sha256:1145bedc1c5c518ba6e12f0ab66a52e424702ce5d2a10644b929bfdb1ad41058"
     }
   ],
   "style": "clay_render",
@@ -35,12 +43,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 2,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/aws-cannot-restore-bahrain/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1582389,
-  "sha256": "sha256:1145bedc1c5c518ba6e12f0ab66a52e424702ce5d2a10644b929bfdb1ad41058",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/aws-cannot-restore-bahrain/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 406726,
+  "sha256": "sha256:a21e08a991505c65872eb72cb0944571b71bfc44da4e0305f964dc6b7766a4b5",
   "source_hash": "sha256:5847e27b418412d72eaba57b0f7eedd3",
   "source_chars": 5521,
   "task_id": "aa3fd212ba767cac85d6ef631fcc3a3a",
@@ -62,29 +70,43 @@
     "kicker": "CLOUD ARCHITECTURE // REGIONAL LOSS",
     "title": "AWS CANNOT RESTORE BAHRAIN",
     "hook": "When a cloud provider declares a region unrecoverable",
-    "anchor": "top-right",
-    "light": false,
-    "scrim": 75,
-    "contrast": 4.6,
-    "target": 4.5,
-    "clutter": 0.155,
+    "anchor": "top-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.78,
+    "target": 5.5,
+    "clutter": 0.349,
     "region_rgb": [
-      147,
-      137,
-      120
+      94,
+      88,
+      79
     ],
     "binding_rgb": [
-      116,
-      110,
-      96
+      152,
+      141,
+      123
     ],
     "title_lines": [
       "AWS CANNOT",
-      "RESTORE BAHRAIN"
+      "RESTORE",
+      "BAHRAIN"
     ],
-    "subject": 0.087,
-    "ink_subject": 0.051,
-    "spike": 0.232,
+    "subject": 0.347,
+    "ink_subject": 0.151,
+    "spike": 0.551,
     "generated_at": "2026-10-13T11:42:49+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 406726,
+    "quality": 76,
+    "sha256": "sha256:a21e08a991505c65872eb72cb0944571b71bfc44da4e0305f964dc6b7766a4b5",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T14:26:01+00:00",
+  "generated_at": "2026-11-26T14:21:15+00:00",
   "site_source": "context/frontends.json, CMS base per domain from public.vertical_sites",
   "sites": {
     "giniloh.com": {
@@ -377,6 +377,25 @@
       "category_slugs": [],
       "excerpt": "Model net cash flow, Beckham Law tax savings, US FEIE/FTC options, corporate tax equalization, and 5-year wealth impact for international relocations.",
       "modified": "",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": null,
+      "slug": "turkiyes-150k-permit-rents-a-country",
+      "title": "T\u00fcrkiye Investor Residence Permit: $150k, Not a Tax Plan",
+      "url": "https://giniloh.com/turkiyes-150k-permit-rents-a-country/",
+      "path": "/turkiyes-150k-permit-rents-a-country/",
+      "sites_live": {
+        "giniloh.com": "/turkiyes-150k-permit-rents-a-country/"
+      },
+      "categories": [],
+      "category_ids": [],
+      "category_slugs": [],
+      "excerpt": "T\u00fcrkiye now sells a three-year residence permit for $150,000 in financial assets. It settles where you may live \u2014 not where the tax bills land.",
+      "modified": "2026-11-26T12:42:50",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -2706,29 +2725,6 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
-      "slug": "smart-irrigation-payback-water-tier",
-      "title": "A Smart Sprinkler Pays Back at Your Top Water Tier, Not the Spec Sheet",
-      "url": "https://wellroost.com/smart-irrigation-payback-water-tier/",
-      "path": "/smart-irrigation-payback-water-tier/",
-      "sites_live": {
-        "wellroost.com": "/smart-irrigation-payback-water-tier/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "A smart sprinkler box claims to save \\\"up to 15,000 gallons\\\" of water a year. Yet a U.S.",
-      "modified": "2026-10-31T04:49:14",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
       "slug": "snow-robot-stops-at-6000-ft2-it-docks",
       "title": "Snow Robot Stops at 6,000 ft\u00b2: It Docks",
       "url": "https://wellroost.com/snow-robot-stops-at-6000-ft2-it-docks/",
@@ -2791,6 +2787,29 @@
       ],
       "excerpt": "Windows: the 13 percent saving on a replacement label is the best case, not an average.",
       "modified": "2026-10-31T04:49:12",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "winning-630500-buys-97-years-of-125-checks",
+      "title": "Winning $630,500 Buys You 97 Years of $125 Checks",
+      "url": "https://wellroost.com/winning-630500-buys-97-years-of-125-checks/",
+      "path": "/winning-630500-buys-97-years-of-125-checks/",
+      "sites_live": {
+        "wellroost.com": "/winning-630500-buys-97-years-of-125-checks/"
+      },
+      "categories": [
+        "Tools & Equipment"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "tools-equipment"
+      ],
+      "excerpt": "A Maine judge ordered a builder to pay $630,500 back. At the agreed $125 a week, repayment takes 97 years \u2014 and the checks already stopped once.",
+      "modified": "2026-11-26T12:08:24",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -3649,29 +3668,6 @@
       "site": "wellroost.com",
       "kind": "article",
       "id": null,
-      "slug": "your-ev-is-now-a-home-battery-behind-a-paywall",
-      "title": "Your EV Is Now a Home Battery \u2014 Behind a Paywall",
-      "url": "https://wellroost.com/your-ev-is-now-a-home-battery-behind-a-paywall/",
-      "path": "/your-ev-is-now-a-home-battery-behind-a-paywall/",
-      "sites_live": {
-        "wellroost.com": "/your-ev-is-now-a-home-battery-behind-a-paywall/"
-      },
-      "categories": [
-        "Energy & Efficiency"
-      ],
-      "category_ids": [],
-      "category_slugs": [
-        "energy-efficiency"
-      ],
-      "excerpt": "Tesla just turned its two best-selling cars into backup batteries for your house.",
-      "modified": "2026-10-31T04:49:14",
-      "live": true,
-      "source": "frontend-sitemap"
-    },
-    {
-      "site": "wellroost.com",
-      "kind": "article",
-      "id": null,
       "slug": "your-flood-gap-has-44-days",
       "title": "Your Flood Gap Has 44 Days",
       "url": "https://wellroost.com/your-flood-gap-has-44-days/",
@@ -4194,6 +4190,29 @@
       ],
       "excerpt": "The electrician wiring your kitchen and the one wiring a data center are the same person, and this fall, the data center is winning.",
       "modified": "2026-10-31T04:49:05",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "wellroost.com",
+      "kind": "article",
+      "id": null,
+      "slug": "your-rent-cap-20-and-24-months",
+      "title": "Your Rent Cap: 20% and Two Years",
+      "url": "https://wellroost.com/your-rent-cap-20-and-24-months/",
+      "path": "/your-rent-cap-20-and-24-months/",
+      "sites_live": {
+        "wellroost.com": "/your-rent-cap-20-and-24-months/"
+      },
+      "categories": [
+        "Home Cost Decisions"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "home-cost-decisions"
+      ],
+      "excerpt": "Loss-of-use coverage pays your rent after a fire, capped at a fraction of the dwelling limit and on a short clock. Run one division to see if it outlasts the\u2026",
+      "modified": "2026-11-25T20:14:30",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -8989,6 +9008,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-ai-forecast-expires-december-1",
+      "title": "Your AI Forecast Expires December 1: the Bill Doubles",
+      "url": "https://aichieve.net/your-ai-forecast-expires-december-1/",
+      "path": "/your-ai-forecast-expires-december-1/",
+      "sites_live": {
+        "aichieve.net": "/your-ai-forecast-expires-december-1/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "Your AI forecast expires on December 1. That is the day Google doubles the prices on the Gemini 4 Carbon API (the interface teams bill tokens through), and\u2026",
+      "modified": "2026-11-26T11:11:38",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-ai-roi-28-rising-28-stalled",
       "title": "Your AI ROI Trap: 28% Both Ways",
       "url": "https://aichieve.net/your-ai-roi-28-rising-28-stalled/",
@@ -9495,6 +9537,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-egress-bill-six-times-storage",
+      "title": "Egress Pricing: Six Times the Storage Line",
+      "url": "https://aichieve.net/your-egress-bill-six-times-storage/",
+      "path": "/your-egress-bill-six-times-storage/",
+      "sites_live": {
+        "aichieve.net": "/your-egress-bill-six-times-storage/"
+      },
+      "categories": [
+        "AI Stack & Tool TCO"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "ai-stack-tool-tco"
+      ],
+      "excerpt": "The monthly bill arrived with two lines that did not belong in the same sentence: $41 to keep the data, $492 to move it. That is not a mis-billing.",
+      "modified": "2026-11-25T19:21:01",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-error-text-breaks-the-repair",
       "title": "Your Error Text Breaks the Repair: 45% vs 84%",
       "url": "https://aichieve.net/your-error-text-breaks-the-repair/",
@@ -9955,6 +10020,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-labor-line-replaces-40-percent",
+      "title": "Your 40% Churn Bills $21,800",
+      "url": "https://aichieve.net/your-labor-line-replaces-40-percent/",
+      "path": "/your-labor-line-replaces-40-percent/",
+      "sites_live": {
+        "aichieve.net": "/your-labor-line-replaces-40-percent/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Warehouse labor turns over about 40% a year and each exit costs roughly $21,800, so the labor line in an automation case should be priced from replacement cost, not\u2026",
+      "modified": "2026-11-25T19:47:49",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-machine-duty-180-days-still-unpriced",
       "title": "Your Machine Duty: 180 Days, Still Unpriced",
       "url": "https://aichieve.net/your-machine-duty-180-days-still-unpriced/",
@@ -10063,6 +10151,29 @@
       ],
       "excerpt": "Late and short store deliveries cost North American suppliers roughly $100 billion a year, against $10 billion to $11 billion they can bill, rush or dispute.",
       "modified": "2026-10-31T04:48:14",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
+      "slug": "your-multi-agent-fan-out-bills-3-8x",
+      "title": "Your Agent Fan-Out Bills 3.8\u00d7: 16 Agents, One Price Tag",
+      "url": "https://aichieve.net/your-multi-agent-fan-out-bills-3-8x/",
+      "path": "/your-multi-agent-fan-out-bills-3-8x/",
+      "sites_live": {
+        "aichieve.net": "/your-multi-agent-fan-out-bills-3-8x/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "A 16-agent tier went on sale the same week the first equal-cost study priced the fan-out bill at 3.8\u00d7 a single agent for 1\u20135 test points. Headcount is the wrong\u2026",
+      "modified": "2026-11-26T11:00:18",
       "live": true,
       "source": "frontend-sitemap"
     },
@@ -10691,6 +10802,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-sku-cut-leaves-a-1-1b-bill",
+      "title": "Your SKU Cut Leaves $1.1B Hidden",
+      "url": "https://aichieve.net/your-sku-cut-leaves-a-1-1b-bill/",
+      "path": "/your-sku-cut-leaves-a-1-1b-bill/",
+      "sites_live": {
+        "aichieve.net": "/your-sku-cut-leaves-a-1-1b-bill/"
+      },
+      "categories": [
+        "Supply Chain & Operations"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "supply-chain-operations"
+      ],
+      "excerpt": "Under Armour told investors on its November 6 earnings call that it will now cut its stock-keeping unit (SKU) count by 50%.",
+      "modified": "2026-11-26T13:22:21",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-sso-bill-125-a-connection",
       "title": "Your SSO Bill: $125 a Connection, $7.75 a Seat",
       "url": "https://aichieve.net/your-sso-bill-125-a-connection/",
@@ -11082,6 +11216,29 @@
       "site": "aichieve.net",
       "kind": "article",
       "id": null,
+      "slug": "your-workflow-repair-pays-twice",
+      "title": "Why Your Workflow Repair Pays Twice: 12 Calls vs 7",
+      "url": "https://aichieve.net/your-workflow-repair-pays-twice/",
+      "path": "/your-workflow-repair-pays-twice/",
+      "sites_live": {
+        "aichieve.net": "/your-workflow-repair-pays-twice/"
+      },
+      "categories": [
+        "Autonomous & Agentic Workflows"
+      ],
+      "category_ids": [],
+      "category_slugs": [
+        "autonomous-agentic-workflows"
+      ],
+      "excerpt": "A workflow repair that pays again for calls which already ran is not bad luck. It is the promised behavior of durable execution \u2014 a runtime that saves each\u2026",
+      "modified": "2026-11-25T18:19:30",
+      "live": true,
+      "source": "frontend-sitemap"
+    },
+    {
+      "site": "aichieve.net",
+      "kind": "article",
+      "id": null,
       "slug": "your-zone-deferral-is-worth-115-percent",
       "title": "Your Zone Saves 1.15%: The Hidden Cost",
       "url": "https://aichieve.net/your-zone-deferral-is-worth-115-percent/",
@@ -11126,6 +11283,90 @@
     }
   ],
   "not_live": [
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1886,
+      "slug": "your-sku-cut-leaves-a-1-1b-bill",
+      "title": "Your SKU Cut Leaves $1.1B Hidden",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-26T13:22:21",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1880,
+      "slug": "your-ai-forecast-expires-december-1",
+      "title": "Your AI Forecast Expires December 1: the Bill Doubles",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-26T11:11:38",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1877,
+      "slug": "your-multi-agent-fan-out-bills-3-8x",
+      "title": "Your Agent Fan-Out Bills 3.8\u00d7: 16 Agents, One Price Tag",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-26T11:00:18",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1874,
+      "slug": "your-labor-line-replaces-40-percent",
+      "title": "Your 40% Churn Bills $21,800",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-25T19:47:49",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1871,
+      "slug": "your-egress-bill-six-times-storage",
+      "title": "Egress Pricing: Six Times the Storage Line",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-25T19:21:01",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
+    {
+      "site": "giniloh.com",
+      "kind": "article",
+      "id": 1868,
+      "slug": "your-workflow-repair-pays-twice",
+      "title": "Why Your Workflow Repair Pays Twice: 12 Calls vs 7",
+      "url": "",
+      "categories": [],
+      "category_ids": [],
+      "excerpt": "",
+      "modified": "2026-11-25T18:19:30",
+      "live": false,
+      "reason": "published in the CMS but absent from the frontend sitemap"
+    },
     {
       "site": "giniloh.com",
       "kind": "article",
@@ -12191,100 +12432,16 @@
       "reason": "published in the CMS but absent from the frontend sitemap"
     },
     {
-      "site": "giniloh.com",
+      "site": "aichieve.net",
       "kind": "article",
-      "id": 1480,
-      "slug": "your-signed-tool-still-leaks-3-of-3",
-      "title": "Your Signed MCP Tool Still Leaks: 3 of 3",
+      "id": 1882,
+      "slug": "turkiyes-150k-permit-rents-a-country",
+      "title": "T\u00fcrkiye Investor Residence Permit: $150k, Not a Tax Plan",
       "url": "",
       "categories": [],
       "category_ids": [],
       "excerpt": "",
-      "modified": "2026-11-05T10:57:31",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1476,
-      "slug": "your-robot-budget-39-year-gap",
-      "title": "Your Robot Budget&#8217;s 39-Year Gap",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-04T20:04:32",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1471,
-      "slug": "your-support-bill-an-engineer-at-190k",
-      "title": "Cloud Support Costs: An Engineer at $190K",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-04T19:29:18",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1469,
-      "slug": "seven-slices-89-percent-one-card",
-      "title": "Seven Slices Won&#8217;t Buy 89%",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-04T18:48:40",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1466,
-      "slug": "your-router-breaks-275-constraints",
-      "title": "Your Router Breaks 275 Rules",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-04T18:12:50",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1462,
-      "slug": "your-undo-is-14-6x-cheaper",
-      "title": "Your Undo Is 14.6x Cheaper",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-04T17:48:29",
-      "live": false,
-      "reason": "published in the CMS but absent from the frontend sitemap"
-    },
-    {
-      "site": "giniloh.com",
-      "kind": "article",
-      "id": 1459,
-      "slug": "second-layer-has-no-unit-price",
-      "title": "$6 Billion, Same 25 Buildings",
-      "url": "",
-      "categories": [],
-      "category_ids": [],
-      "excerpt": "",
-      "modified": "2026-11-04T12:57:55",
+      "modified": "2026-11-26T12:42:50",
       "live": false,
       "reason": "published in the CMS but absent from the frontend sitemap"
     },

@@ -1,6 +1,6 @@
 {
   "slug": "backup-battery-sizing-critical-loads",
-  "revision": 9,
+  "revision": 10,
   "history": [
     {
       "revision": 1,
@@ -60,6 +60,14 @@
     },
     {
       "revision": 8,
+      "alt_text": "Sizing Your Home Battery. An electric vehicle powering specific glowing windows of a dark house via a heavy-duty charging cab",
+      "caption": "Sizing Your Home Battery: Matching backup capacity to critical outage loads.",
+      "title": "Sizing Your Home Battery",
+      "bytes": 368516,
+      "sha256": "sha256:7ec58f11e2597ef0dae228f8f6d5e85bcb52c50ce749dfc29232a6ff9e3d2c36"
+    },
+    {
+      "revision": 9,
       "alt_text": "Sizing Your Home Battery. An electric vehicle powering specific glowing windows of a dark house via a heavy-duty charging cab",
       "caption": "Sizing Your Home Battery: Matching backup capacity to critical outage loads.",
       "title": "Sizing Your Home Battery",

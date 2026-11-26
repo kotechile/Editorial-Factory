@@ -1,6 +1,6 @@
 {
   "slug": "ai-coding-seats-measure-or-renew",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "AI-Coding-Trial-Gap",
       "bytes": 1944154,
       "sha256": "sha256:cc852ed7d6cf861f49ada0aee57acddd"
+    },
+    {
+      "revision": 2,
+      "alt_text": "The AI Coding Gap. Dual mechanical gauges side-by-side, one needle pointing high and the other pointing low, in a matte clay ",
+      "caption": "The AI Coding Gap: Why AI coding tools show a 75-point productivity gap.",
+      "title": "The AI Coding Gap",
+      "bytes": 1475472,
+      "sha256": "sha256:96f52db3621b4288ea5650c6a9ba67dc47684949d5ca3e5f579e60e92cc7cb4c"
     }
   ],
   "style": "clay_render",
@@ -27,7 +35,7 @@
   "core_thesis": "The published randomized trials of AI coding tools span 55.8% faster to 19% slower, so a seat count has to rest on a trial of your own code.",
   "core_conflict": "Vendor-supplied greenfield speed benchmarks versus the reality of maintaining known, complex proprietary code.",
   "composition": "split-screen diptych with left-right scenario contrast",
-  "alt_text": "The AI Coding Gap. Dual mechanical gauges side-by-side, one needle pointing high and the other pointing low, in a matte clay ",
+  "alt_text": "The AI Coding Gap. Dual mechanical gauges side-by-side, one needle pointing high and the other pointing low, in a matte clay",
   "caption": "The AI Coding Gap: Why AI coding tools show a 75-point productivity gap.",
   "title": "The AI Coding Gap",
   "credit": "Illustration: Editorial-Factory Intelligence Unit",
@@ -35,12 +43,12 @@
   "director": "gemini-3.1-pro-preview",
   "director_attempts": 1,
   "pinned": {},
-  "file": "featured.png",
-  "local_path": "context/assets/illustrations/ai-coding-seats-measure-or-renew/featured.png",
-  "ext": "png",
-  "content_type": "image/png",
-  "bytes": 1475472,
-  "sha256": "sha256:96f52db3621b4288ea5650c6a9ba67dc47684949d5ca3e5f579e60e92cc7cb4c",
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/ai-coding-seats-measure-or-renew/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 391468,
+  "sha256": "sha256:726298547ab2c31d70f815e5323bde0c68fbfbaeb04c0a4e4cec313d9099f0c9",
   "source_hash": "sha256:2811dd4d4c551911d60a809ec692bff1",
   "source_chars": 5367,
   "task_id": "ad33c96bd1599dceec8120c6a8f1a477",
@@ -62,29 +70,42 @@
     "kicker": "ENTERPRISE AI // CODING ASSISTANTS",
     "title": "THE AI CODING GAP",
     "hook": "Why AI coding tools show a 75-point productivity gap",
-    "anchor": "top-left",
+    "anchor": "bottom-right",
     "light": true,
     "scrim": 120,
-    "contrast": 6.41,
+    "contrast": 9.74,
     "target": 5.5,
-    "clutter": 0.375,
+    "clutter": 0.312,
     "region_rgb": [
-      130,
-      120,
-      104
+      37,
+      33,
+      25
     ],
     "binding_rgb": [
-      175,
-      159,
-      136
+      58,
+      59,
+      54
     ],
     "title_lines": [
       "THE AI CODING",
       "GAP"
     ],
-    "subject": 0.186,
-    "ink_subject": 0.102,
-    "spike": 0.524,
+    "subject": 0.273,
+    "ink_subject": 0.173,
+    "spike": 0.255,
     "generated_at": "2026-10-13T18:39:10+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 391468,
+    "quality": 80,
+    "sha256": "sha256:726298547ab2c31d70f815e5323bde0c68fbfbaeb04c0a4e4cec313d9099f0c9",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }

@@ -1,0 +1,121 @@
+{
+  "slug": "your-mcp-tax-2x-30x-tokens-per-turn",
+  "revision": 3,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Fully populated server racks in a darkened data hall at dusk, every blade slot's amber status light burning along the row.",
+      "caption": "Every server an agent mounts keeps billing its full tool schema on every turn \u2014 the whole catalog lit, all night.",
+      "title": "MCP bill: every mounted blade burns",
+      "bytes": 373314,
+      "sha256": "sha256:5593ca304687c5104ad12fa3cbb4d719"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Your MCP Bill Grows 2X\u201330X Per Server. Fully populated server racks in a darkened data hall at dusk, every blade slot's amber status light",
+      "caption": "Your MCP Bill Grows 2X\u201330X Per Server: Default MCP wiring re-bills tool schemas every turn; retrieval cuts the payload by 99.6%.",
+      "title": "Your MCP Bill Grows 2X\u201330X Per Server",
+      "bytes": 399474,
+      "sha256": "sha256:364420f380fa49028beb44aa06f57f27d7e9d6e3357beeeb57ad8fc71010a2f7"
+    }
+  ],
+  "style": "architectural_night",
+  "style_label": "Lit architecture at dusk",
+  "style_when": "the story is about change after hours \u2014 automation displacing shifts, a market open all night, capacity running while people sleep",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Data hall at blue hour: a long rack row fully populated with server blades, every slot mounted and every amber status light burning \u2014 the whole mounted catalog running through the night. Low three-quarter view along the aisle, 24mm wide lens with gentle falloff, the lit rack row commanding the left two-thirds of the frame, polished concrete floor leaving calm reflective breathing room on the right. Deep blue dusk light falls from high windows on the left, the amber LEDs the only warm light. Brushed steel rack frames, perforated metal doors, neat looms of black cable sheathing. Graphite, steel blue and safety-amber palette, crisp crystalline air, fine film grain, no people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks, logos, people",
+  "rationale": "The story is a systemic billing mechanic that accrues on every turn, so it needs an environment, not a product shot or macro strip. Architectural night makes the cost visible as heat: a rack row with every slot mounted and lit after hours says 'every mount bills, all night,' and the blue-hour calm against a wall of amber LEDs carries the quiet expense of default wiring.",
+  "cue": "Your MCP Bill Grows 2x\u201330x Per Server",
+  "subject": "a fully populated server rack row in a data hall at blue hour, every blade slot's amber status light lit",
+  "core_thesis": "Mounting MCP servers the default way re-bills their full tool schemas on every turn \u2014 2x\u201330x prompt inflation \u2014 while retrieving only the few tools a query needs cuts that payload by 99.6%.",
+  "core_conflict": "The protocol's own strength \u2014 many servers, easy to mount \u2014 is exactly what multiplies the payload: full-catalog mounting on every turn versus selective retrieval that trims 99.6% of schema tokens but misses the right tool about one query in thirty.",
+  "composition": "low three-quarter view along a long rack aisle, the lit rack row commanding the left two-thirds, polished floor reflections leaving breathing room on the right",
+  "alt_text": "Your MCP Bill Grows 2X\u201330X Per Server. Fully populated server racks in a darkened data hall at dusk, every blade slot's amber status light",
+  "caption": "Your MCP Bill Grows 2X\u201330X Per Server: Default MCP wiring re-bills tool schemas every turn; retrieval cuts the payload by 99.6%.",
+  "title": "Your MCP Bill Grows 2X\u201330X Per Server",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 2,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-mcp-tax-2x-30x-tokens-per-turn/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 399474,
+  "sha256": "sha256:364420f380fa49028beb44aa06f57f27d7e9d6e3357beeeb57ad8fc71010a2f7",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 399474,
+    "quality": 80,
+    "sha256": "sha256:364420f380fa49028beb44aa06f57f27d7e9d6e3357beeeb57ad8fc71010a2f7",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:6140ab9403f4fe10072db701c4028c6150870ae35060634d0f70ea391abbf82f",
+  "render_phash": "c86daa3d8918c999c90d49854881c9c1c9a3c901c901c9258c24e8ccc10c811d",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A long row of illuminated server racks in a data center at blue hour, with amber status lights on the blades, viewed from a low angle down the aisle with a polished reflective floor and windows on the right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.88,
+    "reason": "The image literally shows populated server racks \u2014 the article's own protagonist ('per server') \u2014 matching the ordered lit-rack-at-dusk frame, so a reader would connect it to a story about MCP server costs, though it depicts generic hardware rather than the protocol mechanism itself."
+  },
+  "source_hash": "sha256:c142b1a7b179f93fcf272599271efc2f",
+  "source_chars": 4036,
+  "task_id": "df21120a59aa54cd1d05e1f8ee2aa471",
+  "credits": 5.0,
+  "cost_ms": 85,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/df21120a59aa54cd1d05e1f8ee2aa471_1795714898112.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Data hall at blue hour: a long rack row fully populated with server blades, every slot mounted and every amber status light burning \u2014 the whole mounted catalog running through the night. Low three-quarter view along the aisle, 24mm wide lens with gentle falloff, the lit rack row commanding the left two-thirds of the frame, polished concrete floor leaving calm reflective breathing room on the right. Deep blue dusk light falls from high windows on the left, the amber LEDs the only warm light. Brushed steel rack frames, perforated metal doors, neat looms of black cable sheathing. Graphite, steel blue and safety-amber palette, crisp crystalline air, fine film grain, no people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-26T17:41:58+00:00",
+  "overlay": {
+    "kicker": "MODEL CONTEXT PROTOCOL // TOKEN COSTS",
+    "title": "YOUR MCP BILL GROWS 2X\u201330X PER SERVER",
+    "hook": "Default MCP wiring re-bills tool schemas every turn; retrieval cuts the payload by 99.6%",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 6.51,
+    "target": 4.5,
+    "clutter": 0.132,
+    "region_rgb": [
+      57,
+      69,
+      83
+    ],
+    "binding_rgb": [
+      86,
+      83,
+      90
+    ],
+    "title_lines": [
+      "YOUR MCP BILL",
+      "GROWS 2X\u201330X",
+      "PER SERVER"
+    ],
+    "subject": 0.109,
+    "ink_subject": 0.015,
+    "spike": 0.107,
+    "generated_at": "2026-11-26T17:41:58+00:00"
+  }
+}

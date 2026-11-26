@@ -1,6 +1,6 @@
 {
   "slug": "self-hosting-break-even-one-hour-a-year",
-  "revision": 6,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -44,6 +44,14 @@
       "title": "Self-Hosting Break-Even: The Bill Versus the Hours",
       "bytes": 399113,
       "sha256": "sha256:86da468bce81da93e6e7f97db083332e"
+    },
+    {
+      "revision": 6,
+      "alt_text": "Self-Hosting Breaks Even At 1.26 Hours A Year. A slim mailbox bill on the left, a thick stack of maintenance log sheets with a wristwatch",
+      "caption": "Self-Hosting Breaks Even At 1.26 Hours A Year: Cost is a bad reason to self-host \u2014 your hours cost more than the bill you cancel.",
+      "title": "Self-Hosting Breaks Even At 1.26 Hours A Year",
+      "bytes": 377562,
+      "sha256": "sha256:933b873b025e7cd426fabab55f67d87312fd396be7b81bc3b5c7d0b1e64c4461"
     }
   ],
   "style": "document_flatlay",

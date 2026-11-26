@@ -1,6 +1,6 @@
 {
   "slug": "cheapest-fuel-priciest-pipe",
-  "revision": 6,
+  "revision": 7,
   "history": [
     {
       "revision": 1,
@@ -36,6 +36,14 @@
     },
     {
       "revision": 5,
+      "alt_text": "The Gas Line Trap. An excavated trench in a dark lawn exposes a heavy utility pipe, with a warmly lit house in the background",
+      "caption": "The Gas Line Trap: The hidden $30,000 pipe cost behind cheap winter heat.",
+      "title": "The Gas Line Trap",
+      "bytes": 403943,
+      "sha256": "sha256:0d45ed2e11e73cbdb61b5f17e1cf2d88c14598b84b32b8478a835c5920f00352"
+    },
+    {
+      "revision": 6,
       "alt_text": "The Gas Line Trap. An excavated trench in a dark lawn exposes a heavy utility pipe, with a warmly lit house in the background",
       "caption": "The Gas Line Trap: The hidden $30,000 pipe cost behind cheap winter heat.",
       "title": "The Gas Line Trap",

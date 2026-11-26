@@ -1,6 +1,6 @@
 {
   "slug": "agent-failures-tests-stayed-green",
-  "revision": 2,
+  "revision": 3,
   "history": [
     {
       "revision": 1,
@@ -9,6 +9,14 @@
       "title": "fail-plausible-agent-gate",
       "bytes": 226636,
       "sha256": "sha256:fc884952f5e49aeb65f3e8eaacc237da"
+    },
+    {
+      "revision": 2,
+      "alt_text": "Why Agent Tests Stay Green. An automated inspection gate shining a green laser on a server module while missing a deep scorch",
+      "caption": "Why Agent Tests Stay Green: Why most agent failures bypass standard green test suites.",
+      "title": "Why Agent Tests Stay Green",
+      "bytes": 128687,
+      "sha256": "sha256:9b226577e2dd7f7d37215859fda8f1d36068d45f798c6cf4415db1ca9b9fe25d"
     }
   ],
   "style": "cinematic_still",
@@ -39,8 +47,8 @@
   "local_path": "context/assets/illustrations/agent-failures-tests-stayed-green/featured.jpg",
   "ext": "jpg",
   "content_type": "image/jpeg",
-  "bytes": 128687,
-  "sha256": "sha256:9b226577e2dd7f7d37215859fda8f1d36068d45f798c6cf4415db1ca9b9fe25d",
+  "bytes": 262983,
+  "sha256": "sha256:bd635da674dcd81a869b17e2ce8ce561de81654bbaa82a6afd2f939e5b119b3f",
   "source_hash": "sha256:078e758abf31daac3a93304b8137fcc3",
   "source_chars": 7593,
   "task_id": "98a692fc21af64debcf61d74ef492ac1",
@@ -62,27 +70,41 @@
     "hook": "Why most agent failures bypass standard green test suites",
     "anchor": "bottom-left",
     "light": true,
-    "scrim": 0,
-    "contrast": 9.89,
+    "scrim": 120,
+    "contrast": 10.27,
     "target": 4.5,
-    "clutter": 0.187,
+    "clutter": 0.18,
     "region_rgb": [
-      22,
-      36,
+      23,
+      35,
       35
     ],
     "binding_rgb": [
-      32,
-      63,
+      37,
+      59,
       57
     ],
     "title_lines": [
-      "WHY AGENT TESTS",
-      "STAY GREEN"
+      "WHY AGENT",
+      "TESTS STAY",
+      "GREEN"
     ],
-    "subject": 0.029,
-    "ink_subject": 0.014,
-    "spike": 0.09,
+    "subject": 0.101,
+    "ink_subject": 0.012,
+    "spike": 0.099,
     "generated_at": "2026-10-13T10:44:35+00:00"
+  },
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 262983,
+    "quality": 88,
+    "sha256": "sha256:bd635da674dcd81a869b17e2ce8ce561de81654bbaa82a6afd2f939e5b119b3f",
+    "filename_rule": "<slug>-featured.jpg"
   }
 }
