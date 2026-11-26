@@ -590,3 +590,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-26 | `your-ai-forecast-expires-december-1` | enterprise_ai_finops | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ai-forecast-expires-december-1/featured.jpg` |
 | 2026-11-26 | `winning-630500-buys-97-years-of-125-checks` | home_ops_execution | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/winning-630500-buys-97-years-of-125-checks/featured.jpg` |
 | 2026-11-26 | `turkiyes-150k-permit-rents-a-country` | expat_cross_border_relocation | `paper_collage` | nanobanana | 16:9 | 1K | 18 | `context/assets/illustrations/turkiyes-150k-permit-rents-a-country/featured.jpg` |
+| 2026-11-26 | `your-sku-cut-leaves-a-1-1b-bill` | demand_sensing_advanced_sop | `long_lens_industry` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-sku-cut-leaves-a-1-1b-bill/featured.jpg` |

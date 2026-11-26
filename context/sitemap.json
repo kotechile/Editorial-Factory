@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T12:38:39Z",
+  "updated_at": "2026-11-26T13:22:23Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -8222,6 +8222,28 @@
         "Related reading"
       ],
       "target_persona": "ai_architect",
+      "date": "2026-11-26",
+      "public": false
+    },
+    {
+      "slug": "2026-11-26_your-sku-cut-leaves-a-1-1b-bill",
+      "title": "Your SKU Cut Leaves $1.1B Hidden",
+      "vertical": "demand_sensing_advanced_sop",
+      "primary_keyword": "SKU cut",
+      "secondary_keywords": [
+        "inventory overhang",
+        "assortment reduction",
+        "demand planning"
+      ],
+      "h2_topics": [
+        "At a glance",
+        "The purge is a planning decision",
+        "By the numbers",
+        "Where the decision actually lands",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "ops_leader",
       "date": "2026-11-26",
       "public": false
     }

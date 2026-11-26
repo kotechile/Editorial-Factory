@@ -1,0 +1,113 @@
+{
+  "slug": "your-sku-cut-leaves-a-1-1b-bill",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Loaded pallet racking of boxed apparel stock in a warehouse aisle, one rack row stripped bare, daylight from a distant loading bay.",
+      "caption": "The purge halves the assortment once; the shelves still carry $1.1 billion of stock, 4% above plan.",
+      "title": "Apparel warehouse aisle: loaded stock racks beside a half-stripped rack row",
+      "bytes": 397525,
+      "sha256": "sha256:3f209ff6cf6d311b473572ace5311a08"
+    }
+  ],
+  "style": "long_lens_industry",
+  "style_label": "Compressed telephoto industry",
+  "style_when": "scale is the story \u2014 a port, a refinery, a data centre hall, a rail yard, a skyline of cranes \u2014 and the reader needs to feel how big it is",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "200mm telephoto compression down a modern apparel distribution warehouse aisle: towering weathered-orange pallet racking on the left packed solid with shrink-wrapped corrugated cartons of folded apparel stock, while the facing rack row stands stripped to bare galvanised steel beams holding a few empty pallets. Hard directional daylight pours from the loading bay doors at the far right end, raking across carton faces and casting long rack shadows over polished concrete. Weathered orange, bone white and graphite palette, crisp crystalline air, deep industrial contrast, flat compressed layers of stacked stock receding to a bright doorway. Extreme asymmetry: the loaded stock wall commands the left two-thirds with the aisle breathing to the right. No people. Fine film grain.",
+  "negative_prompt": "garbled text, random lettering, legible words, numbers, watermarks, logos",
+  "rationale": "The stake in this story is scale: $1.1 billion of inventory still standing after a 50% assortment cut. Telephoto compression stacks rack layer over rack layer into a dense wall of stock, so the reader physically feels the mass the purge leaves behind, while the stripped facing row states the halving without a single invented prop. Macro would strip the environment from a systemic capacity story, and the warehouse aisle is where this planning decision actually lands.",
+  "cue": "its shelves still carry $1.1 billion",
+  "subject": "a towering pallet-rack aisle of shrink-wrapped apparel cartons \u2014 the standing inventory \u2014 beside a rack row stripped half empty",
+  "core_thesis": "Under Armour's 50% SKU purge simplifies the forecast once, but its shelves still carry $1.1 billion of inventory, 4% above plan \u2014 the durable payoff comes from faster decisions on what each remaining SKU is becoming, every cycle after.",
+  "core_conflict": "one-time assortment simplification vs. recurring demand misses \u2014 the SKU count halves while revenue falls 7% and stock lands above plan, so the purge pays once but the inventory line keeps refilling every quarter",
+  "composition": "extreme asymmetry \u2014 the loaded stock wall commands the left two-thirds of the frame, the aisle recedes toward a bright loading bay on the right",
+  "alt_text": "Under Armour'S SKU Cut Leaves $1.1B Hidden. Loaded pallet racking of boxed apparel stock in a warehouse aisle, one rack row stripped bare",
+  "caption": "Under Armour'S SKU Cut Leaves $1.1B Hidden: The purge pays once \u2014 the demand miss that left $1.1B above plan repeats every quarter.",
+  "title": "Under Armour'S SKU Cut Leaves $1.1B Hidden",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-sku-cut-leaves-a-1-1b-bill/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 404993,
+  "sha256": "sha256:ac775ea0cb272271eb1eb0b63ea4401e6effe733fdeb457eb8d57a78e26a9159",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 404993,
+    "quality": 64,
+    "sha256": "sha256:ac775ea0cb272271eb1eb0b63ea4401e6effe733fdeb457eb8d57a78e26a9159",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:65d18650676b10fa122fd406b18eba686fe42b59e601daa090bb0c57159ecd4b",
+  "render_phash": "0ce22a612b630be802e000c320e32a130b130b13293329a309b328f321f301f3",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A warehouse aisle with tall orange pallet racks on the left stacked high with shrink-wrapped white cartons, a mostly empty concrete aisle floor on the right with a few loose wooden pallets, and a bright open loading-bay doorway at the far end.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image shows the article's own object \u2014 a towering wall of standing inventory cartons dominating the frame beside a stripped, bright loading bay \u2014 matching the ordered composition of overstock next to a half-cleared aisle."
+  },
+  "source_hash": "sha256:a9eece6d531acb500de9b754870dbd3e",
+  "source_chars": 4843,
+  "task_id": "3bbb009681d678c30dec7b83c4680210",
+  "credits": 5.0,
+  "cost_ms": 127,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/3bbb009681d678c30dec7b83c4680210_1795699297649.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "200mm telephoto compression down a modern apparel distribution warehouse aisle: towering weathered-orange pallet racking on the left packed solid with shrink-wrapped corrugated cartons of folded apparel stock, while the facing rack row stands stripped to bare galvanised steel beams holding a few empty pallets. Hard directional daylight pours from the loading bay doors at the far right end, raking across carton faces and casting long rack shadows over polished concrete. Weathered orange, bone white and graphite palette, crisp crystalline air, deep industrial contrast, flat compressed layers of stacked stock receding to a bright doorway. Extreme asymmetry: the loaded stock wall commands the left two-thirds with the aisle breathing to the right. No people. Fine film grain.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-26T13:21:47+00:00",
+  "overlay": {
+    "kicker": "DEMAND SENSING // SKU RATIONALIZATION",
+    "title": "UNDER ARMOUR'S SKU CUT LEAVES $1.1B HIDDEN",
+    "hook": "The purge pays once \u2014 the demand miss that left $1.1B above plan repeats every quarter",
+    "anchor": "bottom-left",
+    "light": true,
+    "scrim": 120,
+    "contrast": 5.5,
+    "target": 5.5,
+    "clutter": 0.363,
+    "region_rgb": [
+      94,
+      92,
+      92
+    ],
+    "binding_rgb": [
+      147,
+      147,
+      149
+    ],
+    "title_lines": [
+      "UNDER ARMOUR'S",
+      "SKU CUT LEAVES",
+      "$1.1B HIDDEN"
+    ],
+    "subject": 0.272,
+    "ink_subject": 0.084,
+    "spike": 0.421,
+    "generated_at": "2026-11-26T13:21:47+00:00"
+  }
+}
