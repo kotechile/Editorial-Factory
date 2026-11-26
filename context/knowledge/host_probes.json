@@ -3360,6 +3360,14 @@
   "note": "PDF returns empty text through the verifier's fetcher; same for research.google.com/pubs/archive/40801.pdf, cacm.acm.org and three .edu mirrors of The Tail at Scale"
  },
  {
+  "host": "www.bobvila.com",
+  "url": "https://www.bobvila.com/articles/hvac-maintenance-cost/",
+  "verdict": "unreachable",
+  "as_of": "2026-11-26",
+  "vertical": "home_ops_execution",
+  "note": "Unreachable to the verifier fetcher (as of 2026-11-26); use fixr.com or thisoldhouse.com for HVAC cost anchors."
+ },
+ {
   "host": "www.briggsandstratton.com",
   "url": "https://www.briggsandstratton.com/en-us/support/maintenance-how-to/how-to-change-oil",
   "verdict": "fetchable",
@@ -3414,6 +3422,14 @@
   "as_of": "2026-11-17",
   "vertical": "nhil_infrastructure_ops",
   "note": "epa.gov SPCC paths (/spcc, /emergency-response/..., /oil-spills-prevention-and-preparedness-regulations/...) all unreachable to the verifier on 2026-11-17; a /sites/default/files PDF came back unsupported. Build an SPCC "
+ },
+ {
+  "host": "www.fixr.com",
+  "url": "https://www.fixr.com/costs/hvac-maintenance",
+  "verdict": "fetchable",
+  "as_of": "2026-11-26",
+  "vertical": "home_ops_execution",
+  "note": "Fetches first try with the verifier UA; carries the 75 average / 50-50 range and the task table (0-0 filter, 00-50 coil cleaning, 5-50 hourly labor) as plain text. Dated 'Updated: January 30, 2026'."
  },
  {
   "host": "www.forbes.com",
@@ -3662,6 +3678,14 @@
   "as_of": "2026-11-18",
   "vertical": "enterprise_build_vs_buy",
   "note": "read at source this run"
+ },
+ {
+  "host": "www.thisoldhouse.com",
+  "url": "https://www.thisoldhouse.com/heating-cooling/reviews/hvac-maintenance-cost",
+  "verdict": "fetchable",
+  "as_of": "2026-11-26",
+  "vertical": "home_ops_execution",
+  "note": "Fetches first try; carries 5-00 one-off tune-up, 5-50 annual agreement, 50-00 bi-annual, warranty proof-of-maintenance condition, priority scheduling. Row-crafting: the first '$75' token hits the average-cost sentence, n"
  },
  {
   "host": "www.yarbo.com",
