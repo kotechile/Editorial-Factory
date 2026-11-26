@@ -588,3 +588,4 @@ back-to-back; `featured.json` beside each image holds the full brief.
 | 2026-11-25 | `your-rent-cap-20-and-24-months` | property_loss_insurance_mitigation | `architectural_night` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-rent-cap-20-and-24-months/featured.jpg` |
 | 2026-11-26 | `your-multi-agent-fan-out-bills-3-8x` | agentic_ai | `studio_object` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-multi-agent-fan-out-bills-3-8x/featured.jpg` |
 | 2026-11-26 | `your-ai-forecast-expires-december-1` | enterprise_ai_finops | `document_flatlay` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/your-ai-forecast-expires-december-1/featured.jpg` |
+| 2026-11-26 | `winning-630500-buys-97-years-of-125-checks` | home_ops_execution | `cinematic_still` | flux | 16:9 | 1K | 5 | `context/assets/illustrations/winning-630500-buys-97-years-of-125-checks/featured.jpg` |

@@ -1,0 +1,113 @@
+{
+  "slug": "winning-630500-buys-97-years-of-125-checks",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Thick stack of court judgment papers beside a single thin envelope on a plywood bench in a gutted, stud-framed kitchen at dusk.",
+      "caption": "The judge's order runs to a fat bound stack; the money arrives one thin envelope at a time.",
+      "title": "Judgment Stack and Single Envelope in Gutted Camp Kitchen",
+      "bytes": 264149,
+      "sha256": "sha256:9973efb123f659afb6794864df8d6dfc"
+    }
+  ],
+  "style": "cinematic_still",
+  "style_label": "Cinematic still",
+  "style_when": "the article describes one decisive moment or place \u2014 a yard at dawn, a control room, a shutdown line, a handover \u2014 that a film still could hold",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Cinematic film still, anamorphic 35mm wide: a camp kitchen gutted down to bare timber studs, plywood patches and a water-stained ceiling overhead. On a painted-wood workbench at the right third, a fat ribbon-bound stack of blank court papers \u2014 the award \u2014 beside one thin lone envelope, tiny against the stack. A single work lamp rakes warm ochre light across the bone-white paper from the left rear; the unfinished room falls into charcoal and deep pine green dusk through a bare window opening. Extreme asymmetric composition, stud framing dissolving into shadow, shallow depth of field, crisp atmospheric depth, fine film grain, no people, no legible text.",
+  "negative_prompt": "garbled text, random lettering, watermarks, readable numbers",
+  "rationale": "The story turns on one decisive place \u2014 the camp rebuilt down to the studs that still lets water in \u2014 and one decisive gap: the order versus the money. Cinematic_still lets the gutted room carry the builder's failure while the thick judgment stack against the lone envelope states the verdict-versus-cash conflict in a single glance, with dusk atmosphere no macro or collage could ground.",
+  "cue": "The order was real. The money was not.",
+  "subject": "a thick ribbon-bound stack of court papers beside one thin envelope on a plywood bench",
+  "core_thesis": "A court order is not money in your hand: a Maine homeowner's very real $630,500 judgment trickles out at an agreed $125 a week \u2014 97 years of checks \u2014 because the builder behind it was unregistered, unregulated and effectively judgment-proof.",
+  "core_conflict": "The paper victory versus the collectible cash \u2014 a legally airtight award collides with an unlicensed, assetless builder the state itself admits it often cannot collect from, so the homeowner's only real leverage was the money never paid in the first place.",
+  "composition": "Extreme asymmetric wide framing: the judgment stack and single envelope sit on the right third of a makeshift bench, while bare timber stud framing recedes into dusk shadow across the generous left negative space.",
+  "alt_text": "97 Years To Collect A $630,500 Verdict. Thick stack of court judgment papers beside a single thin envelope on a plywood bench in a gutted",
+  "caption": "97 Years To Collect A $630,500 Verdict: The family won outright and the checks still stopped \u2014 because a court order.",
+  "title": "97 Years To Collect A $630,500 Verdict",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/winning-630500-buys-97-years-of-125-checks/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 334724,
+  "sha256": "sha256:a46f4fe7ff06a6787574d9eeb69f6d9e6d2fed583d476ad729aec4ce767ddf3b",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 334724,
+    "quality": 88,
+    "sha256": "sha256:a46f4fe7ff06a6787574d9eeb69f6d9e6d2fed583d476ad729aec4ce767ddf3b",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:23ad66dc0a4d440e95570a38a2cce3875887b8f534eaca11899d41d75f61309c",
+  "render_phash": "24ea25ae62ae26265b2e062a076a076a067e067324b3a4e3a43e248724b3a4e3",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A thick stack of white papers and a single thin white envelope resting on the right side of a weathered wooden bench inside an unfinished plywood-and-timber room, with a window showing trees and a hanging lamp, and open stud framing receding into shadow on the left.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.9,
+    "reason": "The image literally shows the article's own mechanism \u2014 a massive judgment stack dwarfing one thin weekly-payment envelope \u2014 staged in a bare timber/plywood interior that evokes the builder-homeowner dispute, exactly as the art director's frame specified."
+  },
+  "source_hash": "sha256:615875e5b85c1275ae5c2e121cae7008",
+  "source_chars": 4382,
+  "task_id": "d9fc34defdb4a554b09aa257680a9122",
+  "credits": 5.0,
+  "cost_ms": 17,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/d9fc34defdb4a554b09aa257680a9122_1795694857070.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Cinematic film still, anamorphic 35mm wide: a camp kitchen gutted down to bare timber studs, plywood patches and a water-stained ceiling overhead. On a painted-wood workbench at the right third, a fat ribbon-bound stack of blank court papers \u2014 the award \u2014 beside one thin lone envelope, tiny against the stack. A single work lamp rakes warm ochre light across the bone-white paper from the left rear; the unfinished room falls into charcoal and deep pine green dusk through a bare window opening. Extreme asymmetric composition, stud framing dissolving into shadow, shallow depth of field, crisp atmospheric depth, fine film grain, no people, no legible text.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-26T12:07:50+00:00",
+  "overlay": {
+    "kicker": "HOME CONSTRUCTION // UNCOLLECTIBLE JUDGMENTS",
+    "title": "97 YEARS TO COLLECT A $630,500 VERDICT",
+    "hook": "The family won outright and the checks still stopped \u2014 because a court order",
+    "anchor": "top-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 11.95,
+    "target": 4.5,
+    "clutter": 0.124,
+    "region_rgb": [
+      42,
+      35,
+      29
+    ],
+    "binding_rgb": [
+      55,
+      42,
+      33
+    ],
+    "title_lines": [
+      "97 YEARS TO",
+      "COLLECT A",
+      "$630,500 VERDICT"
+    ],
+    "subject": 0.088,
+    "ink_subject": 0.017,
+    "spike": 0.087,
+    "generated_at": "2026-11-26T12:07:50+00:00"
+  }
+}

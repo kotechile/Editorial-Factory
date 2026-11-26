@@ -72,6 +72,14 @@
   "note": "style statute rows are not needed for a charger-circuit fact because `afdc.energy.gov` prints \"7.2 kW\" and \"a dedicated 40-Amp circuit \u2026 Article 625\" as prose."
  },
  {
+  "host": "ai.google.dev",
+  "url": "https://ai.google.dev/gemini-api/docs/pricing",
+  "verdict": "fetchable",
+  "as_of": "2026-11-26",
+  "vertical": "enterprise_ai_finops",
+  "note": "Google Gemini API rate card: plain fetch returns full pricing tables including expiry-dated promo rows and sibling model prices; the primary of record for any Google token price."
+ },
+ {
   "host": "amd.com",
   "url": "",
   "verdict": "unreachable",
@@ -1814,6 +1822,14 @@
   "as_of": "2026-11-10",
   "vertical": "workstation_compute_economics",
   "note": "ry a row: `crucial.com` product pages (HTTP 403 \"Request Rejected\"), `kingston.com`, `teamgroupinc.com` and `docs.nvidia.com` DGX system guides (`unreachable`), `semiconductor.samsung.com` ("
+ },
+ {
+  "host": "kion.io",
+  "url": "https://kion.io",
+  "verdict": "partial",
+  "as_of": "2026-11-26",
+  "vertical": "enterprise_ai_finops",
+  "note": "kion.io pages fetch via web_extract but wp-json REST answers Cloudflare 'Just a moment'; date blog posts from the publisher's own related-resources listings (stated dates) instead."
  },
  {
   "host": "kress.com",
