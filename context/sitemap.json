@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T12:08:25Z",
+  "updated_at": "2026-11-26T12:38:39Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -8146,6 +8146,27 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-25",
+      "public": false
+    },
+    {
+      "slug": "2026-11-26_turkiyes-150k-permit-rents-a-country",
+      "title": "T\u00fcrkiye Investor Residence Permit: $150k, Not a Tax Plan",
+      "vertical": "expat_cross_border_relocation",
+      "primary_keyword": "T\u00fcrkiye investor residence permit",
+      "secondary_keywords": [
+        "residence permit by investment",
+        "183-day tax residency rule"
+      ],
+      "h2_topics": [
+        "At a glance",
+        "Priced permit, unpriced test",
+        "By the numbers",
+        "What I'd watch",
+        "The catch",
+        "Related reading"
+      ],
+      "target_persona": "cross_border_expat",
+      "date": "2026-11-26",
       "public": false
     },
     {
