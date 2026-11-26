@@ -3424,6 +3424,14 @@
   "note": "the 6-inch siding line, the $125 fee and the three-year designation; `www.ibhs.org/wildfire/` for a field count like \"destroyed 615\"), while the dual-office acoustic beat still has **no** fe"
  },
  {
+  "host": "www.kalzumeus.com",
+  "url": "https://www.kalzumeus.com/2026/11/25/multiagent-coding-is-the-future/",
+  "verdict": "fetchable",
+  "as_of": "2026-11-26",
+  "vertical": "agentic_ai",
+  "note": "WordPress-backed blog; full text via plain urllib fetch, byline date 2026-11-24 on the page."
+ },
+ {
   "host": "www.langchain.com",
   "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
   "verdict": "fetchable",

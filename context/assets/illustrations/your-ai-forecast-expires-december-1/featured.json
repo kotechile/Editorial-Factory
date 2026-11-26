@@ -1,0 +1,109 @@
+{
+  "slug": "your-ai-forecast-expires-december-1",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "A printed AI rate card on a brushed-steel desk, one pricing row struck through in red, beside a token bill laid down twice.",
+      "caption": "The rate card printed the doubling a month out; the bill still cannot say which workloads were standing on it.",
+      "title": "Rate card with doubled bill \u2014 Gemini 4 Carbon price expiry",
+      "bytes": 365333,
+      "sha256": "sha256:f5fbda997ea60c3d513b5d98add77499"
+    }
+  ],
+  "style": "document_flatlay",
+  "style_label": "Document still life",
+  "style_when": "the story is regulatory or contractual \u2014 a filing, a mandate, a rate notice, a certificate, a purchase order that changed the economics",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Overhead flat-lay photograph, top-down 90-degree view, on a brushed-steel desk in a dim control room. A printed API rate card in bone-white tactile paper stock lies off-centre on the right third, its faint pricing rows cropped illegible at the frame edge, one row struck through with an oxidised-red pencil rule. Beside it, lower left, the same monthly token bill laid down twice \u2014 two identical sheets fanned slightly out of alignment, the December copy doubled. A red pencil rests across the papers. Soft diffused daylight from the left, cool monitor glow rimming the desk edge, muted paper tones, graphite and bone white with oxidised-red accents. 50mm lens, shallow depth of field, fine film grain, generous negative space.",
+  "negative_prompt": "garbled text, random lettering, legible numbers, watermarks, logos",
+  "rationale": "The story's protagonist is a rate notice \u2014 the document that changed the economics \u2014 and the catalogue reserves document_flatlay for exactly that artefact. A top-down paper still life lets the doubling be shown physically (the same bill, laid down twice) without any legible text, and the handled, pencil-ruled sheet carries the article's own voice of reading the expiry line twice.",
+  "cue": "One model has a clock on its price",
+  "subject": "a printed API rate card with one repriced row, beside its monthly token bill laid down twice",
+  "core_thesis": "Google's own rate card prints Gemini 4 Carbon's price doubling for December 1, but because token bills show spend only by API key or project, most FinOps teams cannot see which of their workloads are standing on the cliff.",
+  "core_conflict": "A public, dated price schedule on the vendor's rate card versus bills that carry no workload grain \u2014 repricing the budget takes an afternoon, but tracing the exposure to workloads does not.",
+  "composition": "Top-down 90-degree flat-lay, asymmetric: rate card off-centre on the right third, the doubled bill stack lower left, wide graphite negative space above",
+  "alt_text": "Gemini 4 Carbon Price Doubles December 1. A printed AI rate card on a brushed-steel desk, one pricing row struck through in red, beside a",
+  "caption": "Gemini 4 Carbon Price Doubles December 1: The hike is easy to reprice; the hard part is finding which of your workloads it hits.",
+  "title": "Gemini 4 Carbon Price Doubles December 1",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/your-ai-forecast-expires-december-1/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 381499,
+  "sha256": "sha256:0307c38ca5754a06a02703ff5b4063d8e5aa6828449778575c96b79beedb6a5e",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 381499,
+    "quality": 84,
+    "sha256": "sha256:0307c38ca5754a06a02703ff5b4063d8e5aa6828449778575c96b79beedb6a5e",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:9d97c18cf55e6ad848b823f9efbea09bf1c731d74dd7c2d2ea8322e242d8f9aa",
+  "render_phash": "2c3fce5ef67e7e3ffe7ef7fefbf6ce7ff6fff5ffedff8bff4b7f5bff3fbf0f1f",
+  "review": {
+    "ok": true,
+    "skipped": true,
+    "reason": "render review unavailable (render review failed: frontier returned no text (finish_reason=length)) \u2014 the brief gate ran, the picture was not checked"
+  },
+  "source_hash": "sha256:35a43af8b618989a7556ddf3a067f3ab",
+  "source_chars": 4731,
+  "task_id": "a688692670bcce5ee3cedd7e0d01a08a",
+  "credits": 5.0,
+  "cost_ms": 24,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/a688692670bcce5ee3cedd7e0d01a08a_1795691454185.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Overhead flat-lay photograph, top-down 90-degree view, on a brushed-steel desk in a dim control room. A printed API rate card in bone-white tactile paper stock lies off-centre on the right third, its faint pricing rows cropped illegible at the frame edge, one row struck through with an oxidised-red pencil rule. Beside it, lower left, the same monthly token bill laid down twice \u2014 two identical sheets fanned slightly out of alignment, the December copy doubled. A red pencil rests across the papers. Soft diffused daylight from the left, cool monitor glow rimming the desk edge, muted paper tones, graphite and bone white with oxidised-red accents. 50mm lens, shallow depth of field, fine film grain, generous negative space.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-26T11:11:14+00:00",
+  "overlay": {
+    "kicker": "AI FINOPS // GEMINI PRICE DOUBLING",
+    "title": "GEMINI 4 CARBON PRICE DOUBLES DECEMBER 1",
+    "hook": "The hike is easy to reprice; the hard part is finding which of your workloads it hits",
+    "anchor": "top-left",
+    "light": false,
+    "scrim": 120,
+    "contrast": 5.92,
+    "target": 5.5,
+    "clutter": 0.287,
+    "region_rgb": [
+      180,
+      184,
+      186
+    ],
+    "binding_rgb": [
+      134,
+      141,
+      149
+    ],
+    "title_lines": [
+      "GEMINI 4 CARBON",
+      "PRICE DOUBLES",
+      "DECEMBER 1"
+    ],
+    "subject": 0.094,
+    "ink_subject": 0.012,
+    "spike": 0.062,
+    "generated_at": "2026-11-26T11:11:14+00:00"
+  }
+}

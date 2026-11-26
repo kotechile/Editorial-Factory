@@ -25,7 +25,7 @@ Two facts landed nine days apart: a vendor tier that scales agents to sixteen, a
 
 <!-- tension -->
 ## The fan-out met its price tag
-On 17 November, Perplexity's launch post described the new effort level. One lead agent assigns up to 16 workers on Claude Opus 5.5, GPT (OpenAI's model line) 6.1 Sol and Gemini 4 Carbon. The agents share findings directly and check each other's work [1]. On 24 November, a practitioner essay on Kalzumeus called multiagent coding "as much of a paradigm shift as LLMs coding" [2]. On 25 November, the measurement arrived [3].
+I find the nine-day spacing the sharpest part of this story. On 17 November, Perplexity's launch post described the new effort level. One lead agent assigns up to 16 workers on Claude Opus 5.5, GPT (OpenAI's model line) 6.1 Sol and Gemini 4 Carbon. The agents share findings directly and check each other's work [1]. On 24 November, a practitioner essay on Kalzumeus called multiagent coding "as much of a paradigm shift as LLMs coding" [2]. On 25 November, the measurement arrived [3].
 
 The study then compared one agent against a main agent that delegates to subagents — child agents spawned to work in parallel. The tasks came from the NL2Repo and ProgramBench benchmarks. Both build a whole code base from a written spec. Parallel subagents added just 1 to 5 points of hidden-test pass rate, a gap that held across model versions [3]. That margin cost 2.6 to 3.8 times a single agent's spend [3]. At equal cost, the single agent scored the same or better [3].
 
@@ -42,7 +42,7 @@ I find this week's reactions telling, because neither side argues for dropping t
 
 <!-- nuanced-takeaway -->
 ## The catch
-The study's own scope keeps this from being an anti-parallel verdict. Gains were larger on hard tasks. The parallel runs produced more modular code, with more files and shorter functions [3]. And the one-sentence probe fix did not transfer to DeepSeek's open harness or to NL2Repo [3]. What the evidence supports is narrower than either the marketing or my own fear. On ordinary code work, the parallel bill does not pay for itself by default. The margin you can win back sits in the instruction, the fresh context and the routing policy, not in the agent count. Until a vendor prints a cost column beside its agent-count slider, the buyer holds the pencil.
+My read is that the study's own scope keeps this from being an anti-parallel verdict. Gains were larger on hard tasks. The parallel runs produced more modular code, with more files and shorter functions [3]. And the one-sentence probe fix did not transfer to DeepSeek's open harness or to NL2Repo [3]. What the evidence supports is narrower than either the marketing or my own fear. On ordinary code work, the parallel bill does not pay for itself by default. The margin you can win back sits in the instruction, the fresh context and the routing policy, not in the agent count. Until a vendor prints a cost column beside its agent-count slider, the buyer holds the pencil.
 
 ## Sources
 - [1] Perplexity, "Introducing Multiagent for the most complex work", 2026-11-17 — https://www.perplexity.ai/hub/blog/introducing-computer-multiagent

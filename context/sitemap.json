@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T11:00:20Z",
+  "updated_at": "2026-11-26T11:11:41Z",
   "articles": [
     {
       "slug": "2026-09-21_mcp-skills-extension",
@@ -8146,6 +8146,23 @@
       ],
       "target_persona": "ai_architect",
       "date": "2026-11-25",
+      "public": false
+    },
+    {
+      "slug": "2026-11-26_your-ai-forecast-expires-december-1",
+      "title": "Your AI Forecast Expires December 1: the Bill Doubles",
+      "vertical": "enterprise_ai_finops",
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "h2_topics": [
+        "At a glance",
+        "A price on a calendar",
+        "By the numbers",
+        "Where the exposure hides",
+        "The catch"
+      ],
+      "target_persona": "enterprise_cai",
+      "date": "2026-11-26",
       "public": false
     },
     {
