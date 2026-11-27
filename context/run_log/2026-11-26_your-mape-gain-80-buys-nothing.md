@@ -1,0 +1,10 @@
+# Run log: 2026-11-26 your-mape-gain-80-buys-nothing (demand_sensing_advanced_sop, evergreen)
+
+- Gate: `generation_gate.py --mode evergreen` OK; topic from primary_angles #2 (forecast-accuracy amortization) + persona ops_leader wants (working-capital math) + customer-truth Anecdote 1.
+- Evergreen brief: `context/recon_proposals/2026-11-26_demand_sensing_advanced_sop_evergreen_brief.md` — gate PASS 20:04 UTC, 5 rows / 5 fetched / 4 hosts (demand-planning.com x2, arxiv.org, apicsprsjorg.starchapter.com, horizonsolutions.ai), de-dup names `2026-10-15_forecast-value-added-lose-to-last-period` (layer scoring vs naive) — this piece prices a point of accuracy itself.
+- Core evidence: demand-planning.com M5-value simulation (80% of accuracy gains changed no decision; 12.6% paid; 7.3% hurt; ~28% net haircut), arXiv 2603.16815 (7 methods graded by inventory cost), ASCM-chapter carrying-cost 15–25% rule, Horizon vendor band 8–15% buffer per 5-point MAPE cut.
+- Draft: `context/drafts/2026-11-26_your-mape-gain-80-buys-nothing_draft.md`. Pre-tune needed: Flesch 23→51 (word swaps: reorder→order call, accuracy→score in some slots, dataset→data; glossed MAPE, S&OP, SKU). Headline 100/100, lead_ok True.
+- Review: attempt 1 HELD with hard=0 (flow regression: rhythm sd 10.5→9.6, mean 21) → adopted held attempt, hand-repaired: re-bolded By-the-numbers bullets, split 3 long sentences, restored the tactical first-person observer cue ("What I find hard to square…").
+- Gates: 8/8 ok. Publish: WordPress post 1898 (publish, kind tag evergreen 44, vertical term 31), media 1897, Supabase row dc2ca588-2dc6-4419-b735-eb94abf419e8, published/ file, sitemap refreshed, auto-deploy pushed.
+- Front verified ~10 min later: aichieve.net/your-mape-gain-80-buys-nothing/ 200, inline link to /inventory-carrying-cost-rate/ present (curl 200 on destination), hero featured.jpg on the rendered page (base-image convention matches the 10-15 article; -1024x576 derivative also 200), og:image set.
+- No publish padding: two alternate candidates dropped in the brief (ERP-native vs point solutions — vendor-only figures; promo-shock sandbox — covered 2026-10-29).

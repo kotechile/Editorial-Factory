@@ -1,0 +1,113 @@
+{
+  "slug": "roofers-fight-the-15-year-roof-clock",
+  "revision": 2,
+  "history": [
+    {
+      "revision": 1,
+      "alt_text": "Weathered asphalt shingle roof with lifted, curling tab edges and loose granules under low raking sunlight.",
+      "caption": "Fifteen years of sun and weather, and the paperwork gives out long before the shingles do.",
+      "title": "Weathered Asphalt Shingles \u2014 15-Year Roof Limit",
+      "bytes": 368410,
+      "sha256": "sha256:b0cbc8064c5d08f5e795adb76ff86b06"
+    }
+  ],
+  "style": "editorial_macro",
+  "style_label": "Editorial macro",
+  "style_when": "the story turns on one physical thing \u2014 a part, a material, a component, a document \u2014 and what that thing costs, contains or crosses a border is the news",
+  "model": "flux-2/pro-text-to-image",
+  "model_key": "flux",
+  "model_note": "",
+  "aspect_ratio": "16:9",
+  "resolution": "1K",
+  "prompt": "Extreme asymmetric macro photograph on a weathered asphalt shingle roof plane: a 15-year-old charcoal-grey shingle with a lifted, curling tab edge sits low on the left third, loose ceramic granules drifted in the course seam. Low late-afternoon sun rakes hard from the left, pulling long shadow lines off every lifted edge and exposing worn bald patches and rust-coloured lichen. Receding shingle courses fall away into soft blur toward bone-white sky in the upper right, generous editorial negative space. 100mm macro lens, razor-thin focal plane locked on the curling tab, visible granule texture and dust, fine film grain. Charcoal, rust and bone-white palette. No people, no text, no logos.",
+  "negative_prompt": "garbled text, random lettering, watermarks",
+  "rationale": "The story literally turns on one physical material \u2014 the aging asphalt shingle \u2014 and what that material's age now costs, which is the exact brief for a macro. A 100mm plane at inspection distance makes every lifted tab and lost granule read as the contested evidence in the ARMA\u2013IBHS fight. Architectural night would bury the roof's age in silhouette and studio object would read as a product catalog for a policy story.",
+  "cue": "Your 15-Year Roof Loses Its Discount",
+  "subject": "a weathered asphalt shingle roof surface with lifted, curling tab edges and drifted loose granules",
+  "core_thesis": "From January 1, 2027, an asphalt roof past 15 years loses the FORTIFIED designation behind insurance discounts, and the shingle industry is publicly calling the science behind that age ceiling flawed.",
+  "core_conflict": "Shingle makers' claim of long service life versus insurers converting roof age into eligibility cutoffs and drop letters \u2014 the certificate expires while the roof may still hold years of usable life.",
+  "composition": "extreme asymmetric close-up \u2014 the curling shingle tab anchors the lower-left third while receding courses fall away into soft blur toward bone-white sky in the upper right",
+  "alt_text": "Shingle Makers Attack 15-Year Roof Limit. Weathered asphalt shingle roof with lifted, curling tab edges and loose granules under low raking",
+  "caption": "Shingle Makers Attack 15-Year Roof Limit: From January 2027, roofs past 15 years lose the certificate behind the discounts.",
+  "title": "Shingle Makers Attack 15-Year Roof Limit",
+  "credit": "Illustration: Editorial-Factory Intelligence Unit",
+  "depicts_real_brand": false,
+  "director": "z-ai/glm-5.3",
+  "director_attempts": 1,
+  "pinned": {},
+  "file": "featured.jpg",
+  "local_path": "context/assets/illustrations/roofers-fight-the-15-year-roof-clock/featured.jpg",
+  "ext": "jpg",
+  "content_type": "image/jpeg",
+  "bytes": 409028,
+  "sha256": "sha256:6c180cc4994c4e2ebb6aefc3c414cd90d5ac252e8eb848df90d14999d7f46b25",
+  "delivery": {
+    "standard": "2026-10-24",
+    "format": "JPEG",
+    "progressive": true,
+    "color_space": "sRGB",
+    "width": 2400,
+    "height": 1350,
+    "aspect": 1.7778,
+    "bytes": 409028,
+    "quality": 84,
+    "sha256": "sha256:6c180cc4994c4e2ebb6aefc3c414cd90d5ac252e8eb848df90d14999d7f46b25",
+    "filename_rule": "<slug>-featured.jpg"
+  },
+  "render_sha256": "sha256:379dc9d7fd19cc91431cc198198406aec962f33b5394b5749cf3e591a22443af",
+  "render_phash": "06ff01afe0cf3037c90f66c337e03db82d349e9e1c5c8cb17c6c6327038320cf",
+  "review": {
+    "ok": true,
+    "problems": [],
+    "depicts": "A macro close-up of a weathered asphalt shingle roof surface with a curling, lifted tab anchoring the lower left, drifted loose granules scattered across the courses, and receding shingle rows falling into soft blur toward a pale sky in the upper right.",
+    "legible_text": "",
+    "on_topic": true,
+    "confidence": 0.95,
+    "reason": "The frame depicts the article's own protagonist and mechanism \u2014 an aging asphalt shingle roof showing curl and granule loss, the exact condition the 15-year FORTIFIED age limit penalizes."
+  },
+  "source_hash": "sha256:81242759ab4786c3392a61b282aeab6e",
+  "source_chars": 4843,
+  "task_id": "740ba6b72cd1cfe147f60ae546d28bb6",
+  "credits": 5.0,
+  "cost_ms": 47,
+  "provider_url": "https://tempfile.aiquickdraw.com/a2/740ba6b72cd1cfe147f60ae546d28bb6_1795776232350.jpg",
+  "provider_request": {
+    "model": "flux-2/pro-text-to-image",
+    "input": {
+      "prompt": "Extreme asymmetric macro photograph on a weathered asphalt shingle roof plane: a 15-year-old charcoal-grey shingle with a lifted, curling tab edge sits low on the left third, loose ceramic granules drifted in the course seam. Low late-afternoon sun rakes hard from the left, pulling long shadow lines off every lifted edge and exposing worn bald patches and rust-coloured lichen. Receding shingle courses fall away into soft blur toward bone-white sky in the upper right, generous editorial negative space. 100mm macro lens, razor-thin focal plane locked on the curling tab, visible granule texture and dust, fine film grain. Charcoal, rust and bone-white palette. No people, no text, no logos.\n\nDo not include: people, faces, hands, garbled text, random lettering, numbers, signage, watermarks, UI, logos.",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    }
+  },
+  "generated_at": "2026-11-27T10:44:03+00:00",
+  "overlay": {
+    "kicker": "ROOFING // FORTIFIED AGE LIMIT",
+    "title": "SHINGLE MAKERS ATTACK 15-YEAR ROOF LIMIT",
+    "hook": "From January 2027, roofs past 15 years lose the certificate behind the discounts",
+    "anchor": "bottom-right",
+    "light": true,
+    "scrim": 120,
+    "contrast": 4.77,
+    "target": 4.5,
+    "clutter": 0.206,
+    "region_rgb": [
+      85,
+      79,
+      76
+    ],
+    "binding_rgb": [
+      111,
+      112,
+      107
+    ],
+    "title_lines": [
+      "SHINGLE MAKERS",
+      "ATTACK 15-YEAR",
+      "ROOF LIMIT"
+    ],
+    "subject": 0.339,
+    "ink_subject": 0.061,
+    "spike": 0.297,
+    "generated_at": "2026-11-27T10:44:03+00:00"
+  }
+}

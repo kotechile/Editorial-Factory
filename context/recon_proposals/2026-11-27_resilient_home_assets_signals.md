@@ -1,0 +1,35 @@
+# Signals: resilient_home_assets — 2026-11-27
+**Window:** 2026-10-28 → 2026-11-27
+**Queries run:** 11 — one Home & Lifestyle Intelligence pull (`home_lifestyle_intel_client.py --recent 30 --vertical resilient_home_assets --format signals`: 10 items, 3 on-axis — Maine heat-pump rate, Uber EV fleet, Redfin price index; the rest off-vertical browser/kitchen noise), 7 date-agnostic web fan-outs across the primary angles (insurability/FORTIFIED, V2H, home battery, non-renewals, wildfire/defensible space, First Street), plus 3 direct primary reads (Insurance Journal, Canary Media, Insurify) and 2 publisher-date confirmations (Insurance Journal's URL date 2026-11-09, GlobeNewswire dateline 2026-11-13 reprinted by Yahoo Finance and the Fidelity news feed).
+
+| # | Signal | Source URL | Date | Figure/Claim | Angle | Intensity |
+|---|--------|-----------|------|--------------|-------|-----------|
+| 1 | Asphalt-roofing manufacturers publicly attack IBHS over the 15-year FORTIFIED roof-age limit | https://www.insurancejournal.com/news/southeast/2026/11/09/891911.htm | 2026-11-09 | ARMA calls the IBHS conclusions "fundamentally compromised by non-standard testing protocols, unrepresentative grab-sampling, and incomplete probabilistic modeling"; IBHS's Sept. 29 bulletin (TB FH 2026-03) bars roofs older than 15 years from the FORTIFIED designation effective **2027-01-01**; >100,000 FORTIFIED designations nationwide, Alabama more than half, double 2023; Security First Insurance prices on roof age — "the single-largest rate factor"; only Florida (2022 statute, <15-year-old roofs protected if ≥5 years useful life remain), Texas and Virginia bar roof-age-only non-renewals | property insurability crisis and fortified roof retrofits | 88 |
+| 2 | BigBattery launches RAIO, an all-in-one LFP home battery at $7,950 | https://finance.yahoo.com/energy/articles/bigbattery-launches-raio-ul-9540-131500713.html | 2026-11-13 | GlobeNewswire release, Commerce TX, Nov. 13: 14.7 kWh LiFePO4 battery + 7.68 kW hybrid inverter in one UL 9540-certified enclosure; base equipment kits "start at $7,950, excluding installation" (certified-installer, licensed-electrician install required); 11.52 kW solar input over three MPPTs; expandable in parallel to 73.5 kWh (5 units); 12-year limited warranty; preorder, estimated ship 2026-12-01 | behind-the-meter microgrids solar and LFP storage sizing | 80 |
+| 3 | Maine PUC revives a winter heat-pump discount rate at Central Maine Power | https://www.canarymedia.com/articles/heat-pumps/maine-heat-pump-winter-discount | 2026-11-25 | Approved "last week"; voluntary rate kicks in **2026-12-01** for CMP's 670,000+ households: winter transmission-and-distribution charges eliminated, supply 13.63 ¢/kWh as of the new year, ~$41/month fee vs $27 standard; summer 25 ¢/kWh vs 12 ¢; CMP's own example (500 kWh summer, 1,200 kWh winter) saves $211/year; heating oil (used by ~half of Maine homes) near $6/gallon; Massachusetts' first season of required heat-pump rates saved customers >$37M, >$250/household | grid resilience through rate design | 76 |
+| 4 | California Energy Commission convenes automakers on commercially available V2H | https://www.energy.ca.gov/event/webinar/2026-11/webinar-enabling-bidirectional-ev-charging-home-v2h | 2026-11-10 | Event dated 2026-11-10: CEC webinar presenting "commercially available and upcoming vehicle-to-home (V2H) solutions" with automaker and charger-equipment presentations, "to gather broad stakeholder input as CEC considers next steps and policies to facilitate access to bidirectional charging benefits" | vehicle to home V2H bi-directional EV charging limits | 64 |
+
+## Dated background
+
+These carry context or provenance and are barred as anchors (publication predates the window, undated, or a standing record). Their URLs are here so `synthesize_topics.py --check-briefs` can find every URL a draft cites.
+
+- IBHS technical bulletin TB FH 2026-03, "Re-designation Eligibility Requirements for Homes with Asphalt Shingle Roof Systems", First Release **2026-09-29** (the document row 1 reports on — out of window itself): https://fortifiedhome.org/wp-content/uploads/FH-2026-03-Redesignation-Eligibility-1.pdf
+- FORTIFIED program page restating the 15-year asphalt-shingle eligibility limit and "Beginning January 1, 2027" (standing record, observed 2026-11-27): https://fortifiedhome.org/designations
+- IBHS news release, FORTIFIED surpasses 100,000 designations, 2026-05-20: https://ibhs.org/ibhs-news-releases/ibhss-fortified-program-surpasses-100000-designations
+- Roofing Magazine on the updated FORTIFIED standards (updated-statement context): https://roofingmagazine.com/new-ibhs-standards
+- BigBattery's own RAIO product page, observed 2026-11-27: "Starting at $7,950.00 Battery, inverter & gateway", preorder "Est. Dec 1", up to 5 units in parallel, 12-Year Warranty — corroborates row 2's first-party figures: https://bigbattery.com/products/bigbattery-raio-residential-all-in-one-home-ess-gray and https://bigbattery.com/ul-certified-grid-tied-systems
+- Insurify H1-2026 home-insurance rate analysis ("some counties up to 33%") — publish date not shown on the page; H1-2026 data, undated on page: https://insurify.com/homeowners-insurance/insights/rates-increase-first-half-2026
+- Texas Commerce, TX USA Today-style coverage of the same RAIO release on the Fidelity news feed, 2026-11-13: https://www.fidelity.com/news/article/default/202611130815PRIMZONEFULLFEED9877070
+
+**Dating note.** Rows 1, 2 and 3 carry a publication/dateline date inside the window (2026-11-09, 2026-11-13, 2026-11-25). Row 4 is an event notice dated by the CEC's own event page for 2026-11-10; it states a process (a convening) rather than a measurement, and can corroborate that V2H is commercially deployed but never anchor a figure. Row 1's underlying technical bulletin is dated 2026-09-29 and sits in Dated background; the in-window event is the manufacturers' pushback on 2026-11-09 and the effective date 2027-01-01 the bulletin itself sets. The prior edition of this vertical's sweep (2026-11-13) anchored the CDI Dove Fire moratorium and the FAIR Plan statistics; those artifacts are published and cannot be re-anchored.
+
+## Candidate Synthesis Pairs
+
+<!-- synthesis-seed:start -->
+<!-- pair-seeding: helper=synthesize_topics.py rows=4 candidates=0 heuristic=- window=2026-10-28..2026-11-27 -->
+> Advisory: mechanical pre-filter only. The Judge (`skills/virality_judge.md` §2.5) owns the collision vector
+> and the >= 8 publish gate. `emergence_heuristic` is a hint, not a score; it cannot clear any gate.
+> Seeded mechanically from this file's own rows by `python3 scripts/synthesize_topics.py --seed <this file>`; re-run it after adding or removing a signal row. The Judge scores the rows and writes the collision vector per `skills/virality_judge.md` §2.5.
+
+_No mechanically valid pair. That is a legitimate answer, not a failure: the Judge may still find a synthesis this token layer cannot see._
+<!-- synthesis-seed:end -->

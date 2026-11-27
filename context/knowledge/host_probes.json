@@ -104,6 +104,14 @@
   "note": "l; only exact slugs such as `products/air_source_heat_pumps` fetch), `angi.com`, `homeguide.com`, and `nachi.org/inspecting-hvac-systems.htm`. **A colliding reference table can still be resc"
  },
  {
+  "host": "apicsprsjorg.starchapter.com",
+  "url": "https://apicsprsjorg.starchapter.com/blog/id/6",
+  "verdict": "fetchable",
+  "as_of": "2026-11-26",
+  "vertical": "demand_sensing_advanced_sop",
+  "note": "ASCM local-chapter page: plain-text carrying-cost table (15-25% rule, 25-55% component sum); fetches first try, 3.7 KB."
+ },
+ {
   "host": "app.leg.wa.gov",
   "url": "",
   "verdict": "fetchable",
